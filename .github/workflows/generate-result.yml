@@ -1,7 +1,7 @@
 name: Archive Questions
-on: push
-  #schedule:
-  #  - cron: '0 0 * * *'
+on:
+  schedule:
+  - cron: '0 0 * * *'
     
 jobs:
   create_archive:
