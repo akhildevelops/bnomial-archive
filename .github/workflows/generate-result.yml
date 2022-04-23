@@ -17,6 +17,8 @@ jobs:
         with:
           toolchain: stable
           override: true
+      - name: Cache pkgs
+        uses: Swatinem/rust-cache@v1
       - name: cargo run
         run: cargo run
       - name: push changes
