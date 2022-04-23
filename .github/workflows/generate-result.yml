@@ -12,6 +12,8 @@ jobs:
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: Pull changes
+        run: git pull
       - name: Install rust stable
         uses: actions-rs/toolchain@v1
         with:
