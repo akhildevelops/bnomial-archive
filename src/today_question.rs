@@ -17,9 +17,14 @@ struct BnomialResp {
 
 impl ToFileContent for BnomialRespContent {
     fn to_string(&self) -> String {
-        let choices = self.choices.join("\n");
+        let choices = self
+            .choices
+            .iter()
+            .map(|x| "- ".to_owned() + x)
+            .reduce(|x, y| [x, y].join("\n"))
+            .unwrap();
         format!(
-            "Date - {}\n\n\nTitle - {}\n\n\nQuestion :\n\n{}\n\n\nChoices :\n\n{}\n\n-----------------------\n\n",
+            "## Date - {}\n\n\n## Title - {}\n\n\n### **Question** :\n\n{}\n\n\n### **Choices** :\n\n{}\n\n-----------------------\n\n",
             self.date, self.title, self.content, choices
         )
     }
