@@ -1,7 +1,7 @@
 name: Archive Questions
 on:
   schedule:
-  - cron: '10 5 * * *'
+  - cron: '20 5 * * *'
     
 jobs:
   create_archive:
