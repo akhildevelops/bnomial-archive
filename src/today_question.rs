@@ -1,10 +1,21 @@
 use crate::defaults;
 use crate::write_file::ToFileContent;
+use chrono::prelude::*;
 use reqwest;
-use serde::Deserialize;
+use serde::{de, Deserialize, Deserializer};
+
+fn naive_date_time_from_str<'de, D>(deserializer: D) -> Result<NaiveDate, D::Error>
+where
+    D: Deserializer<'de>,
+{
+    let s = Deserialize::deserialize(deserializer)?;
+    NaiveDate::parse_from_str(s, "%Y%m%d").map_err(de::Error::custom)
+}
+
 #[derive(Deserialize)]
 pub struct BnomialRespContent {
-    date: String,
+    #[serde(deserialize_with = "naive_date_time_from_str")]
+    date: NaiveDate,
     title: String,
     content: String,
     choices: Vec<String>,

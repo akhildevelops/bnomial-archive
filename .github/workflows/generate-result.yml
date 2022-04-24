@@ -1,0 +1,31 @@
+name: Archive Questions
+on:
+  schedule:
+  - cron: '10 5 * * *'
+    
+jobs:
+  create_archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: Pull changes
+        run: git pull
+      - name: Install rust stable
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+      - name: Cache pkgs
+        uses: Swatinem/rust-cache@v1
+      - name: cargo run
+        run: cargo run
+      - name: push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          # create_branch: true
+          # branch: date-${{ steps.date.outputs.date }}
+          commit_message: Updated result.md
