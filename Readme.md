@@ -2,4 +2,4 @@
 
 ---
 
-Please refer to [result.md](./result.md) for updated questions everyday.
+Please refer to [questions.md](./questions.md) file for updated questions everyday.
