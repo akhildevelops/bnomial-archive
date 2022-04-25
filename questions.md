@@ -24,3 +24,29 @@ Mia did a lot of research before deciding in favor of this architecture. She kne
 - Radial Basis Function Network
 
 ---
+## Date - 2022-04-25
+
+
+## Title - Harper and the small gradients
+
+
+### **Question** :
+
+Harper's team is struggling with the deep neural network they have been building.
+
+Unfortunately, during backpropagation, the gradient values of their network decrease dramatically as the process gets closer to the initial layers, preventing them from learning at the same pace as the last set of layers.
+
+Harper knows their model suffers from the vanishing gradient problem. She decides to research every possible option to improve their model.
+
+**Which of the following techniques will make Harper's model more robust to the vanishing gradient problem?**
+
+
+### **Choices** :
+
+- Harper should try ReLU as the activation function since it's well-known for mitigating the vanishing gradient problem.
+- Harper should modify the model architecture to introduce Batch Normalization.
+- Harper should make sure they are initializing the weights properly. For example, using He initialization should help with the vanishing gradient problem.
+- Harper should increase the learning rate to avoid getting stuck in local minima and thus reduce the chance of suffering vanishing gradients.
+
+-----------------------
+
