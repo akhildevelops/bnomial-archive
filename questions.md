@@ -50,3 +50,27 @@ Harper knows their model suffers from the vanishing gradient problem. She decide
 
 -----------------------
 
+## Date - 2022-04-26
+
+
+## Title - Exploring data before anything else
+
+
+### **Question** :
+
+An essential step in any machine learning project is the Exploratory Data Analysis process.
+
+Before we can train a model, we need to understand our data. As the name suggests, Exploratory Data Analysis allows us to explore the data to discover potential problems or patterns that we can use.
+
+**Which of the following are some of the steps we take during this process?**
+
+
+### **Choices** :
+
+- Learn the distribution of the target variable.
+- Understand the features in the dataset and the distribution of their values.
+- Evaluate the performance of our models on this data.
+- Assess the data quality, including missing or corrupt values.
+
+-----------------------
+
