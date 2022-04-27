@@ -74,3 +74,29 @@ Before we can train a model, we need to understand our data. As the name suggest
 
 -----------------------
 
+## Date - 2022-04-27
+
+
+## Title - Susan needs to make a decision
+
+
+### **Question** :
+
+The deadline is approaching, and Susan still hasn't decided which version of her classification model to deploy to production.
+
+She experimented with different hyperparameters, and now she has two models that perform pretty well. 
+
+Her problem is that none of these models is better than the other in every situation. One model has a higher recall but worse precision than the other. Susan can improve the precision by playing with different thresholds, but now the recall decreases.
+
+**How can Susan decide which is the best overall model?**
+
+
+### **Choices** :
+
+- Susan should tune the thresholds until both have a recall of 95% and choose the one with higher precision.
+- Susan should tune the thresholds until both have a precision of 95% and choose the one with a higher recall.
+- Susan should compute the area under the curve for both models and choose the one with the higher value.
+- There's no objective way to decide which model is best. Susan should pick either one of them.
+
+-----------------------
+
