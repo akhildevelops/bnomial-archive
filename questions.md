@@ -130,3 +130,29 @@ The next step is to multiply `X` and `w`, but you aren't sure about the result o
 
 -----------------------
 
+## Date - 2022-04-29
+
+
+## Title - 20,000 sunny and cloudy samples
+
+
+### **Question** :
+
+Today is your very first day.
+
+You get access to weather data. Twenty thousand samples with the weather of sunny and cloudy days. You want to build a model to predict whether a future day will be sunny or cloudy.
+
+You already know this is a binary classification problem, and now it's time to pick a model.
+
+**Which of the following techniques can you use to build a binary classification model?**
+
+
+### **Choices** :
+
+- Logistic Regression
+- k-Nearest Neighbors
+- Neural Networks
+- Decision Trees
+
+-----------------------
+
