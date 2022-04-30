@@ -156,3 +156,31 @@ You already know this is a binary classification problem, and now it's time to p
 
 -----------------------
 
+## Date - 2022-04-30
+
+
+## Title - The true meaning of hyperparameter tuning
+
+
+### **Question** :
+
+Marlene is trying to build an audience.
+
+Writing content seems easy, but taking a complex subject and boiling it down to its essence is not an obvious task.
+
+Marlene wants to start from the basics and write as much as possible about the fundamentals of machine learning.
+
+She picked her first topic: hyperparameter tuning.
+
+**If you were trying to summarize the core idea of hyperparameter tuning, which one of the following sentences would you use?**
+
+
+### **Choices** :
+
+- Hyperparameter tuning is about choosing the set of optimal features from the data to train a model.
+- Hyperparameter tuning is about choosing the set of optimal samples from the data to train a model.
+- Hyperparameter tuning is about choosing the optimal parameters for a learning algorithm to train a model.
+- Hyperparameter tuning is about choosing the set of hypotheses that better fit the goal of the model.
+
+-----------------------
+
