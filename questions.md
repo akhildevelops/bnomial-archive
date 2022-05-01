@@ -184,3 +184,27 @@ She picked her first topic: hyperparameter tuning.
 
 -----------------------
 
+## Date - 2022-05-01
+
+
+## Title - One of these shouldn't be here
+
+
+### **Question** :
+
+Here are four different techniques commonly used in machine learning.
+
+Although they are all related somehow, one of them is different from the rest. Your goal is to determine which of the following doesn't belong on this list.
+
+**Can you select the odd one out?**
+
+
+### **Choices** :
+
+- Expectation–Maximization
+- PCA
+- DBSCAN
+- K-Means
+
+-----------------------
+
