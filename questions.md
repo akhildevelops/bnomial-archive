@@ -208,3 +208,29 @@ Although they are all related somehow, one of them is different from the rest. Y
 
 -----------------------
 
+## Date - 2022-05-02
+
+
+## Title - The bankruptcy story
+
+
+### **Question** :
+
+Suzanne wants to build an algorithm to predict whether a company is about to declare bankruptcy over the next few months.
+
+She has access to a labeled dataset with detailed financial information from thousands of companies, including those that have declared bankruptcy over the last 100 years.
+
+Suzanne has some ideas but would love to hear what you think.
+
+**Understanding that there are many ways to approach a problem, what would be your first recommendation to Suzanne?**
+
+
+### **Choices** :
+
+- The best way to approach this problem is with Supervised Learning by using a regression algorithm.
+- The best way to approach this problem is with Supervised Learning by using a classification algorithm.
+- The best way to approach this problem is with Unsupervised Learning by using a clustering algorithm.
+- The best way to approach this problem is with Reinforcement Learning.
+
+-----------------------
+
