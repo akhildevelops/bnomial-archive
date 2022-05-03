@@ -234,3 +234,31 @@ Suzanne has some ideas but would love to hear what you think.
 
 -----------------------
 
+## Date - 2022-05-03
+
+
+## Title - A batch of rotated pictures
+
+
+### **Question** :
+
+After looking at the last batch of images, the problem was apparent:
+
+Customers were taking pictures and sending them with different degrees of rotation. The Convolutional Neural Network that Jessica built wasn't ready to handle this.
+
+She knew she needed to do something about it.
+
+A couple of meetings later, Jessica knew what the right solution was. It took some time for the team to agree, but they had a plan now.
+
+**Which of the following approaches could Jessica have proposed?**
+
+
+### **Choices** :
+
+- Extending the pipeline with a data preprocessing step to properly rotate every image coming from the customer before giving the data to the model.
+- Extending the model with a layer capable of rotating the data to the correct position.
+- Extending the training data with samples of images rotated across the full 360-degree spectrum to build some rotation invariability into the model.
+- Configuring the network correctly since Convolutional Neural Networks are translation and rotation invariant and should handle these images correctly.
+
+-----------------------
+
