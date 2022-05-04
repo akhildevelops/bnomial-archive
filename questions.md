@@ -262,3 +262,29 @@ A couple of meetings later, Jessica knew what the right solution was. It took so
 
 -----------------------
 
+## Date - 2022-05-04
+
+
+## Title - Alex's model is not doing well
+
+
+### **Question** :
+
+Alex is a Machine Learning Engineer working for a new photo-sharing startup.
+
+His team started building a model to predict the likeability of every new image posted on the platform. They collected some data and built a simple classification model.
+
+Unfortunately, Alex quickly realizes that the model doesn't perform well. He notices that the training error is not as low as expected.
+
+**What do you think is happening with Alex's model?**
+
+
+### **Choices** :
+
+- It's very likely that the model suffers from high bias and is underfitting. This usually happens when the model is not complex enough and can't capture the relationship between input and output variables.
+- It's very likely that the model suffers from low bias and is underfitting. This usually happens when the model is not complex enough and can't capture the relationship between input and output variables.
+- It's very likely that the model suffers from high variance and is overfitting. This usually happens when the model is too complex and captures the noise of the data.
+- It's very likely that the model suffers from low variance and is overfitting. This usually happens when the model is too complex and captures the noise of the data.
+
+-----------------------
+
