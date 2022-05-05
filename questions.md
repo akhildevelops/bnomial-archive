@@ -288,3 +288,31 @@ Unfortunately, Alex quickly realizes that the model doesn't perform well. He not
 
 -----------------------
 
+## Date - 2022-05-05
+
+
+## Title - Behind Gradient Descent
+
+
+### **Question** :
+
+It's 2030, and neural networks are taught at high schools worldwide.
+
+It makes sense. Few subjects are as impactful to society as machine learning, so it's only appropriate that schools get students onboard from a very early age.
+
+Lillian spent a long time learning about gradient descent and how it's an optimization algorithm frequently used in machine learning applications.
+
+This is Lillian's last exam. The first question asks her to describe in a few words how gradient descent works.
+
+**Which of the following statements is a sensible description of how the algorithm works?**
+
+
+### **Choices** :
+
+- Gradient descent identifies the minimum loss and adjusts every parameter proportionally to this loss.
+- Gradient descent searches every possible combination of parameters to find the optimal loss.
+- Gradient descent identifies the slope in all directions and adjusts the parameters to move them in the direction of the negative slope.
+- Gradient descent identifies the slope in all directions and adjusts the parameters to move them in the direction of the slope.
+
+-----------------------
+
