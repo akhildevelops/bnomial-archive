@@ -316,3 +316,29 @@ This is Lillian's last exam. The first question asks her to describe in a few wo
 
 -----------------------
 
+## Date - 2022-05-06
+
+
+## Title - A recommendation for Adrienne
+
+
+### **Question** :
+
+Kaggle looked like the perfect opportunity for Adrienne to start practicing machine learning.
+
+She went online and started listening to the conversations about popular Kagglers. One particular topic caught her attention: They kept discussing different ways to create ensembles.
+
+Adrienne knew that ensemble learning is a powerful technique where you combine the decisions from multiple models to improve the overall performance. She had never used ensembles before, so she decided this was the place to start.
+
+**Which of the following are valid ensemble techniques that Adrienne could study?**
+
+
+### **Choices** :
+
+- Max Voting: Multiple models make predictions for each sample. The final prediction is the one produced by the majority of the models.
+- Weighted Voting: Multiple models make predictions for each sample, and each model is assigned a different weight. The final prediction considers the importance of the model in determining the final vote.
+- Simple Averaging: Multiple models make predictions for each sample. The final prediction is the average of all of those predictions.
+- Weighted Averaging: Multiple models make predictions for each sample, and each model is assigned a different weight. The final prediction is the average of all of those predictions, considering the importance of each model.
+
+-----------------------
+
