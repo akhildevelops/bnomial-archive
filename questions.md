@@ -342,3 +342,27 @@ Adrienne knew that ensemble learning is a powerful technique where you combine t
 
 -----------------------
 
+## Date - 2022-05-07
+
+
+## Title - Sometimes, small is better
+
+
+### **Question** :
+
+Fynn is new to a team working on a neural network model. Unfortunately, they haven't been happy with the results so far.
+
+Fynn thinks that he found the problem: they chose a batch size as large as it fits into the GPU memory. His colleagues believe this is the right approach, but Fynn believes a smaller batch size will be better.
+
+**What would be good arguments to support Fynn's suspicion?**
+
+
+### **Choices** :
+
+- A smaller batch size is more computationally effective.
+- A smaller batch size reduces overfitting because it increases the noise in the training process.
+- A smaller batch size reduces overfitting because it decreases the noise in the training process.
+- A smaller batch size can improve the generalization of the model.
+
+-----------------------
+
