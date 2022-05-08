@@ -366,3 +366,29 @@ Fynn thinks that he found the problem: they chose a batch size as large as it fi
 
 -----------------------
 
+## Date - 2022-05-08
+
+
+## Title - Reese's baseline
+
+
+### **Question** :
+
+Starting with a simple baseline is a great way to approach a new problem.
+
+Reese knew that, and her go-to has always been a simple Linear Regression, probably one of the most popular algorithms in statistics and machine learning.
+
+But Reese knows that for Linear Regression to work, she must consider several assumptions about the problem.
+
+**Which of the following are some of the assumptions that Reese should make for Linear Regression to be a good candidate for her baseline?**
+
+
+### **Choices** :
+
+- The relationship between the features in the data and the target variable must be linear.
+- The features in the data are highly correlated between them.
+- The features in the data and the target variable are not noisy.
+- There must not be more than two relevant features plus the target variable.
+
+-----------------------
+
