@@ -3,7 +3,13 @@ use crate::write_file::ToFileContent;
 use chrono::prelude::*;
 use reqwest;
 use serde::{de, Deserialize, Deserializer};
-use std::{collections::HashMap, fmt::format};
+use std::collections::HashMap;
+
+macro_rules! markdown {
+    () => {
+        "<details><summary>CLICK ME</summary><p>{}</p></details>"
+    };
+}
 
 fn naive_date_time_from_str<'de, D>(deserializer: D) -> Result<NaiveDate, D::Error>
 where
@@ -41,13 +47,12 @@ impl ToFileContent for BnomialRespContent {
             .map(|x| "- ".to_owned() + x)
             .reduce(|x, y| [x, y].join("\n"))
             .unwrap();
-        let answer = format!(
-            "<details><summary>CLICK ME</summary><p>{}</p></details>",
-            self.answer
-        );
+        let answer = format!(markdown!(), self.answer);
+        let explaination = format!(markdown!(), self.explanation);
+        let references = format!(markdown!(), self.references);
         format!(
             "## Date - {}\n\n\n## Title - {}\n\n\n### **Question** :\n\n{}\n\n\n### **Choices** :\n\n{}\n\n\n### **Answer** :\n\n{}\n\n\n### **Explaination** :\n\n{}\n\n\n### **References**: \n\n{}\n\n-----------------------\n\n",
-            self.date, self.title, self.content, choices, answer, self.explanation, self.references
+            self.date, self.title, self.content, choices, answer, explaination, references
         )
     }
 }
