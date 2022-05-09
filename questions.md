@@ -392,3 +392,29 @@ But Reese knows that for Linear Regression to work, she must consider several as
 
 -----------------------
 
+## Date - 2022-05-09
+
+
+## Title - Migrating to PyTorch Lighting
+
+
+### **Question** :
+
+Many of the old team members have left Layla's company, forcing them to start building a new team.
+
+They have been hiring from local universities, and most new hires brought a lot of experience in PyTorch Lightning. Unfortunately for Layla's company, their main product uses TensorFlow.
+
+After some discussions, Layla's team decided to migrate their model to PyTorch Lightning. This change, however, will not come without making some concessions. 
+
+**Which of the following are some of the downsides of this decision?**
+
+
+### **Choices** :
+
+- The team will lose the ability to deploy the model in TPUs (Tensor Processing Units), limiting them to GPUs and CPUs.
+- The team won't be able to use tools like TensorBoard during the training process, so they will need to find an equivalent tool compatible with PyTorch Lightning.
+- The team will have to invest time to migrate the deployment process of their model from TensorFlow Serving to something like TorchServe or PyTorch Live.
+- Migrating the existing codebase to PyTorch Lightning could introduce unforeseen problems that could cause issues with the new model.
+
+-----------------------
+
