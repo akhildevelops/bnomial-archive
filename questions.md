@@ -596,3 +596,51 @@ In summary, the second and third choices are the correct answers to this questio
 
 -----------------------
 
+## Date - 2022-05-13
+
+
+## Title - Pick the one you don't like
+
+
+### **Question** :
+
+Let's get straight to the point.
+
+Your goal is to determine which of the following doesn't belong on this list.
+
+**Can you select the odd one out?**
+
+
+### **Choices** :
+
+- AdaGrad
+- RMSProp
+- Adam
+- SGD
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Every example here is an optimization method used when training a machine learning model. 
+
+However, [AdaGrad](https://en.wikipedia.org/wiki/Stochastic_gradient_descent#AdaGrad), [RMSProp](https://en.wikipedia.org/wiki/Stochastic_gradient_descent#RMSProp), and [Adam](https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam) are adaptive learning rate methods, while [SGD](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) is not.
+
+[Adaptive learning rate methods](https://towardsdatascience.com/learning-rate-schedules-and-adaptive-learning-rate-methods-for-deep-learning-2c8f433990d1) track and update different learning rates for each model parameter, while SGD uses the same learning rate for all parameters.
+
+The last choice is the correct answer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- [Learning Rate Schedules and Adaptive Learning Rate Methods for Deep Learning](https://towardsdatascience.com/learning-rate-schedules-and-adaptive-learning-rate-methods-for-deep-learning-2c8f433990d1)
+- [Stochastic gradient descent: Extensions and variants](https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Extensions_and_variants)
+- [How to Configure the Learning Rate When Training Deep Learning Neural Networks](https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/)
+- [Deep Learning](https://amzn.to/3CSjPkR)</p></details>
+
+-----------------------
+
