@@ -644,3 +644,59 @@ The last choice is the correct answer.</p></details>
 
 -----------------------
 
+## Date - 2022-05-14
+
+
+## Title - Depth perception
+
+
+### **Question** :
+
+Richard finally got a job as a self-driving car engineer!
+
+His first task is to help the car perceive depth using the onboard cameras. He wants to start with an overview of the different approaches he can use to estimate the distance to every pixel in the image.
+
+Before diving into the existing techniques, Richard has to think about the different ways he can capture pictures.
+
+**Which of the following mechanisms do you think Richard can use to estimate depth?**
+
+
+### **Choices** :
+
+- An image from a single camera.
+- A sequence of images from a single camera.
+- A pair of images from a stereo camera.
+- Cameras are 2D sensors, so Richard can't use them to estimate depth.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Cameras are indeed 2D sensors, but there are many ways to estimate distance using pictures from a camera, so the last choice is incorrect.
+
+Using a stereo camera is one of the classical approaches to do this. For every point observed in both camera images, we can triangulate its 3D position. Therefore, the third choice is correct.
+
+We can also use a sequence of images from a single camera to triangulate fixed points over different frames. This method is called [Structure from Motion](https://en.wikipedia.org/wiki/Structure_from_motion) and is also a correct choice. I'd recommend listening to [Andrej Karpathy's talk](https://youtu.be/Ucp0TTmvqOE?t=8479) covering the work they are doing at Tesla to estimate depth using video.
+
+The most interesting correct choice is the first one. We don't have enough information to triangulate the distance to a point in the image, but we can use our knowledge of the world to make some assumptions and solve the problem.
+
+Remember, we are only interested in a car driving on the street, so we can exploit our understanding of the scene and our knowledge of standard dimensions of objects to estimate the distance to each point on the image. Over the last few years, we have seen several methods to train deep neural networks using this approach. ["Single Image Depth Estimation: An Overview"](https://arxiv.org/abs/2104.06456) is a good paper covering this topic.
+
+In summary, every choice but the last one is correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- [Stereo Vision](https://en.wikipedia.org/wiki/Computer_stereo_vision)
+- [Structure from Motion](https://en.wikipedia.org/wiki/Structure_from_motion)
+- [Monocular depth estimation](https://paperswithcode.com/task/monocular-depth-estimation)
+- [Depth from vision by Andrej Karpathy](https://youtu.be/Ucp0TTmvqOE?t=8479)
+- [Single Image Depth Estimation: An Overview](https://arxiv.org/abs/2104.06456)
+- [Multiple View Geometry](https://amzn.to/3KNPhmN)</p></details>
+
+-----------------------
+
