@@ -700,3 +700,62 @@ In summary, every choice but the last one is correct.</p></details>
 
 -----------------------
 
+## Date - 2022-05-15
+
+
+## Title - The benefits of the Huber loss
+
+
+### **Question** :
+
+The Huber loss is a popular loss function used for regression problems in machine learning.
+
+[Here is the formula](https://en.wikipedia.org/wiki/Huber_loss). Take a second and look at it. 
+
+The formula may look complex, but there are two things you need to know about the Huber loss. 
+
+First, it behaves like a square function for values smaller than a parameter δ (similar to MSE.) Second, it acts as the absolute function for larger values (similar to MAE.)
+
+In essence, the Huber loss is a combination of two other popular loss functions: Mean Squared Error (MSE) and Mean Absolute Error (MAE.)
+
+**What are the benefits of combining these two functions?**
+
+
+### **Choices** :
+
+- It adds an additional hyperparameter δ which helps tune the model.
+- It is more robust against large outliers than MSE.
+- It is smooth around 0 helping the training converge better.
+- It is continuous and differentiable.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The [Huber loss](https://en.wikipedia.org/wiki/Huber_loss) tries to combine the advantages of both MSE and MAE. Here is a picture showing a comparison between these three functions (Image credit to ["Regression loss functions for machine learning"](https://www.evergreeninnovations.co/blog-machine-learning-loss-functions/)):
+
+![image](https://user-images.githubusercontent.com/1126730/167011014-92c64b36-689e-4a89-bc6e-1e963807a982.png)
+
+If we want to have a loss function that is not affected by outliers, we typically use MAE instead of MSE. When using MAE, we don't square the errors as we do with MSE, so outliers aren't amplified. However, MAE has the problem that it is not smooth around 0 (the derivative jumps a lot at 0,) which may cause issues with convergence. 
+
+The Huber loss behaves like MAE for large values, so it's robust against outliers, but it acts like MSE around 0, so it is smooth. In a way, we get our cake and eat it too with the Huber loss! Therefore, the second and third options are correct.
+
+An important goal for the Huber loss was to make it continuous and differentiable. This makes the fourth choice correct as well.
+
+Finally, the Huber loss comes with an additional hyperparameter δ. That extra parameter means that the training process will be harder to tune. Although the parameter is essential in the design of the Huber loss, it's not an advantage compared to a loss function that doesn't require tuning. Therefore, the first choice is incorrect.
+
+In summary, the second, third, and fourth choices are correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- [Huber loss](https://en.wikipedia.org/wiki/Huber_loss)
+- [Huber Loss: Why Is It, Like How It Is?](https://www.cantorsparadise.com/huber-loss-why-is-it-like-how-it-is-dcbe47936473)
+- [Regression loss functions for machine learning](https://www.evergreeninnovations.co/blog-machine-learning-loss-functions/)</p></details>
+
+-----------------------
+
