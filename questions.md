@@ -759,3 +759,63 @@ In summary, the second, third, and fourth choices are correct.</p></details>
 
 -----------------------
 
+## Date - 2022-05-16
+
+
+## Title - Climbing a hill
+
+
+### **Question** :
+
+Gabriela wanted her friend to grow an appreciation for the outdoors, so they started meeting every Saturday and going for a hike together.
+
+And what better way to spend their time than starting a discussion about hill climbing and how it relates to their day-to-day work.
+
+It turns out that hill climbing is an optimization algorithm that attempts to find a better solution by making incremental changes until it doesn't see further improvements.
+
+Her friend couldn't help but notice how similar to gradient descent the process was, but Gabriela knew there were a few critical differences between them. 
+
+**Can you select every correct statement from the following comparison list?**
+
+
+### **Choices** :
+
+- Hill climbing is a general optimization algorithm, but gradient descent is only used to optimize neural networks.
+- Unlike gradient descent, hill climbing can return an optimal solution even if it's interrupted at any time before it ends.
+- Gradient descent is usually more efficient than hill climbing, but there are fewer problems we can tackle with gradient descent.
+- Both hill climbing and gradient descent can find optimal solutions for convex problems.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Hill climbing](https://en.wikipedia.org/wiki/Hill_climbing) is an optimization algorithm, just like [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) is. You can use both to minimize a function, regardless of whether it's related to a neural network, so the first choice is incorrect. For example, the following animation comes from ["Linear Regression using Gradient Descent."](https://towardsdatascience.com/linear-regression-using-gradient-descent-97a6c8700931) It shows a linear regression model that uses gradient descent as the optimization algorithm:
+
+![Linear regression using gradient descent](https://miro.medium.com/max/1400/1*CjTBNFUEI_IokEOXJ00zKw.gif)
+
+The second choice is also incorrect. Hill climbing can return a valid solution even if it's interrupted before it ends, but there's no guarantee that this will be the optimal solution. We call these types of algorithms ["anytime algorithms."](https://en.wikipedia.org/wiki/Anytime_algorithm) They find better and better solutions the longer they keep running but can return a reasonable solution at any time.
+
+Gradient descent looks at the slope in the local neighborhood and moves in the direction of the steepest slope. This makes it much more efficient than hill climbing, which needs to look at all neighboring states to evaluate the cost function in each of them. 
+
+The efficiency gained by gradient descent presents a trade-off: the algorithm assumes that you can compute the function's gradient in any given state, limiting the problems where we can use it. Therefore, the third choice is correct.
+
+Finally, the fourth choice is also a correct answer. Both algorithms can find the optimal solution for a convex problem. Look at the following example of a [convex function](https://en.wikipedia.org/wiki/Convex_function). Assuming we configure hill climbing to optimize for finding the minimum, neither function should have trouble getting all the way to the bottom of this problem:
+
+![A convex function](https://user-images.githubusercontent.com/1126730/167182794-30f47b44-2149-4700-b642-616d8d6dce51.png)
+
+In summary, the third and fourth choices are the correct answers to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Hill Climbing Algorithms (and gradient descent variants) IRL](https://umu.to/blog/2018/06/29/hill-climbing-irl)
+* [Linear Regression using Gradient Descent](https://towardsdatascience.com/linear-regression-using-gradient-descent-97a6c8700931)
+* [Hill climbing](https://en.wikipedia.org/wiki/Hill_climbing)
+* [Gradient descent](https://en.wikipedia.org/wiki/Gradient_descent)</p></details>
+
+-----------------------
+
