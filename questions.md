@@ -913,3 +913,67 @@ This is the pattern the team is seeing. Kiara used ReLU as her activation functi
 
 -----------------------
 
+## Date - 2022-05-18
+
+
+## Title - Riley's speed-dating match
+
+
+### **Question** :
+
+If you spend all day sitting at a desk, you can't expect to have many opportunities to meet interesting people.
+
+Riley decided to get to bull by the horns and checked in on one of those speed-dating sites that promise to find your perfect match.
+
+But of course, Silicon Valley is a ridiculous caricature of the impossible, and Riley's first match decided to start blabbing about machine learning and dimensionality reduction algorithms.
+
+And if this wasn't crazy enough, Riley didn't think this person knew what he was talking about.
+
+**Can you guess all the possible statements about dimensionality reduction that would make Riley's match incorrect?**
+
+
+### **Choices** :
+
+- Supervised learning algorithms can be used as dimensionality reduction techniques.
+- Every dimensionality reduction technique is a clustering technique, but every clustering technique is not a dimensionality reduction algorithm.
+- Dimensionality reduction algorithms are primarily considered unsupervised learning techniques.
+- Nowadays, the most successful dimensionality reduction techniques are deep learning algorithms.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Here is something clear to Riley: Dimensionality reduction algorithms reduce the number of input variables in a dataset to find a lower-dimensional representation that still preserves the salient relationships in the data.
+
+For example, PCA—short for [Principal Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)—is a dimensionality reduction algorithm often used to reduce the number of variables in a dataset while preserving as much information as possible. Another dimensionality reduction technique is [Independent Component Analysis](https://en.wikipedia.org/wiki/Independent_component_analysis) (ICA).
+
+Everywhere you go, dimensionality reduction algorithms are classified as unsupervised learning techniques. Even auto-encoders that require training a neural network are not considered a supervised technique, as mentioned in ["Machine Learning: A Probabilistic Perspective"](https://amzn.to/3s39PRD):
+
+> An auto-encoder is a kind of unsupervised neural network that is used for dimensionality reduction and feature discovery. More precisely, an auto-encoder is a feedforward neural network that is trained to predict the input itself.
+
+This doesn't mean that you can't use a supervised learning method to reduce the dimensionality of a dataset. For example, here is an excerpt from ["Seven Techniques for Data Dimensionality Reduction"](https://www.knime.com/blog/seven-techniques-for-data-dimensionality-reduction):
+
+> Decision Tree Ensembles, also referred to as random forests, are useful for feature selection in addition to being effective classifiers. One approach to dimensionality reduction is to generate a large and carefully constructed set of trees against a target attribute and then use each attribute's usage statistics to find the most informative subset of features.
+
+At this point, we know that the first and the third choices are correct statements about dimensionality reduction. But what about the other two options?
+
+The second choice is incorrect because every dimensionality reduction technique is not a clustering technique. For example, neither PCA nor ICA are clustering methods.
+
+The fourth option is also incorrect because it's not true that the most successful dimensionality reduction techniques are limited to deep learning algorithms. For example, PCA is one of the most popular dimensionality reduction techniques and has nothing to do with deep learning.
+
+If Riley's match was incorrect, he must have mentioned the second or fourth statements, so they are the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Introduction to Dimensionality Reduction for Machine Learning](https://machinelearningmastery.com/dimensionality-reduction-for-machine-learning/)
+* [Machine Learning: A Probabilistic Perspective](https://amzn.to/3s39PRD)
+* [Seven Techniques for Data Dimensionality Reduction](https://www.knime.com/blog/seven-techniques-for-data-dimensionality-reduction)
+* [A Gentle Introduction to LSTM Autoencoders](https://machinelearningmastery.com/lstm-autoencoders/)</p></details>
+
+-----------------------
+
