@@ -1140,3 +1140,57 @@ In summary, the smaller the value of `k` is, the lower the bias and higher the v
 
 -----------------------
 
+## Date - 2022-05-22
+
+
+## Title - The 3-sigma accuracy
+
+
+### **Question** :
+
+Clara and her team are working on a drone localization project.
+
+They have developed a neural network model that uses drone cameras to determine its position in the world so the drone can come back and land at the same spot it took off.
+
+Clara was discussing the latest evaluation results with her colleagues when Jan mentioned that their latest model reached a 3-sigma accuracy of 20cm. 
+
+Clara is new to the industry, and _"3-sigma accuracy of 20cm"_ didn't make much sense.
+
+**What does a "3-sigma accuracy of 20cm" mean in this context?**
+
+
+### **Choices** :
+
+- In 66.6% of the cases, the model's error is less than 20cm
+- In 68.2% of the cases, the model's error is less than 20cm
+- In 95.4% of the cases, the model's error is less than 20cm
+- In 99.7% of the cases, the model's error is less than 20cm
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The 3-sigma accuracy is a common way to quantify the accuracy of a model when estimating a continuous variable. Here is a quote from [Wikipedia's explanation of the 68 - 95 - 99.7 rule](https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule):
+
+> In the empirical sciences, the so-called three-sigma rule of thumb (or 3σ rule) expresses a conventional heuristic that nearly all values are taken to lie within three standard deviations of the mean, and thus it is empirically useful to treat 99.7% probability as near certainty.
+
+We can often assume that the error of estimating a continuous variable (such as the drone's position) follows the normal distribution. If we denote the standard deviation of the normal distribution as σ (sigma), then 68.2% of the samples should fall in the region from -1σ to 1σ around the mean.
+
+![Standard deviation](https://user-images.githubusercontent.com/1126730/169593614-ee0ecdf7-a262-41b3-943f-5ae6865afcc8.png)
+
+If we take a larger range from -2σ to 2σ, then 95.4% of a normally distributed dataset will fall in this interval. Finally, a 3σ interval will cover 99.73% of the samples.
+
+Therefore, when we talk about a 3-sigma accuracy of 20cm, we mean that 99.73% of the model predictions are more accurate than 20cm (because they fall in the -3σ to 3σ interval). Thus, the correct answer is the fourth choice.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- [Normal distribution](https://en.wikipedia.org/wiki/Normal_distribution#Standard_deviation_and_coverage)
+- [68–95–99.7 rule](https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule)</p></details>
+
+-----------------------
+
