@@ -1610,3 +1610,62 @@ In summary, the fourth choice is the correct answer to this question.</p></detai
 
 -----------------------
 
+## Date - 2022-05-30
+
+
+## Title - A non-boring government job
+
+
+### **Question** :
+
+Nobody thought that Hazel's job was going to be this interesting.
+
+Her first assignment working for the government was in a lab, but not any lab. She was working with bright people on audio surveillance applications.
+
+A week in and she got a package with maximum urgency. The government recorded a known terrorist at a coffee shop, but unfortunately, the audio was almost inaudible because the music was playing simultaneously.
+
+Hazel needs to clean the audio so they can listen to the target.
+
+**Which of the following techniques should Hazel use?**
+
+
+### **Choices** :
+
+- Hazel could use Independent Component Analysis to reveal the mixed-signal sources from the audio recording.
+- Hazel could use a clustering algorithm to cluster the voice and the music apart on the audio recording.
+- Hazel could use supervised learning to identify the signal coming from the voice from the signal coming from the music.
+- There's not a good way to clean the audio.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>This problem is known as the "Cocktail Party Problem," where we need to separate two independent but previously mixed audio sources. If we make some assumptions, Hazel should be able to solve this problem.
+
+Let's go straight to the correct answer: [Independent Component Analysis](https://en.wikipedia.org/wiki/Independent_component_analysis) (ICA) is a dimensionality reduction algorithm that should do the trick for Hazel. Here is a quote and an image depicting the problem from ["A Tutorial on Independent Component Analysis"](https://arxiv.org/pdf/1404.2986.pdf):
+
+> Solving blind source separation using ICA has two related interpretations – filtering and dimensional reduction. (...) Filtering data based on ICA has found many applications (...), most notably audio signal processing.
+
+![ICA](https://user-images.githubusercontent.com/1126730/169366606-b019ba62-7999-45a1-8c37-abe333e8f932.png)
+
+Keep in mind that, for ICA to work, the source signals have to be independent of each other and not normally distributed. 
+
+Using a clustering algorithm to separate both signals sounds like something that could potentially work, even if for a constrained use case. I wouldn't be surprised if clustering has been used before for this purpose, but I couldn't find any successful examples of solving the Cocktail Party Problem using clustering, so this is not a correct answer for this question.
+
+The third choice argues for a supervised algorithm. I can see a scenario where we could model the problem in a way that a dataset and a trained neural network help us separate the sources, but this doesn't seem like a viable alternative for this case. I didn't find any examples about this either, so this choice is also incorrect.
+
+In summary, the first choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [A Tutorial on Independent Component Analysis](https://arxiv.org/pdf/1404.2986.pdf)
+* [Cocktail Party Problem - Eigentheory and Blind Source Separation Using ICA](https://gowrishankar.info/blog/cocktail-party-problem-eigentheory-and-blind-source-separation-using-ica/)
+* [Independent component analysis](https://en.wikipedia.org/wiki/Independent_component_analysis)</p></details>
+
+-----------------------
+
