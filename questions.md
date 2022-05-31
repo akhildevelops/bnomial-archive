@@ -1669,3 +1669,57 @@ In summary, the first choice is the correct answer to this question.</p></detail
 
 -----------------------
 
+## Date - 2022-05-31
+
+
+## Title - Fewer false negatives
+
+
+### **Question** :
+
+Allison is the Chief Data Scientist of the hospital, and she's been leading a revolutionary machine learning application to help identify patients that could potentially develop a rare disease.
+
+The main goal of the model is to identify every patient that's prone to developing the condition. Allison has worked very hard to reduce the number of false negatives as much as possible.
+
+**From the following list, select every accurate statement describing Allison's situation.**
+
+
+### **Choices** :
+
+- Allison has worked hard to ensure her model has high sensitivity.
+- Sensitivity is the same as the True Positive Rate of the model.
+- Higher sensitivity means that the model minimizes the number of false negatives.
+- Allison can compute the True Positive Rate of her model by dividing the number of patients that could develop the disease by all patients selected as positive by the model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The problem gives us an important clue about what Allison has been doing: she wants to reduce the number of false negatives as much as possible.
+
+Let's start from the beginning and work on this problem step by step. 
+
+A positive sample represents a patient that could develop the disease, and a negative sample represents a patient that will not develop it. Allison wants to reduce the number of false negatives, which is the number of patients that could become sick, but the model misses. In other words, if a patient could become ill and the model misses it, the hospital won't be able to offer treatment, so Allison wants to make sure that happens as infrequently as possible.
+
+Sensitivity refers to the probability of selecting a patient as positive if the person has a genuine chance of developing the disease. We can compute sensitivity by dividing every true positive patient by every patient we think is positive. In short, `sensitivity = TP / P`. 
+
+A model with high sensitivity minimizes the number of false negatives. To get here, we can look back at the formula for sensitivity and break down positive samples (P) into True Positives (TP) + False Negatives (FN). This will give us that `sensitivity = TP / (TP + FN)`. The more False Negatives we have, the lower the sensitivity, so a high-sensitive model keeps false negatives as low as possible.
+
+Allison wants to keep the number of false negatives down, so she wants a high-sensitive model. This makes the first and third choices correct answers to this question.
+
+Finally, we can compute the model's [True Positive Rate](https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=overview-true-positive-rate-tpr) (TPR) as `TPR = TP / P`. Notice how this is the same formula we use to calculate sensitivity, so we can conclude that the second choice is also correct. The fourth choice's description of True Positive Rate is conveniently also accurate.
+
+In summary, every single choice of this question is correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Everything you need to know about [Sensitivity and specificity](https://en.wikipedia.org/wiki/Sensitivity_and_specificity) you can find in Wikipedia.
+* ["Machine Learning – Sensitivity vs Specificity Difference"](https://vitalflux.com/ml-metrics-sensitivity-vs-specificity-difference/) is a great article covering the differences between these two concepts.</p></details>
+
+-----------------------
+
