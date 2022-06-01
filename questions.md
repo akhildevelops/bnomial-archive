@@ -1723,3 +1723,58 @@ In summary, every single choice of this question is correct.</p></details>
 
 -----------------------
 
+## Date - 2022-06-01
+
+
+## Title - The Fukushima nuclear disaster
+
+
+### **Question** :
+
+The Fukushima nuclear disaster was the most severe nuclear accident since Chernobyl. Together, they have been the only ones with a level 7 classification on the International Nuclear and Radiological Event Scale.
+
+In 2011, an earthquake followed by a tsunami caused the disaster in the Japanese plant, and it all traces back to a mistake in the safety model.
+
+The engineers used historical earthquake data to build a regression model to determine the likelihood of significant earthquakes. Instead of using the accepted [Gutenberg-Richter](https://en.m.wikipedia.org/wiki/Gutenberg%E2%80%93Richter_law) model, they saw a kink in the data and assumed the appropriate regression was not linear but polynomial.
+
+The correct linear model would have predicted that earthquakes of 9.0 magnitude were 70 times more likely than what the incorrect polynomial model predicted. But the engineers, in their pursuit of following the data too closely, came up with a very different conclusion.
+
+The plant was designed to withstand a maximum earthquake of 8.6 magnitude and a tsunami as high as 5.7 meters. The earthquake of 2011 measured 9.0 and resulted in a 14-meter high tsunami.
+
+**How would you summarize the mistake made by the engineers in this incident?**
+
+
+### **Choices** :
+
+- The engineers built a model that wasn't powerful enough and ended up underfitting the historical earthquake data.
+- The engineers built a model that wasn't powerful enough and ended up overfitting the historical earthquake data.
+- The engineers built a model that was too powerful and ended up overfitting the historical earthquake data.
+- The engineers built a model that was too powerful and ended up underfitting the historical earthquake data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When designing the model, the engineers saw a kink in the data. A linear model couldn't follow those data points closely, so they switched to a more complex, polynomial model.
+
+The most important result of the [Gutenberg-Richter law](https://en.m.wikipedia.org/wiki/Gutenberg%E2%80%93Richter_law) is that the relationship between the magnitude of an earthquake and the logarithm of the probability that it happens is linear. The engineers ignored this.
+
+This is a devastating example of overfitting. Here is an excerpt from [Berkeley's machine learning crash course](https://ml.berkeley.edu/blog/posts/crash-course/part-4/):
+
+> As the name implies, overfitting is when we train a predictive model that "hugs" the training data too closely. In this case, the engineers knew the relationship should have been a straight line, but they used a more complex model than they needed to.
+
+The third choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Fukushima: The Failure of Predictive Models](https://mpra.ub.uni-muenchen.de/69383/1/MPRA_paper_69383.pdf)
+* [Machine Learning Crash Course: Part 4](https://ml.berkeley.edu/blog/posts/crash-course/part-4/)
+* [Gutenberg–Richter law](https://en.m.wikipedia.org/wiki/Gutenberg%E2%80%93Richter_law)</p></details>
+
+-----------------------
+
