@@ -1778,3 +1778,58 @@ The third choice is the correct answer to this question.</p></details>
 
 -----------------------
 
+## Date - 2022-06-02
+
+
+## Title - Classifying waste
+
+
+### **Question** :
+
+A group of students decided to build an application to classify household waste using smartphone pictures.
+
+They want to start with a simple solution, so they are focusing the first version on the most commonly found types of waste: liquid, solid, organic, recyclable, and hazardous waste.
+
+The tricky part of the application is that it needs to recognize every type of waste present on every image uploaded by users.
+
+The students decided to use a convolutional neural network to solve this problem. The only question left is on the best way to architect it.
+
+**Which of the following would be the best approach to design this network?**
+
+
+### **Choices** :
+
+- The output layer of the network should have a softmax activation function. The loss function should be categorical cross-entropy.
+- The output layer of the network should have a sigmoid activation function. The loss function should be binary cross-entropy.
+- The output layer of the network should have a softmax activation function. The loss function should be binary cross-entropy.
+- The output layer of the network should have a sigmoid activation function. The loss function should be categorical cross-entropy.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The students are trying to build a [multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) model. In multi-label classification, every image might show multiple types of waste. This is different from [multi-class classification](https://en.wikipedia.org/wiki/Multiclass_classification), where a photo would show only one kind of waste.
+
+When building multi-label classification models, we need an output layer where every class is independent. Remember that we can have more than one active class for each input. The softmax activation function doesn't work because it uses every score to output the probabilities of each class. Softmax is the correct output for multi-class classification but not for multi-label classification problems. 
+
+Since we shouldn't use softmax, the first and third choices are incorrect. The sigmoid function converts output scores to a value between 0 and 1, independently of all the other scores.
+
+Multi-label classification problems borrow the same principles from binary classification problems. The difference is that we end up with multiple sigmoid outputs instead of a single one. In our example problem, we have a combination of five different binary classifiers. This is why we should use a binary cross-entropy as the loss function.
+
+In summary, multi-class classification models should use a softmax output with the categorical cross-entropy loss function. Multi-label classification models should use a sigmoid output and the binary cross-entropy loss function.
+
+The second choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The Wikipedia explanation of [Multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) should give you most of what you need to understand for this type of task.
+* ["Difference between multi-label classification and multi-class classification"](https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede) is an excellent article comparing these two types of problems.
+* ["How to choose cross-entropy loss function in Keras?"](https://androidkt.com/choose-cross-entropy-loss-function-in-keras/) explains the differences between the loss functions that we discussed in this question.</p></details>
+
+-----------------------
+
