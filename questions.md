@@ -1896,3 +1896,60 @@ Therefore, the second and third choices are the correct answers to this question
 
 -----------------------
 
+## Date - 2022-06-04
+
+
+## Title - Cutting down neurons
+
+
+### **Question** :
+
+Denise had an idea she wanted to try on the neural network she built to identify handwritten digits.
+
+Her output layer had 10 neurons, one for each digit she wanted to
+recognize. She thought she could optimize the training process by cutting the number of neurons down to 4.
+
+The goal of the model was to recognize the digit represented by an input image, and with 4 neurons, she could encode a total 16 different values, so she thought this was enough.
+
+After training for some time, Denise found out that the network didn't perform well.
+
+**What conclusions can you draw from Denise's experience?**
+
+
+### **Choices** :
+
+- To get better results, Denise should experiment with different optimization algorithms and learning rate values.
+- Denise's network is working correctly. She can improve the results by modifying her evaluation criteria and discarding any mistakes due to the extra capacity supported by her new architecture.
+- With this architecture, the first output neuron has to decide what the most significant bit of the digit represented by the image was. Unfortunately, there's no apparent relationship between the shapes that make up a digit and this information.
+- Instead of replacing the 10-neuron layer, Denise should have kept it as a hidden layer and added the 4-neuron layer as the new output. The new network should be capable of finding the bitwise representation of the digit without much trouble.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In his excellent book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap1.html#a_simple_network_to_classify_handwritten_digits), [Michael Nielsen](https://twitter.com/michael_nielsen) presents this problem and his results after trying both architectures:
+
+> The ultimate justification is empirical: we can try out both network designs, and it turns out that, for this particular problem, the network with 10 output neurons learns to recognize digits better than the network with 4 output neurons. 
+
+But why does the 10-neuron output network outperforms the 4-neuron output network?
+
+> If we had 4 outputs, then the first output neuron would be trying to decide what the most significant bit of the digit was. And there's no easy way to relate that most significant bit to simple shapes (...) It's hard to imagine that there's any good historical reason the component shapes of the digit will be closely related to (say) the most significant bit in the output.
+
+This means that the third choice is a correct explanation of what's happening to Denise with her new architecture. She won't solve the problem by exploring alternate optimization functions or experimenting with different learning rate values. Her architecture is fundamentally flawed.
+
+The fourth choice is a potential avenue that Denise could use to improve the results. She could keep the original layer with 10 neurons to identify the correct digit but add the extra 4-neuron layer as the output to find the digit's binary representation. The network should have no issues solving this problem.
+
+In summary, the third and fourth choices are the correct answer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Using neural nets to recognize handwritten digits"](http://neuralnetworksanddeeplearning.com/chap1.html#a_simple_network_to_classify_handwritten_digits) is Michael Nielsen's book chapter that discusses this problem.
+* ["But what is a neural network?"](https://www.youtube.com/watch?v=aircAruvnKk) is a YouTube video with one of the best explanations out there about how neural networks work.</p></details>
+
+-----------------------
+
