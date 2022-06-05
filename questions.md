@@ -1953,3 +1953,50 @@ In summary, the third and fourth choices are the correct answer.</p></details>
 
 -----------------------
 
+## Date - 2022-06-05
+
+
+## Title - Regression x 4
+
+
+### **Question** :
+
+Here are four popular machine learning methods.
+
+Imagine you want to build a simple binary classification model. Your goal is to predict whether a sample is positive or negative.
+
+You could make any of these four algorithms give you the results you want with enough work. That's awesome, but you are interested in the easiest way to make this happen.
+
+**Which of these four algorithms would you use?**
+
+
+### **Choices** :
+
+- Linear regression
+- Lasso regression
+- Logistic regression
+- Random Forest regression
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The correct answer is Logistic regression. 
+
+[Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression) is an excellent fit for binary classification tasks. It outputs the probability of one event, in our case, the probability of a sample being positive.
+
+All other methods are used to perform regression, in which the algorithm will predict a continuous outcome. We, however, want a categorical output, so logistic regression is the best approach.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check out ["Logistic Regression for Machine Learning"](https://machinelearningmastery.com/logistic-regression-for-machine-learning/) for an introduction to Logistic regression.
+- ["Logistic Regression"](https://en.wikipedia.org/wiki/Logistic_regression) is the Wikipedia page introducing logistic regression.
+- For a list and a quick introduction to regression algorithms, check out ["5 Regression Algorithms you should know – Introductory Guide!"](https://www.analyticsvidhya.com/blog/2021/05/5-regression-algorithms-you-should-know-introductory-guide/)</p></details>
+
+-----------------------
+
