@@ -2000,3 +2000,57 @@ All other methods are used to perform regression, in which the algorithm will pr
 
 -----------------------
 
+## Date - 2022-06-06
+
+
+## Title - Supervised learning workshop
+
+
+### **Question** :
+
+Lydia is going to be teaching a new machine learning class.
+
+Among other things, she will be covering Supervised Learning techniques. Lydia knows how important this is, so she is preparing to turn the class into a giant hands-on workshop.
+
+The University has access to many different datasets, and Lydia decides to pick a few interesting problems with enough data for students to explore.
+
+**Which of the following problems should Lydia pick to teach supervised learning?**
+
+
+### **Choices** :
+
+- Determine whether a website displays content for a mature audience.
+- Learn the best way to split a group of car buyers into different categories based on their buying patterns.
+- Given the medical records from patients suffering a specific illness, learn whether we can split them into different groups for better treatment.
+- Predict next year's crop yields taking into account data of the past decade.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>There are always multiple ways to approach these problems, but some are better for [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning), while others can benefit from [unsupervised learning](https://en.wikipedia.org/wiki/Unsupervised_learning).
+
+To answer this question, we need to assume that the datasets from the university are labeled when necessary. Remember that supervised learning algorithms require these labels.
+
+Let's start with the first choice. Given any website, we want a "Yes" or "No" answer depending on whether the site displays mature content. Lydia could tackle this problem with a binary classification algorithm, which is a supervised learning technique. 
+
+Splitting a group of car buyers into different categories requires a technique that helps Lydia cluster buyers based on their buying patterns. We can't foresee these patterns beforehand, so any problem that involves finding out the best way of grouping samples is a good fit for clustering algorithms. [Clustering](https://en.wikipedia.org/wiki/Cluster_analysis) is an unsupervised learning technique, so this option is not a good fit for supervised learning. 
+
+The same happens with the problem related to the medical records. We don't have a predefined set of categories to split the group of patients, so this problem seems to be more amenable to clustering techniques.
+
+Finally, predicting next year's crop yields seems a good candidate for a regression algorithm. Regression algorithms are supervised learning techniques that help us predict a continuous value—in this case, how much a crop will yield. This is another valid answer to this question.
+
+In summary, the first and fourth choices are the correct answers.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) is an excellent introduction to the differences between supervised and unsupervised learning.
+* Check out ["Customer Segmentation with Machine Learning"](https://towardsdatascience.com/customer-segmentation-with-machine-learning-a0ac8c3d4d84) for more information about how to tackle problems where we need to cluster samples into groups.</p></details>
+
+-----------------------
+
