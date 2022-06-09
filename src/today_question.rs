@@ -19,7 +19,7 @@ where
     NaiveDate::parse_from_str(s, "%Y%m%d").map_err(de::Error::custom)
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Debug)]
 pub struct BnomialRespContent {
     #[serde(deserialize_with = "naive_date_time_from_str")]
     date: NaiveDate,
@@ -34,9 +34,14 @@ pub struct BnomialRespContent {
     references: String,
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Debug)]
 struct BnomialResp {
     question: BnomialRespContent,
+}
+
+#[derive(Deserialize, Debug)]
+struct BnomialRespTod {
+    today: BnomialResp,
 }
 
 impl ToFileContent for BnomialRespContent {
@@ -68,7 +73,8 @@ pub fn today_question() -> Result<BnomialRespContent, Box<dyn std::error::Error>
     let response_content = client
         .get(defaults::QUESTION_URL)
         .send()?
-        .json::<BnomialResp>()?
+        .json::<BnomialRespTod>()?
+        .today
         .question;
 
     let random_answer = bnomial_rand_answer(response_content.choices.len());
@@ -86,6 +92,8 @@ pub fn today_question() -> Result<BnomialRespContent, Box<dyn std::error::Error>
 
 #[cfg(test)]
 mod tests {
+    use serde_json::Value;
+
     use super::*;
 
     #[test]
@@ -94,5 +102,18 @@ mod tests {
         map.insert("answer", "0000");
         let client = reqwest::blocking::Client::new();
         let _response = client.post(defaults::ANSWER_URL).json(&map).send().unwrap();
+    }
+
+    #[test]
+    fn test_question() {
+        let client = reqwest::blocking::Client::new();
+        let response_content = client
+            .get(defaults::QUESTION_URL)
+            .send()
+            .unwrap()
+            .json::<BnomialRespTod>()
+            .unwrap();
+
+        println!("{:?}", response_content);
     }
 }
