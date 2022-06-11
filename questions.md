@@ -2268,3 +2268,49 @@ In other words, a type II error is when we incorrectly accept the null hypothesi
 
 -----------------------
 
+## Date - 2022-06-11
+
+
+## Title - Penelope is looking for more
+
+
+### **Question** :
+
+Penelope needs to finish her homework. The final step is to make her neural network "deeper."
+
+She tried to solve the problem using a shallow network architecture, but her professor wanted her to try a deeper network.
+
+**What should Penelope do to turn her architecture into a deep neural network?**
+
+
+### **Choices** :
+
+- Penelope should increase the dimensionality of the input data.
+- Penelope should add more layers to the network.
+- Penelope should use images, text, voice, or video as the input.
+- Penelope should add more neurons to the existing layers.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A deep neural network is an artificial neural network with multiple layers between the input and output layers. The more layers we add, the "deeper" the network becomes.
+
+A deep neural network can process all sorts of data. Neither the type of input nor its dimensionality has any relationship with the depth of the network. Therefore, neither the first nor the third choices are correct.
+
+Adding neurons alone doesn't change the depth of the network either. It does change its capacity, but a network with the same number of layers but more neurons will still have the same depth. 
+
+The only choice for Penelope is to add more layers to the network.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Wikipedia's definition of ["Deep neural networks"](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks) serves as a succinct summary of what deep neural networks are.
+* Check ["A Layman’s Guide to Deep Neural Networks"](https://towardsdatascience.com/a-laymans-guide-to-deep-neural-networks-ddcea24847fb) for a non-mathematical introduction to deep neural networks.</p></details>
+
+-----------------------
+
