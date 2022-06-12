@@ -2314,3 +2314,56 @@ The only choice for Penelope is to add more layers to the network.</p></details>
 
 -----------------------
 
+## Date - 2022-06-12
+
+
+## Title - Low-variance model
+
+
+### **Question** :
+
+Usually, the best approach is to start experimenting with a few different algorithms to narrow down the possibilities and pick a good path forward.
+
+That's what Sophia did. She ran her dataset through four different algorithms and noticed something peculiar.
+
+Since she had a lot of data, she trained each algorithm with different batches separately. Only one of the models gave consistent results regardless of what portion of the data she used.
+
+Sophia knew this was a variance issue. Low-variance models usually produce consistent results regardless of the data used to train them.
+
+**Which of the following algorithms was the one giving consistent results?**
+
+
+### **Choices** :
+
+- Support Vector Machine (SVM)
+- Decision Trees
+- Logistic Regression
+- k-Nearest Neighbors (KNN)
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Every machine learning algorithm deals with three types of errors: bias, variance, and irreducible error. We need to focus specifically on the variance error to answer this question.
+
+Here is what [Jason Brownlee](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) has to say about variance: "Variance is the amount that the estimate of the target function will change if different training data was used."
+
+In other words, variance refers to how much the answers given by the model will change if we use different training data. The model has low variance if the answers stay the same when using different portions of our training dataset.
+
+Generally, linear models with little flexibility have low variance. For example, Linear and logistic regression are low-variance models. Nonlinear algorithms with a lot of flexibility have high variance, for example, Decision Trees, Support Vector Machines, and k-Nearest Neighbors.
+
+Therefore, the third choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) is Jason Brownlee's article covering bias, variance, and their tradeoff.
+* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).
+* In case you like the simplicity of Twitter threads, here is one for you about this topic: ["Bias, variance, and their relationship with machine learning algorithms"](https://twitter.com/svpino/status/1390969728504565761).</p></details>
+
+-----------------------
+
