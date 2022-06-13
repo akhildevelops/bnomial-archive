@@ -2367,3 +2367,61 @@ Therefore, the third choice is the correct answer to this question.</p></details
 
 -----------------------
 
+## Date - 2022-06-13
+
+
+## Title - Looking for labels
+
+
+### **Question** :
+
+The company had a lot of data, but none was labeled. 
+
+As soon as the team started planning the work, Blake's first recommendation was to look into Supervised Learning. She knew, however, that without labeled data, they weren't going anywhere.
+
+There are many different ways to produce labels, and Blake will have to decide how to move forward.
+
+**Which of the following techniques could Blake use to label the data?**
+
+
+### **Choices** :
+
+- Assemble a team of people that go through the data and label each sample.
+- Use feedback from an existing process to automatically produce the labels.
+- Use a Supervised Learning technique to infer the labels directly from the existing data.
+- Use Semi-Supervised Learning to propagate labels across all of your data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>If Blake wants to use a Supervised Learning method, she has no other option than to produce labels for the data. There are many different techniques she can use to accomplish this.
+
+The most common way to label data is to use human labelers. Blake could assemble a team that will go through each sample assigning the appropriate label. For example, assuming the company wants to classify car pictures, the labelers could review each image and set the correct make and model of the car. Therefore, the first choice is correct.
+
+Sometimes, we can use feedback from an existing process to create labels, also known as "direct labeling." For example, a video site recommending movies to different users can use actual clicks from its audience to determine which posters work and which don't. 
+
+Unfortunately, direct labeling is very dependent on your use case, and it's not something you can always do. Also, notice that direct labeling doesn't necessarily capture the "true ground-truth," but only a useful approximation. Nevertheless, direct labeling is a good approach, so the second choice is correct.
+
+The third choice argues that we could use a Supervised Learning method to infer the labels from the existing dataset, but this doesn't make sense. Supervised Learning requires the existence of labels, and that's what Blake doesn't have. If we could use the data to predict labels, we could also use it to solve the problem in the first place. This choice is incorrect.
+
+Finally, we could use [Semi-Supervised Learning](https://machinelearningmastery.com/semi-supervised-learning-with-label-propagation/) assuming we already have a few labels. For example, if we had 10% of the labels, we could build a model to generate the other 90% of labels. However, there's no indication that Blake has any labeled data, so Semi-Supervised Learning is not an option. This choice is also incorrect.
+
+[Active Learning](https://rapidminer.com/glossary/active-learning-machine-learning/) and [Weak Supervision](https://snorkel.ai/weak-supervision/) are also techniques to generate labels. They aren't part of this question, but it's helpful to know about them.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Machine Learning Data Lifecycle in Production"](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production) course in Coursera, part of the [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops).
+* Check out ["Semi-Supervised Learning With Label Propagation"](https://machinelearningmastery.com/semi-supervised-learning-with-label-propagation/) for an introduction to how to use a few labels with semi-supervised learning.
+* ["Active Learning in Machine Learning"](https://rapidminer.com/glossary/active-learning-machine-learning/) is a short explanation of Active Learning, enough if all you need is a high-level overview.
+* If you are serious about Active Learning, ["Active Learning Literature Survey"](https://burrsettles.com/pub/settles.activelearning.pdf) is the publication you want to read. 
+* ["Weak Supervision: A New Programming Paradigm for Machine Learning"](http://ai.stanford.edu/blog/weak-supervision/) is a good article from Stanford introducing Weak Supervision.
+* An introduction to [Weak Supervision](https://snorkel.ai/weak-supervision/) by Snorkel AI, a labeling platform. This one even includes a video.</p></details>
+
+-----------------------
+
