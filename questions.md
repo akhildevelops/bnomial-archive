@@ -2425,3 +2425,76 @@ Finally, we could use [Semi-Supervised Learning](https://machinelearningmastery.
 
 -----------------------
 
+## Date - 2022-06-14
+
+
+## Title - Rebecca's rotation
+
+
+### **Question** :
+
+After a very late coffee, Rebecca felt plenty of energy to crack open the book she's been dreading to read the entire week.
+
+It was a dense read. A computer vision masterpiece that went all the into the mathematical reasoning behind every topic.
+
+The latest chapter combined deep learning, linear algebra, and geometric transformations. Rebecca promised herself to watch a movie as soon as she finished the first problem on the topic.
+
+It seemed straightforward: Rebecca had to rotate a two-dimensional square 90 degrees counterclockwise using matrix multiplication. She knew she had to multiply the coordinates of her square with a specific 2x2 matrix, but she didn't remember how exactly it worked.
+
+**Which of the following is the correct matrix R to rotate a 2D square 90 degrees counterclockwise?**
+
+
+### **Choices** :
+
+- The matrix R is `[[0, -1], [1, 0]]`.
+- The matrix R is `[[0, 1], [-1, 0]]`.
+- The matrix R is `[[1, 0], [0, 1]]`.
+- The matrix R is `[[-1, 0], [0, -1]]`.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>At its core, deep learning mostly boils down to many tensor operations chained together. These operations have a corresponding geometric interpretation, and understanding them is an excellent exercise to shed some light on how deep learning networks work.
+
+When we talk about [rotating](https://en.wikipedia.org/wiki/Rotation_(mathematics)) an object, we can think of moving each point of that object circularly around a center. Assuming that we use a column vector to represent the coordinate of each point, we can use matrix multiplication to rotate the object.
+
+We need a rotation matrix R to multiply with the object's coordinates and obtain the new set of rotated coordinates. The structure of this matrix R to rotate an object counterclockwise is `[[cos(θ), -sin(θ)], [sin(θ), cos(θ)]]` where θ represents the rotation angle.
+
+Rebecca needs to rotate the 2D square 90 degrees. Remember that `cos(90) = 0` and `sin(90) = 1`, so the matrix R that Rebecca needs is `[[0, -1], [1, 0]]`, which is the first choice of this question.
+
+Just for fun, we can go through all the other choices and determine what would be the corresponding rotation angle. 
+
+The second choice rotates the 2D square 90 degrees clockwise—in the opposite direction that Rebecca wanted. Notice how the only difference with the correct answer is the position of the signs.
+
+The third choice does not rotate the square—θ is 0 degrees. To see this, let's start with the matrix `[[cos(θ), -sin(θ)], [sin(θ), cos(θ)]]` and assume we multiply it by a vector `[x, y]` to get a new, rotated vector `[x', y']`:
+
+```
+x' = x * cos(θ) - y * sin(θ)
+y' = x * sin(θ) + y * cos(θ)
+```
+
+Replacing the values of each component as specified in the third choice:
+
+```
+x' = x * 1 - y * 0 = x - 0 = x
+y' = x * 0 + y * 1 = 0 + y = y
+```
+
+Notice how we get the exact coordinates after we apply the rotation. 
+
+Finally, the fourth choice rotates the square 180 degrees counterclockwise. 
+
+In summary, the first choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Rotations and reflections in two dimensions"](https://en.wikipedia.org/wiki/Rotations_and_reflections_in_two_dimensions) for an explanation of how to rotate and reflect objects in a two-dimensional space.</p></details>
+
+-----------------------
+
