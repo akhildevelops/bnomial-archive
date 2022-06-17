@@ -2614,3 +2614,56 @@ In summary, the second choice is the correct answer to this question.</p></detai
 
 -----------------------
 
+## Date - 2022-06-17
+
+
+## Title - Sorting tomatoes
+
+
+### **Question** :
+
+Maya's model caused a false alarm, and the tomato sorting line at the factory stopped working for the third time today.
+
+Maya designed a computer vision model to estimate the size of tomatoes entering a sorting machine. The device has a problem handling unusually small or large tomatoes and can get damaged if one of these enters it.
+
+Unfortunately, the factory didn't have the budget to replace the whole machine. So, they hired Maya to install a camera and implement a computer vision model to check the size of the tomatoes. If it detects a tomato that's too small or too large, the machine stops automatically and raises the alarm.
+
+Whenever Maya's model predicts a regular-sized tomato as an outlier, the production line stops and costs the factory money. Maya suspects there is a problem with the loss function she is using.
+
+**Which of the following loss functions should Maya use for this problem?**
+
+
+### **Choices** :
+
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- Huber Loss
+- Binary Cross-entropy Loss
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Maya should focus on improving how the model handles outliers, and the loss function she is using plays an important role.
+
+Loss functions like the [Mean Absolute Error ](https://en.wikipedia.org/wiki/Mean_absolute_error)(MAE) or the [Huber loss](https://en.wikipedia.org/wiki/Huber_loss) have a linear behavior for outliers. The [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) (MSE), on the other hand, penalizes errors quadratically, which means that significant outliers will get much higher penalties.
+
+For example, consider Maya's model estimating the size of a 5cm tomato to be 15cm. The difference between the actual and predicted size is 10 if she uses MAE or the Huber loss, but it will become 100 if she uses MSE.
+
+Therefore, if Maya uses MSE as the loss function, her model will optimize in a way that avoids significant outliers. Smaller errors are not critical in this case since she is only interested in very small or large tomatoes.
+
+With this in mind, the first choice is the correct answer, while the second and the third are not. The fourth choice is the cross-entropy loss which doesn't apply to regression problems and is therefore incorrect.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Regression Metrics for Machine Learning"](https://machinelearningmastery.com/regression-metrics-for-machine-learning/) for an overview of some of the most popular metrics used for regression problems.
+* ["RMSE vs MAE, which should I use?"](https://stephenallwright.com/rmse-vs-mae/) is a great summary by Stephen Allwright about the properties of these two functions and how you should think about them.
+* For more information about the Huber loss, take a look at ["Huber Loss: Why Is It, Like How It Is?"](https://www.cantorsparadise.com/huber-loss-why-is-it-like-how-it-is-dcbe47936473).</p></details>
+
+-----------------------
+
