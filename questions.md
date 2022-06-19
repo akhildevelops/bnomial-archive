@@ -2719,3 +2719,54 @@ Something else to mention: there's a process called ["Stratified Cross-Validatio
 
 -----------------------
 
+## Date - 2022-06-19
+
+
+## Title - Helping Charlie with statistics
+
+
+### **Question** :
+
+There's a lot about machine learning that comes straight from statistics.
+
+Charlie wasn't surprised when she started recognizing terms from her statistics course while reading a newly published paper. 
+
+In statistics, the notion of statistical error is an integral part of hypothesis testing. There are two types of errors when testing the null hypothesis: type I and type II errors. The paper used both terms, and Charlie was already confused.
+
+Let's help her out.
+
+**Which of the following statements is correct about type I errors?**
+
+
+### **Choices** :
+
+- A type I error occurs when the null hypothesis is true and is not rejected.
+- A type I error occurs when the null hypothesis is false but is not rejected.
+- A type I error occurs when the null hypothesis is false and is rejected.
+- A type I error occurs when the null hypothesis is true but is rejected.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>It makes sense for those who are more used to machine learning terminology to compare type I and type II errors with false positives and false negatives.
+
+Type I errors are the same as false positives. For example, if we mark a valid email as spam, we are in the presence of a false positive. Type I errors are the rejection of a true [null hypothesis](https://www.investopedia.com/terms/n/null_hypothesis.asp) by mistake.
+
+Type II errors are the same as false negatives. For example, if we let a spam message pass as a valid email, we are in the presence of a false negative. This is a type II error because we accept the conclusion of the email being good, even though it is incorrect. Type II errors are the acceptance of a false null hypothesis by mistake.
+
+Based on the above description, the fourth choice is the correct answer to this question: A type I error occurs when the null hypothesis is true but is rejected.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["What Is a Null Hypothesis?"](https://www.investopedia.com/terms/n/null_hypothesis.asp) covers the basics you need to understand before going into hypothesis testing.
+* Check out ["Type I and type II errors"](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) for the definition and examples of each type of error. 
+* ["Understanding Null Hypothesis Testing"](https://opentextbc.ca/researchmethods/chapter/understanding-null-hypothesis-testing/) is an excellent article about hypothesis testing.</p></details>
+
+-----------------------
+
