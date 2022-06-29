@@ -3274,3 +3274,47 @@ Finally, a CNN can learn visual features of increasing complexity. The initial l
 
 -----------------------
 
+## Date - 2022-06-29
+
+
+## Title - The black sheep
+
+
+### **Question** :
+
+Here you have a list containing three popular deep learning architectures.
+
+But there's one black sheep. One of these is not a deep learning architecture.
+
+**Can you determine which of the following doesn't belong on this list?**
+
+
+### **Choices** :
+
+- ImageNet
+- AlexNet
+- GoogleNet
+- VGG16
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>While [AlexNet](https://www.analyticsvidhya.com/blog/2021/03/introduction-to-the-architecture-of-alexnet/), [GoogleNet](https://arxiv.org/abs/1409.4842v1), and [VGG16](https://arxiv.org/abs/1409.1556) are deep learning architectures, [ImageNet](https://www.image-net.org/) is an image database with millions of images, so it has nothing to do with the rest.
+
+The first choice is the correct answer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Introduction to The Architecture of Alexnet"](https://www.analyticsvidhya.com/blog/2021/03/introduction-to-the-architecture-of-alexnet/).
+* ["Going Deeper with Convolutions"](https://arxiv.org/abs/1409.4842v1) is the paper introducing GoogleNet.
+* ["Very Deep Convolutional Networks for Large-Scale Image Recognition"](https://arxiv.org/abs/1409.1556) is the paper introducing VGG16.
+* Check the [ImageNet](https://www.image-net.org/) website for more information about one of the most popular public datasets in the world.</p></details>
+
+-----------------------
+
