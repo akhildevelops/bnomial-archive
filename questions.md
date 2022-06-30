@@ -3318,3 +3318,59 @@ The first choice is the correct answer.</p></details>
 
 -----------------------
 
+## Date - 2022-06-30
+
+
+## Title - 120 shirt combinations
+
+
+### **Question** :
+
+Amanda wants to buy the perfect shirt.
+
+She knows somebody at a warehouse, so she pulls a favor one Sunday afternoon, and to her amusement, they have thousands of different shirts. 
+
+If Amanda only cared about a size that fits her, and there are four different sizes, she could buy one right after trying four shirts.
+
+But if Amanda also cared about the color, and there are ten different colors, Amanda would have to try `4 x 10 = 40` combinations to find the perfect shirt.
+
+What would happen if she also wanted to take the material into account? Assuming three different types, Amanda could only find the perfect shirt after trying `4 x 10 x 3 = 120` shirts.
+
+All of a sudden, Amanda is overwhelmed.
+
+**Which of the following ideas explains what's happening to Amanda?**
+
+
+### **Choices** :
+
+- Occam's Razor
+- No Free Lunch Theorem
+- Curse of Dimensionality
+- Universal Approximation Theorem
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Occam's Razor is the idea that, given two solutions with similar characteristics, the simplest and most direct one is the correct answer. This idea is unrelated to Amanda's problem, so it's not the right choice.
+
+The No Free Lunch Theorem implies that no single algorithm is universally the best-performing algorithm for all problems in machine learning. This idea is also unrelated to what's happening here.
+
+The Universal Approximation Theorem states that a feed-forward network with a single hidden layer containing a finite number of neurons can approximate any continuous function. Not a correct choice either.
+
+Finally, the Curse of Dimensionality refers to various phenomena when working with data in high-dimensional spaces. It states that, as the dimensionality of the data increases, the amount of data needed to train a learning algorithm grows exponentially.
+
+That's what's happening to Amanda: as she wants to consider more shirt attributes, it becomes more problematic to pick the perfect shirt.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check out ["Curse of Dimensionality"](https://en.wikipedia.org/wiki/Curse_of_dimensionality) in Wikipedia.
+* For a deeper dive, check ["What is the Curse of Dimensionality?"](https://deepai.org/machine-learning-glossary-and-terms/curse-of-dimensionality).</p></details>
+
+-----------------------
+
