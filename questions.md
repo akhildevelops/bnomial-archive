@@ -3801,3 +3801,50 @@ Often, linear models are low-variance, and nonlinear models are high-variance. T
 
 -----------------------
 
+## Date - 2022-07-09
+
+
+## Title - Hot equipment
+
+
+### **Question** :
+
+Sarah is building a model to recognize pieces of equipment running too hot in a warehouse. She has a large enough dataset of thermal images, and she is using a deep learning model to build a classifier.
+
+The problem is that the dataset is severely imbalanced, with most images showing normal temperatures. Sarah's model results aren't good enough.
+
+**Which of the following are helpful strategies to help Sarah deal with imbalanced datasets?**
+
+
+### **Choices** :
+
+- Augment the minority class—images showing hot equipment—with synthetically-generated data.
+- Reduce the training time to prevent the learning algorithm from overfitting.
+- Resample the dataset by either oversampling the minority class or undersampling images showing normal temperatures.
+- A deep learning model is not a good solution to solve this problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>From the list of choices, two strategies could help Sarah overcome the problem: augmentation and resampling.
+
+Sarah's model is struggling because the dataset is severely imbalanced: it doesn't have too many pictures showing equipment running hot. We could alleviate this problem by adding more photos of this minority class. The first choice proposes adding synthetically-generated images, which is usually a cheaper option to generate a lot of valid data. Augmenting the dataset will allow Sarah to balance both classes, which will help her classifier.
+
+The second strategy that could also help is resampling the dataset. Instead of training with the data as-is, Sarah could oversample the photos showing equipment running hot. For example, she could duplicate every hot image. Sarah could also undersample the normal images; for instance, she could only take every other picture.
+
+Reducing the training time is not a helpful strategy for this problem. Also, nothing on the problem statement would suggest that deep learning is not a good approach.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Random Oversampling and Undersampling for Imbalanced Classification"](https://machinelearningmastery.com/random-oversampling-and-undersampling-for-imbalanced-classification/) for an introduction to oversampling and undersampling.
+* ["Failure of Classification Accuracy for Imbalanced Class Distributions"](https://machinelearningmastery.com/failure-of-accuracy-for-imbalanced-class-distributions/) covers the problem of using accuracy as the metric in imbalanced classification problems.
+* ["Learning from imbalanced data"](https://www.jeremyjordan.me/imbalanced-data/) discusses a number of considerations and techniques for dealing with imbalanced data.</p></details>
+
+-----------------------
+
