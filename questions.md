@@ -3848,3 +3848,49 @@ Reducing the training time is not a helpful strategy for this problem. Also, not
 
 -----------------------
 
+## Date - 2022-07-10
+
+
+## Title - Self-supervised learning
+
+
+### **Question** :
+
+Julia regularly works with supervised and unsupervised learning methods.
+
+However, she keeps seeing new methods that use self-supervised learning techniques. Julia doesn't understand how these methods compare to supervise and unsupervised learning, so she is here to ask for your help.
+
+**Which of the statements on self-supervised learning are true?**
+
+
+### **Choices** :
+
+- Self-supervised learning is just a fancy name for unsupervised learning.
+- Similar to supervised learning, self-supervised methods can judge if their prediction is correct or not during training.
+- Like unsupervised learning, self-supervised methods don't require labeled training data.
+- Self-supervised methods require only a small number of labeled samples.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Self-supervised methods are considered a form of unsupervised learning. However, not all unsupervised methods are self-supervised. This reasoning allows us to exclude the first choice.
+
+Self-supervised methods have similarities to both supervised and unsupervised learning. They don't require labeled data, which makes them similar to unsupervised learning. On the other hand, in self-supervised methods, "supervision" can be derived directly from the data. Therefore, like supervised learning, we can judge whether a prediction is true or false.
+
+An example would be a neural network that predicts the next word given a part of a sentence. We can take the text of a book and create random samples by picking parts of sentences. We don't need any labels, but for every instance, we still know what the correct answer is. Therefore, the second and the third choice are correct.
+
+The last choice is the definition of semi-supervised learning, which is different than self-supervised learning and is therefore incorrect.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Self-supervised learning"](https://project.inria.fr/paiss/files/2018/07/zisserman-self-supervised.pdf) is a presentation by Andrew Zisserman covering self-supervised learning for images.
+* ["Self-supervised learning: The dark matter of intelligence"](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/) is an excellent post from Meta's AI Research team.</p></details>
+
+-----------------------
+
