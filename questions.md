@@ -3946,3 +3946,59 @@ The order I chose for each dimension is intentional. By convention, we structure
 
 -----------------------
 
+## Date - 2022-07-12
+
+
+## Title - Betty's surprise
+
+
+### **Question** :
+
+Discovering that Gradient Descent has different names based on how many samples it uses to calculate the error was something Betty wasn't expecting.
+
+There are three popular variations of the algorithm: Mini-Batch Gradient Descent, Stochastic Gradient Descent, and Batch Gradient Descent.
+
+Betty found this fascinating, and although it made sense, she always found that Stochastic Gradient Descent was the hardest for her to define.
+
+**Which of the following statements is true about this version of the algorithm?**
+
+
+### **Choices** :
+
+- Stochastic Gradient Descent determines the optimal amount of data required to compute the gradient of the cost function.
+- Stochastic Gradient Descent uses a single sample of data during every iteration.
+- Stochastic Gradient Descent uses all available data once during every iteration.
+- Stochastic Gradient Descent uses a batch of data (more than one sample but fewer than the entire dataset) during every iteration.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Here is a simplified explanation of how Gradient Descent works: We take samples from the training dataset, run them through the model, and determine how far our results are from what we expect. We then use this "error" to compute how much we need to update the model weights to improve the results.
+
+A critical decision we need to make is how many samples we use on every iteration to run through the model. We have three choices: 
+* Use a single sample of data.
+* Use all of the data at once.
+* Use some of the data.
+
+Using a single sample of data on every iteration is called "Stochastic Gradient Descent" or SGD. In other words, the algorithm uses one sample to compute the updates. 
+
+Using all the data at once is called "Batch Gradient Descent." After processing every sample, the algorithm takes the entire dataset and computes the updates. 
+
+Finally, using some of the data—more than one sample but fewer than the entire dataset—is called "Mini-Batch Gradient Descent." The algorithm works like Batch Gradient Descent, with the only difference that we use fewer samples.
+
+Therefore, the second choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["An overview of gradient descent optimization algorithms"](https://ruder.io/optimizing-gradient-descent/index.html#gradientdescentvariants) for a deep dive into gradient descent and every one of its variants.
+* ["Gradient Descent For Machine Learning"](https://machinelearningmastery.com/gradient-descent-for-machine-learning/) is another great introduction to gradient descent.
+* ["A Gentle Introduction to Mini-Batch Gradient Descent and How to Configure Batch Size"](https://machinelearningmastery.com/gentle-introduction-mini-batch-gradient-descent-configure-batch-size/) covers Batch and Mini-Batch Gradient Descent.</p></details>
+
+-----------------------
+
