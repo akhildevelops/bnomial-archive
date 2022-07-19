@@ -4298,3 +4298,49 @@ co-adaptation of feature detectors"](https://arxiv.org/pdf/1207.0580.pdf).
 
 -----------------------
 
+## Date - 2022-07-19
+
+
+## Title - Convolutions are better
+
+
+### **Question** :
+
+When Nora finished the chapter about neural networks, she was ready to step it up with a more complex problem.
+
+The next stop was computer vision using convolutional neural networks (CNN.) These worked differently than fully connected networks and were better suited for processing image data.
+
+Before diving in, Nora wanted to summarize the advantages of using a CNN.
+
+**Which of the following are characteristics of convolutional neural networks?**
+
+
+### **Choices** :
+
+- Convolutional neural networks are scale invariant.
+- Convolutional neural networks are rotation invariant.
+- Convolutional neural networks are translation invariant.
+- Convolutional neural networks do not need human preprocessing or supervision to detect relevant features in an image.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To answer this question, we need to consider that Nora is focusing on out-of-the-box [convolutional neural networks](https://en.wikipedia.org/wiki/Convolutional_neural_network) and how they compare to fully-connected networks. [Some implementations](https://arxiv.org/abs/1411.6369) improve the capabilities of CNNs in different ways, but here we are focusing on their fundamental characteristics.
+
+Convolutional neural networks are [neither scale nor rotation invariant](https://pyimagesearch.com/2021/05/14/are-cnns-invariant-to-translation-rotation-and-scaling/); you need to include rotated images at different scales as part of your training dataset to teach the network how to recognize them. They are, however, translation invariant: they can recognize the same patterns independently of where they show in an image. This characteristic differentiates them from fully-connected networks.
+
+Finally, convolutional neural networks can learn relevant features of an image without needing human supervision. Back in the day, when trying to get a neural network to work with image data, we had to preprocess the images and manually curate data points to help the network learn what we considered important. This was time-intensive, didn't scale, and made the training process brittle and slow. Therefore, the fourth choice is also correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Are CNNs invariant to translation, rotation, and scaling?"](https://pyimagesearch.com/2021/05/14/are-cnns-invariant-to-translation-rotation-and-scaling/) goes into more detail about whether convolutional neural networks are translation, rotation, and scale invariant.
+- Check ["How Do Convolutional Layers Work in Deep Learning Neural Networks?"](https://machinelearningmastery.com/convolutional-layers-for-deep-learning-neural-networks/) for an introduction to how convolutional layers work.</p></details>
+
+-----------------------
+
