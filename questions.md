@@ -4344,3 +4344,55 @@ Finally, convolutional neural networks can learn relevant features of an image w
 
 -----------------------
 
+## Date - 2022-07-20
+
+
+## Title - Crossing the bridge
+
+
+### **Question** :
+
+To cross the bridge, Rylee had to solve a final puzzle.
+
+She had four pieces in front of her, each representing a layer used in Convolutional Neural Networks (CNN). Rylee had to put them in the correct order, and only then will the doors to the bridge reveal.
+
+There's only one chance and no time to waste.
+
+**Which of the following is the correct order in which these four layers appear in a CNN?**
+
+
+### **Choices** :
+
+- Input Layer, Pooling Layer, Convolutional Layer, Non-linearity.
+- Input Layer, Convolutional Layer, Pooling Layer, Non-linearity.
+- Input Layer, Convolutional Layer, Non-linearity, Pooling Layer.
+- Input Layer, Pooling Layer, Non-linearity, Convolutional Layer.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Look at the structure of a CNN, and you'll see a pattern repeated multiple times: Convolution, non-linearity, pooling. ReLU and Max Pooling are popular choices for non-linearity and pooling layers.
+
+Here is an illustration of the [architecture of VGG16](https://medium.com/mlearning-ai/an-overview-of-vgg16-and-nin-models-96e4bf398484). Notice the pattern:
+
+![Architecture of VGG16](https://user-images.githubusercontent.com/1126730/174477391-272e2265-415a-49ef-b3c5-8573e96b153a.png)
+
+The convolutional layer creates feature maps by applying learned filters to the input image. The pooling layer downsamples the feature maps and makes the model robust against location differences of the features detected. They work together, which is why they appear in this order.
+
+Introducing non-linearities is crucial if we want our model to learn complex functions. The non-linearity is applied directly after the convolution layer to produce the final feature map.
+ 
+If Rylee wants to stay alive, she must order the pieces as indicated by the third choice.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Convolutional Neural Networks — A Beginner’s Guide"](https://towardsdatascience.com/convolution-neural-networks-a-beginners-guide-implementing-a-mnist-hand-written-digit-8aa60330d022) is a great introduction to Convolutional Neural Networks.
+* Check ["A Gentle Introduction to Pooling Layers for Convolutional Neural Networks"](https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/) for more information about how the combination of convolutions and pooling layers work.</p></details>
+
+-----------------------
+
