@@ -4396,3 +4396,53 @@ If Rylee wants to stay alive, she must order the pieces as indicated by the thir
 
 -----------------------
 
+## Date - 2022-07-21
+
+
+## Title - Roman numerals
+
+
+### **Question** :
+
+Tracy is taking part in the [Data-Centric AI Competition](https://https-deeplearning-ai.github.io/data-centric-comp/) by [Andrew Ng](https://twitter.com/andrewyng). The competition's goal is to train a model to classify Roman numerals. However, unlike most other challenges, in this one, the participants are only allowed to change the data and not the model.
+
+Every competitor has access to a balanced dataset with examples of Roman literals, but Tracy decided to use a Generative Adversarial Network (GAN) to generate new samples.
+
+She implemented a GAN and trained it on her dataset. Both loss functions converged nicely, and she started sampling from the model. However, something was off: the GAN only generated images for two of the numerals but never produced any others.
+
+**Why is Tracy's network not producing the expected results?**
+
+
+### **Choices** :
+
+- The GAN is overfitting. That's why the loss functions converged, but the results in practice are not good.
+- The dataset isn't perfectly balanced. The network probably ignored any underrepresented classes.
+- Training GANs requires vast amounts of training data. Tracy didn't have a large enough dataset.
+- The discriminator network is stuck in a local minimum allowing the generator to cheat.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Tracy's idea is good. We can use [Generative Adversarial Networks](https://en.wikipedia.org/wiki/Generative_adversarial_network) to create new data samples and augment the original dataset. However, a lot of work is involved in training a GAN correctly. 
+
+The first hypothesis is that the GAN is suffering from overfitting. However, the network seems to work well for some numerals but not others. That is an unlikely behavior for a model that's overfitting.
+
+Neither the second nor the third choices are correct either. First, the description of this problem states that Tracy's dataset is well balanced. Even if there are minor differences, it's unlikely for the network to struggle to generate some of the numerals. Second, the amount of samples doesn't seem to be a problem for the classes produced by the network, so it shouldn't be causing the issue either.
+
+Finally, the fourth choice seems to hit the nail: we are in the presence of one of the most common problems when training a GAN: "[Mode collapse.](https://developers.google.com/machine-learning/gan/problems#mode-collapse)"
+
+Mode collapse happens when the discriminator network gets stuck in a local minimum, and the generator learns to fool it by consistently producing a few samples repeatedly. At this point, the generator stops producing images for most of the numerals, and we end up with results from a few classes.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Andrej Karpathy](https://twitter.com/karpathy) built a [Generative Adversarial Network tool](https://cs.stanford.edu/people/karpathy/gan/) that you can use to play around with different hyperparameters when training a GAN.
+* For a deep dive into Generative Adversarial Networks, check Neuromatch's Academy [Introduction to GANs](https://deeplearning.neuromatch.io/tutorials/W2D4_GenerativeModels/student/W2D4_Tutorial2.html).</p></details>
+
+-----------------------
+
