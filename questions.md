@@ -4446,3 +4446,52 @@ Mode collapse happens when the discriminator network gets stuck in a local minim
 
 -----------------------
 
+## Date - 2022-07-22
+
+
+## Title - Agatha Christie's novels
+
+
+### **Question** :
+
+Maeve wanted to win the hackathon, so she went with a fun and impressive application.
+
+She downloaded the text of three dozen Agatha Christie novels and used it to train a model to impersonate the author and generate short stories using her style.
+
+The most exciting part was that Maeve's model wrote the stories one character at a time!
+
+**Which of the following models do you think Maeve used to build her solution?**
+
+
+### **Choices** :
+
+- A Feed-forward Neural Network
+- A Convolutional Neural Network
+- A Recurrent Neural Network
+- A Text Generation Neural Network
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Maeve used a [Recurrent Neural Network](https://en.wikipedia.org/wiki/Recurrent_neural_network) (RNN) to build her model. This choice gave Maeve an essential advantage.
+
+Maeve's model receives a large chunk of text, one character at a time, and outputs the probability distribution of the next character in the sequence. This approach may not sound impressive until you think carefully about what it does when generating a word like "HELLO": the first time she feeds the model the letter "L," its output should be another "L," but the second time, the output switches to an "O."
+
+This ability reveals a critical characteristic of Recurrent Neural Networks: they don't solely rely on their input to make predictions. Instead, they have a memory to keep context and use it to generate their output. In other words, the RNN's output is influenced not only by its input but also by the history of inputs Maeve used in the past.
+
+Keeping context around and using it for text generation is crucial for Maeve's application.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["The Unreasonable Effectiveness of Recurrent Neural Networks"](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy for the motivation behind Recurrent Neural Networks.
+* ["An Introduction To Recurrent Neural Networks And The Math That Powers Them"](https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/) is an excellent introduction to Recurrent Neural Networks.
+* Neuromatch's Academy ["Time series for Language"](https://deeplearning.neuromatch.io/tutorials/W2D5_TimeSeriesAndNaturalLanguageProcessing/student/W2D5_Tutorial2.html) also introduces Recurrent Neural Networks.</p></details>
+
+-----------------------
+
