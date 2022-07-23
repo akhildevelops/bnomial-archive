@@ -4495,3 +4495,54 @@ Keeping context around and using it for text generation is crucial for Maeve's a
 
 -----------------------
 
+## Date - 2022-07-23
+
+
+## Title - Different twins
+
+
+### **Question** :
+
+Mary and Jane were twins.
+
+Despite their striking physical similarities, they were very different people.
+
+Mary was stubborn. She had a specific mental model for everything, and no matter the situation, she would follow her model regardless of the consequences. As Jane frequently said, Mary was always biased in her process.
+
+On the other hand, Jane was all over the place, sometimes, even to a fault. She could not generalize and gave too much importance to small and irrelevant details. Her variability drove Mary crazy.
+
+**If Mary and Jane were machine learning models, which of the following would be correct?**
+
+
+### **Choices** :
+
+- Mary will be more likely to overfit. Jane will be more likely to underfit.
+- Mary will be more likely to underfit. Jane will be more likely to overfit.
+- Mary will be more likely to underfit. Jane will be similarly likely to overfit and underfit.
+- Mary will be similarly likely to overfit and underfit. Jane will be more likely to overfit.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Neither Mary nor Jane are machine learning models, but this makes for an interesting question, so let's go with it.
+
+We know that Mary has a high bias. She pays little attention to the situation that she is in and instead always follows a specific mental model. Her inability to adapt to scenarios that aren't part of her mental models makes her decisions suboptimal.
+
+Because of the high bias, Mary will be more likely to underfit. She isn't capable of adapting to new situations, so she wouldn't take advantage of new opportunities and will always get mediocre results.
+
+On the other hand, Jane has the opposite problem: She is high variance. Jane pays a lot of attention to every detail, no matter how unimportant. Her lack of mental models will take her down rabbit holes that won't be productive. Because of this, Jane will be more likely to overfit.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Understanding the Bias-Variance Tradeoff"](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229) is a great introduction to bias, variance, and their tradeoff.
+* ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) is an excellent introduction to the bias and variance tradeoff.
+* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
