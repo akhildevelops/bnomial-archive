@@ -4546,3 +4546,58 @@ On the other hand, Jane has the opposite problem: She is high variance. Jane pay
 
 -----------------------
 
+## Date - 2022-07-24
+
+
+## Title - Show me another function
+
+
+### **Question** :
+
+During her interview, Maggie has to build a binary classifier to distinguish images of shoes from pictures of watches.
+
+The problem was simple, and since there wasn't a lot of data, Maggie used a pre-trained ResNet50 model, modified its output, and trained the final two layers on the data they had. Before anyone in the room noticed, the model had finished with excellent performance.
+
+Impressed with Maggie's speed, the interviewer started looking at the code. Since this was a binary classification problem, Maggie used a Sigmoid activation function on the last layer, catching the interviewer's attention.
+
+"I understand why you used Sigmoid for this problem,"— he said with a smirk. "Can you modify the code using a different activation function, please?"
+
+**Which of the following activation functions could Maggie use in the last layer to get similarly good results? Select all that apply.**
+
+
+### **Choices** :
+
+- ReLU
+- Leaky ReLU
+- Softmax
+- Tanh
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Maggie is building a binary classifier, which means she wants the output layer to produce a result that she can easily interpret to determine whether a picture is a photo of a shoe or an image of a watch.
+
+Neither the first nor the second choices are correct. [ReLU](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks) returns its input if positive or zero otherwise, while Leaky ReLU is based on ReLU but with a slight slope for negative values. 
+
+Let's assume the input to the output layer using ReLU or Leaky ReLU is a positive value. Both activation functions will leave that value untouched. They will act as a passthrough for any positive values coming from the previous layer and turn any negative values into zero—Leaky ReLU will turn negative values into a tiny positive result. This is not going to help Maggie classify the images.
+
+[Softmax](https://en.wikipedia.org/wiki/Softmax_function) converts a vector of numbers into a vector of probabilities. Maggie cares about two different classes: "shoe" and "watch." She can use softmax to output a vector with two values and decide the correct classification based on which one returns the largest value. For example, if the first value in the output vector is larger, Maggie can assume the image is a shoe. If the second value is larger, the picture is a watch.
+
+Remember that Maggie initially used a [sigmoid](https://en.wikipedia.org/wiki/Logistic_function) activation function. Softmax is an extension of sigmoid to cover cases where we care about more than two classes. [Softmax reduces to sigmoid](https://en.wikipedia.org/w/index.php?title=Logistic_regression&oldid=755697139#As_a_.22log-linear.22_model) when we use it in a binary classification context, so Maggie should get the same result in both cases.
+
+Finally, Maggie could also use a tanh activation function in the output layer. She will need to modify the encoding of the target classes as -1 and 1—instead of 0 and 1, which is what we commonly do—and use a different loss function. [Here is an experiment](https://jamesmccaffrey.wordpress.com/2020/11/02/neural-network-binary-classification-with-tanh-output-activation/) where the author trains a network using mean square error and an output layer with a tanh activation function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For a comparison between sigmoid and softmax, check ["The Differences between Sigmoid and Softmax Activation Functions."](https://medium.com/arteos-ai/the-differences-between-sigmoid-and-softmax-activation-function-12adee8cf322)
+* ["A Gentle Introduction to the Rectified Linear Unit (ReLU)"](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks) is a great introduction to ReLU.
+* Check out ["Neural Network Binary Classification With Tanh Output Activation"](https://jamesmccaffrey.wordpress.com/2020/11/02/neural-network-binary-classification-with-tanh-output-activation/) for the source code of a binary classifier using a tanh activation function.</p></details>
+
+-----------------------
+
