@@ -4601,3 +4601,47 @@ Finally, Maggie could also use a tanh activation function in the output layer. S
 
 -----------------------
 
+## Date - 2022-07-25
+
+
+## Title - Transforming Remi's model
+
+
+### **Question** :
+
+Everyone convinced Remi to rewrite her Long Short-Term Memory (LSTM) model and start using Transformers.
+
+But after Remi spent some time researching, she concluded that Transformers wouldn't necessarily improve the quality of her model results.
+
+**Assuming both models will provide the same results, what's a valid reason for Remi to start using Transformers instead of LSTM?**
+
+
+### **Choices** :
+
+- Transformers are much more computationally efficient than RNN-based networks.
+- Transformers have the potential to understand the relationship between an element and the element that follow it in the sequence.
+- Transformers have the potential to process sequences one element at a time.
+- Transformers have the potential to understand the relationship between sequential elements that are far from each other.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Unlike Transformers, [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory) models are sequential and process elements in order. Transformers process sequences as a whole rather than element by element. This characteristic allows us to parallelize Transformers, which enables us to process much more data when compared with an LSTM.
+
+The above explanation helps answer the first and third choices of this question. Transformers are much more computationally efficient, and they don't process elements sequentially but rather process sequences as a whole.
+
+Finally, although Transformers can understand the relationship of two elements next to each other in a sequence, an LSTM can also do the same, so the second choice is not a reason to migrate to Transformers. Unlike LSTM models, the power of the Transformer architecture is understanding the relationship between elements that are far from each other.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) is the famous paper where the Google Brain team introduced the Transformer architecture.
+* Check ["Long Short-Term Memory"](https://en.wikipedia.org/wiki/Long_short-term_memory) for an introduction to LSTM models.</p></details>
+
+-----------------------
+
