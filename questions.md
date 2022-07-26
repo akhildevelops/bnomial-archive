@@ -4645,3 +4645,60 @@ Finally, although Transformers can understand the relationship of two elements n
 
 -----------------------
 
+## Date - 2022-07-26
+
+
+## Title - Launching in different countries
+
+
+### **Question** :
+
+Maddison has never been part of such an extensive application. 
+
+Her company hired her to build an incredibly ambitious project, and a few years after they launched it, usage took off in the United States. With more and more daily interest, Maddison's company is ready to expand to other countries.
+
+Maddison knows it won't be a trivial task. At its core, the system uses a deep learning model to describe pictures taken by users, and Maddison is afraid of what will happen when people from all over the world start uploading data. 
+
+**What can Maddison do to mitigate potential biases before expanding to different countries?**
+
+
+### **Choices** :
+
+- Maddison should improve their feature engineering process to create better features that help the model produce good results for users in different countries.
+- Maddison should collect equal proportions of data from users living in the countries they plan to release.
+- Maddison should improve their labeling process to ensure a diverse pool of people handling labels.
+- Maddison should improve their feature selection process to ensure the model only uses relevant features for each user's country.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Maddison is right: guaranteeing the application runs with the same success across different countries will require work. Specifically, they will need to ensure the training data reflects every user's diversity and cultural context.
+
+Here are a few wedding photographs labeled by a classifier trained on the Open Images dataset. This example comes from [Google's AI blog](http://ai.googleblog.com/2018/09/introducing-inclusive-images-competition.html). Notice the predictions recorded below each image:
+
+![Wedding photographs labeled by a classifier trained on the Open Images dataset](https://user-images.githubusercontent.com/1126730/167641166-a55ff720-1a29-4d75-b60b-71e3f3da4f81.png)
+
+The classifier can't handle wedding traditions from different parts of the world, and that's what Maddison needs to avoid. 
+
+Maddison should focus on the data they use to train their model to ensure fairness and proper representation, but it is neither about better feature engineering nor feature selection.
+
+If the training dataset they are using doesn't correctly represent every user, no amount of fiddling with features will reduce the bias. Remember,  ƒ(🗑️)=🗑️ —garbage in, garbage out.
+
+From the choices on this question, Maddison should focus her time on two different areas: collecting representative data and ensuring that data is correctly labeled. Notice that doing only one of these is not enough; you need both to ensure you have a less biased dataset.
+
+For example, adding the last image to the dataset is not enough because most people in the United States will not recognize it as a webbing image, either. Labelers should be familiar with the particular country's culture to classify pictures correctly.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Introducing the Inclusive Images Competition"](http://ai.googleblog.com/2018/09/introducing-inclusive-images-competition.html) Google's blog post introducing the ["Inclusive Images Challenge"](https://www.kaggle.com/c/inclusive-images-challenge) competition on Kaggle.
+* The ["Machine Learning Data Lifecycle in Production"](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production) course in Coursera, part of the [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops).
+* ["Fairness"](https://en.wikipedia.org/wiki/Fairness_(machine_learning)) is a Wikipedia article covering some important fairness concepts.</p></details>
+
+-----------------------
+
