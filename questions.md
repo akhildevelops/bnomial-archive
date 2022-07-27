@@ -4702,3 +4702,61 @@ For example, adding the last image to the dataset is not enough because most peo
 
 -----------------------
 
+## Date - 2022-07-27
+
+
+## Title - Rotten bananas
+
+
+### **Question** :
+
+The supermarket wanted to create an automatic process to detect rotten bananas so they could send a rep and pull them out of the shelves.
+
+They had been collecting pictures for a long time, but unfortunately, most were images of good-looking bananas. 
+
+Camila had an idea. What if they used an autoencoder to build a model capable of detecting rotten bananas? The dataset they had was probably everything they needed for this.
+
+**Regardless of whether this is a good idea, which of the following statements are true about autoencoders?**
+
+
+### **Choices** :
+
+- Autoencoders are supervised learning methods that use neural networks for the task of representation learning.
+- Autoencoders are good at detecting unique characteristics among the different samples in the dataset and reproducing them in the output.
+- Autoencoders have a bottleneck, which we use to constrain the amount of information that traverses from the input to the network's output.
+- Autoencoders are typically only capable of reconstructing data similar to the class of observations we used during training.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>I like to think of autoencoders as data compression algorithms built using neural networks. A network encodes (compresses) the original input into an intermediate representation, and another network reverses the process to get the same information back.
+
+The encoding process generalizes the input data. Its job is to represent the dataset as compactly as possible, so the decoder can do a decent job reproducing the original data. This encoding and decoding process is lossy, which means we will lose some details from the initial input.
+
+Autoencoders are not supervised learning methods because they don't need explicit labels to train. Instead, we can consider them self-supervised because they generate labels directly from the training data. Therefore, the first choice is incorrect.
+
+The second choice is also incorrect: any unique characteristics in the input data will never make it past the autoencoder's bottleneck. The encoder is very picky about the features it encodes, so it'll never select anything that's not representative of the whole dataset. This is a great property that we can use to detect anomalies in the data!
+
+The third choice is correct. Here is a visualization of an autoencoder from my favorite ["Introduction to autoencoders"](https://www.jeremyjordan.me/autoencoders/) article:
+
+![Autoencoder](https://user-images.githubusercontent.com/1126730/168314400-94634324-b449-4279-87b1-efc0e41bc550.png)
+
+Notice the bottleneck in the middle. This is a fancy name for a hidden layer that forces the network to learn a compressed representation of the original input. Any characteristic that doesn't help explain the dataset correctly will never make it past the bottleneck. 
+
+For example, imagine we train an autoencoder with thousands of pictures of bananas. The autoencoder will learn to reproduce the original picture. What would happen if we showed the autoencoder a rotten banana instead? Since the autoencoder didn't learn how to represent rotten bananas, the decoder will never be able to reproduce them correctly. The result will look like a regular banana because that's all the information the decoder had.
+
+Finally, the fourth choice is also correct. Autoencoders can only reconstruct data similar to the data they were trained on.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* My favorite introduction to autoencoders is the ["Introduction to autoencoders"](https://www.jeremyjordan.me/autoencoders/) article by Jeremy Jordan.
+* If you want to play with some code, check the ["Convolutional autoencoder for image denoising"](https://keras.io/examples/vision/autoencoder/) Keras tutorial. You should be able to run it using Google Colab.</p></details>
+
+-----------------------
+
