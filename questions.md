@@ -4760,3 +4760,51 @@ Finally, the fourth choice is also correct. Autoencoders can only reconstruct da
 
 -----------------------
 
+## Date - 2022-07-28
+
+
+## Title - Visiting new places
+
+
+### **Question** :
+
+Mackenzie loved visiting new places and working remotely for weeks at a time.
+
+She had a strategy to discover every secret corner of a new city: Some days, she would pick a random path. Other days, she would only use the streets she knew well enough. Over time, Mackenzie would learn about every corner, road, and hidden passage the city would have to offer.
+
+Mackenzie, a reinforcement learning engineer, described her approach as a "0.6 epsilon greedy policy."
+
+**Which of the following correctly summarizes Mackenzie's approach during her travels?**
+
+
+### **Choices** :
+
+- Mackenzie follows a random path 60% of the time and only takes streets she already knows 40% of the time.
+- Mackenzie follows a random path 40% of the time and takes streets she already knows 60% of the time.
+- Mackenzie emphasizes exploiting her knowledge about the city more than exploring the unknown.
+- Mackenzie usually follows a greedy path and otherwise takes random streets.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In reinforcement learning, an ["epsilon greedy policy"](https://developers.google.com/machine-learning/glossary#epsilon-greedy-policy) refers to a strategy that either follows a random policy with epsilon probability or a greedy policy otherwise.  
+
+A [greedy policy](https://developers.google.com/machine-learning/glossary#greedy-policy) always chooses the action with the highest expected return. In Mackenzie's case, this would be taking the streets that she already knows. She explores and discovers new places and roads when following a [random policy](https://developers.google.com/machine-learning/glossary#random_policy).
+
+Mackenzie describes her approach as a "0.6 epsilon greedy policy" because she follows random streets about 60% of the time. In other words, Mackenzie spends most of her time exploring rather than exploiting what she already knows.
+
+As an additional note, in reinforcement learning, after accumulating knowledge from exploiting, the algorithm reduces the value of epsilon to shift from following a random to a greedy policy.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Exploration vs. exploitation in reinforcement learning"](https://www.manifold.ai/exploration-vs-exploitation-in-reinforcement-learning) is a great introduction to the exploration vs. exploitation tradeoff.
+* Check Google's machine learning glossary definition of ["Epsilon greedy policy"](https://developers.google.com/machine-learning/glossary#epsilon-greedy-policy).</p></details>
+
+-----------------------
+
