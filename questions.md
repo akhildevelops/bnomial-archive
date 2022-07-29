@@ -4808,3 +4808,54 @@ As an additional note, in reinforcement learning, after accumulating knowledge f
 
 -----------------------
 
+## Date - 2022-07-29
+
+
+## Title - Tom hates losing
+
+
+### **Question** :
+
+During the COVID19 lockdown, Tom started playing backgammon with his friends. He liked the game, but he wasn't good at it.
+
+Tom hates losing, so he decided to train a reinforcement learning algorithm to help him play the game and beat his friends. He chose the Monte Carlo Tree Search method and implemented it using deep learning. After all, this approach helped [AlphaGo Zero](https://en.wikipedia.org/wiki/AlphaGo_Zero) become the best Go player, so surely it would help him beat his friends.
+
+Soon after Tom started, he found a concept he didn't understand. He needed to train a _value network_ despite having a _policy network_ telling him what move to do next. Why does he need yet another network?
+
+**Which of the following statements about the _value network_ are useful?**
+
+
+### **Choices** :
+
+- The value network takes the state of the game and outputs the best possible moves the player can make.
+- The value network takes the state of the game and outputs an estimation of how good that state is for the player.
+- The value network is used to reduce the depth of the search when traversing all possible variants of how the game could develop.
+- The value network is used to reduce the breadth of the search when traversing all possible variants of how the game could develop.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The classical algorithmic approach to solving a game is traversing all possible states and seeing which move leads to the most favorable outcome. For many games, including backgammon, checking all possibilities is not feasible, so we need to rely on approximations.
+
+[Monte Carlo Tree Search](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search) is a popular method that has been applied successfully to many games. Combining it with deep neural networks makes it even more powerful. For this, we need to train two neural networks.
+
+The first one is called the policy network. Given the state of the game, this network outputs a probability distribution over all possible game moves, and it tells us which ones are likely the best. We can train this network with experts in a supervised fashion, then refine it using reinforcement learning. Notice that this question's first choice incorrectly mistakes this network with the value network.
+
+The second neural network we need to train is the value network. It takes the state of the game and outputs an approximation of how favorable that state is for the player. That's what the second choice of this question describes, so it's a correct answer.
+
+When finding the best strategy, the policy network tells us which moves are best and reduces the search's breadth in the game tree. The value network tells us if it makes sense to continue exploring a branch given its value. Therefore, the value network helps us reduce the search's depth, making the third choice of this question a correct answer as well.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- The ["Monte Carlo Tree Search"](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search) page in Wikipedia has a good overview of this heuristic search method.
+- The [Reinforcement Learning](https://amzn.to/3yk2bon) book by Sutton and Barto is an excellent book on reinforcement learning covering all the topics from this question.
+- ["Reinforcement Learning For Games by Neuromatch"](https://deeplearning.neuromatch.io/tutorials/W3D5_ReinforcementLearningForGames/chapter_title.html) is an excellent tutorial on applying Monte Carlo Tree Search with deep learning to games.</p></details>
+
+-----------------------
+
