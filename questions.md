@@ -4859,3 +4859,51 @@ When finding the best strategy, the policy network tells us which moves are best
 
 -----------------------
 
+## Date - 2022-07-30
+
+
+## Title - Securing your bank account
+
+
+### **Question** :
+
+Jacob is working at a big bank, and they assigned him a critical task: Revamp their mobile application's security using face-scanning authentication.
+
+Modern phones offer face identification functionality, but the bank wanted to use additional biometric markers to ensure higher security. In addition to taking a picture of the user's face, Jacob had to create a 3D model.
+
+The problem was that many of the bank's customers used phones with a single front camera and no 3D capabilities.
+
+**What method can Jacob use to create a 3D model of the user's face?**
+
+
+### **Choices** :
+
+- Jacob can use a deep learning-based depth estimation algorithm using a single front-facing photo from users.
+- Jacob can estimate a 3D model by asking users to take two photos: one front-facing and another after moving the phone to the left.
+- Jacob can estimate a 3D model by asking users to take two photos: one front-facing and another after moving the phone closer to their faces.
+- Jacob can estimate a 3D model by asking users to take two photos: one front-facing in portrait mode and another in landscape mode.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Face identification alone doesn't provide enough security: anyone could bypass the authentication screen by using a static photo of the user's face. That's why having a 3D model of the user's face is critical.
+
+That's why the first choice of this question is not a good idea. While [monocular depth estimation methods using deep learning](https://paperswithcode.com/task/monocular-depth-estimation) deliver fantastic results, using a single photo won't offer the security of a 3D model.
+
+Using multiple photos of the user's face from different positions will give us information that we can use to estimate a 3D model. We can use the [parallax effect](https://en.wikipedia.org/wiki/Parallax) to calculate the distance to every pixel and create a 3D model of the face using triangulation. The intuition behind this method is that points far away from the camera will move less between photos compared to closer points. Such methods are known as [stereo vision](https://en.wikipedia.org/wiki/Computer_stereo_vision). 
+
+Finally, although the fourth choice of this question argues about using multiple photos, we can only use the parallax effect when the pictures are from different positions. Rotating the phone will not be enough because the image of the user's face will look mostly identical in both shots.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["How Do Neural Networks See Depth in Single Images?"](https://openaccess.thecvf.com/content_ICCV_2019/papers/van_Dijk_How_Do_Neural_Networks_See_Depth_in_Single_Images_ICCV_2019_paper.pdf) is a paper that covers how we can estimate depth from a single image.
+- Check the ["Triangulation"](https://en.wikipedia.org/wiki/Triangulation_(computer_vision)) Wikipedia page for an explanation of stereo estimation when using two or more images.</p></details>
+
+-----------------------
+
