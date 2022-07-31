@@ -4907,3 +4907,60 @@ Finally, although the fourth choice of this question argues about using multiple
 
 -----------------------
 
+## Date - 2022-07-31
+
+
+## Title - Parallelizing training
+
+
+### **Question** :
+
+Claire's company has been accumulating data at a breakneck pace. 
+
+Her team maintains one of their machine learning models, and every few weeks, they retrain it with all of the available data.
+
+Unfortunately, the training process is starting to take too much time. Not only is the team spending a fortune on computing power, but any experimentation is becoming a problem.
+
+Claire wants to look into whether parallelizing the training process is doable.
+
+**How can Claire parallelize training?**
+
+
+### **Choices** :
+
+- Claire can parallelize the process by training multiple model copies on the same computer running various GPUs. Each copy will train on a portion of the training dataset, and each device will synchronize its updates at the end of each iteration.
+- Claire can parallelize the process by training multiple model copies on different computers. Each model will train on a portion of the training dataset, and each computer will synchronize its updates at the end of each iteration.
+- Claire can parallelize the process by training multiple models on different computers. Each copy will use the entire training dataset, and Claire will keep the best performant model at the end.
+- Unfortunately, Claire can't parallelize the training process of her model because training is an atomic operation. It would be different if Claire needed to train an ensemble model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Claire has multiple ways to parallelize—or distribute—the training process. We can divide these into two groups:
+
+* Data Parallelism: We train multiple copies of the model on a different subset of the data.
+* Model Parallelism: We train different segments of a model on the entire dataset.
+
+The first two choices are instances of data parallelism: Claire can train multiple copies of the model on separate workers, each on a different slice of the dataset. Notice that these two choices differ from what we consider a "worker."
+
+The first choice suggests that Claire can use multiple GPUs in the same computer to distribute the training process. The second choice argues that Claire can do the same using various computers. Both options are correct. Check TensorFlow's [Mirrored Strategy](https://www.tensorflow.org/guide/distributed_training#mirroredstrategy) and [Multi-Worker Mirrored Strategy](https://www.tensorflow.org/guide/distributed_training#multiworkermirroredstrategy), and PyTorch's [Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html).
+
+The third choice is not a valid approach to parallelizing the model. If Claire trains the same model on the same data on separate computers, she will get the same results, albeit minor differences due to the stochasticity of the training process.
+
+Finally, the fourth choice is incorrect because Claire does have options to parallelize training.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["How to Distribute Deep Learning Model Training?"](https://arshren.medium.com/how-to-distribute-deep-learning-model-training-693a1898918f) is a great introduction to training parallelization.
+* For information about how to parallelize training using TensorFlow, check ["Distributed training with TensorFlow"](https://www.tensorflow.org/guide/distributed_training).
+* For information about how to parallelize training using PyTorch, check ["Getting started with Distributed Data Parallel"](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html).
+* The ["Machine Learning Data Lifecycle in Production"](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production) course in Coursera, part of the [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops) covers parallelization.</p></details>
+
+-----------------------
+
