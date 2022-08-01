@@ -4964,3 +4964,57 @@ Finally, the fourth choice is incorrect because Claire does have options to para
 
 -----------------------
 
+## Date - 2022-08-01
+
+
+## Title - What happens to the loss?
+
+
+### **Question** :
+
+Aubrey is not happy with the train and validation loss of her model.
+
+Everything seems to be working fine, except her validation loss is lower than the training loss.
+
+Aubrey's experience is the opposite. She is used to seeing models crush the training set and get a much lower loss, so this chart seems suspicious to her:
+
+![Train and validation loss](https://user-images.githubusercontent.com/1126730/172624732-e6f2d9ea-5a75-447e-87da-2f06e2df0d8a.png)
+
+**Which of the following could be valid reasons for the validation loss to be lower than the training loss?**
+
+
+### **Choices** :
+
+- Aubrey's model includes Dropout layers.
+- Aubrey is using some data augmentation techniques before training.
+- Aubrey is using a validation set that's too easy for the model.
+- Aubrey is leaking training samples into the validation set.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Many people look at a plot showing a validation loss lower than a training loss and immediately assume there's a problem. The fact is that this is not necessarily something to worry about, but first, we need to make sure of that.
+
+The simplest explanation is that Aubrey might have a validation set that's very easy for the model—at least easier than the training set. This could happen, for example, because of the way Aubrey sampled the data to create the validation set—picking simple instances—or because there's a leak—which would be a problem. If she is working with an imbalanced dataset but is not stratifying the data, she might be in this situation. The same problem could happen if the validation set doesn't have enough samples.
+
+The third and fourth choices are potential reasons based on the above explanation. Aubrey should make sure she doesn't have a leak and work to improve her validation set.
+
+But her validation set might be perfectly correct, and the explanation for the lower loss might be elsewhere.
+
+Dropout is a regularization technique that makes learning the train set harder for the model. Remember that Dropout only applies during training and not validation. Assuming Aubrey is using Dropout layers in her model, she is pushing the training loss higher and contributing to the gap. Therefore, the first choice is a potential reason for the validation loss to be lower.
+
+Finally, data augmentation could also contribute to this problem. Data augmentation has a regularization effect, and we usually augment data during training but not during validation. In other words, we train models with complex examples and evaluate them with more straightforward samples. Therefore, the second choice is also a correct answer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Why is my validation loss lower than my training loss?"](https://pyimagesearch.com/2019/10/14/why-is-my-validation-loss-lower-than-my-training-loss/) covers the answer to this question.
+* ["How to use Learning Curves to Diagnose Machine Learning Model Performance"](https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/) is a great introduction to learning curves and how to use them to understand how your model is working.</p></details>
+
+-----------------------
+
