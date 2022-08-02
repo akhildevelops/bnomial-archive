@@ -5018,3 +5018,54 @@ Finally, data augmentation could also contribute to this problem. Data augmentat
 
 -----------------------
 
+## Date - 2022-08-02
+
+
+## Title - Twitter loves gradient boosting
+
+
+### **Question** :
+
+When Stella joined Twitter, she found that many people in the machine learning community were fans of gradient-boosting algorithms.
+
+Stella wasn't expecting this. She came from a program emphasizing deep learning techniques, so seeing so much talk about gradient boosting was shocking. Apparently, these algorithms were instrumental in real-life applications.
+
+Stella asked around, and [Bojan](https://twitter.com/tunguz) replied. He gave her a list of some of the main characteristics of gradient boosting algorithms.
+
+**Which of the following do you think made it into Bojan's list?**
+
+
+### **Choices** :
+
+- Gradient boosting combines individual learners barely better than random guessing to produce excellent results.
+- Gradient boosting's results are less interpretable than those from a decision tree.
+- Gradient boosting is flexible and can optimize any differentiable loss function.
+- Gradient boosting is very computationally and memory efficient.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Twitter is right: [gradient boosting](https://en.wikipedia.org/wiki/Gradient_boosting) is a helpful ensembling technique for building machine learning systems. Remember that ensembling is where we combine a group of models to produce a new model that yields better results than any one of the initial individual models.
+
+This introduction speaks directly about the first choice. Gradient boosting ensembles a group of weak learners. We call them "weak" because they have some predictive capacity, usually slightly better than random guessing. The strength of the technique is not in any of these individual learners but in their combination. Therefore, the first choice is correct.
+
+Using decision trees as the weak learners for gradient boosting is popular. Unfortunately, in ensembling these learners, we tradeoff some of the interpretability we'd get from an individual decision tree. It's much harder to interpret gradient boosting results than a tree's results. Therefore, the second choice was also part of Bojan's list.
+
+As the name suggests, gradient boosting uses the loss function's gradient to minimize the loss of the model. It works similarly to gradient descent, supporting any differentiable loss function. That means we can use well-known loss functions like squared errors, logarithmic loss, or even define a custom loss function. The paper ["Greedy Function Approximation: A Gradient Boosting Machine"](https://jerryfriedman.su.domains/ftp/trebst.pdf) goes into more detail about the generalization that makes this possible.
+
+Finally, the fourth choice is not correct. Depending on the problem, gradient boosting can quickly scale to thousands of weak learners, which is expensive in terms of computational and memory resources.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* If this is the first time you hear about gradient boosting, start by reading ["A Gentle Introduction to the Gradient Boosting Algorithm for Machine Learning"](https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/).
+* Check out ["Gradient Boosting In Classification: Not a Black Box Anymore!"](https://blog.paperspace.com/gradient-boosting-for-classification/) for a full walkthrough of how gradient boosting works with one example.
+* ["Greedy Function Approximation: A Gradient Boosting Machine"](https://jerryfriedman.su.domains/ftp/trebst.pdf) is the paper mentioned in the explanation of this question.</p></details>
+
+-----------------------
+
