@@ -5069,3 +5069,64 @@ Finally, the fourth choice is not correct. Depending on the problem, gradient bo
 
 -----------------------
 
+## Date - 2022-08-03
+
+
+## Title - Navigating the recession
+
+
+### **Question** :
+
+The looming recession wasn't good news for the newspaper, and to add insult to injury, their machine learning model predicting demand started deviating from the actual results they were seeing.
+
+Marisol had to take over. Her mission was simple: investigate what was happening with the model. They needed to fix it as soon as possible if they wanted a chance to survive.
+
+After a few weeks, Marisol's report came back. The model wasn't ready to handle the changing economic conditions, and there were a few features whose values had drifted. She offered a few solutions for the team to consider.
+
+**Which of the following could be part of Marisol's proposed solutions?**
+
+
+### **Choices** :
+
+- Keep the existing model, but modify its input in production by replacing the drifting features with their training mean or mode.
+- Remove the drifting features from the training dataset and retrain the model.
+- Add a few additional features to the training dataset, hoping the model can better adapt to the changing economic conditions. Retrain the model.
+- Collect additional data, label it, and retrain the model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The world doesn't stand still. As soon as you deploy your machine learning model to production, changes in the data—regardless of how small they are—will affect the quality of its predictions.
+
+In a sudden economic downturn, our newspaper found itself in a middle of a bad situation. They struggled to survive, and degraded predictions made the issue even more pressing: they were flying blind.
+
+Marisol understood the model was suffering from the consequences of drift in the data, and she even identified the few features significantly impacting the results. The newspaper could alleviate this problem in many different ways, so let's analyze each possibility.
+
+One possible solution is to continue using the same model but replace the drifting features with a more traditional value. For example, assuming one of the features has changed significantly from its training mean, they could use that mean value instead of the skewed value.
+
+The advantage of this scenario is that they don't need to retrain their model. The disadvantage is that there's no guarantee that this will work. Most likely, the model's predictions will still suffer, but there's a chance this degradation is less severe than allowing the drift to hit the model.
+
+Remember that the first option may not be a reasonable solution depending on how severe the drift is and the correlation between the drifting feature and the target label. However, since we don't have any more specific information, this is something worth trying.
+
+Something similar could happen if we follow the second strategy: removing a feature altogether and retraining the model could help alleviate the drift but is not guaranteed. Again, we'll likely see a drop in performance, and the only question is whether that decrease is less severe than using the skewed features. 
+
+Sometimes we can add additional features to the dataset that help address the drift. For example, the unemployment rate could help smooth predictions during changing economic conditions. This is not always possible but worth exploring.
+
+Finally, the go-to solution is to collect more data and retrain the model to adapt to the new situation. This is usually how most companies try to address data and concept drift, and it works in most cases, although it's far from a silver bullet. For example, there are situations where collecting updated ground-truth data is not possible without waiting for a long time, so reacting to drifts is a significant challenge.
+
+In summary, every one of the choices is a possibility for the newspaper to explore. They all have different tradeoffs, and the team must decide which works better for them.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* This question was inspired by this excellent article: ["Drift in Machine Learning."](https://towardsdatascience.com/drift-in-machine-learning-e49df46803a) It covers the nuances of how to deal with data drift and comes with several good examples.
+* ["Data Drift vs. Concept Drift: What Are the Main Differences?"](https://deepchecks.com/data-drift-vs-concept-drift-what-are-the-main-differences/) is a great introduction to data and concept drift.
+* ["Why You Should Care About Data and Concept Drift" ](https://evidentlyai.com/blog/machine-learning-monitoring-data-and-concept-drift) is a great article from [Evidently AI](https://evidentlyai.com/) focusing on the importance of monitoring your models.</p></details>
+
+-----------------------
+
