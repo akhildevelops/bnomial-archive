@@ -5130,3 +5130,67 @@ In summary, every one of the choices is a possibility for the newspaper to explo
 
 -----------------------
 
+## Date - 2022-08-04
+
+
+## Title - Avery's internship
+
+
+### **Question** :
+
+It took her some time, but finally, Avery landed an internship position at one of her dream companies.
+
+The fun didn't last long. On the first day, she joined a team of other interns who had been dealing with a training problem with their neural network.
+
+Soon after starting the process, the training loss flattened out and remained unchanged until the end. The team tried to increase the number of iterations to no avail.
+
+**Which of the following could be valid reasons for the training loss to remain flat?**
+
+
+### **Choices** :
+
+- The team is using a learning rate that's too low.
+- The team is using too much regularization.
+- The team is working with an imbalanced dataset, with one class overwhelmingly dominating the rest.
+- The team is using a lousy weight initialization strategy.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>I can't think of a better start to an internship than dealing with a model that refuses to learn. That's what's happening to their network: the training loss represents the model's ability to understand the training data. Getting a flat curve means the model can't learn that data appropriately.
+
+Let's first consider the effect of the learning rate on this problem. The learning rate is a setting that lets you control how fast we move in the direction that the optimization algorithm wants to take us. Think of a ball rolling down a hill. A higher learning rate means the ball will move at a more significant speed, while a lower learning rate means there will be a lot of friction, and the ball will move slower.
+
+Finding the optimal solution is like getting the ball right inside a hole at the bottom of the hill. If our learning rate is too high, the ball might roll over the hole and continue moving! If our learning rate is too low, we might never get to the hole in the first place. Keep in mind that the closer we get to the hole, the more our "training loss" will show progress.
+
+Avery's team is looking at a flat training loss. This means they aren't seeing progress toward the solution, which is consistent with using a learning rate that's too low. Their hypothetical ball has too much friction and is not moving fast enough—or maybe at all—towards the solution, so it makes sense for the training loss to remain flat. Therefore, the first choice is correct.
+
+Sometimes, we have a model that fits the training data too well. That might sound like something good, but it isn't. Models tend to "memorize" the training data and do very poorly on any future samples when this happens. A way to combat this problem is by using a concept that we call ["regularization."](https://theaisummer.com/regularization/)
+
+Regularization controls the model complexity. Think of it as saving the model from itself. The more aggressive the regularization is, the harder for the model to memorize the training data and the more it will need to focus on learning from it. But what happens if we set the regularization too high? It could be challenging for the model to learn anything, so Avery's team would see a flat learning curve. Therefore, the second choice is also a possible explanation.
+
+Working with imbalanced datasets is challenging because models tend to prioritize the majority class. Imagine you are building a model that tells dogs apart from cats, and 99% of your images are dogs. A simple model that always predicts a dog will be correct 99% of the time, but this would be useless. Regardless, if the model is learning anything, the training loss should decrease, so the third choice is not a reasonable explanation for Avery's problem.
+
+Finally, we have to consider whether initializing a network's weights could not lead the model to learn. Here is an excerpt from ["Gradient Descent,"](http://www.cs.umd.edu/~djacobs/CMSC426/GradientDescent.pdf) a publication from the Computer Science Department of the University of Maryland:
+
+> When a problem is nonconvex, it can have many local minima. And depending on where we initialize gradient descent, we might wind up in any of those local minima since they are all fixed points.
+
+Let's get back to our ball rolling downhill and imagine that along the way, there are small holes that look like a solution, but they aren't. Initializing the network is like placing our ball in a specific position on the hill: If we start far from the optimal solution—the hole we want to reach—there will be a more significant probability of not getting there.
+
+Moreover, we risk placing the ball where we will get stuck in one of those holes along the way: The network will think it finishes and stop learning. Therefore, the initialization can influence whether the network learns and the fourth choice is also correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Gradient Descent"](http://www.cs.umd.edu/~djacobs/CMSC426/GradientDescent.pdf) is a deep dive into gradient descent and its variants from the Computer Science Department of the University of Maryland.
+* ["Understand the Impact of Learning Rate on Neural Network Performance"](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/) it's an excellent summary of the learning rate's impact when training neural networks.
+* You can check out ["Regularization techniques for training deep neural networks"](https://theaisummer.com/regularization/) to learn more about regularization.
+* The best in-depth explanation I've read about weight initialization is ["Initializing neural networks"](https://www.deeplearning.ai/ai-notes/initialization/), an interactive post from DeepLearning AI.</p></details>
+
+-----------------------
+
