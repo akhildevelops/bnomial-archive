@@ -5194,3 +5194,59 @@ Moreover, we risk placing the ball where we will get stuck in one of those holes
 
 -----------------------
 
+## Date - 2022-08-05
+
+
+## Title - The cheap, local zoo
+
+
+### **Question** :
+
+The local zoo hired a team to build a feature for their mobile application.
+
+They wanted people to take a picture of an animal and have the model classify its species.
+
+The zoo was government-funded and didn't have much money, so they hired the least expensive team they could find. That was obvious from the very first meeting.
+
+After presenting the problem, the project lead admitted he wasn't sure about the best way to measure the model's success. He gave the zoo four possibilities and waited for them to answer.
+
+**Which of the following metrics do you think are good ways to evaluate the model's performance?**
+
+
+### **Choices** :
+
+- The team could use the overall accuracy of the model.
+- The team could use the F1-Score of the model.
+- The team could use the precision of the model.
+- The team could use the recall of the model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Before we look at every possible choice, I want to draw your attention to something important: the question is about which metrics are good ways to evaluate the model, not the "best" metric.
+
+The zoo needs a classification model. Are any of these metrics not valid for a classification model?
+
+The team can use any of these metrics to evaluate the model since each is useful in different ways. Even better, they can use a combination of these metrics to understand various aspects of the final solution.
+
+For example, accuracy is usually an excellent metric to describe the performance of a classification system. Accuracy doesn't work very well when dealing with imbalanced problems—where one class dominates the other—but we have no indication this will be the case. An advantage of using accuracy is that it is a very well-understood term, even among non-technical people.
+
+[F1-Score](https://en.wikipedia.org/wiki/F-score) is another good metric to evaluate a classification model. It's a balance between the precision of the model and its recall. F1-Score works much better than the accuracy when the balance between classes is an essential factor. However, F1-Score is not as easy to interpret as the accuracy of a model.
+
+[Precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall) are also beneficial to understanding the model's performance. For example, the team could monitor the precision of the model in classifying specific species or focus on its recall for others.
+
+In summary, all four metrics are helpful for this particular problem.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check ["Evaluating Deep Learning Models: The Confusion Matrix, Accuracy, Precision, and Recall"](https://blog.paperspace.com/deep-learning-metrics-precision-recall-accuracy/) for a great introduction to how to evaluate a model.
+- ["Accuracy vs. F1-Score"](https://medium.com/analytics-vidhya/accuracy-vs-f1-score-6258237beca2) contrasts these two metrics, just as ["F1 Score vs. Accuracy: Which Should You Use?"](https://www.statology.org/f1-score-vs-accuracy/) does.</p></details>
+
+-----------------------
+
