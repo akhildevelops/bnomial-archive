@@ -5250,3 +5250,57 @@ In summary, all four metrics are helpful for this particular problem.</p></detai
 
 -----------------------
 
+## Date - 2022-08-06
+
+
+## Title - Infinite number of layers
+
+
+### **Question** :
+
+As she ran some experiments, Sadie noticed an interesting pattern with her classification model.
+
+Sadie was building a model using a feed-forward neural network. She wanted to find the appropriate capacity for the model, so she started experimenting by adding new hidden layers and checking the final accuracy of the network.
+
+**Which of the following describes what Sadie found as she increased the number of hidden layers in the network?**
+
+
+### **Choices** :
+
+- The network's accuracy on the training data decreased while the accuracy on the test data increased.
+- The network's accuracy on the training data increased while the accuracy on the test data decreased.
+- Both the network's accuracy on the training and test data increased.
+- Both the network's accuracy on the training and test data decreased.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Sadie kept increasing the network's capacity by adding more hidden layers. Unfortunately, all of this additional power comes at a cost.
+
+In other areas of computing, throwing more resources at a problem doesn't necessarily have negative consequences; we may waste the extra capacity, but it wouldn't influence the results. That is not the case with machine learning models.
+
+How much capacity we have in a neural network is an essential factor in its ability to produce good results. The model will underfit if we don't have enough and overfit if we have too much. We need the network's capacity to be just right to get good results.
+
+As Sadie adds more hidden layers, her neural network will start overfitting. All the extra power will lead the model to memorize the training data instead of trying to generalize. Think about that for a second: what would be the model results on the training data if the model memorized it?
+ 
+The model's accuracy on the training data will improve. The more power we give the network, the better the results. Remember, the model is not learning much; it's just memorizing the data.
+
+And how about the test data?
+
+The model hasn't seen the test data, so regardless of how much capacity we add, it can't simply memorize it. Our only hope for the model to do well on the test data is if it generalizes appropriately, and in this case, we know the model is overfitting. As Sadie increases the network's capacity, the results on data that the model hasn't seen will start degrading quickly.
+
+In summary, as Sadie increases the neural network's capacity, the model will start overfitting, increasing the accuracy of the predictions on the training data and decreasing the model's accuracy on the test data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting With Machine Learning Algorithms"](https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/) for an introduction to overfitting and underfitting in machine learning.
+* ["How to Solve Underfitting and Overfitting Data Models"](https://allcloud.io/blog/how-to-solve-underfitting-and-overfitting-data-models/) covers several strategies to solve overfitting and underfitting.</p></details>
+
+-----------------------
+
