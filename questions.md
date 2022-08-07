@@ -5304,3 +5304,63 @@ In summary, as Sadie increases the neural network's capacity, the model will sta
 
 -----------------------
 
+## Date - 2022-08-07
+
+
+## Title - Time for tuning
+
+
+### **Question** :
+
+The team already had a machine learning model with decent results, but Pilar was sure they could do better.
+
+They enrolled in a tabular competition, finally settling on a good solution after a few days. It was now time to try and squeeze as much as possible from their model.
+
+Over the years, Pilar has used several techniques to tune her models' hyperparameters. She wanted to bring some of them in front of the team so they could all pick the best approach.
+
+**Which of the following are hyperparameter tuning strategies that the team could use?**
+
+
+### **Choices** :
+
+- The team could use a Random search to sample the search space randomly.
+- The team could use a Grid search to search through the hyperparameters exhaustively.
+- The team could use a cross-validation scheme to search for the best hyperparameters.
+- The team could manually search for the best combination of hyperparameters.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We use the term "hyperparameter" to refer to the settings we can use to control the learning process. We fix these "knobs" and "levers" before training a model. In contrast, we use "parameters" to refer to variables internal to the model whose values we estimate (learn) during the learning process using data.
+
+A good way of thinking about this:
+
+* Parameters: We learn their values during training. We do not set their values manually.
+* Hyperparameters: The settings we fix before the learning process. We cannot learn these values during training.
+
+Each model has different hyperparameters. For example, you can control the depth of a decision tree or the step size during the optimization process of a neural network.
+
+[Hyperparameter tuning](https://en.wikipedia.org/wiki/Hyperparameter_optimization) is finding the optimal parameters for a learning algorithm on a particular problem. There are many different techniques, but the simplest one is to do it manually. The team could pick the few hyperparameters they need to optimize and try different combinations of values. They will keep the best-performing model at the end of the process. Therefore, the fourth choice is correct.
+
+Manually tuning hyperparameters is not fun, and it becomes inefficient with too many hyperparameters. When working on complex problems, a better strategy is to use a search algorithm like [Grid search](https://en.wikipedia.org/wiki/Hyperparameter_optimization#Grid_search) or [Random search](https://en.wikipedia.org/wiki/Hyperparameter_optimization#Random_search).
+
+Grids search is an algorithm that searches every possible combination of hyperparameter values. As you might imagine, grid search is not a feasible technique if the search space is too large (too many hyperparameters with an extensive range of potential values.) We don't have any information about Pilar's problem, so this choice is also correct.
+
+Random search doesn't have the same problem with high-dimensional spaces. This technique searches randomly for the best combination of hyperparameters. It is one of the most popular hyperparameter tuning techniques, and Pilar will probably consider it.
+
+Finally, a [cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) scheme is a fundamental piece of the overall strategy, but it's not a way to search for optimal values. We need to validate the model results as we explore the search space and select different combinations of hyperparameters. Here is where the cross-validation scheme comes into play. By itself, cross-validation does nothing to find the optimal values.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Overview of hyperparameter tuning"](https://cloud.google.com/ai-platform/training/docs/hyperparameter-tuning-overview) is a great introduction to hyperparameters and the process to find their optimal value.
+* ["7 Hyperparameter Optimization Techniques Every Data Scientist Should Know"](https://towardsdatascience.com/7-hyperparameter-optimization-techniques-every-data-scientist-should-know-12cdebe713da) is a quick overview of some of the most popular hyperparameter tuning techniques.
+* [The Kaggle Book](https://amzn.to/3kbanRb) is a fantastic reference for those looking to participate in Kaggle.</p></details>
+
+-----------------------
+
