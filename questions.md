@@ -5364,3 +5364,60 @@ Finally, a [cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(st
 
 -----------------------
 
+## Date - 2022-08-08
+
+
+## Title - Nothing seems to work
+
+
+### **Question** :
+
+Mila started doing what others recommended: she split her dataset and trained a model on the split with most of the data. Unfortunately, her binary classification model was barely better than random chance.
+
+She augmented the dataset with synthetic examples to no avail. She experimented with a different learning rate and added momentum, but the model struggled to learn the training data.
+
+Mila knew her model was underfitting, but she didn't know what else to do.
+
+**Which of the following techniques can Mila use to prevent underfitting?**
+
+
+### **Choices** :
+
+- Mila should unconstraint her model by removing any regularization.
+- Mila should increase the network's capacity by using more layers and neurons.
+- Mila should start using Batch normalization layers.
+- Mila should start using Dropout.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We know that Mila's model is underfitting; it can't capture the relationship between her data and the target variable.
+
+Usually, a way to work around underfitting is to ensure the model has enough capacity. In other words, we want to increase the complexity of the model and remove any constraints that would prevent it from thoroughly learning.
+
+Looking at the available choices, the first two are sensible options that Mila should explore.
+
+The first choice will remove regularization constraints from the model. Regularization is a technique we can use to prevent a model from overfitting. Think of it as "breaks" we add to the model to prevent it from "memorizing" the data. Too much regularization could cause the model to start underfitting.
+
+The second choice will make the model more complex. By adding depth and width to the network, Mila will increase its capacity, giving the model a better chance to accommodate the training data appropriately.
+
+Unfortunately, there's no guarantee either one of these two options will solve Mila's problem, but they are an excellent place to start.
+
+The third choice is incorrect. [Batch normalization](https://www.analyticsvidhya.com/blog/2021/03/introduction-to-batch-normalization/) is a form of regularization, so it probably won't help Mila overcome her problem. [Dropout](https://programmathically.com/dropout-regularization-in-neural-networks-how-it-works-and-when-to-use-it/) is also a form of regularization, so it won't help Mila either.
+
+In summary, the first and second choices are the correct answers to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["How to Control Neural Network Model Capacity With Nodes and Layers"](https://machinelearningmastery.com/how-to-control-neural-network-model-capacity-with-nodes-and-layers/) is an excellent article about the effects of changing the capacity of a neural network.
+* ["A Gentle Introduction to Batch Normalization for Deep Neural Networks"](https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/) covers Batch normalization from top to bottom.
+* ["Dropout Regularization in Neural Networks: How it Works and When to Use It"](https://programmathically.com/dropout-regularization-in-neural-networks-how-it-works-and-when-to-use-it/) will give you everything you need to know about Dropout.</p></details>
+
+-----------------------
+
