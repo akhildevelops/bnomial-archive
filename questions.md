@@ -5421,3 +5421,57 @@ In summary, the first and second choices are the correct answers to this questio
 
 -----------------------
 
+## Date - 2022-08-09
+
+
+## Title - Pranking Howard
+
+
+### **Question** :
+
+Jim wants to prank Howard. They have had an on-and-off relationship for years, and Jim is looking to score some cheap points.
+
+Howard is the company's data scientist, and he's been working on a machine learning model. Jim is not an expert, but he knows enough to realize that Howard is working with decision trees.
+
+Jim wants to do something subtle that increases the complexity of the tree. He wants the model to start overfitting.
+
+**Which of the following ideas is the one most likely to make Howard's tree more complex?**
+
+
+### **Choices** :
+
+- Jim should include more samples in Howard's dataset. The larger the dataset, the more complex the resulting model will be.
+- Jim should remove some of the data that Howard is using. The smaller the dataset, the more complex the resulting model will be.
+- Jim should modify the code and increase the maximum depth of the tree. The larger this value, the more complex the model will be.
+- Jim should modify the code and decrease the maximum depth of the tree. The smaller this value, the more complex the model will be.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Jim is mean, but I trust him, and I'm sure Howard deserves it.
+
+Jim wants Howard's model to start overfitting. He is considering two different levers to accomplish it: modifying the amount of data in the dataset or modifying the maximum depth of the tree.
+
+You could argue that increasing the amount of data could potentially introduce patterns that increase the complexity of a decision tree—through samples that bring something new to the table. This, however, is not a given, so Jim should not do this.
+
+Removing data is also not a good strategy. Jim will end up with the same complexity or have a less complex tree that will start underfitting, which is the opposite of what he wants.
+
+Messing with the maximum depth, however, is a solid move. A [decision tree](https://en.wikipedia.org/wiki/Decision_tree_learning) represents particular observations about a sample in its branches and the conclusions about that item's target value as the tree's leaves. If you draw the tree, its maximum depth is a way to explain how tall the tree is.
+
+Complexity increases proportionally with the depth of the tree. If Jim increases the maximum depth in the code, the next time Howard trains the model, the tree could try to accommodate more patterns than it needs to generalize appropriately. In other words, the larger the depth of a tree, the more likely Howard's model is to overfit. The third choice is the correct answer.
+
+By the way, decreasing the maximum depth of the tree will probably result in underfitting. A less complex tree might not have enough capacity to learn the necessary patterns in the dataset.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Decision tree learning"](https://en.wikipedia.org/wiki/Decision_tree_learning) is the Wikipedia page where you can read about decision trees.
+- ["How to tune a Decision Tree?"](https://towardsdatascience.com/how-to-tune-a-decision-tree-f03721801680) is a great article talking about different ways to tune a decision tree, including the effects of setting the maximum depth hyperparameter.</p></details>
+
+-----------------------
+
