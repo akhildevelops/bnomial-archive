@@ -5529,3 +5529,57 @@ In summary, the third choice is the correct answer to this question.</p></detail
 
 -----------------------
 
+## Date - 2022-08-11
+
+
+## Title - A photography collection
+
+
+### **Question** :
+
+Audrey's love for photography is legendary.
+
+She has spent most of her life taking beautiful pictures, and after so many years, she has built an impressive collection with hundreds of photos.
+
+Audrey decided to take her art to the next level and start taking advantage of some of her deep learning knowledge. Her goal is to train a model on her collection of images to identify interesting patterns.
+
+Audrey's never done this before, and she isn't sure how to use tensors to load her entire collection of images at once in memory.
+
+**How many dimensions should Audrey use to load all of her photos at once in a tensor?**
+
+
+### **Choices** :
+
+- Audrey should use a 1-dimensional tensor.
+- Audrey should use a 2-dimensional tensor.
+- Audrey should use a 3-dimensional tensor.
+- Audrey should use a 4-dimensional tensor.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When working with images, we need to store three different "components": the height, the width, and the color depth. Color images have three color channels (one for red, one for green, and one for blue), and grayscale images have a single color channel.
+
+How many dimensions do we need to store an entire image if we don't care about colors? Assuming Audrey's pictures are of size 512 x 512, she can keep every pixel of a single image in a tensor of shape `(512, 512)`. 
+
+But even with grayscale images, we always add a dimension to store the color depth by convention. That's nice because we can use the same structure for grayscale and color images. Audrey could keep one picture in a `(512, 512, 1)` tensor if she doesn't care about color. If she does, the tensor will be `(512, 512, 3)`.
+
+Audrey needs three dimensions to store one of her photos, but she wants to load her entire collection. To do this, she needs another dimension. Assuming Audrey has 1,000 pictures, her tensor will look like `(1000, 512, 512, 3)`. 
+
+When loading images in a tensor, the order for each dimension is intentional: (samples, height, width, channels). There's a different convention where channels go in front of the dimensions of the images, but most people use them at the end.
+
+Therefore the fourth option is the correct answer to this question: Audrey needs a 4-dimensional tensor to store her collection of images.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Deep Learning with Python, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.
+* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors and practical code.</p></details>
+
+-----------------------
+
