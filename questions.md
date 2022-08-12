@@ -5583,3 +5583,114 @@ Therefore the fourth option is the correct answer to this question: Audrey needs
 
 -----------------------
 
+## Date - 2022-08-12
+
+
+## Title - Balancing costs
+
+
+### **Question** :
+
+Mariam has been working on predicting whether mechanical components need maintenance. She built a computer vision model, went through a successful pilot program, and her company is ready to start using the model in one of their warehouses.
+
+You might remember Mariam. We already talked about her journey.
+
+She ran pictures of 100 different components during the pilot program, and the model made four mistakes. The company, however, doesn't see them as equally important:
+
+* Every false-negative mistake will cost the company $5,000.
+* Every false-positive mistake will cost the company $100.
+
+**Which one of the following metrics should Mariam prioritize when evaluating her model?**
+
+
+### **Choices** :
+
+- Mariam should prioritize getting a model with high accuracy.
+- Mariam should prioritize getting a model with high precision.
+- Mariam should prioritize getting a model with high recall.
+- Mariam should prioritize getting a model with high f1 score.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>There's a critical detail here: false negatives are fifty times more expensive than false positives. Here is how the company looks at this situation:
+* Every false-negative mistake means the company won't replace a component before it breaks, so downtime will occur when the part stops working. Every time this happens, the cost will be $5,000.
+* Every false-positive mistake means that the company will have to send a technician to replace a component that is working correctly. It'll waste time, so every time this happens, the cost will be $100.
+
+Mariam needs a model that prevents false negatives. In other words, the model should be good at detecting components that need maintenance, even if it will flag a few functional ones incorrectly.
+
+Here is an idea to answer this question. We can compute the cost of two different scenarios and look at the value of each metric to decide which one points to the best model.
+
+These are the two scenarios, each one with the model making five mistakes:
+1. 100 components, 4 true positives, 91 true negatives, 3 false positives, and 2 false negatives. The cost of this scenario is $300 + $10,000 = $10,300.
+2. 100 components, 5 true positives, 90 true negatives, 2 false positives, 3 false negatives. The cost of this scenario is $200 + $15,000 = $15,200.
+
+The second scenario is much worse for the company, so we need to look at each one of the metrics and see which one would tell us that.
+
+In both cases, the model's accuracy is 95%—5 mistakes in 100 samples. If Mariam prioritizes the model's accuracy, she won't be able to tell these two scenarios apart. Therefore, the first choice is incorrect.
+
+Let's compute the [precision](https://en.wikipedia.org/wiki/Precision_and_recall#Precision) of each scenario:
+
+```
+precision = TP/(TP+FP)
+
+precision1 = 4/(4+3)
+precision1 = 4/7
+precision1 = 0.57
+
+precision2 = 5/(5+2)
+precision2 = 5/7
+precision2 = 0.71
+```
+If Mariam prioritizes the model's precision, she would incorrectly decide that the second scenario is better, which is not the case. Therefore, the second choice is incorrect.
+
+Let's compute the [recall](https://en.wikipedia.org/wiki/Precision_and_recall#Recall) of each scenario:
+
+```
+recall = TP/(TP+FN)
+
+recall1 = 4/(4+2)
+recall1 = 4/6
+recall1 = 0.66
+
+recall2 = 5/(5+3)
+recall2 = 5/8
+recall2 = 0.62
+```
+
+The recall tells Mariam that the first scenario is better than the second, which is correct. Prioritizing recall is a good strategy.
+
+And what about the [f1-score](https://en.wikipedia.org/wiki/F-score)? This metric is interesting because it looks for a balance of precision and recall. Intuitively, we know that always prioritizing recall without worrying about precision will not work. For example, imagine 10,000 components where a single one is not working. A model with 100% recall could predict that every one of the components needs maintenance, costing the company $100 for each of the 9,999 mistakes. This is not good, but would the f1-score address that problem?
+
+Let's do the math for the two scenarios we have:
+
+```
+f1-score = 2*TP/(2*TP+FP+FN)
+
+f1-score1 = 2*4/(2*4+3+2)
+f1-score1 = 8/13
+f1-score1 = 0.61
+
+f1-score2 = 2*5/(2*5+2+3)
+f1-score2 = 10/15
+f1-score2 = 0.66
+```
+
+Here, the f1-score incorrectly points to the second scenario as the best outcome. The issue is that the f1-score balances the precision and recall equally, but we need a model biased towards higher recall. We can accomplish this using β > 1 in the [fβ-score](https://machinelearningmastery.com/fbeta-measure-for-machine-learning), but that's not a valid choice for this question. 
+
+In this scenario, Mariam should prioritize the recall of her model, making the third choice the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check out ["Precision and recall"](https://en.wikipedia.org/wiki/Precision_and_recall) for a better understanding of these two metrics.
+* ["Evaluating Deep Learning Models: The Confusion Matrix, Accuracy, Precision, and Recall"](https://blog.paperspace.com/deep-learning-metrics-precision-recall-accuracy/) is a great article that puts all of these concepts together.
+- Check ["A Gentle Introduction to the Fbeta-Measure for Machine Learning"](https://machinelearningmastery.com/fbeta-measure-for-machine-learning) for an introduction to the fβ-score.</p></details>
+
+-----------------------
+
