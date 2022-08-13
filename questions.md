@@ -5694,3 +5694,57 @@ In this scenario, Mariam should prioritize the recall of her model, making the t
 
 -----------------------
 
+## Date - 2022-08-13
+
+
+## Title - Slow training
+
+
+### **Question** :
+
+The results were good, but the training process was painfully slow and inefficient. The team ran out of credits because they had to use some of the most expensive hardware to train their neural network.
+
+It was Ivy who proposed the right solution.
+
+Instead of using Batch Gradient Descent, she proposed Stochastic Gradient Descent. With a single change, they would speed up training and relieve pressure on the instances' memory. 
+ 
+**Which of the following statements is true about Stochastic Gradient Descent?**
+
+
+### **Choices** :
+
+- Stochastic Gradient Descent uses a single sample of data to compute the gradient of the cost function.
+- Stochastic Gradient Descent uses a batch of data (more than one sample but fewer than the entire dataset) to compute the gradient of the cost function.
+- Stochastic Gradient Descent uses the entire dataset to compute the gradient of the cost function.
+- Stochastic Gradient Descent determines the optimal amount of data required to compute the gradient of the cost function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Here is a simplified explanation of how Gradient Descent works: We take samples from the training dataset, run them through the model, and determine how far our results are from what we expect. We then use this difference (error) to compute how much we need to update the model weights to improve the results.
+
+A critical decision we need to make is how many samples we use to compute the gradient of the objective function. We have three choices:
+* Use a single instance of data.
+* Use all of the data at once.
+* Use some of the data.
+
+Using a single sample of data is called "Stochastic Gradient Descent" or SGD. Using all the data at once is called "Batch Gradient Descent." Finally, using some of the data—more than one sample but fewer than the entire dataset—is called "Mini-Batch Gradient Descent." 
+
+Notice that we always make a tradeoff between the accuracy of the updates and the time it takes to calculate them. Ivy moved to SGD, and the process became much faster, but she will start seeing fluctuations in her loss function.
+
+In summary, the first choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["An overview of gradient descent optimization algorithms"](https://ruder.io/optimizing-gradient-descent/index.html#gradientdescentvariants) for a deep dive into gradient descent and every one of its variants.
+* ["Gradient Descent For Machine Learning"](https://machinelearningmastery.com/gradient-descent-for-machine-learning/) is another great introduction to gradient descent.
+* ["A Gentle Introduction to Mini-Batch Gradient Descent and How to Configure Batch Size"](https://machinelearningmastery.com/gentle-introduction-mini-batch-gradient-descent-configure-batch-size/) covers Batch and Mini-Batch Gradient Descent.</p></details>
+
+-----------------------
+
