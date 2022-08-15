@@ -5807,3 +5807,57 @@ Finally, we don't split the data to improve the training process speed; we do it
 
 -----------------------
 
+## Date - 2022-08-15
+
+
+## Title - The shoe reseller
+
+
+### **Question** :
+
+Nova worked for a shoe reseller in the computer vision department. 
+
+She led the team that built their deep learning model to recognize shoes from pictures. They used a pre-trained ResNet50 as the foundation and fine-tuned it with a large dataset of shoe images.
+
+Nova's model can classify 1,000 different shoe styles, and it's pretty good!
+
+During Fashion Week, right after the model goes into production, a famous manufacturer releases a new style of their popular shoe brand.
+
+**What would happen if we showed a picture of the new shoes to Nora's model? Select everything that could occur.**
+
+
+### **Choices** :
+
+- Assuming Nora's team trained the model properly, it should classify the new style correctly.
+- The model will return an incorrect style with low confidence.
+- The model will return an incorrect style with high confidence.
+- The model will return an error because it doesn't recognize the new style.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Nora and her team trained their model on a dataset with 1,000 different classes—each class representing a particular shoe style. This is a classic supervised learning approach: you train a model to classify a sample into a group of pre-defined categories.
+
+Unfortunately, their classification model can't correctly classify a style that the team didn't use during the training process, so the first choice is not correct.
+
+The fourth choice is incorrect: the model will not return an error. [Classification models don't know what they don't know](https://twitter.com/svpino/status/1531968815063769089), so Nora's model will produce a prediction albeit an incorrect one.
+
+We are left with two choices: Would the prediction's confidence be low or high? Intuitively, it would make sense to get a low confidence result. At the end of the day, the model is trying to classify a shoe style it hasn't seen before. Unfortunately, this is not the way it works.
+
+The confidence that we get back from a classification model does not reflect how confident the model is in that prediction concerning the potential universe of possible results. That's how we think, but the "universe" of a model is limited to the categories we used to train it. In Nora's case, they need to look at a 95% confidence result for the other 999 categories, not as "the model it's 95% certain the image belongs to this particular style."
+
+Therefore, we can't predict how the model's confidence will fluctuate for a particular style—either supported or unsupported. We may get a low or high confidence result, but the prediction will be incorrect in every case. Therefore, the second and third choices are both valid.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Out-of-distribution"](https://deepchecks.com/glossary/out-of-distribution/) for a quick introduction to the problem of trying to classify samples that differ from the training data.
+* A Twitter thread covering why ["Classification models don't know what they don't know"](https://twitter.com/svpino/status/1531968815063769089).</p></details>
+
+-----------------------
+
