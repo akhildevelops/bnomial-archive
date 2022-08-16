@@ -5861,3 +5861,55 @@ Therefore, we can't predict how the model's confidence will fluctuate for a part
 
 -----------------------
 
+## Date - 2022-08-16
+
+
+## Title - Cheating on the exam
+
+
+### **Question** :
+
+Cheating is not smart, but students do it every day.
+
+The professor wasn't paying attention when somebody handed Aurora a piece of paper asking for help. They wanted to know how to configure the output layer of a neural network for different types of problems.
+
+Aurora wanted to help, and although she wasn't entirely sure, she sent them back the notes below.
+
+**Which of the following notes did Aurora get right?**
+
+
+### **Choices** :
+
+- For a regression problem, use a single neuron and no activation function.
+- For a binary classification problem, use a single neuron and a sigmoid activation function.
+- For a multi-class classification problem, use as many neurons as you have classes and a softmax activation function.
+- For a multi-label classification problem, use as many neurons as you have classes and a sigmoid activation function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Please, don't cheat in your exams. With that out of the way, every note Aurora sent was correct.
+
+When we work on [regression](https://en.wikipedia.org/wiki/Regression_analysis) problems, we want the model to output a single, continuous value. For example, imagine we want to return the predicted price of a house or the predicted highest temperature for the weekend. We need a single neuron (value) to accomplish this, and we don't need any activation function to alter that value. 
+
+For [binary classification](https://en.wikipedia.org/wiki/Binary_classification) problems, we can set up a one-neuron output layer, but we need a sigmoid activation function this time. We need two different results from binary classification models: one positive and one negative. We can do this using one value constrained between 0 and 1, and that's how a sigmoid function will help. We can then threshold the result and decide, for example, that any results equal to or greater than 0.5 is positive or negative otherwise.
+
+In [multi-class classification](https://en.wikipedia.org/wiki/Multiclass_classification) tasks, we are looking to predict the correct class out of several choices. We can set up an output layer with one neuron for each potential class to accomplish this. After running a sample through the network, the largest output value will correspond to the predicted class. A softmax activation function will transform the output values into a probability distribution of every potential class.
+
+Finally, when building [multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) models, we need an output layer where every class is independent because we can have more than one active class per sample. We can accomplish this by using one neuron per class, but this time using a sigmoid activation function instead of a softmax function. The sigmoid will individually squeeze every neuron value between 0 and 1, so we can later pick every class over the threshold as the predicted labels for a sample.
+
+Remember that the optimizer we use to train the networks is an essential difference between multi-class and multi-label classification problems. It's not enough with a different output activation function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Difference between multi-label classification and multi-class classification"](https://towardsdatascience.com/multi-label-image-classification-with-neural-network-keras-ddc1ab1afede) is an excellent article comparing these two types of problems.
+* Read the section "Activation for Output Layers" from ["How to Choose an Activation Function for Deep Learning"](https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/) for a summary of different activation functions for the output layer of neural networks.</p></details>
+
+-----------------------
+
