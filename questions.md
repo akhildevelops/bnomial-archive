@@ -5913,3 +5913,51 @@ Remember that the optimizer we use to train the networks is an essential differe
 
 -----------------------
 
+## Date - 2022-08-17
+
+
+## Title - A classification model
+
+
+### **Question** :
+
+Natalie has been a software developer for quite some time. Although her job keeps her motivated, she wants to take her career to the next level.
+
+A critical step she wants to take is introducing machine learning into her work. She started learning some of the fundamentals and is now ready to apply what she's learned.
+
+She researched one of her company's problems and learned she needed to build a supervised learning classification model. She had enough labeled data, so it seemed like a good fit.
+
+**Based on this, which of the following better describes what Natalie needs to accomplish?**
+
+
+### **Choices** :
+
+- She needs to train a model that returns a numerical prediction for each sample of data.
+- She needs to train a model that clusters the data into different groups based on their characteristics.
+- She needs to train a model to predict the class of every sample of data out of a predefined list of classes.
+- She needs to train a model that returns the optimal policy that maximizes the potential outcomes of her problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Natalie's problem requires her to predict the class of every sample of data out of a predefined list of classes. That's the goal of machine learning classification models.
+
+The first choice refers to a [regression](https://en.wikipedia.org/wiki/Regression_analysis) model. Here we want the model to output a single, continuous value. For example, imagine we want to return the predicted price of a house or the predicted highest temperature for the weekend. 
+
+The second choice refers to a [clustering](https://en.wikipedia.org/wiki/Cluster_analysis) model. These unsupervised learning techniques are helpful when we don't have labels for our data and want the algorithm to group every sample into dynamically generated groups.
+
+The fourth choice is a loose description of a [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning) approach, where we want an agent to learn the optimal policy that maximizes a reward function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["4 Types of Classification Tasks in Machine Learning"](https://machinelearningmastery.com/types-of-classification-in-machine-learning/) is an excellent introduction to classification models in machine learning.
+* For an introduction to classification models, check ["Classification in Machine Learning: What it is and Classification Models"](https://www.simplilearn.com/tutorials/machine-learning-tutorial/classification-in-machine-learning)</p></details>
+
+-----------------------
+
