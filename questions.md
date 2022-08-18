@@ -5961,3 +5961,55 @@ The fourth choice is a loose description of a [reinforcement learning](https://e
 
 -----------------------
 
+## Date - 2022-08-18
+
+
+## Title - Maximum depth
+
+
+### **Question** :
+
+One of the essential hyperparameters used in decision trees is their maximum depth.
+
+But unfortunately, that's not the only thing the classroom had to remember for their test. There were many more hyperparameters with funny names and responsibilities, and they barely had time to prepare for the exam.
+
+As soon as Isabella looked at the first section of the test, her heart dropped. It was all about decision trees, and she spent most of her time focusing on neural networks.
+
+The first question didn't seem too tricky, however.
+
+**Which of the following is the correct definition of the maximum depth of a decision tree?**
+
+
+### **Choices** :
+
+- The maximum depth of a decision tree is the length of the longest path from the tree's root to a leaf.
+- The maximum depth of a decision tree is the length of the shortest path from the tree's root to a leaf.
+- The maximum depth of a decision tree is the length of the longest path from the tree's root to an interior node.
+- The maximum depth of a decision tree is the length of the shortest path from the tree's root to an interior node.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In a few words, a [decision tree](https://en.wikipedia.org/wiki/Decision_tree_learning) represents particular observations about a sample in its branches and the conclusions about that item's target value as the tree's leaves. If you draw the tree, its maximum depth is a way to explain how tall the tree is.
+
+It makes sense that the maximum depth is the length of the longest path from the root to the bottom of the tree, but what exactly is that bottom? Is it a leaf or an internal node?
+
+Your decision tree would not be complete if you only considered internal nodes. Remember, leaves are where the conclusions of the target value live. In other words, a leaf is where the final answer lives. You can't talk about the maximum depth of a tree without considering the leaves, so that's the correct answer to this question.
+
+One more important thing to notice is that everything else being equal, a more straightforward decision tree will always generalize better than a more complex one. The maximum depth of the tree directly affects its complexity.
+
+In summary, the first choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Decision tree learning"](https://en.wikipedia.org/wiki/Decision_tree_learning) is the Wikipedia page where you can read about decision trees.
+- ["How to tune a Decision Tree?"](https://towardsdatascience.com/how-to-tune-a-decision-tree-f03721801680) is a great article talking about different ways to tune a decision tree, including the effects of setting the maximum depth hyperparameter.</p></details>
+
+-----------------------
+
