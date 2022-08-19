@@ -6013,3 +6013,55 @@ In summary, the first choice is the correct answer to this question.</p></detail
 
 -----------------------
 
+## Date - 2022-08-19
+
+
+## Title - Hiring a team
+
+
+### **Question** :
+
+The company was getting ready to build an extensive system with a machine learning model at its core, so it was time to start hiring.
+
+Jordan was one of the first. She came right off her Ph.D. to lead the creation of an automated data pipeline for the system. There was only one small problem: she didn't have industry experience, and her research work was very different.
+
+Jordan needs to build a team, but it's hard to identify the appropriate candidates without fully understanding what goes into a data pipeline.
+
+**Which of the following are some of the data processing steps that go into a data pipeline?**
+
+
+### **Choices** :
+
+- Data analysis is one of the steps of a data pipeline.
+- Data ingestion is one of the steps of a data pipeline.
+- Data preparation is one of the steps of a data pipeline.
+- Data validation is one of the steps of a data pipeline.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A critical part of any production-ready machine learning system is the data pipeline. Its goal is to collect and prepare the data we can use later to train, validate and use the model. 
+
+A data pipeline is a fully automated process. There shouldn't be any steps that require human intervention.
+
+Analyzing the data is not part of a data pipeline. During the data analysis phase, the team will define the data required by the system. This is a manual step that happens before the data pipeline is ready. During the data analysis phase, the team will make the necessary decisions to build the data pipeline. Therefore, the first option is incorrect.
+
+Data ingestion is one of the steps of a data pipeline. During this step, we ingest the data from the different data sources and transfer it to where we will store it and later process it. For example, the company may need data currently stored in spreadsheets, databases, and a few real-time sensors. The data ingestion step will get the necessary data from each place and keep them in the final location for the rest of the process.
+
+Data preparation is another essential step of a data pipeline, where we format and prepare the data before using it. For example, the company might want to standardize the format of dates collected from different sources or perform specific transformations on numerical data. 
+
+Finally, data validation is another step of a data pipeline. We can validate that the necessary data we are ingesting is present and follow the appropriate schema during this step. For example, we might need to collect a minimum number of samples daily and raise an exception during the data validation step if we don't meet that condition.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Machine Learning Data Lifecycle in Production"](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production) course in Coursera, part of the [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops).
+* ["What is a Data Pipeline"](https://hazelcast.com/glossary/data-pipeline/) is a short article explaining the high-level idea of data pipelines.</p></details>
+
+-----------------------
+
