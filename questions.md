@@ -6125,3 +6125,53 @@ In summary, the second choice is the correct answer to this question.</p></detai
 
 -----------------------
 
+## Date - 2022-08-21
+
+
+## Title - Low-bias models
+
+
+### **Question** :
+
+High bias models typically include more assumptions about the target function, while low bias models incorporate fewer assumptions about the target function. 
+
+High bias models are simpler to interpret and usually run fast, but they don't scale well to complex problems. 
+
+Juliette has already tried a few high-bias algorithms on her dataset and pushed them as far as possible. She is now ready to try something different.
+
+**Which of the following algorithms are low-bias models that Juliette can try on her problem?**
+
+
+### **Choices** :
+
+- Linear Regression
+- Decision Trees
+- Logistic Regression
+- k-Nearest Neighbors (KNN)
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Every machine learning algorithm deals with three types of errors: bias, variance, and irreducible error. We need to focus specifically on the bias error to answer this question.
+
+Here is what [Jason Brownlee](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) has to say about bias: "Bias are the simplifying assumptions made by a model to make the target function easier to learn."
+
+In other words, "bias" refers to the assumptions the model makes to simplify the process of finding answers. The fewer assumptions it makes, the less biased the model is.
+
+Nonlinear models are usually low-bias. They don't make too many assumptions about the target function, making them an excellent option for tackling complex problems. Decision Trees and k-Nearest Neighbors are examples of low-bias models.
+
+On the other hand, linear models are usually high-bias. They are easier to understand but make too many assumptions about the target function, preventing them from performing well on complex problems. Linear and logistic regression are two examples of high-bias models.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Here is Jason Brownlee's article I mentioned before: ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/).
+* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
