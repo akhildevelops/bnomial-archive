@@ -6175,3 +6175,60 @@ On the other hand, linear models are usually high-bias. They are easier to under
 
 -----------------------
 
+## Date - 2022-08-22
+
+
+## Title - Three elevators
+
+
+### **Question** :
+
+Iris's company moved downtown. After closing on a large round of funding, they leased one of the tallest buildings in the city. 
+
+The views were amazing, but the building was busy, and getting an elevator during peak hours was always a chore.
+
+Iris's floor had three elevators unequally spaced along a wall. On a dull afternoon, while waiting for their ride to come, Iris asked her friends where they would stand and wait for the elevator. She wanted to minimize the distance they had to walk when one of the elevators arrived.
+
+**Which of the following will minimize the distance they have to walk? Keep in mind the elevators are not spaced equally along the wall.**
+
+
+### **Choices** :
+
+- They should always stand in any of the elevators at both extremes of the wall.
+- They should always stand in front of the middle elevator, regardless of its location along the wall.
+- They should always stand at the mid-point between the two elevators located at the extreme.
+- They should only stand in front of the middle elevator if the distance to the other two elevators is the same. If not, they can stand in any of the extreme elevators.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>If Iris stands in front of the middle elevator, she will minimize the distance she has to walk. This holds for any distribution of the elevators along the wall—they don't need to be equally spaced.
+
+Let's break this down into the three possible situations with an example where we have elevators A, B, and C located along a wall (paraphrasing the answer on [this Stack Exchange page](https://stats.stackexchange.com/questions/355538/why-does-minimizing-the-mae-lead-to-forecasting-the-median-and-not-the-mean)):
+1. If Iris waits in front of elevator A and elevator B arrives, she will need to walk from A to B. If elevator C arrives, she must walk from A to C, passing B on her way. Here is the pattern: A→B or A→B→C.
+2. If Iris waits in front of elevator C and elevator A arrives, she will need to walk from C to A, passing B on her way. If elevator B comes, she must walk from C to B. Here is the pattern: C→B→A, or C→B.
+3. If Iris waits in front of elevator B and elevator A arrives, she will need to walk from B to A. If elevator C arrives, she must walk from B to C. She will never have to pass any other elevator. Here is the pattern: B→A or B→C.
+
+Do you see how standing in front of any of the elevators at both extremes of the wall will make you walk the same distance in multiple cases? A→B in the first case, and C→B in the second one.
+
+["Visualizing the Median as the Minimum-Deviation Location"](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.610.3019&rep=rep1&type=pdf) explains this as follows:
+
+> First, consider waiting at a median location. Then, consider "moving" to a waiting position away from this median point. If one does so, one moves away from more elevators than one moves towards, thereby increasing the sum of the distances to the elevators.
+
+A more exciting insight: we can minimize the distance by standing at the median point between elevators for any number of elevators, not only three. Notice that this median point is not necessarily in front of an elevator.
+
+Now that we know the correct answer is the second choice imagine if we wanted to minimize the total distance they have to walk from the door they enter the lobby where the elevators are located. It's no longer about the distance between the elevators, but we also need to consider the distance from the door to the elevator that arrives. [The answer may surprise you](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.610.3019&rep=rep1&type=pdf).</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Take a look at ["Visualizing the Median as the Minimum-Deviation Location"](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.610.3019&rep=rep1&type=pdf) for an in-depth analysis of this problem.
+* ["Why does minimizing the MAE lead to forecasting the median and not the mean?"](https://stats.stackexchange.com/questions/355538/why-does-minimizing-the-mae-lead-to-forecasting-the-median-and-not-the-mean) is the question that led me down this rabbit hole.</p></details>
+
+-----------------------
+
