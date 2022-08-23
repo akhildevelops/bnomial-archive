@@ -6232,3 +6232,55 @@ Now that we know the correct answer is the second choice imagine if we wanted to
 
 -----------------------
 
+## Date - 2022-08-23
+
+
+## Title - Bloody snake
+
+
+### **Question** :
+
+It's 2030, and you are playing a massive multi-player game in the Metaverse.
+
+Don't ask how you got here. You don't have time for these questions. You need to focus on staying alive.
+
+A massive snake with three heads and bloody eyes comes charging after you. It's not looking good! 
+
+You have enough breath to read a clue written on the walls at the last second: "bootstrap it, and you'll live," it says.
+
+**Where would you hide? Only one of these places will save your life:**
+
+
+### **Choices** :
+
+- Behind a tree
+- In the forest
+- In a cave
+- In a hole
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>I hope this was a fun question.
+
+As you would expect, the answer is in the clue written on the walls. "Bootstrap it, and you'll live" doesn't say much until you see the four hiding spots: A tree, a forest, a cave, and a hole.
+
+[Bootstrap aggregating](https://en.wikipedia.org/wiki/Bootstrap_aggregating), also called "bagging," is a popular machine learning ensembling technique. We usually use bagging with decision trees, and one of the hiding spots is a tree, so that could be the answer! In reality, there's an even better answer.
+
+[Random Forest](https://en.wikipedia.org/wiki/Random_forest) is an algorithm that consists of many individual decision trees. It uses bootstrap aggregating to combine these trees to reach a solution much better than the one provided by any of the individual trees.
+
+"Bootstrapping" is more closely related to Random Forest than Decision Trees, so you'll stay alive if you hide in the forest.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Bagging and Random Forest Ensemble Algorithms for Machine Learning"](https://towardsdatascience.com/understanding-random-forest-58381e0602d2) is a great introduction to bagging and Random Forest.
+* Check out ["Understanding Random Forest"](https://towardsdatascience.com/understanding-random-forest-58381e0602d2) to understand how it works and why it's effective.</p></details>
+
+-----------------------
+
