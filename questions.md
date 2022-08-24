@@ -6284,3 +6284,67 @@ As you would expect, the answer is in the clue written on the walls. "Bootstrap 
 
 -----------------------
 
+## Date - 2022-08-24
+
+
+## Title - The political reporter
+
+
+### **Question** :
+
+Aria has been working with a source for the past four weeks to get information about hospitalized patients with COVID-19.
+
+In her short career as a political reporter, she has never dealt with technical data, so imagine her surprise when she realized the information her source sent her was not in plain English.
+
+The hospital has been using a machine learning model to predict whether patients sick with COVID-19 will end up in the hospital. The report came with a bunch of numbers, and it measured the quality of the model using two weird terms: "precision" and "recall."
+
+Aria has to write her article, but first, she needs to figure out how to interpret the numbers.
+
+**Which of the following statements accurately represent what precision and recall are?**
+
+
+### **Choices** :
+
+- Precision: Among all the patients classified by the model as potential hospitalizations, the fraction that ended up in the hospital.
+- Precision: Among all the patients that ended up in the hospital, the fraction that the model correctly classified.
+- Recall: Among all the patients classified by the model as potential hospitalizations, the fraction that ended up in the hospital.
+- Recall: Among all the patients that ended up in the hospital, the fraction that the model correctly classified.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In machine learning, especially when building classification models, [precision](https://en.wikipedia.org/wiki/Precision_and_recall#Precision) and [recall](https://en.wikipedia.org/wiki/Precision_and_recall#Recall) are two of the most critical metrics we need to understand.
+
+Let's start with the definition from Wikipedia:
+
+Precision is the fraction of relevant instances among the retrieved instances, while recall is the fraction of relevant instances that were retrieved. 
+
+Using this definition, we can break down what precision is by looking at two components:
+
+1. Relevant instances: These are all patients the model predicted as positive and actually ended up in the hospital. We call these "true positive" patients.
+2. Retrieved instances: These are all the patients the model predicted would end up in the hospital. 
+
+The precision is the number of relevant instances divided by retrieved instances. We want to express how "precise" the model was: out of every patient the model predicted would end up in the hospital, how many were actually hospitalized. Looking at the available choices, the first is the correct definition of precision.
+
+Let's do the same with recall. We need two components:
+
+1. Relevant instances: These are all patients the model predicted as positive and actually ended up in the hospital. We call these "true positive" patients.
+2. Positive instances: The number of patients that ended up in the hospital.
+
+The recall is the number of relevant instances divided by the number of positive instances. In other words, we want to express the capacity of the model to find positive patients: out of every patient that ended up in the hospital, how many did the model retrieve. Looking at the choices, the fourth is the correct definition of recall.
+
+In summary, the first and fourth choices are the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check out ["Precision and recall"](https://en.wikipedia.org/wiki/Precision_and_recall) for a better understanding of these two metrics.
+* ["Precision vs Recall"](https://medium.com/@shrutisaxena0617/precision-vs-recall-386cf9f89488) is a great article covering the tradeoffs of precision and recall using a real-life example.</p></details>
+
+-----------------------
+
