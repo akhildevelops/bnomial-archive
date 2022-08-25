@@ -6348,3 +6348,53 @@ In summary, the first and fourth choices are the correct answer to this question
 
 -----------------------
 
+## Date - 2022-08-25
+
+
+## Title - Hailey's labeling approach
+
+
+### **Question** :
+
+Hailey had an excellent idea!
+
+Despite having access to a massive dataset of x-ray pictures, she didn't have too many labels. The company couldn't afford to have doctors spending their time labeling samples, so she was in a catch-22 situation: to save the doctor's time, she wanted to build a supervised learning model, but she couldn't do that without having the doctors spend more time labeling data.
+
+Hailey found a way to solve the problem: she built a model using the labels she had. Then started processing the unlabeled samples and setting aside those for which her model wasn't confident.
+
+After each round, Hailey asked doctors only to spend time labeling those low-confidence samples, after which she built a new model and repeated the process. 
+
+This approach saved the company a massive amount of money. 
+
+**How would you classify Hailey's approach?**
+
+
+### **Choices** :
+
+- Hailey's approach is a Weak Supervision technique.
+- Hailey's approach is a Reinforcement Learning technique.
+- Hailey's approach is an Unsupervised Learning technique.
+- Hailey's approach is a Semi-supervised Learning technique.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Hailey encountered a widespread problem we often face when we want to build machine learning models for companies. Sometimes, we have access to plenty of data, but labeling the dataset is time-consuming or hard to collect without a prohibitive cost.
+
+Hailey did something clever: she only asked doctors to spend time labeling images that had the most value to her model. She built a good model with a fraction of the labels that otherwise would have been necessary.
+
+We call this technique ["Active Learning"](https://essays.bnomial.com/active-learning), a semi-supervised learning technique. Hailey followed a [pool-based sampling](https://towardsdatascience.com/active-learning-in-machine-learning-525e61be16e5) approach, where she queried the pool of unlabeled samples and used the confidence of her model to decide which instances to label next.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Active Learning"](https://essays.bnomial.com/active-learning) is a short introduction to active learning and how the process works.
+* If you are serious about Active Learning, ["Active Learning Literature Survey"](https://burrsettles.com/pub/settles.activelearning.pdf) is the publication you want to read.</p></details>
+
+-----------------------
+
