@@ -6398,3 +6398,64 @@ We call this technique ["Active Learning"](https://essays.bnomial.com/active-lea
 
 -----------------------
 
+## Date - 2022-08-26
+
+
+## Title - The weird puzzle room
+
+
+### **Question** :
+
+Vivian took her kids to an escape room. They had to solve a bunch of puzzles to get out.
+
+But this room wasn't like every other room. 
+
+They found the final puzzle behind a painting hanging from the wall. Four numbered little doors. The key hid behind one of them and a losing score behind the other three.
+
+Above the doors, they found the question: "What's the optimal depth of a decision tree?"
+
+**What door will let Vivian's family out of the room?**
+
+
+### **Choices** :
+
+- The optimal value for a decision tree's depth is setting it to the number of training samples minus one.
+- The optimal value for a decision tree's depth is setting it to the logarithm of the number of training samples.
+- The optimal value for a decision tree's depth is setting it as low as we possibly can.
+- The optimal value for a decision tree's depth is setting it as high as we possibly can.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We need to revisit a few concepts and establish constraints to answer this question. How do we know a decision tree has an optimal depth?
+
+First, the depth of a decision tree is the length of the longest path from a root to a leaf. There's a tradeoff to keep in mind related to this value. Deeper trees will lead to more complex models prone to overfitting. Shallower trees will have the opposite problem: less complex models prone to underfitting. Finding the appropriate depth is critical to getting good results.
+
+To determine the optimal depth, we then need to establish how we will measure the performance of the decision tree. Since the goal is to build a model that produces good predictions, I'll assume that our goal is to find the optimal depth to get the best predictions possible on a test dataset.
+
+Let's start with the first choice that argues that we should set the depth at the number of training samples minus one. This is the maximum theoretical depth of a decision tree, but it's not the optimal value. If we make the tree this deep, we will undoubtedly overfit the training data and perform poorly on any unseen data.
+
+The second choice is also incorrect. Although this option is probably better than setting the depth to the number of samples, it will still lead to overfitting. For example, for a dataset with 1024 training samples, we will need a decision tree with 10 levels and a tree of depth 10, which requires a total of `2^10 = 1024` nodes. This choice will lead to a tree with as many nodes as samples, which will cause the tree to overfit.
+
+We can analyze the third and fourth choices together. Are we better off setting the depth of a decision tree as low or as high as possible? Let's pick two hypothetical decision trees, each producing the same results, but one deeper than the other. Which of these two models would you use?
+
+Less complex classifiers will usually generalize better than more complex ones. We should remove any non-critical or redundant sections of a decision tree, which generally leads to a much better model. [Decision tree pruning](https://en.wikipedia.org/wiki/Decision_tree_pruning) is one technique used to accomplish this.
+
+If you have two decision trees with the same predictive power in your test dataset, always pick the simpler one. Therefore, we should always set the depth as low as possible without affecting the model's predictive capabilities.
+
+In summary, the third choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["How to tune a Decision Tree?"](https://towardsdatascience.com/how-to-tune-a-decision-tree-f03721801680) is a great article talking about different ways to tune a decision tree, including the effects of setting the maximum depth hyperparameter.
+- ["Decision tree pruning"](https://en.wikipedia.org/wiki/Decision_tree_pruning) is a Wikipedia article covering pruning and its effects.
+- A great article to understand the relationship between the bias-variance tradeoff, overfitting, and under-fitting is ["How To Find Decision Tree Depth via Cross-Validation"](https://towardsdatascience.com/how-to-find-decision-tree-depth-via-cross-validation-2bf143f0f3d6).</p></details>
+
+-----------------------
+
