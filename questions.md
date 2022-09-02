@@ -6800,3 +6800,56 @@ Finally, the last choice is also incorrect. Multiplying the intersection by the 
 
 -----------------------
 
+## Date - 2022-09-02
+
+
+## Title - Stock prices
+
+
+### **Question** :
+
+George had an exciting meeting with his new client.
+
+A fund manager wants George's team to design a machine learning model that evaluates the price of stocks. The model should use publicly available information to predict the true share price of each company. 
+
+That's all the fund manager needs. He will take it from there and look deeper into under-priced stocks (where the true price is higher than the current market price.) 
+
+The model will act as a pre-filter to sort out potential companies, and the fund manager will do a more detailed analysis before deciding whether to invest in the stock. The fund manager doesn't care if there are occasional wrong predictions, even by a large margin, but he doesn't want to have too many false positives because detailed research will cost a lot of time.
+
+George is trying to decide which loss function the team should use for the model.
+
+**Which of the following loss functions do you think are suitable for this problem?**
+
+
+### **Choices** :
+
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- Binary Cross-entropy Loss
+- Huber Loss
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We don't have too much information about the problem, but the client has clear priorities regarding the errors they are willing to tolerate. Significant outliers are not a big problem because the fund manager will spot them quickly and reject them. However, they expect excellent overall performance to avoid wasting time researching unpromising stocks.
+
+With this in mind, the [Mean Absolute Error](https://en.wikipedia.org/wiki/Mean_absolute_error) (MAE) and the [Huber loss](https://en.wikipedia.org/wiki/Huber_loss) seem like better options than the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) (MSE.) The MSE penalizes high errors of the model much more than the others. This means that the model will try to learn to avoid big mistakes in the prediction, which will likely come at the cost of worse overall performance. We don't want this.
+
+On the other hand, the MAE and the Huber loss are more robust to outliers, and they will not dominate the training process. Therefore, the second and fourth choices are the correct answers.
+
+The cross-entropy loss doesn't apply to regression problems, so the third choice is also incorrect.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Regression Metrics for Machine Learning"](https://machinelearningmastery.com/regression-metrics-for-machine-learning/) for an overview of some of the most popular metrics used for regression problems.
+* ["RMSE vs MAE, which should I use?"](https://stephenallwright.com/rmse-vs-mae/) is a great summary by Stephen Allwright about the properties of these two functions and how you should think about them.
+* For more information about the Huber loss, take a look at ["Huber Loss: Why Is It, Like How It Is?"](https://www.cantorsparadise.com/huber-loss-why-is-it-like-how-it-is-dcbe47936473).</p></details>
+
+-----------------------
+
