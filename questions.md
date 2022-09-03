@@ -6853,3 +6853,47 @@ The cross-entropy loss doesn't apply to regression problems, so the third choice
 
 -----------------------
 
+## Date - 2022-09-03
+
+
+## Title - Recognizing overfitting
+
+
+### **Question** :
+
+Cora doesn't know yet what overfitting is, but most of her class doesn't talk about anything else, so she expects to find out about it at any moment.
+
+She started training models recently and would love to know how to recognize when one of her models overfit.
+
+**If you were to summarize it for Cora, in which of the following situations is a model overfitting?**
+
+
+### **Choices** :
+
+- The training loss on the model stays constant during the entire training process.
+- The model's performance on the training set is good but low on the validation set.
+- The model's performance on the training and validation sets is low.
+- The model takes an extremely long time to converge.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>If the training loss doesn't move during the training process, something is wrong, but we can't say that the model is overfitting. Overfitting is also not related to the speed of convergence. There may be multiple reasons a model takes a long time to converge, but we can't claim that a model is not converging fast enough because it's overfitting.
+
+When a model is overfitting, we should see a good performance on the training set alone. A good model should capture valuable patterns in the data and discard any noise that doesn't help with predictions, leading to good performance in both the training and validation sets. The third choice argues for low performance on both training and validation sets, which will be a way to detect underfitting.
+
+In summary, the second option is the correct answer: Cora should expect good performance on the training set but low validation performance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting With Machine Learning Algorithms"](https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/) for an introduction to overfitting and underfitting in machine learning.
+* ["How to Solve Underfitting and Overfitting Data Models"](https://allcloud.io/blog/how-to-solve-underfitting-and-overfitting-data-models/) covers several strategies to solve overfitting and underfitting.</p></details>
+
+-----------------------
+
