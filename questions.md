@@ -6947,3 +6947,57 @@ The final choice, however, is not a problem. We want every neuron to learn diffe
 
 -----------------------
 
+## Date - 2022-09-05
+
+
+## Title - Zombies taking over
+
+
+### **Question** :
+
+Every TV in the country didn't talk about anything else: zombies were finally taking over the world.
+
+But there was still hope.
+
+Adeline was part of the team dedicated to finding a cure to transform the zombies back. She wasn't a machine learning expert but knew how to build logistic regression classifiers. Her job was to categorize zombies based on data captured by field teams.
+
+**Assuming that there are five categories of zombies and that Adeline is only working with logistic regression models, how many models does she need to build to classify zombies correctly?**
+
+
+### **Choices** :
+
+- Adeline can classify every zombie correctly by building a single model.
+- Adeline can classify every zombie correctly by building 5 models.
+- Adeline can classify every zombie correctly by building 24 models.
+- Adeline cannot classify every zombie using logistic regression. She needs a multi-class classification model instead.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Adeline can solve the problem using logistic regression alone.
+
+[Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression) estimates the probability of an event occurring by outputting a single value bounded between 0 and 1. The closer the result is to zero, the less likely the event will occur, while the closer is to 1, the more likely it is. This structure makes logistic regression ideal for tackling binary or 2-class classification problems. Notice that we can formulate a binary classification task as a 2-class classification task and vice versa.
+
+Adeline needs to classify zombies into five different categories. She can use the One-vs-All method (also called "One-vs-Rest.") She will need to train five models:
+
+* Model 1: Identifying Class 1 vs. [Class 2, Class 3, Class 4, Class 5]
+* Model 2: Identifying Class 2 vs. [Class 1, Class 3, Class 4, Class 5]
+* Model 3: Identifying Class 3 vs. [Class 1, Class 2, Class 4, Class 5]
+* Model 4: Identifying Class 4 vs. [Class 1, Class 2, Class 3, Class 5]
+* Model 5: Identifying Class 5 vs. [Class 1, Class 2, Class 3, Class 4]
+
+After running the data through every one of these five models, the correct category would be the prediction from the model with the highest confidence.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check out ["Logistic Regression for Machine Learning"](https://machinelearningmastery.com/logistic-regression-for-machine-learning/) for an introduction to Logistic regression.
+- ["Essential Data Science Tips: How to Use One-Vs-Rest and One-Vs-One for Multi-Class Classification"](https://www.kdnuggets.com/2020/08/one-vs-rest-one-multi-class-classification.html) is a great reference to understand how to use the One-vs-All method for multi-class classification.</p></details>
+
+-----------------------
+
