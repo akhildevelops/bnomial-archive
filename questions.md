@@ -7001,3 +7001,62 @@ After running the data through every one of these five models, the correct categ
 
 -----------------------
 
+## Date - 2022-09-06
+
+
+## Title - Cheating with a model
+
+
+### **Question** :
+
+Skylar's model had the best performance in the entire class, but there was a problem: the results were too good to be correct. 
+
+The professor decided to review her process step by step. Skylar stood in front of the class and wrote down her process:
+
+1. Skylar loaded the entire dataset in memory.
+2. Replaced one column's missing values with the mean of the column and scaled another column using Mix-Max Scaling.
+3. She then split the dataset into a train and a test set.
+4. And finally, she trained her model.
+
+As soon as she finished, the professor knew what the issue was. 
+
+**Which of the following is the reason for the model's inflated performance?**
+
+
+### **Choices** :
+
+- Skylar loaded the entire dataset in memory. She should have loaded it in batches.
+- Skylar transformed her data before splitting the dataset. She should have split the data before transforming it.
+- Skylar used the mean of the column to impute missing values. She should have used the median instead.
+- Skylar used Min-Max Scaling to transform one of the columns. She should have applied log transformation instead.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>**Rule of thumb:** When your model's results seem too good to be true, they probably are.
+
+The problem with Skylar's model is a data leak: she transformed her dataset before splitting it. When computing the mean of a column or applying [Min-Max Scaling](https://en.wikipedia.org/wiki/Feature_scaling#Rescaling_(min-max_normalization)), Skylar used the test data, which she isn't supposed to have. 
+
+It's subtle but essential. 
+
+When doing any work with your data, ensure you only look at your train set. Test data is akin to production data: you don't have it during training time and can't make any decisions based on it.
+
+In this example, Skylar imputed missing values using the mean of the entire column, including those samples that later became part of the test set. She also used Min-Max Scaling, which uses the minimum and maximum values of the column. She leaked information from the soon-to-be test dataset into her training process in both cases.
+
+This leak caused Skylar's model to perform much better than others. She cheated without realizing it.
+
+The solution is to split the dataset before doing any transformations. Skylar should compute the training data's mean, minimum, and maximum values and use them to impute and scale the test set.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [Data Leakage in Machine Learning](https://machinelearningmastery.com/data-leakage-machine-learning/) for an introduction to data leaks and how to prevent them. 
+* The [Wikipedia page on leakages in machine learning](https://en.wikipedia.org/wiki/Leakage_(machine_learning)) covers the topic very well.</p></details>
+
+-----------------------
+
