@@ -7792,3 +7792,51 @@ Using data augmentation, Esther can reduce overfitting and help her model perfor
 
 -----------------------
 
+## Date - 2022-09-21
+
+
+## Title - Vanishing gradients
+
+
+### **Question** :
+
+Kaylee's model is not doing great.
+
+She is building a deep neural network but can't even get it to train properly.
+
+Kaylee mainly uses sigmoid as the activation function on the network's layers, so a colleague mentioned the vanishing gradient problem as a potential cause.
+
+**Assuming Kaylee's colleague is correct, which of the following statements should help the network learn?**
+
+
+### **Choices** :
+
+- Kaylee should use tanh instead of sigmoid because it doesn't suffer from vanishing gradients.
+- Kaylee should use ReLU instead of Sigmoid because it doesn't suffer from vanishing gradients.
+- Kaylee should modify her model and introduce Batch Normalization to mitigate the problem.
+- Kaylee should initialize the network weights with large values to avoid vanishing gradients.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>If the gradients of the loss function approach zero, the model will stop learning because the network will stop updating the weights. This phenomenon is known as the [Vanishing Gradient Problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem), and it's common when using the [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) and [tanh](https://www.sciencedirect.com/topics/mathematics/hyperbolic-tangent-function) activation functions in deep neural networks. Kaylee won't fix the problem by replacing sigmoid with tanh.
+
+In contrast, [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) is a way to solve the vanishing gradient problem. ReLU is much less likely to saturate, and its derivative is 1 for values larger than zero, so Kayle should look at it to replace sigmoid.
+
+[Batch normalization](https://en.wikipedia.org/wiki/Batch_normalization) is another way to mitigate the vanishing gradient problem. Suppose we have a layer that uses a sigmoid activation function. We can normalize the input to that layer to ensure that the values don't reach the edges and stay around the area where derivatives aren't too small. By modifying the input to this layer with batch normalization, Kaylee will mitigate the vanishing gradient problem.
+
+Finally, while Kaylee may suffer from the vanishing gradient problem if she uses small values to initialize the network's weights, she will have the opposite problem (exploding gradients) if she initializes the network with large values. ["Initializing neural networks"](https://www.deeplearning.ai/ai-notes/initialization/) is an excellent introduction to the importance of correct weight initialization.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["How to Fix the Vanishing Gradients Problem Using the ReLU"](https://machinelearningmastery.com/how-to-fix-vanishing-gradients-using-the-rectified-linear-activation-function/) for recommendations on how to fix the vanishing gradient problem.
+* ["Initializing neural networks"](https://www.deeplearning.ai/ai-notes/initialization/) is an excellent summary of the importance of weight initialization.</p></details>
+
+-----------------------
+
