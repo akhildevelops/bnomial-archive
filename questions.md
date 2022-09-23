@@ -7888,3 +7888,49 @@ Finally, when computing the final prediction, bagging averages out the results o
 
 -----------------------
 
+## Date - 2022-09-23
+
+
+## Title - Pooling layers
+
+
+### **Question** :
+
+Sienna realized she needed more than convolutional layers to process her image dataset.
+
+After stacking a few convolutional layers, her model started to make progress. Unfortunately, only very similar images returned positive results. Sienna discovered that her model lacked translation invariance: it was paying too much attention to the precise location of every feature.
+
+Fortunately, Sienna found out that she could use pooling layers.
+
+**Which of the following statements about pooling layers are correct?**
+
+
+### **Choices** :
+
+- During the training process, the network will learn the best configuration for the pooling layer.
+- A pooling layer with a stride of 2 will cut the number of feature maps from the previous convolutional layer in half.
+- Pooling layers create the same number of pooled feature maps.
+- Average pooling and max pooling are two of the most common pooling operations.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Pooling layers don't have any learnable parameters. When designing the model, Sienna must specify the pooling operation and configuration she wants to use. 
+
+Pooling layers work on each feature map independently and, depending on the pool size and stride, downsample these feature maps. The result is always a new set of pooled feature maps. Therefore, the second choice is incorrect, but the third is correct.
+
+Finally, Max Pooling and Average Pooling are the two most common pooling operations. Average Pooling computes the average value of each patch, while Max Pooling calculates the maximum value.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Max Pooling in Convolutional Neural Network and Its Features"](https://analyticsindiamag.com/max-pooling-in-convolutional-neural-network-and-its-features/) is a great introduction to Max Pooling.
+* Check ["A Gentle Introduction to Pooling Layers for Convolutional Neural Networks"](https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/) for more information about how pooling layers work.</p></details>
+
+-----------------------
+
