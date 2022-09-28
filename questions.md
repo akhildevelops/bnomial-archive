@@ -8133,3 +8133,48 @@ Finally, when we use data augmentation, we will propagate any of the biases alre
 
 -----------------------
 
+## Date - 2022-09-28
+
+
+## Title - Six months of data
+
+
+### **Question** :
+
+Valerie's company gave her access to their entire dataset from day one.
+
+She used six consecutive months of data: the first five months to train the model and the sixth to test it.
+
+After trying multiple times, Valerie's model performance on the training data had a large gap with the performance on the test data. The model works well with the training dataset but struggles to keep up with the test data.
+
+**Which of the following could be valid reasons for this problem?**
+
+
+### **Choices** :
+
+- Valerie's optimizer is incorrect for this particular problem.
+- Valerie is not using the correct loss function for this particular problem.
+- Valerie's model doesn't have enough complexity to capture the relevant signal from the data.
+- The training data does not come from the same distribution as the test data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Valerie is training her model on five consecutive months' worth of data and testing it with another month worth of data. If something changed during that time, Valerie might have a test set that fundamentally differs from her training data.
+
+This problem is common, and a way to approach it is to ensure the training and test data come from the same distribution. ["Adversarial validation"](https://articles.bnomial.com/adversarial-validation) is a clever technique you can use to accomplish this.
+
+None of the other three options explain a model that works with the training data but struggles with the test dataset.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Adversarial validation"](https://articles.bnomial.com/adversarial-validation) for a quick introduction to this technique.</p></details>
+
+-----------------------
+
