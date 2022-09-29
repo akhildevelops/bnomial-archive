@@ -8178,3 +8178,62 @@ None of the other three options explain a model that works with the training dat
 
 -----------------------
 
+## Date - 2022-09-29
+
+
+## Title - Nodes and connections
+
+
+### **Question** :
+
+June has just started learning about multilayer perceptrons: inputs, outputs, layers, and nodes.
+
+It's a lot for a single day of study, but June doesn't want to go back home without understanding some core ideas.
+
+She devised a simple rule: assuming she had two networks, one with more nodes than the other, this network must also have more connections. 
+
+**What do you think about June's rule?**
+
+
+### **Choices** :
+
+- June is correct: the network with more nodes will always have more connections than the one with fewer nodes.
+- June is incorrect: the network with fewer nodes will always have more connections than the one with more nodes.
+- June is incorrect: every multilayer perceptron has the same number of connections.
+- June is incorrect: either network may have more connections than the other, regardless of the number of nodes.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>June's rule is incorrect.
+
+Imagine a network with three layers:
+* The first layer with 64 nodes
+* The second layer with 8
+* The third layer with 64 nodes
+
+This network has a total of 136 nodes and 1,024 connections.
+
+The second network will have only two layers:
+* The first layer with 64 nodes
+* The second layer with 64 nodes also
+
+This network has a total of 128 nodes and 4,096 connections.
+
+Despite the first network having more nodes than the second one (136 versus 128,) the second network has more connections (4,096 versus 1,024.)
+
+Therefore, the correct answer to this question is the fourth choice.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["But what is a neural network?"](https://www.youtube.com/watch?v=aircAruvnKk) is Grant Sanderson's introduction to neural networks on YouTube. Highly recommended!
+* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen).</p></details>
+
+-----------------------
+
