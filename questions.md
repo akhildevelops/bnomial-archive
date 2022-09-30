@@ -8237,3 +8237,50 @@ Therefore, the correct answer to this question is the fourth choice.</p></detail
 
 -----------------------
 
+## Date - 2022-09-30
+
+
+## Title - Perfect balance
+
+
+### **Question** :
+
+Here is the Fβ score formula:
+
+![FBeta-Score](https://user-images.githubusercontent.com/1126730/193036770-0a37f6f7-9a5d-4be3-9b89-7018931140eb.jpg)
+
+The Fβ score lets us combine precision and recall into a single metric.
+
+We want to use this formula to balance precision and recall perfectly. 
+
+**What's the correct value for the β parameter to achieve this?**
+
+
+### **Choices** :
+
+- β = 0
+- β = 0.5
+- β = 1
+- β = 2
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Fβ score lets us combine precision and recall into a single metric. When using β = 1, we place equal weight on precision and recall. For values of β > 1, recall is weighted higher than precision; for values of β < 1, precision is weighted higher than recall.
+
+Therefore, the correct answer to this question is β = 1.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["What is the F-Score?"](https://deepai.org/machine-learning-glossary-and-terms/f-score) is a short introduction to this metric.
+* ["Micro, Macro & Weighted Averages of F1 Score, Clearly Explained"](https://towardsdatascience.com/micro-macro-weighted-averages-of-f1-score-clearly-explained-b603420b292f) is a great article covering how to compute a global F1-Score metric in multi-class classification problem.
+* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.</p></details>
+
+-----------------------
+
