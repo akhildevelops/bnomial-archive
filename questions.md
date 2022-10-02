@@ -8329,3 +8329,52 @@ This model shows a high training loss, which we expect for an underfitting model
 
 -----------------------
 
+## Date - 2022-10-02
+
+
+## Title - Useless explanation
+
+
+### **Question** :
+
+"Remove every ordinal feature. Keep the nominal ones."
+
+Those were the instructions that Brad sent Angelina. "I hate him so much," she couldn't stop thinking.
+
+Angelina's dataset had a lot of columns, and she couldn't fit it all into memory. Removing some of the columns was an excellent place to start, and since Brad had solved the problem already, she asked him.
+
+"But of course" —she kept thinking— "he couldn't have been more useless."
+
+Angelina doesn't know the difference between ordinal and nominal columns. 
+
+**Which of the following is the way forward for Angelina?**
+
+
+### **Choices** :
+
+- Angelina should remove every categorical feature whose values have a meaningful order.
+- Angelina should remove every categorical feature whose values don't have a meaningful order.
+- Angelina should remove every numerical feature but leave categorical features.
+- Angelina should remove every categorical feature but leave numerical features.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Both ordinal and nominal features refer to categorical columns. 
+
+Ordinal columns have a meaningful order. For example, you could have a feature representing a person's economic status with three possible values: "low," "medium," and "high." Notice how there's a clear order among these values: "low" comes first, then "medium," and finally "high." 
+
+Compare this with a nominal variable that doesn't have a meaningful order between values. For example, a feature representing a "color" will not have any discernible order.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Nominal, ordinal, or numerical variables?"](https://s4be.cochrane.org/blog/2015/07/24/nominal-ordinal-numerical-variables/) to understand the difference between different types of features.</p></details>
+
+-----------------------
+
