@@ -8378,3 +8378,47 @@ Compare this with a nominal variable that doesn't have a meaningful order betwee
 
 -----------------------
 
+## Date - 2022-10-03
+
+
+## Title - Date of sale
+
+
+### **Question** :
+
+When Kylie started working for Nike, she didn't believe her first project was at the core of their sales process.
+
+She found a team working on a machine learning model for about a year with mediocre results. After a couple of weeks, Kylie proposed to do some feature engineering around a feature representing the sale date to help the model improve its predictions.
+
+**Which of the following are examples of feature engineering techniques that Kylie could do to improve the model?**
+
+
+### **Choices** :
+
+- Replacing the feature representing the date of the sale with three separate columns for the year, month, and day.
+- Replacing the feature representing the date of the sale with a single value containing the number of seconds since the year started.
+- Replacing the feature representing the date of the sale with a single value that contains the number of the month.
+- Keeping the date feature untouched and adding a new column representing the number of samples sold during the same month.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We don't know which of these options will be the most useful, but every one of them is an example of feature engineering that could help the model make better predictions.
+
+The first three options are examples of how we can derive new features from a column in our dataset. In this case, Kylie can turn a date field into three components or simplify it by replacing it with a single value that keeps the necessary information for the model. Notice that, in these three cases, Kylie is not introducing anything new. Instead, she is transforming the data so the model can use it.
+
+The fourth option is an example of frequency encoding, where Kylie counts how many products have been sold every month and creates a meta-feature with this information.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.
+* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.</p></details>
+
+-----------------------
+
