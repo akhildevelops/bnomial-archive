@@ -8474,3 +8474,50 @@ Updating the model during every iteration is computationally expensive, so using
 
 -----------------------
 
+## Date - 2022-10-05
+
+
+## Title - Tossing a fair coin
+
+
+### **Question** :
+
+I have a fair coin and want to play a quick game with you.
+
+I'll give the coin to you, and I want you to flip it five times.
+
+Let's image two different scenarios: one where you get the coin to land five consecutive times on heads, and the second where the coin lands four straight times on heads, then on tails.
+
+**Which of those two scenarios is most likely to happen?**
+
+
+### **Choices** :
+
+- Getting five straight heads is more likely than getting four heads followed by tails.
+- Getting four heads followed by tails is more likely than getting five consecutive heads.
+- Getting four heads followed by tails is equally likely than getting five successive heads.
+- If the coin is fair, this is a random event, and we can't say which one is more likely than the other.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Both scenarios are equally likely to happen with a probability of `1/32`.
+
+This scenario is an example of the Gambler's Fallacy, the irrational belief that prior outcomes in a series of events affect the probability of a future outcome, even though the events are independent and identically distributed. 
+
+Here is a quote from the [Gambler's Fallacy](https://en.wikipedia.org/wiki/Gambler%27s_fallacy) Wikipedia page: 
+
+> If after tossing four heads in a row, the next coin toss also came up heads, it would complete a run of five successive heads. Since the probability of a run of five successive heads is `1/32`, a person might believe that the next flip would be more likely to come up tails rather than heads again. This is incorrect and is an example of the gambler's fallacy. The event "5 heads in a row" and the event "first 4 heads, then a tails" are equally likely, each having probability `1/32`.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Gambler's Fallacy"](https://en.wikipedia.org/wiki/Gambler%27s_fallacy) on Wikipedia for an introduction to the situation described in this question.</p></details>
+
+-----------------------
+
