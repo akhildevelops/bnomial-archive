@@ -8624,3 +8624,51 @@ The first choice is the only correct solution to this question. For a more forma
 
 -----------------------
 
+## Date - 2022-10-08
+
+
+## Title - False Negatives
+
+
+### **Question** :
+
+Here is the picture of a confusion matrix we generated after evaluating a model in a dataset with 100 samples:
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/186962046-7c076163-5b58-442f-9641-c09f5cf71003.jpg)
+
+Assume that class A represents the outcomes of the model we are interested in finding.
+
+**What's the total of False Negatives on this evaluation round?**
+
+
+### **Choices** :
+
+- False Negatives are class A samples the model predicted as class B, so the answer is 7.
+- False Negatives are class B samples the model predicted as class A, so the answer is 13.
+- False Negatives are class A samples the model predicted as class A, so the answer is 52.
+- False Negatives are class B samples the model predicted as class B, so the answer is 28.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We are interested in samples from class A which means we will treat class A as our "Positive" samples and class B as our "Negative" samples.
+
+If we replace the classes in the confusion matrix with Positive and Negative instead of "A" and "B," it's much easier to reason about the model's number of False Negatives:
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/186963826-ec29e2b5-c065-4569-9542-712acab129da.jpg)
+
+False Negatives are those samples that we expect to be Positive (class A), but the model predicted as Negative (class B.) Therefore, the correct answer to the question is 7. You can see every combination in the image above.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.
+* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.</p></details>
+
+-----------------------
+
