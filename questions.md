@@ -9083,3 +9083,55 @@ Therefore, the model's recall at predicting class `B` is 68%.</p></details>
 
 -----------------------
 
+## Date - 2022-10-17
+
+
+## Title - Logistic regression exercices
+
+
+### **Question** :
+
+There were four different exercises, but Jade only knew how to use logistic regression.
+
+Luckily, Jade only needed to choose one exercise and solve it. But she needs to ensure she can find a solution using logistic regression; she doesn't have time to learn anything else.
+
+**Select every exercise that Jade could solve using logistic regression?**
+
+
+### **Choices** :
+
+- The first exercise is a regression problem.
+- The second exercise is a binary classification problem.
+- The third exercise is a 2-class classification problem.
+- The fourth exercise is a 3-class classification problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Fortunately for Jade, she can tackle the second, third, and fourth exercises.
+
+[Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression) estimates the probability of an event occurring by outputting a single value bounded between 0 and 1. The closer the result is to zero, the less likely the event will occur, while the closer is to 1, the more likely it is. This structure makes logistic regression ideal for tackling binary or 2-class classification problems. Notice that we can formulate a binary classification task as a 2-class classification task and vice versa.
+
+Jade can also work on the 3-class classification exercise using the One-vs-All method (also called "One-vs-Rest.") She can train three different logistic regression models:
+
+* Model 1: Identifying Class 1 vs. [Class 2, Class 3]
+* Model 2: Identifying Class 2 vs. [Class 1, Class 3]
+* Model 3: Identifying Class 3 vs. [Class 1, Class 2]
+
+The final result would be the prediction from the model with the highest confidence.
+
+Jade should stay away from the first exercise. Logistic regression will not help her solve a regression problem.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check out ["Logistic Regression for Machine Learning"](https://machinelearningmastery.com/logistic-regression-for-machine-learning/) for an introduction to Logistic regression.
+- ["Essential Data Science Tips: How to Use One-Vs-Rest and One-Vs-One for Multi-Class Classification"](https://www.kdnuggets.com/2020/08/one-vs-rest-one-multi-class-classification.html) is a great reference to understand how to use the One-vs-All method for multi-class classification.</p></details>
+
+-----------------------
+
