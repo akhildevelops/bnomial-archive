@@ -9135,3 +9135,52 @@ Jade should stay away from the first exercise. Logistic regression will not help
 
 -----------------------
 
+## Date - 2022-10-18
+
+
+## Title - Scrubbing movies
+
+
+### **Question** :
+
+Over the years, Brianna's agency pivoted to work for big Hollywood studios. They scrubbed early releases looking for mistakes and gathering information to determine the potential ratings that a movie would get.
+
+But watching every hour of every film didn't scale, so they used an active learning approach to only select critical scenes for their team to review. 
+
+They created a machine learning model to predict the ratings. They trained this model on a few randomly selected frames from each movie, processed the entire video, and used the output predictions to decide which scenes to review next. They retrained the model with the new labels and repeated several more iterations.
+
+Thanks to this process, the team reduced the review time by more than 60 percent.
+
+**Which of the following is the team's criterion to select which scenes they will manually review after each iteration?**
+
+
+### **Choices** :
+
+- The team selects any scene their model predicts with high confidence.
+- The team selects any scene their model predicts with low confidence.
+- The team selects any scenes that the model predicts correctly.
+- The team selects any scenes where the model makes a mistake.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Active learning](https://articles.bnomial.com/active-learning) is a learning technique that allows us to build a better-performing machine learning model using fewer training labels by strategically choosing the samples to train the model.
+
+There are many ways to select which scenes will be better for the model, but in summary, we want to strategically choose those that will provide the most value to the model.
+
+The model returns the predicted ratings and the confidence in those predictions. High-confidence samples aren't a challenge for the model, and the amount of information the team will get from labeling them is low. Conversely, low-confidence samples indicate that the model needs help, so the team should focus their time exclusively on them.
+
+Notice that the team doesn't know which mistakes the model makes unless they manually review each scene. Doing this will defeat the purpose of reducing the time they take reviewing footage. They should only rely on the prediction confidence to decide what portions of the video they should consider.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Active Learning"](https://articles.bnomial.com/active-learning) is a short introduction to active learning and how the process works.</p></details>
+
+-----------------------
+
