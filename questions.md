@@ -9521,3 +9521,57 @@ Survivorship bias seriously compromises our ability to determine the odds of som
 
 -----------------------
 
+## Date - 2022-10-26
+
+
+## Title - Model structures
+
+
+### **Question** :
+
+Nothing bothered Josie more than trying to learn something new without first looking at practical examples. 
+
+The professor knew Josie well, so he wasn't surprised when she stood up with four different scenarios during his presentation about Recurrent Neural Networks.
+
+Her question was straightforward but made everyone think:
+
+**Which of the following scenarios can you model using a Recurrent Neural Network?**
+
+
+### **Choices** :
+
+- A model that takes a fixed-size vector as the input and outputs a sequence of vectors.
+- A model that takes a sequence of vectors as the input and outputs a fixed-size vector.
+- A model that takes a sequence of vectors as the input and outputs a sequence of vectors.
+- A model that takes a fixed-size vector as the input and outputs a fixed-sized vector.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Recurrent Neural Networks](https://en.wikipedia.org/wiki/Recurrent_neural_network) (RNNs) have several advantages over vanilla neural networks. One that helps answer this question is their ability to use sequences of vectors, both as their input and output.
+
+A feed-forward network, for example, is limited to taking a fixed-size input vector and outputting another fixed-size vector. Unfortunately, this characteristic limits their usefulness.
+
+Generating an image caption is an example of a model that requires a fixed-size vector as its input (the image) and a sequence of vectors as the output (the generated caption.) 
+
+Sentiment analysis is an example of a model that takes a sequence of vectors as its input (the text) and outputs a fixed-size vector (a numerical value indicating the sentiment.)
+
+To build a model capable of translating text from one language to another, we could use a sequence of vectors as the input (the original text) and output another sequence of vectors (the translation.)
+
+Finally, we don't need an RNN to build a model that takes a fixed-size vector as its input and output, but that doesn't mean that RNNs don't support this structure. [Here is an example](https://arxiv.org/abs/1412.7755) using an RNN to process a picture (fixed-size vector) and outputs the number on the image (fixed-size vector.)
+
+In summary, we could build an RNN model with any structures listed in this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["The Unreasonable Effectiveness of Recurrent Neural Networks"](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy for the motivation behind Recurrent Neural Networks.
+* ["An Introduction To Recurrent Neural Networks And The Math That Powers Them"](https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/) is an excellent introduction to Recurrent Neural Networks.</p></details>
+
+-----------------------
+
