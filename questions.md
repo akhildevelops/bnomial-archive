@@ -9774,3 +9774,52 @@ Following the last information we have, for her use case, Maria should use Batch
 
 -----------------------
 
+## Date - 2022-10-31
+
+
+## Title - Encoding features
+
+
+### **Question** :
+
+After looking at the data she got from her client, Bailey knew she had a lot of work in front of her.
+
+Many features were categorical, and some had a very high cardinality. Baily planned to use a neural network to process everything, so she had to encode every column.
+
+**Which of the following encoding techniques could Bailey use to replace the categorical features of her dataset?**
+
+
+### **Choices** :
+
+- Label encoding
+- Ordinal encoding
+- One-hot encoding
+- Target encoding
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Every option is a valid encoding technique.
+
+Label encoding replaces each category with a consecutive number starting from 0. We can use Label encoding for nominal variables, where order doesn't matter. For example, "cloudy," "rainy," and "sunny."
+
+On the other hand, Ordinal encoding works similarly to Label encoding, but we use it when the order matters. For example, "first," "second," and "third."
+
+One-Hot encoding creates a new feature for each unique value of the original categorical variable. For example, a "weather" feature with three values will get us three new features, one for each value of the original "weather" column. 
+
+Finally, Target encoding helps process categorical features with high cardinality. If we use one-hot encoding on a column with too many different values, we will end up with a sparse representation that will be cumbersome. Instead, target encoding replaces the categories of a column with the average target value of all data points belonging to that category.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["6 Ways to Encode Features for Machine Learning Algorithms"](https://towardsdatascience.com/6-ways-to-encode-features-for-machine-learning-algorithms-21593f6238b0) to see some of these encoding techniques in action.
+* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.
+* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.</p></details>
+
+-----------------------
+
