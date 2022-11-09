@@ -10216,3 +10216,51 @@ Updating the model during every iteration is computationally expensive, so using
 
 -----------------------
 
+## Date - 2022-11-09
+
+
+## Title - Divisible numbers
+
+
+### **Question** :
+
+Lilly needs to pick a number divisible by 3 or by 7.
+
+She can multiply them and use 21, but she needs to pick one number that's not larger than 20.
+
+**Assuming Lilly selects a random number between 1 and 20, what's the probability it will be divisible by 3 or 7?**
+
+
+### **Choices** :
+
+- The probability is 12%
+- The probability is 35%
+- The probability is 40%
+- The probability is 56%
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's assume that A is the event where Lilly selects a number divisible by 3, and B is where her number is divisible by 7. We want to find the probability of `A u B`, which denotes the event where Lilly selects a number divisible by 3 or 7.
+
+The numbers divisible by 3 are 3, 6, 9, 12, 15, and 18. The numbers divisible by 7 are 7 and 14. Since the intersection of these two sets is empty, we know that events A and B are mutually exclusive, therefore:
+
+```
+P(A u B) = P(A) + P(B)
+P(A u B) = 6/20 + 2/20
+P(A u B) = 8/20
+P(A u B) = 40%
+```</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Cartoon Guide to Statistics_](https://amzn.to/3eg9iIo) is a fun and instructive introduction to probabilities and statistics.</p></details>
+
+-----------------------
+
