@@ -10362,3 +10362,49 @@ A simple technique to fix this issue is [Early stopping](https://articles.bnomia
 
 -----------------------
 
+## Date - 2022-11-12
+
+
+## Title - Increasing lambda
+
+
+### **Question** :
+
+It's time for London to regularize her Linear Regression model. 
+
+She is getting great results on the training data, but her model is overfitting: London's validation error is too high.
+
+But London doesn't know exactly how to use the lambda (λ) parameter that controls the regularization on her model, so she decided to increase it and see what happens.
+
+**Which of the following will eventually happen as London continuously increases the value of λ?**
+
+
+### **Choices** :
+
+- London's model will eventually underfit, and the validation error will increase.
+- London's model will eventually overfit, and the validation error will increase.
+- London's model will eventually underfit, and the validation error will decrease.
+- London's model will eventually overfit, and the validation error will decrease.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>London can control the model's regularization using the lambda (λ) parameter. She can tune this parameter to decide how much she wants to penalize the model's flexibility. 
+
+Increasing the value of λ will reduce the value of the coefficients, thus reducing the variance of the model. 
+
+Since London's model is overfitting, reducing the variance is a good step. As the value of λ increases, the model will start losing essential information, and its bias will increase, leading to underfitting and a higher validation error.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Regularization in Machine Learning"](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a) for a detailed explanation of how regularization works.
+* ["Fighting Overfitting With L1 or L2 Regularization: Which One Is Better?"](https://neptune.ai/blog/fighting-overfitting-with-l1-or-l2-regularization) will give you a complete introduction to L1 and L2 regularization.</p></details>
+
+-----------------------
+
