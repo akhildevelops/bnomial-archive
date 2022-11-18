@@ -10653,3 +10653,55 @@ In this case, the output layer uses a sigmoid activation function:
 
 -----------------------
 
+## Date - 2022-11-18
+
+
+## Title - Sparse labels
+
+
+### **Question** :
+
+Evie was reading the code in an [online article](https://articles.bnomial.com/the-wrong-batch-size-is-all-it-takes) and noticed that the author used Keras' `SparseCategoricalCrossentropy` as the loss function to train the neural network:
+
+```
+model.compile(
+    optimizer=SGD(learning_rate=0.01), 
+    loss="sparse_categorical_crossentropy", 
+    metrics=["accuracy"]
+)
+```
+
+Evie was familiar with the general concept, but she wasn't sure how this was different from the regular `CategoricalCrossentropy.`
+
+**When should you use `SparseCategoricalCrossentropy` instead of `CategoricalCrossentropy`?**
+
+
+### **Choices** :
+
+- When the labels in the dataset are integer values.
+- When the labels in the dataset are one-hot encoded.
+- When the labels in the dataset are categorical values.
+- When the labels in the dataset have a lot of sparse values.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Keras' `SparseCategoricalCrossentropy` computes the cross-entropy loss between the labels and predictions. It works when the labels in the dataset are integer values, for example, `1`, `2`, and `3`.
+
+Keras' `CategoricalCrossentropy`, on the other hand, has the same function but works when the labels in the dataset are one-hot encoded, for example, `[1, 0, 0]`, `[0, 1, 0]`, and `[0, 0, 1]`.
+
+The [article](https://articles.bnomial.com/the-wrong-batch-size-is-all-it-takes) that Evie saw generates a random dataset and assigns an integer to each of the three classes. That's the reason the network uses a `sparse_categorical_crossentropy` loss.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Here is Keras' [SparseCategoricalCrossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/losses/SparseCategoricalCrossentropy) and [CategoricalCrossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy) documentation.
+* ["The wrong batch size is all it takes"](https://articles.bnomial.com/the-wrong-batch-size-is-all-it-takes) is the article that inspired this question.</p></details>
+
+-----------------------
+
