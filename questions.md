@@ -10753,3 +10753,44 @@ False Positives are those samples that we expect to be Negative (class B), but t
 
 -----------------------
 
+## Date - 2022-11-20
+
+
+## Title - Fastest hit
+
+
+### **Question** :
+
+Freya finished her first trial competition for the Olympics. Her hit was the fastest she's ever run!
+
+After finishing every hit, the judges computed the final scores. Freya's trainer mentioned that the mode time was 25 seconds!
+
+**Which of the following is the correct interpretation of the trainer's comment?**
+
+
+### **Choices** :
+
+- None of the runners ran faster than 25 seconds.
+- Anyone who ran in 26 seconds was below average.
+- More runners ran in 25 seconds than any other time.
+- Anyone who ran in 24 seconds was above average.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The mean, median, and mode are different ways to measure the center of a dataset. Each of these metrics tries to summarize a set of values using a single number.
+
+The mode of a dataset represents the most frequent number. The correct interpretation of Freya's trainer comment is that 25 seconds was the most common time among all runners.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Mean Median Mode: What They Are, How to Find Them"](https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-median-mode/) for a complete explanation of the Mean, Median, and Mode.</p></details>
+
+-----------------------
+
