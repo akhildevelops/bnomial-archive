@@ -10891,3 +10891,53 @@ Conversely, the closer the model performs to random chance, the worse it is at t
 
 -----------------------
 
+## Date - 2022-11-23
+
+
+## Title - Something wrong
+
+
+### **Question** :
+
+"There's something wrong with your network."
+
+That was the start of a message Camille received from her friend. She posted the plot of a neural network training loss online, and Camilla's friend reached out to let her know.
+
+Camille is using gradient descent for the first time, so she appreciated the help. 
+
+"Do you see what happened around the ninety epoch? The loss increases for a moment before coming back down again until the end. You don't want that,"—concluded the message.
+
+**What would you do if you were in Camille's shoes?**
+
+
+### **Choices** :
+
+- Camille should decrease the learning rate. That should stop the loss from increasing during training.
+- Camille should increase the learning rate. That should stop the loss from increasing during training.
+- Camille should use Early Stopping at around the ninety epoch.
+- Camille shouldn't do anything because her network has no problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Gradient descent moves downhill on average, so a network that learns appropriately should see the loss decrease over the training session. However, individual updates can move in the opposite direction, causing the loss to fluctuate up and down.
+
+Camille's plot shows the loss increasing momentarily, but it immediately starts decreasing. That's normal, and Camille shouldn't worry about it.
+
+Since the training process seems to be working correctly, modifying the learning loss might improve the results, but there's nothing Camille needs to fix. If she uses [Early Stopping](https://articles.bnomial.com/early-stopping), she will prevent the network from improving further.
+
+In summary, Camille shouldn't do anything at this point.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["An overview of gradient descent optimization algorithms"](https://ruder.io/optimizing-gradient-descent/index.html#gradientdescentvariants) for a deep dive into gradient descent and every one of its variants.
+* Check ["Early Stopping"](https://articles.bnomial.com/early-stopping) for an introduction to one of the most effective, easy-to-implement regularization techniques when training machine learning models.</p></details>
+
+-----------------------
+
