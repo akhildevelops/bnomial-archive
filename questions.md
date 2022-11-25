@@ -10982,3 +10982,71 @@ Evangeline is working with a single feature, so _d_ = 1. Therefore, in this case
 
 -----------------------
 
+## Date - 2022-11-25
+
+
+## Title - Basic components
+
+
+### **Question** :
+
+Dakota is trying to understand how neural networks work from their most basic components. She has one neuron with two input values, `x1` and `x2`, and uses the tanh activation function. 
+
+Dakota initialized the network with weights `w1 = -3`, `w2 = 1`, and the bias term with `6` and used `x1 = 2` and `x2 = 0` as the input values.
+
+**Assuming Dakota wants to increase the value of the output, how should she modify the weights?**
+
+
+### **Choices** :
+
+- Dakota should increase the value of `w1`
+- Dakota should decrease the value of `w1`
+- Dakota should increase the value of `w2`
+- Dakota should decrease the value of `w2`
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The first important thing we should notice is that we are passing the value 0 as the second input (`x2`) of the neuron. That means that `w2` will not influence this neuron's output.
+
+To determine whether we should increase or decrease the value of `w1` we could look at the expression to compute the output of the neuron:
+
+```
+output = tanh(x1 * w1 + x2 * w2 + b)
+ ```
+
+Since `x2 = 0`, we can simplify the expression:
+
+```
+output = tanh(x1 * w1 + b)
+```
+
+Let's substitute the initial values:
+
+```
+output = tanh(2 * -3 + 6)
+output = 0
+```
+
+We know that the neuron's output is zero with the initial values, and we want to increase it by modifying the value of `w1`. 
+
+The tanh function returns a positive value for any number greater than 0 and a negative value for any number less than 0. Therefore, we want to modify the value of `w1` to make the input of tanh a positive value, which we can accomplish by increasing `w1.`
+
+We can also arrive at the same result by computing the gradients of the weights. Here is how you could do that using PyTorch:
+
+![Example](https://user-images.githubusercontent.com/1126730/196778961-5d44438f-de9c-446a-8274-e03eb27beff4.png)
+
+If you run the above code, the `w1`'s gradient will be `2.0`, and `w2`'s gradient will be zero, corroborating that we need to modify `w1` with a positive value, and `w2` will not influence the output.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The inspiration for this question comes from Andrej Karpathy's video ["The spelled-out intro to neural networks and backpropagation"](https://www.youtube.com/watch?v=VMj-3S1tku0).</p></details>
+
+-----------------------
+
