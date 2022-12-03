@@ -11434,3 +11434,48 @@ Finally, Posterior encoding is not an encoding technique at the time of this wri
 
 -----------------------
 
+## Date - 2022-12-03
+
+
+## Title - High training and testing
+
+
+### **Question** :
+
+There's not a lot of context for you other than the following chart showing the training and testing losses of a machine learning model:
+
+![Training and Testing Loss Chart](https://user-images.githubusercontent.com/1126730/188513012-1ec37e8e-8c1d-46b9-bff7-d01bedf269a0.jpg)
+
+As you can see, after finishing training, both losses are high.
+
+**What's a reasonable conclusion about this machine learning model?**
+
+
+### **Choices** :
+
+- Your model is overfitting.
+- Your model is underfitting.
+- Your model is either overfitting or underfitting, but you can't tell.
+- Your model is working fine.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A good model should capture valuable patterns in the data and discard any noise that doesn't help with predictions. An overfitting model will fit that noise. An underfitting model will not capture the relevant patterns in the dataset. 
+
+An overfitting model should not have any problems with the training data but stumble with the testing data. Therefore, we should expect a low training loss and a high testing loss. An underfitting model should struggle with the training and testing datasets, so both of its losses should be high.
+
+This model shows high training and testing losses, which we expect from an underfitting model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.</p></details>
+
+-----------------------
+
