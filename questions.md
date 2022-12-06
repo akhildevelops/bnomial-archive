@@ -11571,3 +11571,46 @@ Since none of the other choices are possible, this symmetry tipped Piper about t
 
 -----------------------
 
+## Date - 2022-12-06
+
+
+## Title - Halting training
+
+
+### **Question** :
+
+Kim is recording a YouTube video where she wants to explain how early stopping works when training a neural network.
+
+The fundamental insight she wants her audience to understand is how the technique decides the exact moment it needs to halt the training process.
+
+**Assuming that Kim will use the validation loss as the metric to watch, which of the following is the correct way to configure early stopping?**
+
+
+### **Choices** :
+
+- The training process should stop once the validation loss has increased for several consecutive iterations.
+- The training process should stop once the validation loss has decreased for several successive iterations.
+- The training process should stop once the validation loss hits its maximum value.
+- The training process should stop once the validation loss decreases from its immediate previous value.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Kim is using the validation loss of the model to explain how [early stopping](https://articles.bnomial.com/early-stopping) works. When training a model, its validation loss will decrease as the model learns, but it will increase as soon as it starts overfitting. The goal when using early stopping is to catch this reversal and halt the training process.
+
+The second and third choices argue about the trigger happening when the validation loss decreases, but that's the opposite of what we want. While the validation loss drops, everything is fine, and we should let the model train. When the validation loss hits its maximum value, it's too late to stop the training process, so the second choice is also incorrect. 
+
+The correct answer is the first choice: early stopping should halt the training process as soon as the validation loss has increased for several consecutive iterations.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check ["Early stopping"](https://articles.bnomial.com/early-stopping) for an introduction to one of the most effective, easy-to-implement regularization techniques when training machine learning models.</p></details>
+
+-----------------------
+
