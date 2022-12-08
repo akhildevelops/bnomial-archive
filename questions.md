@@ -11663,3 +11663,47 @@ Target encoding is another technique that helps process categorical features wit
 
 -----------------------
 
+## Date - 2022-12-08
+
+
+## Title - Choosing a project
+
+
+### **Question** :
+
+Elsie wants to practice what she studied about Recurrent Neural Networks (RNN).
+
+She is a practical person, so she wants to choose a project where she can use an RNN. There are several options.
+
+**Which of the following projects do you think Elsie could choose to practice what she learned about RNNs?**
+
+
+### **Choices** :
+
+- Predict the sales of her company's main product.
+- Determining the safety of attachments sent by customers in their email correspondence.
+- Transcribing handwritten correspondence from customers.
+- Transcribing voicemails from customers.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A [recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network) (RNN) is an artificial neural network that uses sequential or time series data. Their main difference from traditional networks is their ability to take information from prior inputs to influence the current input and output.
+
+Because of the nature of written text and speech, Elsie should pick any of the transcription problems. Handwritten text and speech are sequential, making them ideal for an RNN. RNN models are heavily used in natural language processing and speech recognition. 
+
+Predicting sales and classifying email attachments don't seem like a good application of RNNs.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Recurrent Neural Networks"](https://www.ibm.com/cloud/learn/recurrent-neural-networks) for a description of what they are and how they work.
+* ["An Introduction To Recurrent Neural Networks And The Math That Powers Them"](https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/) is a deeper dive into RNNs.</p></details>
+
+-----------------------
+
