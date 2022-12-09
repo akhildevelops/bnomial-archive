@@ -11707,3 +11707,48 @@ Predicting sales and classifying email attachments don't seem like a good applic
 
 -----------------------
 
+## Date - 2022-12-09
+
+
+## Title - Trigger metric
+
+
+### **Question** :
+
+Rhea is building a multi-class classification neural network and doesn't have too much time to regularize it.
+
+Instead, she wants to keep her model as unconstrained as possible and use early stopping as her regularization technique. She knows early stopping is simple to implement and very effective.
+
+Rhea needs to decide how to configure it correctly. Specifically, she must decide which metric to watch to trigger early stopping.
+
+**From the list below, what options could Rhea consider to configure early stopping for her model?**
+
+
+### **Choices** :
+
+- Use the training loss as the metric to watch.
+- Use the accuracy on the training set as the metric to watch.
+- Use the validation loss as the metric to watch.
+- Use the accuracy on the validation set as the metric to watch.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Early stopping](https://articles.bnomial.com/early-stopping) halts the training process as soon as overfitting starts. It watches a pre-configured metric to determine the appropriate time.
+
+Rhea shouldn't use the training set to decide whether her model is overfitting. As she trains for longer, the loss and accuracy on her training set will move continuously in the right direction. Instead, measuring the model's performance on a separate, hold-out validation set is the right approach.
+
+Rhea could use the validation loss to halt the training process. When training a model, its validation loss will decrease as the model learns, but it will increase as soon as it starts overfitting. The model's accuracy could also work as a trigger because it will increase while the model learns but decrease as quickly as it begins overfitting.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check ["Early stopping"](https://articles.bnomial.com/early-stopping) for an introduction to one of the most effective, easy-to-implement regularization techniques when training machine learning models.</p></details>
+
+-----------------------
+
