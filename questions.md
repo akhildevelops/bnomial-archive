@@ -11840,3 +11840,44 @@ There are 45 chips in the bag, 25 of which are blue. Therefore, the probability 
 
 -----------------------
 
+## Date - 2022-12-12
+
+
+## Title - KNN's summary
+
+
+### **Question** :
+
+Kaia has never worked with k-Nearest Neighbors (KNN) before, but that was her teammates' suggestion. 
+
+She decided to do some research and look into how KNN works.
+
+**Here is the summary she put together. Which of the following are correct statements about KNN?**
+
+
+### **Choices** :
+
+- KNN is considered an unsupervised learning algorithm.
+- KNN stores the entire dataset in memory to make a prediction.
+- KNN does not create a predictive model during training time.
+- KNN makes predictions on the fly by calculating the similarity between a sample and the observations in the dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>k-Nearest Neighbors (KNN) is a supervised learning algorithm that doesn't create a predictive model from a training dataset to make predictions. In KNN, there's no need for a training phase. Instead, the algorithm computes a prediction during inference time.
+
+KNN uses the entire dataset and looks for a pre-determined number of instances closest to the observation we want to classify to determine to which group the sample belongs. To do this, KNN stores the entire dataset in memory and computes new predictions on the fly.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Understand the Fundamentals of the K-Nearest Neighbors (KNN) Algorithm"](https://heartbeat.comet.ml/understand-the-fundamentals-of-the-k-nearest-neighbors-knn-algorithm-533dc0c2f45a) for an introduction to KNN.</p></details>
+
+-----------------------
+
