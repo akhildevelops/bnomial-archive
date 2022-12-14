@@ -11927,3 +11927,58 @@ For example, if the data comes from a linear model, Model A may have an advantag
 
 -----------------------
 
+## Date - 2022-12-14
+
+
+## Title - Function differences
+
+
+### **Question** :
+
+Angela needs an activation function for her neural network and wants to decide between Sigmoid and Tanh.
+
+She knows the functions are different but needs a reminder about their specific differences.
+
+**Which of the following are correct statements when comparing Sigmoid and Tanh?**
+
+
+### **Choices** :
+
+- Sigmoid is an s-shaped-looking function. Tanh is not.
+- Around the value 0, Sigmoid has a larger gradient than Tanh.
+- Around the value 0, Tanh has a larger gradient than Sigmoid.
+- Tanh produces values centered around 0. Sigmoid's output is always positive.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Sigmoid function takes an input "x" and squeezes it between 0 and 1. When plotted, Sigmoid is an s-shape curve:
+
+![Sigmoid Plot](https://user-images.githubusercontent.com/1126730/197406367-7a06343e-f5ed-4409-b11d-6ee92eef7171.jpg)
+
+The Tanh function also has a similar-looking s-shape. The function squeezes the input "x" between -1 and 1. Notice how Tanh looks like a stretched and shifted version of Sigmoid:
+
+![Tanh plot](https://user-images.githubusercontent.com/1126730/197406179-9f80cd61-2241-489e-98a7-bd63bf74beba.jpg)
+
+When training neural networks, we use the derivative of the activation function. If we compute the gradient of Sigmoid and Tanh and plot them, we will see the following:
+
+![Gradients](https://user-images.githubusercontent.com/1126730/198387224-79c11611-f666-4df2-9b58-c661fa5900e8.jpg)
+
+Notice how the gradient of Tanh around 0 is around four times larger than the gradient of Sigmoid.
+
+Finally, Tanh produces values centered around 0—between -1 and 1—, while Sigmoid's output is always positive—between 0 and 1.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Activation Functions: Sigmoid vs. Tanh"](https://www.baeldung.com/cs/sigmoid-vs-tanh-functions) for a comparison between these two functions.
+* For a complete description of the Sigmoid function, check the ["Logistic function"](https://en.wikipedia.org/wiki/Logistic_function) Wikipedia page.
+* For a complete description of the Tanh function, check the ["Hyperbolic Functions"](https://en.wikipedia.org/wiki/Hyperbolic_functions) Wikipedia page.</p></details>
+
+-----------------------
+
