@@ -12123,3 +12123,49 @@ The sum of every element in a confusion matrix gives us the number of samples in
 
 -----------------------
 
+## Date - 2022-12-18
+
+
+## Title - Too many features
+
+
+### **Question** :
+
+Rowan's team set up a plan to build a new model. 
+
+Since they had too many features, the first step was taking the entire dataset and performing feature selection. Then, they split the dataset in two: 80% for training the model and 20% for testing it. 
+
+Finally, the team trained a Decision Tree on the training set and used the test data to find the best hyperparameter values for the model.
+
+**Which of the following statements are true regarding this situation?**
+
+
+### **Choices** :
+
+- The team's approach should work as expected.
+- The way the team performed feature selection is problematic.
+- The way the team split the dataset is problematic.
+- The way the team tuned the model's hyperparameters is problematic.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>There are two problems with the team's approach.
+
+First, they used the entire dataset for feature selection. They should have split the dataset first and performed feature selection on the training and testing data separately. When doing feature selection on the entire dataset, the team risks leaking information from the soon-to-be test data into the model. A leak will lead to a model that performs too well on the existing data but will do poorly on future unseen data.
+
+The second problem is how the team tuned the model's hyperparameters. They used the test set to choose the best hyperparameters, which could lead to a model that overfits to the testing dataset. In other words, this model will have trouble with unseen data because the team optimized it to work well on the test dataset. Instead, the team should have used a validation set for hyperparameter tuning.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [Data Leakage in Machine Learning](https://machinelearningmastery.com/data-leakage-machine-learning/) for an introduction to data leaks and how to prevent them. 
+* ["Train, Validation, Test Split for Machine Learning"](https://blog.roboflow.com/train-test-split/) goes into detail about the importance of each split.</p></details>
+
+-----------------------
+
