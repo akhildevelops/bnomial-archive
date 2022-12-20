@@ -12215,3 +12215,56 @@ The only incorrect option is the second: while an RNN can access historical info
 
 -----------------------
 
+## Date - 2022-12-20
+
+
+## Title - Chest X-Rays
+
+
+### **Question** :
+
+In 2017, Andrew Ng's team published a paper on Deep Learning for pneumonia detection on chest X-Rays.
+
+They used a dataset with 112,120 images belonging to 30,805 unique patients. They automatically labeled every sample with 14 different pathologies and randomly split the dataset into 80% training and 20% validation. Their process downscaled images to 224x224 pixels before inputting them into a neural network.
+
+After publishing the paper and listening to the community's feedback, they had to redo their experiments.
+
+**What do you think was wrong with their experiment?**
+
+
+### **Choices** :
+
+- A random split would get pictures from the same patient in training and the validation sets leading to leakage.
+- Using too many images in their training dataset is too slow and wouldn't yield better results.
+- Their dataset needed to be bigger to solve a problem with 14 classes.
+- Downscaling X-Ray pictures to 224x224 is too aggressive and would destroy relevant image information.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The samples in the team's dataset are not independent. Different X-Ray images from the same patient will have similarities that a neural network could use to make a prediction.
+
+For example, a patient might have a scar from a previous surgery or a specific bone density or structure. These clues will help the model make a prediction, so having X-Rays from the same patient in the training and validation sets will create a leaky validation strategy. Here is an excerpt from [The Kaggle Book](https://amzn.to/3kbanRb):
+
+> In a leaky validation strategy, the problem is that you have arranged your validation strategy in a way that favors better validation scores because some information leaks from the training data.
+
+The team fixed the experiment in the third version of their paper. Here is what they did:
+
+> For the pneumonia detection task, we randomly split the dataset into training (28744 patients, 98637 images), validation (1672 patients, 6351 images), and test (389 patients, 420 images). There is no patient overlap between the sets.
+
+Notice how they ensured that there was no overlap between sets.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.
+* ["Target Leakage in Machine Learning"](https://www.youtube.com/watch?v=dWhdWxgt5SU) is a YouTube presentation that covers leakage, including during the partitioning of a dataset.
+* Original paper showing the leaky validation strategy: ["CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning."](https://arxiv.org/pdf/1711.05225v1.pdf). The [third version](https://arxiv.org/pdf/1711.05225.pdf) of the paper fixes the problem.</p></details>
+
+-----------------------
+
