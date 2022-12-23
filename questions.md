@@ -12353,3 +12353,67 @@ This example has four data points: `5`, `5`, `5`, and `9`. Adding these values a
 
 -----------------------
 
+## Date - 2022-12-23
+
+
+## Title - Incompatible shapes
+
+
+### **Question** :
+
+Juliet started by creating a fake dataset. She used Scikit-Learn's `make_blobs()` function:
+
+```
+X, y = make_blobs(
+    n_samples=1000, 
+    centers=3, 
+    n_features=2
+)
+```
+
+One thousand samples were enough data points for Juliet to experiment with neural networks. She used Keras to create a simple model and compiled it as follows:
+
+```
+model.compile(
+    optimizer=SGD(learning_rate=0.01), 
+    loss="categorical_crossentropy", 
+    metrics=["accuracy"]
+ )
+```
+
+But when she tried to fit the model using 32 samples as the `batch_size`, she got the following error: 
+
+> Shapes (32, 1) and (32, 3) are incompatible.
+
+**Which of the following should solve Juliet's problem?**
+
+
+### **Choices** :
+
+- Juliet should not use 32 samples as her batch size. Instead, she should use a smaller value.
+- Juliet should use the value 3 for the `n_features` parameter when calling the `make_blobs()` function.
+- Juliet should use `sparse_categorical_crossentropy` as her loss function.
+- Juliet should one-hot encode the labels returned by the `make_blobs()` function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Keras' `SparseCategoricalCrossentropy` computes the cross-entropy loss between the labels and predictions. It works when the labels in the dataset are integer values, for example, 1, 2, and 3.
+
+Keras' `CategoricalCrossentropy`, on the other hand, has the same function but works when the labels in the dataset are one-hot encoded, for example, `[1, 0, 0]`, `[0, 1, 0]`, and `[0, 0, 1]`.
+
+Juliet is using `make_blobs()` to create a dataset, and this function returns integer values to enumerate the different clusters. Therefore, Juliet should one-hot encode these values, or she needs to replace the loss function with `sparse_categorical_crossentropy`. Either option works.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Here is Keras' [SparseCategoricalCrossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/losses/SparseCategoricalCrossentropy) and [CategoricalCrossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy) documentation.
+* And here is [Scikit-Learn's make_blobs()](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_blobs.html) function documentation.</p></details>
+
+-----------------------
+
