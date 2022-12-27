@@ -12559,3 +12559,49 @@ Finally, thanks to the [Universal approximation theorem](https://en.wikipedia.or
 
 -----------------------
 
+## Date - 2022-12-27
+
+
+## Title - Using log loss
+
+
+### **Question** :
+
+Wren learned about the log loss for the first time.
+
+Log loss, also known as cross-entropy loss, indicates how close a prediction probability comes to the target value.
+
+Wren wants to use what she learned right away.
+
+**Which of the following problems is a good candidate for Wren to practice the log loss?**
+
+
+### **Choices** :
+
+- Predict the house price given a dataset with the number of bedrooms of every house in the neighborhood.
+- Determine a person's location in an image, given a dataset of pictures from a security camera.
+- Determine whether tomorrow will rain, given a dataset with the weather patterns over the last few years.
+- Group customers from a store depending on their buying patterns.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Log loss is a function that we commonly use in classification problems. It returns the negative logarithm of the product of probabilities.
+
+Log loss indicates how close a prediction probability is to the target value. The more the predicted probability differs from the target value, the higher the log loss.
+
+From the list of options, the only classification problem is determining whether it will rain on any given day: it's a binary choice. The other three options are regression, object detection, and clustering.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Understanding binary cross-entropy / log loss: A visual explanation"](https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a) is an excellent introduction to binary cross-entropy.
+- Another article that helps understand binary cross-entropy is ["Binary Cross Entropy/Log Loss for Binary Classification"](https://www.analyticsvidhya.com/blog/2021/03/binary-cross-entropy-log-loss-for-binary-classification/).</p></details>
+
+-----------------------
+
