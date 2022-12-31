@@ -12747,3 +12747,47 @@ KNN uses the entire dataset and looks for a pre-determined number of instances c
 
 -----------------------
 
+## Date - 2022-12-31
+
+
+## Title - The model's accuracy
+
+
+### **Question** :
+
+A team built a binary classification model. They named the classes `A` and `B`.
+
+After finishing training, they evaluated the model on a validation set, and here is the confusion matrix with the results:
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/186248358-1b39a042-5725-408b-84aa-8dd915a6d99d.jpg)
+
+**Given the above confusion matrix, what is the accuracy of this binary classification model?**
+
+
+### **Choices** :
+
+- The accuracy of the model is 28%.
+- The accuracy of the model is 52%.
+- The accuracy of the model is 80%.
+- The accuracy of the model is 88%.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To compute the model's accuracy, we must divide the number of correct predictions by the number of total predictions.
+
+In this example, the model made 100 predictions on the validation set. 80 of those predictions were correct: 52 corresponding to class `A`, and 28 to class `B`. Therefore, the accuracy of the model is 80%.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.
+* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.</p></details>
+
+-----------------------
+
