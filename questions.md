@@ -12791,3 +12791,48 @@ In this example, the model made 100 predictions on the validation set. 80 of tho
 
 -----------------------
 
+## Date - 2023-01-01
+
+
+## Title - Class notes
+
+
+### **Question** :
+
+It's been almost eight years since Dakota's first machine learning class, and she decided to dust her old notes and share them online.
+
+Surprisingly, while reviewing one of her introductory classes, she found one mistake in her description of Linear Regression.
+
+**Below, you have four bullets that Dakota wrote. Which of them is not correct?**
+
+
+### **Choices** :
+
+- Linear Regression is a Supervised Learning technique useful for solving Regression problems.
+- We use Linear Regression for predicting a categorical dependent variable with the help of independent variables.
+- Linear Regression aims to find the best line that can accurately predict the output for the continuous dependent variable.
+- In Linear Regression, the relationship between the dependent and independent variables must be linear.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Linear Regression is probably the most popular Supervised Learning technique in machine learning. Its goal is to fit the best line through the data to predict a continuous output. 
+
+The algorithm uses a set of independent variables to predict a continuous dependent variable. For example, a person's age, salary, or home price. 
+
+Finally, for Linear Regression to work, we must ensure that the relationship between the inputs and the output is linear. A Linear Regression model won't give us good predictions if the relationship isn't linear. Sometimes, this condition means we must transform the input features before using Linear Regression. For example, if you have a variable with an exponential relationship with the target variable, you can use log transform to turn the relationship linear. 
+
+Therefore, Dakota's second bullet point is the only one that's not correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Linear Regression for Machine Learning"](https://machinelearningmastery.com/linear-regression-for-machine-learning/) is an introduction to Linear Regression.</p></details>
+
+-----------------------
+
