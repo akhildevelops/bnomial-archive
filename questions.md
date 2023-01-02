@@ -12836,3 +12836,53 @@ Therefore, Dakota's second bullet point is the only one that's not correct.</p><
 
 -----------------------
 
+## Date - 2023-01-02
+
+
+## Title - Line 10 of the network
+
+
+### **Question** :
+
+Here is a simple and compact implementation of a neural network in Python:
+
+![Neural network](https://user-images.githubusercontent.com/1126730/196750241-0a53d7bf-d821-43e9-bf5c-560e6ca842d4.png)
+
+Line 10 computes the update we will add to the weights connecting the hidden and output layers.
+
+**Which of the following explains what happens on that line?**
+
+
+### **Choices** :
+
+- The code computes the update by multiplying the derivative of the error by the derivative of the network's output.
+- The code calculates the update by multiplying the derivative of the output by the target value.
+- The code computes the update by multiplying the error by the network's output.
+- There's an error in how the code calculates the update.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We need to update the weights of the network during the backpropagation process. We start from the final layer of the network and move sequentially to the beginning.
+
+We can apply the chain rule to calculate the update to the second set of weights: The multiplication between the derivative of the error and the output's layer derivative.
+
+The error represents how far the output is from the target values. In this example, the error is the square of the difference between `layer2` and the target values `y`. The derivative of the error is `2 * (layer2 - y)`.
+
+Notice that the output layer (`layer2`) uses a sigmoid function; hence its derivative is `layer2 * (1 - layer2)`.
+
+Therefore, Line 10 computes the update by multiplying the derivative of the error by the derivative of the network's output.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Neural Networks and Deep Learning_](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen) with a great introduction to neural networks.
+* ["A Neural Network in 13 lines of Python"](https://github.com/ijustloveses/machine_learning/blob/master/gred_descent_and_dropout_with_numpy/A%20Neural%20Network%20in%2013%20lines%20of%20Python%20(Part%202%20-%20Gradient%20Descent).pdf) was the inspiration for the code in this question.</p></details>
+
+-----------------------
+
