@@ -12930,3 +12930,50 @@ For example, she could use [K-Means](https://en.wikipedia.org/wiki/K-means_clust
 
 -----------------------
 
+## Date - 2023-01-04
+
+
+## Title - Noisy training loss
+
+
+### **Question** :
+
+Lucia finished training her deep learning model. She got the training history and plotted the train and validation loss of the model.
+
+Unfortunately, she didn't like what she saw. 
+
+It was tough to look at the chart and draw conclusions from it: The training loss was too noisy, and Lucia would have to fix it if she wanted a better understanding of her model.
+
+**Which strategies should Lucia follow to reduce the noise in the training loss? Select all that apply.**
+
+
+### **Choices** :
+
+- Lucia should increase her learning rate.
+- Lucia should decrease her learning rate.
+- Lucia should increase her batch size.
+- Lucia should decrease her batch size.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>If Lucia increases the learning rate, her model will take larger steps in the gradient direction, but it may miss the local minima. When it misses the local minima, it will start oscillating contributing to the noise Lucia sees in the chart. Reducing the learning rate will help with this problem.
+
+If Lucia uses a small batch size, the optimizer will only see a small portion of the data during every cycle. This introduces noise in the training process because the gradient of the batch may take the model in entirely different directions. Here is Jason Brownlee on ["How to Control the Stability of Training Neural Networks With the Batch Size"](https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/): "Smaller batch sizes are noisy, offering a regularizing effect and lower generalization error."
+
+Based on this idea, if Lucia decreases the batch size, the noise will get worse, so she wants to increase the size to reduce the oscillations of the training loss.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>*  Check ["How to Control the Stability of Training Neural Networks With the Batch Size"](https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/) for a full description of how the batch size affects the stability of the training process.
+* ["What could an oscillating training loss curve represent?"](https://ai.stackexchange.com/questions/14079/what-could-an-oscillating-training-loss-curve-represent) is a StackExchange question covering different strategies to reduce the noise in the training loss.
+* ["Why is my training loss fluctuating?"](https://www.researchgate.net/post/Why_is_my_training_loss_fluctuating) is another public question covering the same topic.</p></details>
+
+-----------------------
+
