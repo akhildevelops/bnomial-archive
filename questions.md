@@ -13027,3 +13027,51 @@ A ROC curve shows the True Positive and False Positive Rates at different classi
 
 -----------------------
 
+## Date - 2023-01-06
+
+
+## Title - Robotics department
+
+
+### **Question** :
+
+Alayah works in the robotics department at a tech company. She has been tasked with building a model that recognizes and identifies different objects.
+
+Alayah decides to use a transformer model for this task. She knows that transformers are a type of deep learning model that has been proven effective in object recognition tasks.
+
+**Which of the following are characteristics of transformers?**
+
+
+### **Choices** :
+
+- Transformers use attention mechanisms to allow the model to focus on specific parts of the input.
+- Transformers can handle variable-length output sequences but only fixed-size input sequences.
+- Transformers are based on convolutional neural networks and use filters to extract features from the input data.
+- Transformers can only work with numeric data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Transformers are a type of deep learning model that has been widely used in Natural Language processing tasks, such as machine translation and text summarization. They were introduced in the 2017 paper [Attention is All You Need](https://arxiv.org/abs/1706.03762) by Vaswani et al.
+
+One of the key characteristics of transformers is their use of attention mechanisms. Attention allows the model to focus on specific input parts, which is useful when processing long data sequences. This differs from traditional recurrent neural networks, which use feedback loops to process the input data.
+
+Another characteristic of transformers is their ability to handle variable-length input and output sequences. This is useful when dealing with natural language data, which often has varying lengths.
+
+Transformers are not based on convolutional neural networks (CNNs.) They are based on self-attention mechanisms, while CNNs are based on convolutional layers, which apply a set of filters to the input data to extract features. 
+
+Transformers are not limited to working with numerical data. They can also process categorical data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check the ["Attention is All You Need"](https://arxiv.org/abs/1706.03762) paper by Vaswani et al. for an introduction to Transformers.
+* The [Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) is a fantastic visual guide that explains the inner workings of the Transformer architecture in an easy-to-understand manner.</p></details>
+
+-----------------------
+
