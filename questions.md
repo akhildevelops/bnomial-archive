@@ -13363,3 +13363,51 @@ Fortunately, Cecilia doesn't care about costs, and leave-one-out cross-validatio
 
 -----------------------
 
+## Date - 2023-01-13
+
+
+## Title - Decreasing KNN's K
+
+
+### **Question** :
+
+Diana knows her k-Nearest Neighbor (KNN) implementation uses a value of `K` that's too high.
+
+She wants to start experimenting with a lower value.
+
+**What should Diana expect to happen as she decreases `K`?**
+
+
+### **Choices** :
+
+- As Diana decreases the value of `K`, she will reduce the algorithm's variance and bias.
+- As Diana decreases the value of `K`, she will increase the algorithm's variance and bias.
+- As Diana decreases the value of `K`, she will increase the algorithm's variance and reduce its bias.
+- As Diana decreases the value of `K`, she will reduce the algorithm's variance and increase its bias.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The smaller the value of `K`, the more variance and less bias KNN will exhibit. For example, if we use `K = 1`, a single sample close to our observation will cause the algorithm to return the wrong prediction. Imagine an observation surrounded by many instances from class A and only one from class B that's closer than everything else. Since `K=1`, the algorithm will incorrectly predict the observation as class B. 
+
+Conversely, the larger the value of `K`, the less variance and more bias KNN will exhibit. Since KNN uses an average or majority voting, no individual sample will cause the algorithm to return the wrong prediction. Setting `K` to a value that's too large will make the algorithm underfit because it won't capture the variance in the dataset.
+
+Here is a quote from ["Why Does Increasing k Decrease Variance in kNN?"](https://towardsdatascience.com/why-does-increasing-k-decrease-variance-in-knn-9ed6de2f5061):
+
+> If we take the limit as `K` approaches the size of the dataset, we will get a model that just predicts the class that appears more frequently in the dataset [...]. This is the model with the highest bias, but the variance is 0 [...]. High bias because it has failed to capture any local information about the model, but 0 variance because it predicts the exact same thing for any new data point.
+
+In summary, the smaller the value of `K` is, the lower the bias and the higher the variance. The larger the value of `K` is, the higher the bias and the lower the variance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Why Does Increasing k Decrease Variance in kNN?"](https://towardsdatascience.com/why-does-increasing-k-decrease-variance-in-knn-9ed6de2f5061) is a great article diving into the relationship of `k` and the variance of KNN.
+* For a more general introduction to the bias-variance trade-off, check ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/).</p></details>
+
+-----------------------
+
