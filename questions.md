@@ -13515,3 +13515,55 @@ If Lilith's client wants only to consider precision regardless of the recall val
 
 -----------------------
 
+## Date - 2023-01-16
+
+
+## Title - Binary features
+
+
+### **Question** :
+
+Your mission is to build a decision tree.
+
+You'll work with a dataset where every feature has a value of 0 or 1. The dataset can have any number of features.
+
+You want the decision tree to learn a function that outputs how many features in a sample have a value of 0.
+
+**Assuming the dataset has _n_ rows and _d_ features, how many leaf nodes would your decision tree have?**
+
+
+### **Choices** :
+
+- 2ⁿ leaf nodes
+- 2ᵈ leaf nodes
+- 2n leaf nodes
+- 2d leaf nodes
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>For a dataset with d features, you will require a decision tree with 2ᵈ leaf nodes.
+
+As an example, imagine we have a dataset with a single feature. The decision tree will need 2 leaf nodes: one to capture the case where the feature has a value of 0 and another to capture when the feature has a value of 1:
+
+![Decision tree with one feature](https://user-images.githubusercontent.com/1126730/197406448-5dda78a5-0011-4525-aa6b-084ed46805a4.jpg)
+
+For 2 features, the possible combinations are four: both features are 0, the first feature is 0 and the second is 1, the first feature is 1, and the second is 0, and both features are 1. The possible resultant count is 0, 1, or 2:
+
+![Decision tree with two features](https://user-images.githubusercontent.com/1126730/197406460-edb7b72f-246f-4c53-8598-d5da4fd7c01c.jpg)
+
+Generally, for _d_ features, the decision tree will need 2ᵈ leaf nodes.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Decision tree learning"](https://en.wikipedia.org/wiki/Decision_tree_learning) is the Wikipedia page where you can read about decision trees.
+- ["How to tune a Decision Tree?"](https://towardsdatascience.com/how-to-tune-a-decision-tree-f03721801680) is a great article talking about different ways to tune a decision tree, including the effects of setting the maximum depth hyperparameter.</p></details>
+
+-----------------------
+
