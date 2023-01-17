@@ -13567,3 +13567,57 @@ Generally, for _d_ features, the decision tree will need 2ᵈ leaf nodes.</p></d
 
 -----------------------
 
+## Date - 2023-01-17
+
+
+## Title - Not enough experience
+
+
+### **Question** :
+
+Gabriela works for Microsoft and is trying to build a machine-learning model that can accurately classify emails as spam or not spam. 
+
+She knows that choosing the right hyperparameters can greatly improve the model's performance, but she doesn't have much experience with hyperparameter tuning.
+
+**Which of the following statements summarizes the core goal of hyperparameter tuning?**
+
+
+### **Choices** :
+
+- Hyperparameter tuning is about choosing the set of optimal samples from the data to train a model.
+- Hyperparameter tuning is about choosing the set of optimal features from the data to train a model.
+- Hyperparameter tuning is about choosing the set of hypotheses that better fit the goal of the model.
+- Hyperparameter tuning is about choosing the optimal parameters for a learning algorithm to train a model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We use the term "hyperparameter" to refer to the settings we can use to control the learning process. We set these "knobs" and "levers" before training a model. In contrast, we use "parameters" to refer to variables internal to the model whose values we estimate (learn) during the learning process using data.
+
+A good way of thinking about this:
+
+* Parameters: We learn their values during training. We do not set their values manually.
+* Hyperparameters: The settings we fix before the learning process. We cannot learn these values during training.
+
+Each model has different hyperparameters. For example, you can control the depth of a decision tree or the step size during the optimization process of a neural network.
+
+Understanding this should be enough to analyze the four choices for this question.
+
+Hyperparameters have nothing to do with the data. They aren't about features or samples. A good set of hyperparameters will indirectly lead to a better-fitted model, but "tuning hyperparameters" is not about "choosing a better hypothesis."
+
+The correct answer is choosing the best parameters to tune a learning algorithm.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Overview of hyperparameter tuning"](https://cloud.google.com/ai-platform/training/docs/hyperparameter-tuning-overview) is a great introduction to hyperparameters and the process of finding their optimal value.
+* [Hyperparameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization)
+* [What is the Difference Between a Parameter and a Hyperparameter?](https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/)</p></details>
+
+-----------------------
+
