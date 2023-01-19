@@ -13678,3 +13678,77 @@ This issue is called "sampling bias." It explains why the problem occurred in on
 
 -----------------------
 
+## Date - 2023-01-19
+
+
+## Title - Graphic designer
+
+
+### **Question** :
+
+Lena is a graphic designer who has been working on a new project for her client. 
+
+She needs to determine the probability that the client will approve of the design she has created. 
+
+To do this, she uses an algorithm that considers several factors, including the number of revisions the client has requested in the past and the overall design quality. The equation for the algorithm is:
+
+```
+probability = σ(a + 0.27b + 0.18c)
+```
+
+Where:
+
+* `a`: Indicates the number of revisions the client has requested in the past.
+* `b`: Indicates the overall quality of the design on a scale from 1 to 10.
+* `c`: Indicates the length of time Lena has spent working on the design.
+* `σ`: Is the sigmoid function.
+
+**Assuming the client has requested two revisions in the past, the design has a quality rating of 8, and Lena has spent 10 hours working on the design, what would be the probability that the client will approve of the design?**
+
+
+### **Choices** :
+
+- The probability is `0.99`
+- The probability is `0.81`
+- The probability is `0.62`
+- The probability is `0.45`
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We need to understand how to compute the Sigmoid function to answer this question. The Sigmoid function takes a value as input and outputs another real value between `0` and `1`. We say that Sigmoid "squeezes" the input into that range.
+
+Here is the formula:
+
+![Sigmoid](https://user-images.githubusercontent.com/1126730/196755518-311dd425-676e-4c85-be1f-467694879c30.jpg)
+
+In Python, the Sigmoid function looks like this:
+
+```
+import math
+
+def sigmoid(x):
+    return 1/(1 + math.exp(-x))
+```
+
+The probability that the client will approve the design can be calculated by plugging the appropriate values for `a`, `b`, and `c` into the equation. In this case, `a` would be 2,`b` would be 8, and `c` would be 10. The equation would look like this:
+
+```
+probability = sigmoid(2 + 0.27 * 8 + 0.18 * 10)
+probability = 0.9974267268461897
+```
+
+Therefore, the probability that the client will approve the design is approximately 0.99.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For a complete description of the Sigmoid function, check the ["Logistic function"](https://en.wikipedia.org/wiki/Logistic_function) Wikipedia page.</p></details>
+
+-----------------------
+
