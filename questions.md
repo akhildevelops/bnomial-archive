@@ -13797,3 +13797,51 @@ Finally, early stopping helps the model generalize to unseen data, opposite to t
 
 -----------------------
 
+## Date - 2023-01-21
+
+
+## Title - Random splits
+
+
+### **Question** :
+
+Saylor is building a classification model.
+
+She labeled the dataset and randomly split the data into training, validation, and testing sets. 
+
+After training and evaluating the model, Saylor realized the results were too good to be true. Deploying the model to production validated her assumption: the model was a failure.
+
+After some research, Saylor discovered the problem was with the random split. 
+
+**Which of the following kinds of data is susceptible to this problem?**
+
+
+### **Choices** :
+
+- Time series data.
+- Data that doesn't change over time.
+- Data that show up in clusters, like news articles.
+- Data where individual samples are correlated.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Any dataset with correlation or groupings between individual samples is not a good candidate for random splitting. When used, data from each group will be present in each set, leading to a leaky validation strategy. Here is an excerpt from [The Kaggle Book](https://amzn.to/3kbanRb):
+
+> In a leaky validation strategy, the problem is that you have arranged your validation strategy in a way that favors better validation scores because some information leaks from the training data.
+
+This problem can happen anytime the data is grouped. Data that doesn't change over time is usually fine for random splits.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.
+* ["Target Leakage in Machine Learning"](https://www.youtube.com/watch?v=dWhdWxgt5SU) is a YouTube presentation that covers leakage, including during the partitioning of a dataset.</p></details>
+
+-----------------------
+
