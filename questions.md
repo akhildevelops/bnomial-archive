@@ -13845,3 +13845,49 @@ This problem can happen anytime the data is grouped. Data that doesn't change ov
 
 -----------------------
 
+## Date - 2023-01-22
+
+
+## Title - Regular process
+
+
+### **Question** :
+
+Elise received a massive dataset for her new project.
+
+Unfortunately, there were too many features, so Elise spent quite a bit of time performing feature selection and creating a new dataset containing only the new features.
+
+After she finished, Elise started her regular process: split the data, set the testing aside, and train a classifier on the training set.
+
+**What do you think about Elise's setup?**
+
+
+### **Choices** :
+
+- Elise's setup is not valid.
+- Elise's setup is problematic.
+- Elise's setup should work as expected.
+- We need more information to decide.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>There's a problem with Elise's setup.
+
+She used the entire dataset for feature selection. She should have split the dataset first and performed feature selection on the training and testing data separately. 
+
+When doing feature selection on the entire dataset, Elise risks leaking information from the soon-to-be test data into the model. A leak will lead to a model that performs too well on the existing data but will do poorly on future unseen data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [Data Leakage in Machine Learning](https://machinelearningmastery.com/data-leakage-machine-learning/) for an introduction to data leaks and how to prevent them. 
+* ["Train, Validation, Test Split for Machine Learning"](https://blog.roboflow.com/train-test-split/) goes into detail about the importance of each split.</p></details>
+
+-----------------------
+
