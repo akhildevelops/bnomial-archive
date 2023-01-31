@@ -14250,3 +14250,55 @@ Finally, thanks to the [Universal approximation theorem](https://en.wikipedia.or
 
 -----------------------
 
+## Date - 2023-01-31
+
+
+## Title - Rotating beers
+
+
+### **Question** :
+
+Avianna works at a beer factory where she processes pictures of the bottles before they are shipped out. 
+
+She noticed that the pictures were often taken with different degrees of rotation, and the Convolutional Neural Network she built wasn't ready to handle this.
+
+**Which of the following approaches could Avianna propose to handle rotation in the pictures?**
+
+
+### **Choices** :
+
+- Adding a data preprocessing step to properly rotate every image before giving the data to the model.
+- Add a layer to the model that can rotate the data to the correct position.
+- Include rotated versions of the images in the training data to build some rotation invariability into the model.
+- Correctly configure the network since Convolutional Neural Networks are inherently rotation invariant.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Convolutional Neural Networks](https://en.wikipedia.org/wiki/Convolutional_neural_network) are [translation invariant but not rotation invariant](https://pyimagesearch.com/2021/05/14/are-cnns-invariant-to-translation-rotation-and-scaling/). They can recognize the same patterns independently of where they show in an image, but they don't have the same ability to recognize shapes with various degrees of rotation. 
+
+There's also no out-of-the-box mechanism for a layer to recognize the orientation of an image and much less "rotate" it to its correct position.
+
+Dealing with rotated images is a common problem, especially with user data. The solution usually boils down to the following two options:
+
+1. Training a model that learns to recognize pictures regardless of their orientation.
+2. Completely sidestepping the problem and always using images in the appropriate position to train the model.
+
+A way to train our model to recognize pictures regardless of their orientation is to extend the dataset with rotated images. If we expect to see images at 0, 90, and 180 degrees, we must teach our model to recognize them. ["Correcting Image Orientation Using Convolutional Neural Networks"](https://d4nst.github.io/2017/01/12/image-orientation/) is an excellent article covering this approach.
+
+Finally, we can extend the pipeline that feeds the model with a step that ensures images are always in the same position. That way, our model doesn't have to deal with rotation. This may not always be possible, but sometimes we have access to metadata that could help with that—for example, using accelerometer information to straighten the picture.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Correcting Image Orientation Using Convolutional Neural Networks"](https://d4nst.github.io/2017/01/12/image-orientation/) is a great article covering practical ways to get a network to recognize rotated pictures.
+* ["Are CNNs invariant to translation, rotation, and scaling?"](https://pyimagesearch.com/2021/05/14/are-cnns-invariant-to-translation-rotation-and-scaling/) goes into more detail about whether convolutional neural networks are translation, rotation, and scale invariant.
+* Check ["How Do Convolutional Layers Work in Deep Learning Neural Networks?"](https://machinelearningmastery.com/convolutional-layers-for-deep-learning-neural-networks/) for an introduction to how convolutional layers work.</p></details>
+
+-----------------------
+
