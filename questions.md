@@ -14467,3 +14467,38 @@ The number of employees and profits from the previous year should be helpful for
 
 -----------------------
 
+## Date - 2023-02-05
+
+
+## Title - Classifying customers
+
+
+### **Question** :
+
+Ariyah was working on a machine learning project to predict the likelihood of a customer churning based on their past behavior. She had been using a Decision Tree model to classify customers.While researching Decision Trees, Ariyah read about pruning, but she didn't understand how it would help her work.**What is the primary purpose of pruning a Decision Tree?**
+
+
+### **Choices** :
+
+- To prevent overfitting or the phenomenon where the model fits the training data too closely and performs poorly on new data.
+- To reduce the time required for testing the model on new data.
+- To conserve space for storing the Decision Tree model on a computer or server.
+- To decrease the model's error on the training set.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Decision Trees are a popular machine-learning model for classification and regression tasks. They build a tree-like decision model based on the data's features to predict the output label of a given input sample. However, if the Decision Tree is allowed to grow too large, it can become overly complex and may start to fit the training data too closely, a phenomenon known as overfitting.Pruning is a technique that can be used to reduce the size of a Decision Tree and prevent overfitting. It involves removing nodes from the tree that are not contributing significantly to the model's accuracy. This can improve the model's generalization performance and reduce the risk of overfitting. While pruning a Decision Tree can also save computing time and space for storing the model, the primary purpose of pruning is to avoid overfitting the training set.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Decision tree pruning"](https://en.wikipedia.org/wiki/Decision_tree_pruning) covers the process of pruning a tree to reduce overfitting.* ["How to tune a Decision Tree?"](https://towardsdatascience.com/how-to-tune-a-decision-tree-f03721801680) is a great article talking about different ways to tune a decision tree, including the effects of setting the maximum depth.</p></details>
+
+-----------------------
+
