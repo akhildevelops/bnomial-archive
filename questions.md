@@ -14502,3 +14502,38 @@ Ariyah was working on a machine learning project to predict the likelihood of a 
 
 -----------------------
 
+## Date - 2023-02-06
+
+
+## Title - Intensive Care Unit
+
+
+### **Question** :
+
+Briella was working at a hospital, where she was tasked with developing a machine learning model to predict whether a patient will be admitted to the intensive care unit (ICU). She had access to medical data for thousands of patients, with labels indicating whether each patient was admitted to the ICU or not. After studying the available techniques, Briella had several options for building a binary classification model. **Which of the following techniques can she use to build a binary classification model?**
+
+
+### **Choices** :
+
+- Briella can use logistic regression.
+- Briella can use k-nearest neighbors.
+- Briella can use neural networks.
+- Briella can use decision trees.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The four choices are examples of supervised learning techniques that you could use to build a binary classification model.Logistic regression is a popular technique for binary classification that uses a linear model to predict the likelihood of an outcome. K-nearest neighbors is a non-parametric technique that uses a similarity measure to classify data points based on their neighbors. It is often used for classification tasks, including binary classification.Neural networks can learn complex patterns in the data and can be used for a wide range of tasks, including binary classification.Decision trees are a type of machine learning model that uses a tree-like structure to make predictions. They are simple to understand and can be effective for binary classification tasks.Although they all work, they are very different approaches, and some might lead to better results on this dataset than others.However, the problem doesn't give us any information about the characteristics of the data, so it's hard to disqualify any of the choices based on what we know.Therefore, every choice is a correct answer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check out ["Binary classification"](https://en.wikipedia.org/wiki/Binary_classification) in Wikipedia for more information.* ["4 Types of Classification Tasks in Machine Learning"](https://machinelearningmastery.com/types-of-classification-in-machine-learning/) is a great article going over different ways to implement a classification model.</p></details>
+
+-----------------------
+
