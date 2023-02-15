@@ -14900,3 +14900,51 @@ In summary, the smaller the value of `K` is, the lower the bias and the higher t
 
 -----------------------
 
+## Date - 2023-02-15
+
+
+## Title - Every book is the same
+
+
+### **Question** :
+
+I have a ton of machine learning books at home.
+
+Great books, most of them, but I can't help but notice that most start their story precisely at the same place:
+
+Linear and Logistic Regression.
+
+I get it. Understanding the fundamentals is essential, but at some point, most books should move on and cover different and more exciting topics.
+
+**In the meantime, I have to ask you to select which of the following statements are true about these two techniques:**
+
+
+### **Choices** :
+
+- In Linear Regression, we find the best line that predicts the output. In Logistic Regression, we find the best sigmoid curve to classify the samples.
+- We use Linear Regression for solving Regression problems. We use Logistic Regression for solving Classification problems.
+- In Linear Regression, we predict the values of continuous variables. In Logistic Regression, we predict the values of categorical variables.
+- Linear Regression uses a set of independent variables to predict a continuous dependent variable. Logistic Regression uses a set of dependent variables to predict a categorical independent variable.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Linear Regression is probably the most popular Supervised Learning technique in machine learning. Its goal is to fit the best line through the data to predict a continuous output. Logistic Regression is also a Supervised Learning technique, with the difference that we use a sigmoid function to map values between 0 and 1. By doing this, we can use Logistic Regression to predict a categorical variable.
+
+In Regression problems, we need to predict continuous outcomes, for example, a person's age, salary, or home price. Linear Regression helps with that. In Classification problems, we need to predict a categorical outcome, for example, whether the person is sick or whether they will get a job. We can use Logistic Regression for that.
+
+Finally, Linear and Logistic Regression use a set of independent variables to predict a dependent variable. In Linear Regression, the dependent variable is continuous, while the dependent variable is categorical in Logistic Regression. Therefore, the final choice of this question is incorrect.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Linear Regression for Machine Learning"](https://machinelearningmastery.com/linear-regression-for-machine-learning/) is an introduction to Linear Regression.
+* ["Logistic Regression for Machine Learning"](https://machinelearningmastery.com/logistic-regression-for-machine-learning/) is an introduction to Logistic Regression.</p></details>
+
+-----------------------
+
