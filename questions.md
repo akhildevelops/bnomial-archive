@@ -15040,3 +15040,38 @@ Winter works at a juice-packing company where she uses a machine-learning model 
 
 -----------------------
 
+## Date - 2023-02-18
+
+
+## Title - Student performance
+
+
+### **Question** :
+
+Jayla is a data science student at a top university. She has been working on a project to build a model that predicts student success. She uses a deep learning model to analyze past student performance data and predict how well current students will do.Unfortunately, Jayla has struggled to get her model to perform well. She has tried different techniques and hyperparameters, but nothing seems to work.Jayla is starting to think that her model suffers from the exploding gradient problem. **Which of the following techniques will make Jayla's model more robust to the exploding gradient problem?**
+
+
+### **Choices** :
+
+- Gradient clipping
+- Weight regularization
+- Increasing the batch size
+- Modifying the model architecture to include batch normalization
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Exploding Gradient Problem is an issue that occurs in training artificial neural networks when large error gradients accumulate and result in very large updates to the network weights during training. This can cause the network to become unstable and prevent it from learning effectively.One way to overcome the exploding gradient problem is to use gradient clipping, where the gradients are capped at a maximum value to prevent them from growing too large. This can help to stabilize the network and improve its performance.Another technique is weight regularization, where the network weights are constrained to prevent them from becoming too large. This can help to prevent the gradients from exploding and improve the stability of the network.Increasing the batch size is not a valid solution to the exploding gradient problem. This technique has nothing to do with the gradients becoming large and exploding.Modifying the model architecture to include batch normalization can help with the vanishing gradient problem, but it does not address the exploding gradient problem.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Exploding Gradient Problem"](https://deepai.org/machine-learning-glossary-and-terms/exploding-gradient-problem) for an introduction to this problem.* ["A Gentle Introduction to Exploding Gradients in Neural Networks"](https://machinelearningmastery.com/exploding-gradients-in-neural-networks/) is a great article covering Exploding Gradients in detail.</p></details>
+
+-----------------------
+
