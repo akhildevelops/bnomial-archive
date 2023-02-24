@@ -15263,3 +15263,38 @@ The solution is to group news articles by their date and ensure they go together
 
 -----------------------
 
+## Date - 2023-02-24
+
+
+## Title - Game theory
+
+
+### **Question** :
+
+Amari has been studying game theory and has learned about Nash equilibrium. She decides to test her understanding by designing a simple game and playing it with her friend, Jake.Each player can choose to either cooperate or defect. If both players cooperate, they each receive a reward of $3. If one player defects and the other cooperates, the defector receives a reward of $5, while the cooperator receives nothing. If both players defect, they each receive a reward of $1.**What is the Nash equilibrium in this game?**
+
+
+### **Choices** :
+
+- Amari and Jake cooperate, and both receive a reward of $3.
+- Amari and Jake defect, and both receive a reward of $1.
+- Amari defects and receives $5, while Jake cooperates and receives nothing.
+- Amari cooperates and receives nothing, while Jake defects and receives $5.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A Nash equilibrium is a state in which all players in a game have made their best decisions given the decisions of the other players. In this game, the only Nash equilibrium is when both players defect because each receives the highest reward possible given the other player's decision.If Amari defects and Jake cooperates, Jake will receive a higher reward than if they both cooperate. This means that Jake has the incentive to change his decision to defect, and the game is not in a Nash equilibrium.Similarly, if Amari cooperates and Jake defects, Amari will receive nothing, which is less than the reward she would receive if they both cooperated. This means that Amari is incentivized to change her decision to cooperate, and the game is not in a Nash equilibrium.Therefore, the only Nash equilibrium in this game is when both players defect.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["An Introduction to the Nash Equilibrium"](https://builtin.com/data-science/nash-equilibrium) for a great explanation of one of the cornerstones of Game Theory.</p></details>
+
+-----------------------
+
