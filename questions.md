@@ -15579,3 +15579,38 @@ In statistics, the notion of a statistical error is integral to hypothesis testi
 
 -----------------------
 
+## Date - 2023-03-03
+
+
+## Title - Classification partitions
+
+
+### **Question** :
+
+Morgan works at a research lab specializing in machine learning and data analysis. She is currently writing a paper on entropy in classification and wants to ensure she accurately describes the concept to her readers. She uses a Decision Tree as the foundation of her explanations.**In this context, what does high entropy say about the partitions in a classification problem?**
+
+
+### **Choices** :
+
+- High entropy means the partitions are pure.
+- High entropy means the partitions are not pure.
+- High entropy means the partitions are useful.
+- High entropy means the partitions are not useful.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Entropy measures how random the information being processed is. The higher the entropy, the harder it is to draw conclusions from that information.Decision Trees use a "purity" metric to split at each node. Low entropy leads to pure nodes, where 100% of the data belongs to a single partition, while high entropy leads to impure nodes, where the data is split evenly between partitions.High entropy means that the different classes are mixed and not well separated. If a partition has high entropy, the class labels are mixed or not pure. This makes it hard for a classifier to predict the class label of new samples accurately. Low entropy means that the classes are more distinct and easier to predict.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Understanding Entropy: the Golden Measurement of Machine Learning"](https://towardsdatascience.com/understanding-entropy-the-golden-measurement-of-machine-learning-4ea97c663dc3) for an introduction to entropy.</p></details>
+
+-----------------------
+
