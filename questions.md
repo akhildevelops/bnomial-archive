@@ -15695,3 +15695,48 @@ Noelle is a student who takes college classes at night while she works full-time
 
 -----------------------
 
+## Date - 2023-03-06
+
+
+## Title - Robotic facility
+
+
+### **Question** :
+
+Makayla works at a robotics facility where she processes pictures of the robots before they are shipped out.
+
+Makayla noticed that the pictures of the robots often had different degrees of rotation and realized that the Convolutional Neural Network she had built couldn't process these images properly.
+
+**Which of the following approaches should Makayla use to handle rotation in the pictures?**
+
+
+### **Choices** :
+
+- Add a layer at the beginning of the model that rotates the data to the correct position.
+- Add a layer at the end of the model that rotates the data to the correct position.
+- Include rotated versions of the images in the training data to build some rotation invariability into the model.
+- Replace the Convolutional Neural Network with a Multilayer Perceptron because they are rotation invariant.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Convolutional Neural Networks](https://en.wikipedia.org/wiki/Convolutional_neural_network) are [translation invariant but not rotation invariant](https://pyimagesearch.com/2021/05/14/are-cnns-invariant-to-translation-rotation-and-scaling/). They can recognize the same patterns independently of where they show in an image, but they don't have the same ability to recognize shapes with various degrees of rotation. Multilayer Perceptrons are not rotation invariant either.
+
+There's also no out-of-the-box mechanism for a layer to recognize the orientation of an image and much less "rotate" it to its correct position. 
+
+A way to train a model to recognize pictures regardless of their orientation is to extend the dataset with rotated images. If we expect to see images at 0, 90, and 180 degrees, we must teach our model to recognize them. ["Correcting Image Orientation Using Convolutional Neural Networks"](https://d4nst.github.io/2017/01/12/image-orientation/) is an excellent article covering this approach.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Correcting Image Orientation Using Convolutional Neural Networks"](https://d4nst.github.io/2017/01/12/image-orientation/) is a great article covering practical ways to get a network to recognize rotated pictures.
+* ["Are CNNs invariant to translation, rotation, and scaling?"](https://pyimagesearch.com/2021/05/14/are-cnns-invariant-to-translation-rotation-and-scaling/) goes into more detail about whether convolutional neural networks are translation, rotation, and scale invariant.
+* Check ["How Do Convolutional Layers Work in Deep Learning Neural Networks?"](https://machinelearningmastery.com/convolutional-layers-for-deep-learning-neural-networks/) for an introduction to how convolutional layers work.</p></details>
+
+-----------------------
+
