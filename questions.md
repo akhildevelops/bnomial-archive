@@ -15810,3 +15810,38 @@ We want to use a Perceptron to represent the AND logic gate. As a reminder, here
 
 -----------------------
 
+## Date - 2023-03-09
+
+
+## Title - Excellent book
+
+
+### **Question** :
+
+Trinity found an excellent explanation of One-Hot Encoding in one of her books.She plans to use the technique with some features of her dataset, but she wanted to do some research before pulling the trigger.**Which of the following statements do you think Trinity found in the book?**
+
+
+### **Choices** :
+
+- One-Hot Encoding creates one additional column for each possible category.
+- One-Hot Encoding encodes a numerical feature into its categorical representation.
+- One-Hot Encoding transforms string variables into a single integer.
+- One-Hot Encoding transforms string variables using a numerical representation.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Categorical data are variables that contain label values rather than numeric values. For example, a variable representing the temperature with values "hot," "warm," and "cold" is a categorical variable.Although some algorithms can use categorical data directly, most can't: they require the data to be numeric. One-Hot Encoding is one of the techniques we can use to turn categorical data into a numerical representation.For example, assume we have a dataset with a single feature called "temperature" that could have the values "hot," "warm," and "cold." Applying One-Hot Encoding will get us a new dataset with three features, one for each value of the original "temperature" column. A sample that had the value "warm" in the previous column will now have the value `0` for both "hot" and "cold" and the value `1` under the "warm" feature.Therefore, One-Hot Encoding creates one additional column for each possible category, and these columns use a numerical representation.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Why One-Hot Encode Data in Machine Learning?"](https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/) for an explanation of how One-Hot Encoding works.</p></details>
+
+-----------------------
+
