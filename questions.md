@@ -15915,3 +15915,49 @@ Elianna worked as a data scientist in the analytics department of a professional
 
 -----------------------
 
+## Date - 2023-03-12
+
+
+## Title - Changing careers
+
+
+### **Question** :
+
+Cataleya wanted to change careers. 
+
+From working as a project manager, she decided to follow her passion and start focusing on data analysis and machine learning.
+
+Her first opportunity was doing some time-series analysis work. Cataleya had some experience with models but needed some help to get started.
+
+**Which of the following would be your recommendation for Cataleya?**
+
+
+### **Choices** :
+
+- Multilayer Perceptron
+- Decision Trees
+- Convolutional Neural Networks
+- Recurrent Neural Networks
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Recurrent Neural Networks have an advantage over traditional feed-forward networks when working with time series or data points that depend upon previous samples.
+
+The magic ingredient of Recurrent Neural Networks is the ability to store the information of previous inputs to generate the following sequence output. Recurrent Neural Networks do this by implementing the concept of a "feedback loop" or "feedback connection." These are connections feeding the hidden layers of the neural network back into themselves.
+
+None of the other options support the concept of feedback loops. Only Recurrent Neural Networks do.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [An Introduction To Recurrent Neural Networks And The Math That Powers Them](https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/)
+* [Recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network)</p></details>
+
+-----------------------
+
