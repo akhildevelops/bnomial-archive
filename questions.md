@@ -16204,3 +16204,38 @@ Blake is an engineer at a government organization responsible for maintaining an
 
 -----------------------
 
+## Date - 2023-03-19
+
+
+## Title - Predicting prices
+
+
+### **Question** :
+
+Camila's first exercise in class is the Housing Price Prediction problem.She has access to a dataset with the size of thousands of houses measured in squared feet and their corresponding price. She needs to build a model that predicts the price of a house, given its size.Before working on the solution, she needs to answer an important question.**How can we classify the type of machine learning problem Camila needs to solve?**
+
+
+### **Choices** :
+
+- Supervised Learning problem.
+- Regression problem.
+- Unsupervised Learning problem.
+- Classification problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>This is both a Supervised Learning and a Regression problem.A problem is considered Supervised Learning when the model is trained on a labeled dataset, where the input and output are known. This is the case for Camila's exercise. She has access to a dataset that contains features (the size of the house) and labels (the price of the house.)The goal of Camila's exercise is to predict a continuous value: the price of the house. Anytime we need to predict continuous values instead of a discrete class, we are looking at a regression model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) is an excellent introduction to the differences between supervised and unsupervised learning.</p></details>
+
+-----------------------
+
