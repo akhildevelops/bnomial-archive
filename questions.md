@@ -16296,3 +16296,53 @@ The variance between the five accuracies is high, so your friend must have used 
 
 -----------------------
 
+## Date - 2023-03-21
+
+
+## Title - Flight delays
+
+
+### **Question** :
+
+Malia started her new job with one of the most important airlines in the country.
+
+Her first project is to build a supervised learning model to predict flight delays. She has access to a large dataset containing information about her airline's arrival and departure flights. 
+
+Early on, Malia discovered something interesting: a delayed flight impacts every flight that day. Any future flight on the same day will likely depart late when a delay occurs.
+
+**Malia wants to split her dataset into a training and a test set. How would you recommend she does it?**
+
+
+### **Choices** :
+
+- Malia should use stratified splitting to ensure both sets contain the same ratio of arrival and departure flights.
+- Malia should split her dataset so that flights from the same date go in the same split.
+- Malia should split her dataset randomly to ensure both sets properly represent the overall dataset.
+- Malia should use flight information before a specific date as her training set and any data after that as her test set.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The samples in Malia's dataset are not independent. Flights during the same day are connected, so having a delay will cascade and affect every flight after that.
+
+If Malia splits her dataset randomly, she risks getting flights that happened on the same day on separate datasets, leading to a leaky validation strategy. Here is an excerpt from [The Kaggle Book](https://amzn.to/3kbanRb):
+
+> In a leaky validation strategy, the problem is that you have arranged your validation strategy in a way that favors better validation scores because some information leaks from the training data.
+
+Malia's model can use the flight date as a clue to predict delays: any flight happening after a delay during the same day will likely be late as well, which will make some of the samples from the test set simple for the model to predict.
+
+The solution is to group flights by their date and ensure they go together into the same set.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.
+* ["Target Leakage in Machine Learning"](https://www.youtube.com/watch?v=dWhdWxgt5SU) is a YouTube presentation that covers leakage, including during the partitioning of a dataset.</p></details>
+
+-----------------------
+
