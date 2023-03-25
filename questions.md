@@ -16451,3 +16451,38 @@ Maggie is a data scientist at a company building an email system. They want to b
 
 -----------------------
 
+## Date - 2023-03-25
+
+
+## Title - Twitter's data scientist
+
+
+### **Question** :
+
+Brooklynn is a data scientist at Twitter. She is working on a project to build a model to predict how well a tweet performs. She uses a deep learning model to analyze past tweets and their performance data to make predictions.Unfortunately, Brooklynn has been having trouble getting her model to perform well. She has tried different techniques and hyperparameters, but nothing seems to work.Brooklynn is starting to think that her model suffers from the exploding gradient problem.**Which of the following techniques will make Brooklynn's model more robust to the exploding gradient problem?**
+
+
+### **Choices** :
+
+- One technique that can help with the exploding gradient problem is gradient clipping, where the gradients are capped at a maximum value to prevent them from growing too large.
+- Increasing the batch size can help to mitigate the exploding gradient problem by providing more data for the model to learn from.
+- Weight regularization can help prevent the gradients from exploding and improve the stability of the network.
+- Modifying the model architecture to include batch normalization can help. This will normalize the input to the network and prevent the values from reaching the edges where the gradients are too large.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Exploding Gradient Problem is an issue that occurs in training artificial neural networks when large error gradients accumulate and result in very large updates to the network weights during training. This can cause the network to become unstable and prevent it from learning effectively.One way to overcome the exploding gradient problem is to use gradient clipping, where the gradients are capped at a maximum value to prevent them from growing too large. This can help to stabilize the network and improve its performance.Another technique is weight regularization, where the network weights are constrained to prevent them from becoming too large. This can help to prevent the gradients from exploding and improve the stability of the network.Increasing the batch size is not a valid solution to the exploding gradient problem. This technique has nothing to do with the gradients becoming large and exploding.Modifying the model architecture to include batch normalization can help with the exploding gradient problem. Batch normalization gets rid of the extreme gradients that accumulate, leading to the elimination of the weight fluctuations that result from the increasing gradients.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Exploding Gradient Problem"](https://deepai.org/machine-learning-glossary-and-terms/exploding-gradient-problem) for an introduction to this problem.* ["A Gentle Introduction to Exploding Gradients in Neural Networks"](https://machinelearningmastery.com/exploding-gradients-in-neural-networks/) is a great article covering Exploding Gradients in detail.</p></details>
+
+-----------------------
+
