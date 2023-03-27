@@ -16521,3 +16521,38 @@ Amina works at an HR consulting firm where she spends most days processing job d
 
 -----------------------
 
+## Date - 2023-03-27
+
+
+## Title - Ensembling list
+
+
+### **Question** :
+
+Here is a list of four popular techniques that people use in machine learning. You've probably heard of them, maybe even used them.You are probably also familiar with ensembling, where we combine a group of models to produce a new model that yields better results than any initial individual models. **Can you select every technique from the list below that's related to ensembling?**
+
+
+### **Choices** :
+
+- Random Forest
+- AdaBoost
+- Bagging
+- Boosting
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Ensembling is where we combine a group of models to produce a new model that yields better results than any initial individual models. Bagging and boosting are two popular ensemble techniques.Bagging trains a group of models in parallel and independently from each other. Each model uses a subset of the data randomly selected with replacement from the original dataset. In contrast, Boosting trains a group of learners sequentially, using the results from each model to inform which samples to use to train the next model.[Random Forest](https://en.wikipedia.org/wiki/Random_forest) is an algorithm that consists of many individual decision trees. It uses bagging to combine these trees to reach a solution much better than the one provided by any of the individual trees.[AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) is another ensembling technique. It's also called Adaptive Boosting and, as the name implies, uses boosting.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [Bagging vs. Boosting in Machine Learning: Difference Between Bagging and Boosting](https://www.upgrad.com/blog/bagging-vs-boosting/) for a detailed comparison between both techniques.* Check out ["Understanding Random Forest"](https://towardsdatascience.com/understanding-random-forest-58381e0602d2) to understand how it works and why it's effective.* [_The Kaggle Book_](https://amzn.to/3kbanRb) is an excellent source for information about ensembling techniques.</p></details>
+
+-----------------------
+
