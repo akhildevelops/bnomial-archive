@@ -16661,3 +16661,38 @@ Charlotte's town is drowning in flu classes. 10,000 people live there, and many 
 
 -----------------------
 
+## Date - 2023-03-31
+
+
+## Title - Game of chicken
+
+
+### **Question** :
+
+In the game of chicken, two players drive toward each other on a collision course. If both players swerve, they each receive a small reward. If one player swerves and the other doesn't, the swerving player receives a moderate reward while the other player receives a large reward. If both players refuse to swerve, they crash and receive a large negative reward. **Which of the following is the Nash equilibrium in this game?**
+
+
+### **Choices** :
+
+- Both players swerve, resulting in both players receiving a small reward.
+- One player swerves, and the other doesn't, resulting in the swerving player receiving a moderate reward and the other player receiving a large reward.
+- Both players refuse to swerve, resulting in a crash and a large negative reward.
+- Neither of these options results in a Nash equilibrium.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A Nash equilibrium is a state in which all players in a game have made their best decisions given the decisions of the other players. In this game, the Nash equilibrium is when one player swerves while the other stays its course. In this case, each player will receive the highest reward possible, given the other player's decision.If both players refuse to swerve, they will crash and obtain the lowest reward. If both swerve, they will obtain a small reward. But whenever one stays the course and the other swerves, they will receive a better reward.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["An Introduction to the Nash Equilibrium"](https://builtin.com/data-science/nash-equilibrium) for a great explanation of one of the cornerstones of Game Theory.</p></details>
+
+-----------------------
+
