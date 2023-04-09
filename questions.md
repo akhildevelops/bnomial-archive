@@ -16976,3 +16976,38 @@ Mariana wants to set up the correct loss function for her model.She read that 
 
 -----------------------
 
+## Date - 2023-04-09
+
+
+## Title - National security
+
+
+### **Question** :
+
+Selena works for the government as a data scientist, focusing on national security. She uses neural networks to classify military vehicles as part of their work.To help bring new team members up to speed, Selena organized a class around Perceptrons. In one of her examples, Selena gave the team the following context:* The Perceptron's weights were initialized as `[0.0, 0.0]`* A training sample with value `[1.0, 2.0]` was ran through the Perceptron* The true label associated with the sample was `0`* The Perceptron returned `1` as its prediction**What does the weight vector look like after the Perceptron updates the weights?**
+
+
+### **Choices** :
+
+- The weight vector will be `[0.0, 0.0]`.
+- The weight vector will be `[-1.0, -2.0]`.
+- The weight vector will be `[1.0, 2.0]`.
+- The weight vector will be `[2.0, 4.0]`.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Since the true label is `0` but the Perceptron predicted `1`, the error will be `0 - 1 = -1`, therefore, the Perceptron will update the weight vector by the negative feature vector.As a reminder, the following snippet of code illustrates how to update the weights of a Perceptron:```import numpy as npx = np.array([1.0, 2.0])w = np.array([0.0, 0.0])error = -1w = w + error * xprint(w)```The feature vector is `[1.0, 2.0]`, and the weights were initialized with `[0.0, 0.0]`. The update will set them to `[-1.0, -2.0].`</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Perceptron Algorithm for Classification in Python"](https://machinelearningmastery.com/perceptron-algorithm-for-classification-in-python/) is a great introduction to the Perceptron.</p></details>
+
+-----------------------
+
