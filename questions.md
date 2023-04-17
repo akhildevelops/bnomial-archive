@@ -17267,3 +17267,38 @@ It's important to carefully select and engineer the features used in a machine l
 
 -----------------------
 
+## Date - 2023-04-17
+
+
+## Title - Defective cell phones
+
+
+### **Question** :
+
+Camille works at a company that produces cell phones, and her team wants to classify defects into three categories: visual scratches, software bugs, and hardware defects.Every cell phone could have one or more of these defects.Camille's team is using a convolutional neural network to solve this problem, and she is trying to determine the best way to design it.**What would be the best approach for Camille's team to design the network to classify the defects?**
+
+
+### **Choices** :
+
+- The output layer of the network should have a softmax activation function, and the loss function should be categorical cross-entropy.
+- The output layer of the network should have a sigmoid activation function, and the loss function should be binary cross-entropy.
+- The output layer of the network should have a softmax activation function, and the loss function should be binary cross-entropy.
+- The output layer of the network should have a sigmoid activation function, and the loss function should be categorical cross-entropy.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The team is trying to build a [multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) model. In multi-label classification, every cell phone might show multiple defects. This differs from [multi-class classification](https://en.wikipedia.org/wiki/Multiclass_classification), where a photo shows only one kind of defect.When building multi-label classification models, we need an output layer where every class is independent. Remember that we can have more than one active class for each input. The softmax activation function doesn't work because it uses every score to output the probabilities of each class. Softmax is the correct output for multi-class classification. Sigmoid is the correct output for multi-label classification problems. The sigmoid function converts output scores to a value between 0 and 1, independently of all the other scores.Multi-label classification problems borrow the same principles from binary classification problems. The difference is that we end up with multiple sigmoid outputs instead of one. In our example problem, we combine three different binary classifiers. This is why we should use a binary cross-entropy as the loss function.In summary, multi-class classification models should use a softmax output with the categorical cross-entropy loss function. Multi-label classification models should use a sigmoid output and the binary cross-entropy loss function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The Wikipedia explanation of [Multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) should give you most of what you need to understand for this task.* ["Demystifying the Difference Between Multi-Class and Multi-Label Classification Problem Statements in Deep Learning"](https://www.analyticsvidhya.com/blog/2021/07/demystifying-the-difference-between-multi-class-and-multi-label-classification-problem-statements-in-deep-learning/) is an excellent article comparing these two types of problems.* ["How to choose cross-entropy loss function in Keras?"](https://androidkt.com/choose-cross-entropy-loss-function-in-keras/) explains the differences between the loss functions that we discussed in this question.</p></details>
+
+-----------------------
+
