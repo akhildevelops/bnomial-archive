@@ -17372,3 +17372,38 @@ Kailani is a data scientist at a hospital and has developed a model that takes i
 
 -----------------------
 
+## Date - 2023-04-20
+
+
+## Title - Financial performance
+
+
+### **Question** :
+
+Charlee is a data scientist in the finance department of a startup. She is working on a project to build a machine-learning model that predicts stock prices for the company. Charlee knows her model's success will significantly impact the company's financial performance.Before she trains her model, Charlee must divide her dataset into three sets: a training set, a validation set, and a test set. She knows that using each set for specific purposes is essential to ensure accurate results.**Which of the following statements are true about the training and validation datasets during the development process?**
+
+
+### **Choices** :
+
+- The training dataset should be used only once before testing the model with the test set.
+- The training dataset can be used multiple times throughout the model development process.
+- The validation set should be used only once before testing the model with the test set.
+- The validation set can be used multiple times throughout the model development process.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The training and validation sets can be used multiple times throughout the model development process.We use a training set to train the model. This training set is a subset of the entire dataset. We use the training set multiple times throughout the model development process as the model is refined and improved.We use a validation set to tune the model's parameters and assess its performance to prevent overfitting. We evaluate the model's performance after each iteration of training.After we finish training and tuning the model, we can evaluate it on a test set, which hasn't been used during the training or validation process. The model's performance on the test set provides an estimate of how well the model will perform in real-world scenarios.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Train, Validation, Test Split for Machine Learning"](https://blog.roboflow.com/train-test-split/) goes into detail about the importance of each split.</p></details>
+
+-----------------------
+
