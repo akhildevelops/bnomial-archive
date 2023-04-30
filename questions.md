@@ -17722,3 +17722,38 @@ We want to use a Perceptron to represent the NAND logic gate. As a reminder, her
 
 -----------------------
 
+## Date - 2023-04-30
+
+
+## Title - Problem framing
+
+
+### **Question** :
+
+Understanding how to approach a new problem is a fundamental skill.Here is a list of four different problems. You can assume you have access to as much data as you need.**Which of the following applications could you frame as a Supervised Learning problem?**
+
+
+### **Choices** :
+
+- An Online Advertising application that, given one specific ad and a user's personal information, determines whether the user will click on the ad.
+- A Self-Driving system that, given a picture of the front camera and the information of the radar, determines the position of other cars.
+- A Visual Inspection application that, given the picture of a circuit board, determines whether there are any defects.
+- An Email application that, given a new message, determines whether it's spam.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>There are multiple ways to approach these problems, but we can solve all of them using [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning).Supervised learning involves using labeled training data to make predictions or classify data. The question tells us that we can access all the data we need. We can then assume we have labeled data for each one of these problems.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) is an excellent introduction to the differences between supervised and unsupervised learning.</p></details>
+
+-----------------------
+
