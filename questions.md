@@ -17947,3 +17947,38 @@ Despite what Ada's model suggests, the chip is likely to be working correctly.</
 
 -----------------------
 
+## Date - 2023-05-05
+
+
+## Title - Game-playing skills
+
+
+### **Question** :
+
+Mariah loves playing games and has been studying game theory to improve her game-playing skills. She has learned about Nash equilibrium and wants to test her understanding by designing a simple game and playing it with her friends.**Which of the following are characteristics of Nash equilibrium in Mariah's game?**
+
+
+### **Choices** :
+
+- Mariah and her friends must choose their strategies at the same time.
+- No player can improve their reward by changing their strategy, given the other players' strategies.
+- The strategies chosen by the players must be completely random.
+- Mariah and her friends must communicate with each other before choosing their strategies.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In a Nash equilibrium, each player has chosen a strategy that maximizes their reward given the other players' strategies. As a result, no player can improve their reward by changing their strategy since doing so would decrease their reward.The strategies chosen by the players do not need to be at the same time or at random, and Mariah and her friends do not need to communicate with each other before choosing their strategies.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["An Introduction to the Nash Equilibrium"](https://builtin.com/data-science/nash-equilibrium) for a great explanation of one of the cornerstones of Game Theory.</p></details>
+
+-----------------------
+
