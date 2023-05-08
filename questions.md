@@ -18083,3 +18083,52 @@ Unsupervised learning, also known as unsupervised machine learning, is a subcate
 
 -----------------------
 
+## Date - 2023-05-08
+
+
+## Title - Genre classification
+
+
+### **Question** :
+
+Aubrey felt exhausted after working on her music genre classification project. Her neural network performed exceptionally well during training but fell short regarding the test data.
+
+Taking a break to clear her head, Aubrey went for a walk to reflect on the situation. Returning, she quickly jotted down a few strategies to tackle the problem.
+
+**Which approaches will most likely help Aubrey address the issue?**
+
+
+### **Choices** :
+
+- Reduce the model's complexity by decreasing the number of layers and neurons.
+- Apply regularization techniques to the model.
+- Expand the volume of training data.
+- Opt for a different optimization algorithm.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Aubrey's model is experiencing overfitting.
+
+The model performs well with the training data but has difficulty with the test set, indicating that it is not generalizing effectively to unseen samples.
+
+By decreasing the model's complexity, Aubrey could prevent the neural network from "memorizing" the training samples. Complex models tend to overfit due to their excess capacity, making it simpler for them to memorize training data rather than generalize.
+
+Switching the optimization algorithm is unlikely to resolve this issue. The current description does not provide any information about Aubrey's algorithm, nor is there any reason to believe it is inadequate. Furthermore, her model is learning from the training data, which would not be possible if the optimization algorithm was inappropriate.
+
+Aubrey could also implement regularization techniques to combat overfitting. Regularization discourages the model from becoming overly complex or flexible, helping to prevent it from "memorizing" the training data.
+
+Lastly, it is possible that Aubrey's training data does not encompass the full range of valid samples for her problem. In other words, her training dataset may not be sufficient for teaching the model to predict the test data accurately. By increasing the training data, Aubrey can create a model that generalizes better.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.</p></details>
+
+-----------------------
+
