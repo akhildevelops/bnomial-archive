@@ -18132,3 +18132,52 @@ Lastly, it is possible that Aubrey's training data does not encompass the full r
 
 -----------------------
 
+## Date - 2023-05-09
+
+
+## Title - Fascinated by intelligence
+
+
+### **Question** :
+
+Hallie has always been fascinated by artificial intelligence and is eager to embark on her career in the field. However, she's uncertain whether to focus on research or dive into a more industry-oriented role. 
+
+To help her make an informed decision, we will outline some key differences between Machine Learning in a research setting and Machine Learning in a production setting.
+
+**Select every statement that correctly highlights the differences between Machine Learning in a research environment versus production Machine Learning.**
+
+
+### **Choices** :
+
+- The design priority in a research environment usually leans towards higher performance—either the highest accuracy or other relevant metrics. Production environments place more emphasis on costs, scalability, and explainability.
+- In a research environment, most work is centered around the initial training and validation of the model. In production, there is a significant focus on monitoring and maintaining models.
+- The data used in a research environment is typically static, while the data used in a production setting is dynamic and constantly evolving.
+- Both research and production environments are concerned with fairness, but the implications of fairness in a production environment are often more critical due to real-world consequences.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Researchers like to test their work on popular datasets. This gives them a fair comparison with other existing methods and makes reproducing their results easily. On the other hand, production data is constantly shifting. The datasets you use to train and test your models can quickly become obsolete.
+
+A lot of emphasis on academia centers around better algorithms and techniques. Can we solve this particular problem and do it more accurately? Can we do it faster? Research jobs are about inventing new methods and squeezing as much as possible from what we already know.
+
+Focusing on better techniques and algorithms leads to the main priority in many research positions: achieving better "performance." It could be about higher accuracy, a faster method, or fewer constraints. These, however, aren't usually the same concerns in the industry.
+
+Production machine learning is generally more focused on the interpretability of results and the cost of the solution. "Higher accuracy" is not the most critical metric in many cases—it's still important but usually not at the expense of other factors. This is one of the main differences between research and industry positions. 
+
+In a research environment, most work is centered around the initial training and validation of the model. Researchers explore techniques, hyperparameters, and training methodologies to improve model performance. In production environments, a significant focus is monitoring and maintaining models to ensure their effectiveness. As new data becomes available, models might require retraining, fine-tuning, or adaptation to maintain performance. Additionally, production environments often involve integrating models into larger systems, handling data pipelines, and ensuring the reliability and stability of the deployed models.
+
+Fairness is essential to machine learning models in research and production environments. However, the implications of fairness are often more critical in a production setting due to real-world consequences. Unfair models may negatively impact users or perpetuate existing biases, leading to ethical concerns and potential legal repercussions. Fairness is studied and addressed in research, but the direct impact on real-world scenarios may not be immediate.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Machine Learning Data Lifecycle in Production"](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production) course in Coursera, part of the [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops).* Check ["Why You Should Care About Data and Concept Drift"](https://evidentlyai.com/blog/machine-learning-monitoring-data-and-concept-drift) to understand the importance of monitoring machine learning models.* ["A Gentle Introduction to Concept Drift in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-concept-drift-machine-learning/) is an excellent introduction to concept drift.</p></details>
+
+-----------------------
+
