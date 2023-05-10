@@ -18181,3 +18181,64 @@ Fairness is essential to machine learning models in research and production envi
 
 -----------------------
 
+## Date - 2023-05-10
+
+
+## Title - Foreign films
+
+
+### **Question** :
+
+Ophelia is building a natural language processing model to classify movie reviews using an RNN.
+
+She has a dataset of 20,000 reviews, split 50% into training and testing. The dataset is well-balanced, containing an equal amount of positive and negative reviews.
+
+After some work, Ophelia's model achieves around 90% accuracy. She notices that the model struggles with reviews of foreign films, so Ophelia asks her team to collect more data.
+
+After several days, the data collection and labeling team provides 1,000 well-balanced new labeled reviews, which Ophelia splits in half to extend the existing training and testing datasets.
+
+The accuracy of the new model dropped to 88%.
+
+**Which of the following is the approach that Ophelia should follow to fix the problem?**
+
+
+### **Choices** :
+
+- The architecture of the RNN model is no longer valid for the new batch of data. Ophelia should change the network to ensure she gets a better result.
+- There must be a problem with the labels on the last batch of 1,000 foreign film reviews. Ophelia should work with the labeling team to correct the labels.
+- Better data always leads to a better model, so Ophelia should review her code because the accuracy must improve or stay where it was.
+- The accuracy here might not tell the story of what's happening. Ophelia should evaluate the model on the original 10,000 test reviews for a valid comparison.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Ophelia compared the 90% accuracy computed on the 10,000 reviews to the 88% accuracy on the augmented dataset containing 10,500 reviews. There is a problem with this.
+
+The new reviews may be much more difficult for the model. Even if the model improved with the new data, Ophelia would not realize it because the additional reviews are causing the overall accuracy to drop.
+
+Here is a hypothetical scenario of two models illustrating how the new model could improve even when returning a lower accuracy:
+
+* Old model's accuracy on 10,000 reviews: 90% (9,000 reviews correctly classified.)
+* Old model's accuracy on the new 500 reviews: 10% (50 reviews correctly classified.)
+* New model's accuracy on the 10,000 reviews: 91% (9,100 reviews correctly classified.)
+* New model's accuracy on the new 500 reviews: 28% (140 reviews correctly classified.)
+* New model's accuracy on the 10,500 reviews: 88% (9,240 reviews correctly classified.)
+
+In this hypothetical example, the new model is better on the original 10,000 reviews (from 90% to 91%) and the 500 new reviews (from 10% to 28%.) However, the approach used by Ophelia to evaluate the results made us believe the model got worse (going down from 90% to 88% accuracy.)
+
+This is called the [Simpson's paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox). When comparing two experiments, we need to make sure that we evaluate the same data or at least data having the same underlying distribution. If we change the distribution, we can't compare the results and may make the wrong conclusion.
+
+The wrong labels or architecture could be reasons for the model performing worse. However, we need to check if the model is performing worse in the first place. Also, adding more data doesn't automatically mean better results.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Simpson's Paradox"](https://www.britannica.com/topic/Simpsons-paradox) for a complete explanation about the paradox.* Here is a video about the [Simpson's Paradox](https://www.youtube.com/watch?v=ebEkn-BiW5k).</p></details>
+
+-----------------------
+
