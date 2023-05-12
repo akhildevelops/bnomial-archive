@@ -18285,3 +18285,52 @@ While the network deals with pixels early on, the deeper we go into it, the more
 
 -----------------------
 
+## Date - 2023-05-12
+
+
+## Title - Avoiding high bias
+
+
+### **Question** :
+
+Kiara is facing a challenging project with a large dataset and many relevant features. 
+
+She understands the role of bias and variance in machine learning algorithms. High-bias models make more assumptions about the target function, while low-bias models make fewer assumptions.
+
+Kiara wants to steer clear of high-bias models for her project.
+
+**Which of the following algorithms should Kiara avoid?**
+
+
+### **Choices** :
+
+- Linear Regression
+- Decision Trees
+- Logistic Regression
+- k-Nearest Neighbors
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Every machine learning algorithm deals with three types of errors: bias, variance, and irreducible error. We need to focus specifically on the bias error to answer this question.
+
+Here is what [Jason Brownlee](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) has to say about bias: "Bias are the simplifying assumptions made by a model to make the target function easier to learn."
+
+In other words, bias refers to the model's assumptions to simplify finding answers. The more assumptions it makes, the more biased the model is.
+
+Often, linear models are high-bias. They are easier to understand but make too many assumptions about the target function, preventing them from performing well on complex problems. Linear and logistic regression are two examples of high-bias models.
+
+Nonlinear models are usually low-bias. Decision Trees and k-Nearest Neighbors are two examples.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Here is Jason Brownlee's article I mentioned before ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/).* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
