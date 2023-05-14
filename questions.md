@@ -18385,3 +18385,48 @@ Finally, one reason CNNs are very effective in dealing with pictures is that the
 
 -----------------------
 
+## Date - 2023-05-14
+
+
+## Title - Unsatisfactory test
+
+
+### **Question** :
+
+Mckenna has been struggling with the Decision Tree model for her dataset. 
+
+Although her model performs exceptionally well on the training data, its test performance is far from satisfactory.
+
+Upon consulting her mentor, she was advised to prune the tree. However, Mckenna is unclear about how this would help resolve the issue.
+
+**Which statements explain why pruning the tree will address Mckenna's problem?**
+
+
+### **Choices** :
+
+- Pruning the Decision Tree will lead to an increase in the model's bias.
+- Pruning the Decision Tree will lead to a decrease in the model's variance.
+- Pruning the Decision Tree will lead to an increase in the model's variance.
+- Pruning the Decision Tree will lead to a decrease in the model's bias.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A Decision Tree is an algorithm with low bias and high variance. A Decision Tree makes almost no assumptions about the target function.
+
+Because of its high variance, Decision Trees overfit easily to the training dataset. Mckenna experienced this when she tested the model on her test data.
+
+To avoid overfitting, Mckenna should prune the tree. By doing so, she forces the tree to generalize better and make assumptions by reducing the number of nodes. In other words, by pruning the tree, she increases its bias and decreases its variance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) is an excellent introduction to the bias and variance tradeoff.* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
