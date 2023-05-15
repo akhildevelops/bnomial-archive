@@ -18430,3 +18430,38 @@ To avoid overfitting, Mckenna should prune the tree. By doing so, she forces the
 
 -----------------------
 
+## Date - 2023-05-15
+
+
+## Title - Course notes
+
+
+### **Question** :
+
+Alivia, a student taking a deep learning class on YouTube, is writing notes about the course and wants to capture the correct output size of a convolutional layer.Her layer receives an input image of size 64x64. She is using a kernel size of 13, padding of 3, and a stride of 2.**What is the output size of the convolutional layer?**
+
+
+### **Choices** :
+
+- The output size is 29x29
+- The output size is 58×58
+- The output size is 28×28
+- The output size is 26×26
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Convolutions have many parameters that influence the output size, so let's go through the properties of the convolutional layer one by one.First, we know the input size to be 64×64.Next, we know that the kernel size is 13. This means we will move a sliding window of size 13×13 over the entire image. The window must fit entirely in the picture, so we cannot compute the convolution for the eight rows/columns on the border. Therefore, the resulting output so far would be 52×52.Adding padding to the image is a way to avoid the reduction of the size. In this case, we added a padding of 3, giving us an extra 6 pixels in each direction for an output of 58x58.Finally, we have a stride of 2. This means the sliding window will move by two rows/columns every time, reducing each output dimension's size by half.Therefore, the final output size of the convolutional layer will be 29×29.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* It may be difficult to imagine why some of these things happen just by reading the text, so I encourage you to go to this ["Convolution Visualizer"](https://ezyang.github.io/convolution-visualizer/) and enter the parameters of the convolutional layer from the question. It should be much more evident now why this happens.* ["Convolution arithmetic"](https://github.com/vdumoulin/conv_arithmetic) is a technical report on convolution arithmetic in the context of deep learning.</p></details>
+
+-----------------------
+
