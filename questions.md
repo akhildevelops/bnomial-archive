@@ -18656,3 +18656,38 @@ We want to use a Perceptron to represent the XOR logic gate. As a reminder, here
 
 -----------------------
 
+## Date - 2023-05-20
+
+
+## Title - Blog encoding techniques
+
+
+### **Question** :
+
+Stevie is writing a blog post about encoding techniques for handling categorical features in a dataset. She wants to add a fun question at the end of the post to test her readers' understanding of the topic.She writes many different ideas, and now it's your turn to decide how Stevie should mark each statement.**Which statements regarding Label encoding and One-Hot encoding techniques are correct?**
+
+
+### **Choices** :
+
+- One-Hot encoding generates new columns for each categorical feature.
+- One-Hot encoding creates a unique numerical representation for each categorical feature.
+- Label encoding generates two new labels for each categorical feature.
+- Label encoding generates new columns for each categorical feature.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Before analyzing this question, we must understand what "categorical data" means.Categorical data are variables that contain label values rather than numeric values. For example, a variable representing the weather with values "sunny," "cloudy," and "rainy" is a categorical variable.Although some algorithms can use categorical data directly, most can't: they require the data to be numeric. We can use One-Hot or Label encoding to do this.[One-Hot encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f) creates a new feature for each unique value of the original categorical variable.For example, assume we have a dataset with a single feature called "weather" that could have the values "sunny," "cloudy," and "rainy." Applying One-Hot Encoding will get us a new dataset with three features, one for each value of the original "weather" column. A sample that had the value "cloudy" in the previous column will now have the value 0 for both "sunny" and "rainy" and the value 1 under the "cloudy" feature.On the other hand, [Label encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/) replaces each categorical value with a consecutive number starting from 0. For example, Label Encoding would replace our weather feature with a new one containing the values 0 instead of "cloudy," 1 instead of "rainy," and 2 instead of "sunny."</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["What is One Hot Encoding? Why and When Do You Have to Use it?"](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f) is an excellent introduction to One-Hot encoding.* ["Label Encoding in Python Explained"](https://www.mygreatlearning.com/blog/label-encoding-in-python/) is an introduction to Label encoding.* ["One-Hot Encoding vs. Label Encoding using Scikit-Learn"](https://www.analyticsvidhya.com/blog/2020/03/one-hot-encoding-vs-label-encoding-using-scikit-learn/) covers both techniques and when to use each one.</p></details>
+
+-----------------------
+
