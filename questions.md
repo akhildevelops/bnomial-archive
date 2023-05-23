@@ -18761,3 +18761,52 @@ Kaylani is the tech lead of a project that aims to classify pictures of animals 
 
 -----------------------
 
+## Date - 2023-05-23
+
+
+## Title - Marine biologist
+
+
+### **Question** :
+
+Aniyah is a marine biologist using machine learning to study the migratory patterns of various sea creatures. She needs to determine how close different species are to one another during their migrations.
+
+Aniyah is considering using clustering algorithms like [K-Means](https://en.wikipedia.org/wiki/K-means_clustering). These algorithms require measuring the similarity between observations in her dataset.
+
+Euclidean distance is one of the most popular distance metrics for this task.
+
+**From the following list, select every correct statement about the Euclidean distance.**
+
+
+### **Choices** :
+
+- The Euclidean distance between two points does not depend on which of the two points is the start and which is the destination. In other words, the distance between _p_ and _q_ is the same as between _q_ and _p_.
+- The Euclidean distance is a way to compute the distance between two points in two-dimensional spaces. The Euclidean distance doesn't work in multidimensional spaces.
+- The Euclidean distance between two distinct points is always positive.
+- Traveling from a point _p_ to a point _q_ via a point _r_ cannot be any shorter than traveling directly from _p_ to _q_.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In one or more dimensions, we can use the [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance). For example, in a line, the distance between two points is the numerical difference between their coordinates. In a plane, the distance is the [Pythagorean distance](https://en.wikipedia.org/wiki/Pythagorean_theorem). 
+
+But can we use it in multidimensional spaces?
+
+The answer is yes; the Euclidean distance works in [multidimensional spaces](https://hlab.stanford.edu/brian/euclidean_distance_in.html). Intuitively, this should make sense because we can use it as the metric to compute the distance between multi-feature observations in our dataset.
+
+The distance from a point _p_ to another point _q_ is the same regardless of whether we start from _p_ or _q_. This distance is always a positive value as long as _p_ and _q_ are different points. If _p_ and _q_ are the same point, the distance is 0.
+
+In the [Euclidean plane](https://en.wikipedia.org/wiki/Euclidean_space), the distance between any two distant points is the length of the line segment joining them. So this segment joining points _p_ and _q_ can't be any shorter, regardless of whether we get from _p_ to _q_ via a third point _r_.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Euclidean Distance In 'n'-Dimensional Space"](https://hlab.stanford.edu/brian/euclidean_distance_in.html) for a summary and visualization of how the Euclidean distance works in multi-dimensional spaces.* ["Euclidean distance"](https://en.wikipedia.org/wiki/Euclidean_distance) and ["Euclidean space"](https://en.wikipedia.org/wiki/Euclidean_space) are Wikipedia articles that will help with this topic.</p></details>
+
+-----------------------
+
