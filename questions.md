@@ -18915,3 +18915,38 @@ Sarah is a computer science student who wants to build a machine-learning model 
 
 -----------------------
 
+## Date - 2023-05-27
+
+
+## Title - Specific outcomes
+
+
+### **Question** :
+
+Tessa is a data scientist working in the field of Computer Vision. She has been assigned a project that involves building a model to predict specific outcomes based on visual data.Before training her model, Tessa divides her dataset into a training set and a test set. She understands that shuffling the dataset before dividing it is crucial in ensuring accurate results.**What is the primary reason for shuffling the dataset before dividing it into a training and test set?**
+
+
+### **Choices** :
+
+- To make sure the training set contains more data than the test set.
+- To make sure the features in the training and test sets are the same.
+- To make sure the class labels are evenly split between the training and test sets.
+- To make sure the training set contains the same number of samples as the test set.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The main reason for shuffling the dataset before dividing it into a training and test set is to ensure that the class labels are evenly distributed between the two sets. This is important because if the class labels are not evenly distributed, one of the sets might not contain data that belongs to some of the labels. For example, assuming our dataset is sorted by the class label, we might assign every sample from one class to the training set and every sample from another to a test set.Shuffling the dataset helps to mitigate this issue by randomly reordering the data, which helps to ensure that the training and test sets are representative samples of the entire data population.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Machine Learning Crash Course"](https://developers.google.com/machine-learning/crash-course) is a great introduction to Machine Learning.</p></details>
+
+-----------------------
+
