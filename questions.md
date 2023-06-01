@@ -19112,3 +19112,38 @@ Jayla was participating in a machine learning hackathon with her teammates, work
 
 -----------------------
 
+## Date - 2023-06-01
+
+
+## Title - Chain rule
+
+
+### **Question** :
+
+Lia is a computer science teacher passionate about helping her students learn the latest developments in the field. She has been teaching a course on neural networks, and one of the topics that have come up is the chain rule from Calculus.For days, her students struggled to fully understand the purpose of the chain rule. Lia has spent time reviewing the materials with them, but they have yet to make much progress.**Which of the following are characteristics of the chain rule?**
+
+
+### **Choices** :
+
+- The chain rule allows the computation of derivatives of composite functions.
+- The chain rule is based on the idea that the derivative of a composite function is the product of the derivative of the outer function and the derivative of the inner function.
+- The chain rule is utilized to compute the gradient of the loss function in relation to the network's weights.
+- The chain rule is used as part of the backpropagation algorithm.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The chain rule in Calculus allows us to find the derivative of a composite function.In the context of neural networks, we use the chain rule as part of the backpropagation algorithm to calculate the gradient of the loss function in relation to the network's weights. This gradient tells us the direction and magnitude of the change we need to make to the weights to reduce the loss.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Chain Rule"](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/a/chain-rule-review) for a review of how it works.* ["The Chain Rule of Calculus for Univariate and Multivariate Functions"](https://machinelearningmastery.com/the-chain-rule-of-calculus-for-univariate-and-multivariate-functions) is a short introduction to the chain rule in machine learning.</p></details>
+
+-----------------------
+
