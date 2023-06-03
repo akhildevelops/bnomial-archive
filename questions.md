@@ -19205,3 +19205,38 @@ For example, to store a color image, we need three dimensions: one representing 
 
 -----------------------
 
+## Date - 2023-06-03
+
+
+## Title - NOR logic gate
+
+
+### **Question** :
+
+We want to use a Perceptron to represent the NOR logic gate. As a reminder, here is how the NOR gate works:* 0 nor 0 = 1* 0 nor 1 = 0* 1 nor 0 = 0* 1 nor 1 = 0Our Perceptron will have two inputs, two weights, and a bias parameter. **Which of the following parameters will make our Perceptron act as a NOR gate?**
+
+
+### **Choices** :
+
+- `w1 = -1.0`, `w2 = -1.0`, `b = 1.0`
+- `w1 = 0.5`, `w2 = 0.5`, `b = -0.1`
+- `w1 = -2.0`, `w2 = -1.0`, `b = 0.8`
+- You need more than one Perceptron to represent the NOR gate.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We can represent a NOR gate using a single Perceptron. Here is a simple implementation with two input values, `x1` and `x2`:```def perceptron(x1, x2, w1, w2, b):    return int((x1*w1 + x2*w2 + b) > 0)```Using this function, we can try the different configurations suggested in this question. Here is an example of running the Perceptron for the NOR gate using a set of parameters:```w1 = -1.0w2 = -1.0b = 1.0assert perceptron(0, 0, w1, w2, b) == 1assert perceptron(0, 1, w1, w2, b) == 0assert perceptron(1, 0, w1, w2, b) == 0assert perceptron(1, 1, w1, w2, b) == 0```Notice how each `assert` validates a specific pair of inputs. If there are no errors, then we can conclude the parameters work.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Neural Representation of AND, OR, NOT, XOR and XNOR Logic Gates (Perceptron Algorithm)"](https://medium.com/@stanleydukor/neural-representation-of-and-or-not-xor-and-xnor-logic-gates-perceptron-algorithm-b0275375fea1) for a deep dive on how to set up a Perceptron to represent multiple logic gates.</p></details>
+
+-----------------------
+
