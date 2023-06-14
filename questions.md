@@ -19694,3 +19694,52 @@ Finally, shuffling helps us prevent the influence of any unintentional order or 
 
 -----------------------
 
+## Date - 2023-06-14
+
+
+## Title - Implementing neural networks
+
+
+### **Question** :
+
+Maggie is learning to implement neural networks and has discovered the importance of using non-linearities. 
+
+She learned that if she doesn't add non-linearities to the model, the network won't solve the problem.
+
+**Which of the following options will add non-linearities to Maggie's neural network?**
+
+
+### **Choices** :
+
+- Using convolution operations as part of the network.
+- Using Stochastic Gradient Descent to train the network.
+- Implementing the backpropagation process.
+- Using Rectifier Linear Unit (ReLU) as an activation function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>For a neural network to learn complex patterns, we must ensure that the network can approximate any function, not only linear ones. This is why we call it "non-linearities."
+
+The way we do this is by using activation functions. 
+
+An interesting fact: the [Universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) states that, when using non-linear activation functions, we can turn a two-layer neural network into a universal function approximator. This is an excellent illustration of how powerful neural networks are.
+
+Some of the most popular activation functions are [sigmoid](https://en.wikipedia.org/wiki/Logistic_function) and [ReLU](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks). 
+
+A [convolution operation is a linear operation](https://en.wikipedia.org/wiki/Convolution#Properties). You can check [this answer](https://ai.stackexchange.com/questions/19879/arent-all-discrete-convolutions-not-just-2d-linear-transforms) in Stack Exchange for an excellent explanation.
+
+Finally, neither Stochastic Gradient Descent nor backpropagation has anything to do with the linearity of the network operations.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Activation function"](https://en.wikipedia.org/wiki/Activation_function) from Wikipedia to understand more about this topic.* I find the ["Universal approximation theorem"](https://en.wikipedia.org/wiki/Universal_approximation_theorem) fascinating.</p></details>
+
+-----------------------
+
