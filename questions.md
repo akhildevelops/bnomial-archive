@@ -19743,3 +19743,50 @@ Finally, neither Stochastic Gradient Descent nor backpropagation has anything to
 
 -----------------------
 
+## Date - 2023-06-15
+
+
+## Title - Supervised work
+
+
+### **Question** :
+
+Makayla is an experienced data scientist who has worked with supervised and unsupervised learning models for years. 
+
+Recently, she was introduced to the concept of self-supervised learning. 
+
+This is new to her. This is different.
+
+**Which of the following statements about self-supervised learning are true?**
+
+
+### **Choices** :
+
+- Self-supervised learning is just a fancy name for unsupervised learning.
+- Similar to supervised learning, self-supervised methods can judge whether their prediction is correct during training.
+- Self-supervised methods require only a small number of labeled samples.
+- Like unsupervised learning, self-supervised methods don't require labeled training data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Self-supervised methods are considered a form of unsupervised learning. However, not all unsupervised methods are self-supervised. Self-supervised methods have similarities to both supervised and unsupervised learning. 
+
+Self-supervised learning doesn't require labeled data, similar to unsupervised learning. On the other hand, in self-supervised methods, "supervision" can be derived directly from the data. Therefore, like supervised learning, we can judge whether a prediction is true or false.
+
+An example would be a neural network that predicts the next word given a part of a sentence. We can take the text of a book and create random samples by picking parts of sentences. We don't need any labels, but for every instance, we still know what the correct answer is.
+
+Semi-supervised learning requires only a small number of labeled samples, but that's not how self-supervised learning works.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Self-supervised learning"](https://project.inria.fr/paiss/files/2018/07/zisserman-self-supervised.pdf) is a presentation by Andrew Zisserman covering self-supervised learning for images.* ["Self-supervised learning: The dark matter of intelligence"](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/) is an excellent post from Meta's AI Research team.</p></details>
+
+-----------------------
+
