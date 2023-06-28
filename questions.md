@@ -20338,3 +20338,48 @@ Finally, a CNN is not inherently immune to the issues caused by imbalanced datas
 
 -----------------------
 
+## Date - 2023-06-28
+
+
+## Title - Testing competition
+
+
+### **Question** :
+
+Evelynn recently joined a machine learning competition, where her task is to build a model to predict outcomes based on a given dataset. 
+
+After implementing a Decision Tree model, she's happy with its performance on the training data. However, the results are disappointing when she evaluates the model on the competition's unseen test data.
+
+After looking for advice online, Evelynn reads she should try pruning the tree to improve the model's performance. 
+
+**Why would pruning the tree help address Evelynn's problem?**
+
+
+### **Choices** :
+
+- Pruning the Decision Tree will decrease the model's bias.
+- Pruning the Decision Tree will increase the model's variance.
+- Pruning the Decision Tree will decrease the model's variance.
+- Pruning the Decision Tree will not help Evelynn.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A Decision Tree is an algorithm with low bias and high variance. A Decision Tree makes almost no assumptions about the target function.
+
+Because of its high variance, Decision Trees overfit easily to the training dataset. Evelynn encountered this issue when she tested the model on the competition's unseen test data.
+
+To avoid overfitting, Evelynn should prune the tree. By doing so, she forces the tree to generalize better and make assumptions by reducing the number of nodes. In other words, by pruning the tree, she increases its bias and decreases its variance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) is an excellent introduction to the bias and variance tradeoff.* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
