@@ -20465,3 +20465,48 @@ Neither multi-class classification nor regression problems use binary-cross entr
 
 -----------------------
 
+## Date - 2023-07-01
+
+
+## Title - Trading used cars
+
+
+### **Question** :
+
+Emma worked at an online platform for trading used cars. Given her background in data science, she was tasked with building an automatic price recommendation system.
+
+A crucial step in this project was to analyze the Manufacturer's Suggested Retail Price (MSRP) of the cars, which was the target variable for the predictive model.
+
+One afternoon, while going through the data, she decided to plot a histogram of the MSRP to understand its distribution better.
+
+**Which of the following statements are correct regarding the distribution plot of the MSRP?**
+
+
+### **Choices** :
+
+- The tail of the distribution is the histogram section that gradually decreases on one side.
+- The head of the distribution is the area where the values are densely concentrated.
+- A long tail in the histogram implies many values are widely spread away from the head.
+- The head of the distribution falls right at the center of the histogram.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Visualizing a histogram](https://en.wikipedia.org/wiki/Histogram) can definitely provide a lot of insight into the distribution of a variable.
+
+The head of the distribution is the area where a significant number of values are concentrated. The position of this area is not necessarily at the center of the histogram, especially if the histogram is skewed to one side.
+
+The distribution's tails are the histogram's parts that start narrowing down. When many values are spread out far from the head of the distribution, this is known as a long tail. You can see an example of a long tail in this image.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["A Complete Guide to Histograms"](https://chartio.com/learn/charts/histogram-complete-guide/) for more information about histograms.</p></details>
+
+-----------------------
+
