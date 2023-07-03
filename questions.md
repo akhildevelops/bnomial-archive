@@ -20567,3 +20567,52 @@ However, the "AI Winter" refers to a period of reduced funding and interest in a
 
 -----------------------
 
+## Date - 2023-07-03
+
+
+## Title - Pineapple pictures
+
+
+### **Question** :
+
+Claire is a software developer at a small startup working on a quirky project: an application that can identify whether a picture contains a pineapple. 
+
+Despite its odd nature, the team is excited about the project. They gathered a large collection of images to train the model and decided to use deep learning to build a binary classifier. The primary question now is about choosing the right activation function for the final layer of the network.
+
+**Which activation functions could be a good candidate for the output layer?**
+
+
+### **Choices** :
+
+- Sigmoid
+- Rectifier Linear Unit (ReLU)
+- Softmax
+- Leaky ReLU
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Claire's team is constructing a binary classifier. The goal is to structure the output layer to produce an easily interpretable result.
+
+ReLU returns its input if it's positive or zero otherwise, while Leaky ReLU works similarly but allows a small, non-zero output for negative inputs.
+
+These functions don't seem suitable for the final layer in Claire's model. Suppose the penultimate layer has successfully captured all the necessary information for prediction. In that case, applying ReLU or Leaky ReLU to the output layer would leave any positive values untouched and turn negative values into zero (or a tiny positive result in the case of Leaky ReLU). This isn't helpful because we can't use the magnitude of these values to differentiate between inputs.
+
+On the other hand, the [Sigmoid function](https://en.wikipedia.org/wiki/Logistic_function) can convert its input into a range from 0 to 1. This characteristic makes it a suitable choice for binary classification models. By setting a threshold, we can interpret the output of the model. For instance, anything equal to or under `0.5` could represent the absence of a pineapple, and anything above `0.5` could indicate its presence.
+
+Finally, the [Softmax function](https://en.wikipedia.org/wiki/Softmax_function) can turn a vector of numbers into a vector of probabilities. In the context of the binary classifier that Claire is working on, softmax could output a vector with two values: the first representing the absence of a pineapple and the second representing its presence. The team could then take the larger of these two values to make the final prediction.
+
+It's worth noting that softmax is essentially a generalization of the sigmoid function for multi-class cases. However, softmax reduces to sigmoid when used in a binary classification context, yielding the same result.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["A Gentle Introduction To Sigmoid Function"](https://machinelearningmastery.com/a-gentle-introduction-to-sigmoid-function/) for a quick introduction to Sigmoid.* ["The Differences between Sigmoid and Softmax Activation Functions"](https://medium.com/arteos-ai/the-differences-between-sigmoid-and-softmax-activation-function-12adee8cf322) is a short comparison between these two functions.</p></details>
+
+-----------------------
+
