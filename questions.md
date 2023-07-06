@@ -20708,3 +20708,58 @@ Typically, the learning rate starts relatively high to allow quick learning, and
 
 -----------------------
 
+## Date - 2023-07-06
+
+
+## Title - Facing resistance
+
+
+### **Question** :
+
+Maria has been exploring the potential of improving her deep learning model by incorporating Rectified Linear Units (ReLU) as the activation function in some model layers.
+
+Knowing that she may face resistance from her colleagues, Maria decides to list down some of the benefits of using ReLU to persuade her team.
+
+She has a list but would like assistance reviewing it before presenting it to her team.
+
+**Which of the following are the advantages of using the ReLU?**
+
+
+### **Choices** :
+
+- ReLU is computationally straightforward to implement.
+- ReLU provides better representational sparsity than the sigmoid and tanh activation functions because it can produce an actual zero output.
+- ReLU saturates around extreme values, allowing backpropagation to converge faster and helping the network learn.
+- Neural networks are easier to optimize when their behavior is as linear as possible. ReLU acts mainly as a linear function, improving our ability to optimize neural networks.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>ReLU is a piecewise linear function that provides the input directly if it is positive and zero if it's otherwise:
+
+```
+f(x) = max(x, 0)
+```
+
+ReLU will convert negative input values to zero, causing the function to saturate. However, ReLU does not saturate for positive input values because it keeps them as they are. Contrarily, functions like sigmoid and tanh do saturate, around `0` and `1` for sigmoid, and `-1` and `1` for tanh, for both positive and negative inputs.
+
+Moreover, the saturation of ReLU does not aid in faster convergence of backpropagation. Saturation is often a challenge in neural networks and leads to problems like "[dying ReLU](https://arxiv.org/abs/1903.06733)" or the "[vanishing gradient problem](https://machinelearningmastery.com/how-to-fix-vanishing-gradients-using-the-rectified-linear-activation-function/)."
+
+ReLU can turn negative inputs into zero, unlike sigmoid and tanh, which approximate a zero value. Therefore, when using ReLU, it's possible to have layers with one or more nodes containing zero values, a situation referred to as "sparse representation". This property simplifies the model and can conserve computational resources while effectively representing data in a lower-dimensional space.
+
+The implementation of ReLU is remarkably simple, particularly in comparison to sigmoid and tanh, which require expensive computational processes like exponentiation.
+
+Lastly, optimizing neural networks is easier when their behavior is as linear as possible. ReLU behaves primarily as a linear function, and this attribute simplifies the optimization process of neural networks. ReLU is sometimes called a "piecewise linear function" because it behaves linearly for half of its input domain and vice versa.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["A Gentle Introduction to the Rectified Linear Unit (ReLU)"](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/) for an introduction to ReLU.* The [_Deep Learning_](https://amzn.to/3MqvoTQ) book is a great resource.</p></details>
+
+-----------------------
+
