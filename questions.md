@@ -20863,3 +20863,52 @@ Lastly, "Mini-Batch Gradient Descent" involves using a portion of the data—mor
 
 -----------------------
 
+## Date - 2023-07-09
+
+
+## Title - Project presentation
+
+
+### **Question** :
+
+Lucy is preparing for her data science project presentation.
+
+In her project, she has been working with a database related to car performance and specifications. Throughout her work, she had to deal with different types of features in the dataset.
+
+She plans to explain the handling of various features during her presentation, with special emphasis on ordinal features.
+
+However, Lucy has trouble remembering the exact definition of an "ordinal feature."
+
+**Which of the following definitions correctly summarizes what an ordinal feature is?**
+
+
+### **Choices** :
+
+- An ordinal feature is a categorical variable with ten or more possible values.
+- Any feature used in a machine learning model is an ordinal feature.
+- An ordinal feature is a categorical variable with fewer than ten possible values.
+- An ordinal feature is a categorical variable with a meaningful order.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Lucy can refer to the ["Ordinal and One-Hot Encodings for Categorical Data"](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/) article by Jason Brownlee to recall the definition:
+
+> [An ordinal variable is a] variable that comprises a finite set of discrete values with a ranked ordering between values.
+
+The ordering of values is the distinguishing feature of an ordinal variable. For instance, a feature denoting safety ratings with values such as "low," "medium," and "high" is ordinal because there is a clear order in these values.
+
+The number of possible values does not define an ordinal feature. Also, machine learning models can use features that aren't ordinal. For instance, machine learning models commonly use numerical and nominal features.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Ordinal and One-Hot Encodings for Categorical Data"](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/) for an explanation about ordinal features.</p></details>
+
+-----------------------
+
