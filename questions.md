@@ -20912,3 +20912,55 @@ The number of possible values does not define an ordinal feature. Also, machine 
 
 -----------------------
 
+## Date - 2023-07-10
+
+
+## Title - Rapid expansion
+
+
+### **Question** :
+
+With the rapid expansion of her digital health platform, Rachel observed an exponential increase in their core dataset size.
+
+Their deployed neural network model began to exhibit serious issues. The problem was clear: the platform collected more features from a diverse user base. The existing model was not fully utilizing the data available, leading to underfitting.
+
+Rachel knew they had to increase the capacity of the model.
+
+**What measures can Rachel take to enhance the capacity of her neural network model?**
+
+
+### **Choices** :
+
+- Rachel should increase the number of hidden layers in her neural network.
+- Rachel should increase the regularization applied to her model.
+- Rachel should raise the learning rate for training her model.
+- Rachel should increase the batch size for training her model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>This segment from ["How to Control Neural Network Model Capacity With Nodes and Layers"](https://machinelearningmastery.com/how-to-control-neural-network-model-capacity-with-nodes-and-layers/) can be useful:
+
+> The capacity of a deep learning neural network model controls the scope of the types of mapping functions that it is able to learn. (...) The capacity of a neural network model is defined by configuring the number of nodes and the number of layers.
+
+Rachel has three options to increase her network's capacity:
+* She can add more hidden layers.
+* She can increase the number of nodes on each layer.
+* She can combine both of these strategies.
+
+By increasing her network's capacity, Rachel will improve the model's generalization power, resulting in better performance as the refined model considers more data.
+
+The learning rate, regularization methods, and batch size don't impact the network's capacity.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [How to Control Neural Network Model Capacity With Nodes and Layers](https://machinelearningmastery.com/how-to-control-neural-network-model-capacity-with-nodes-and-layers/)* [The capacity of feedforward neural networks](https://www.math.uci.edu/~rvershyn/papers/bv-capacity-neural-networks.pdf)</p></details>
+
+-----------------------
+
