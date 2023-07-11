@@ -20964,3 +20964,56 @@ The learning rate, regularization methods, and batch size don't impact the netwo
 
 -----------------------
 
+## Date - 2023-07-11
+
+
+## Title - Advising a company
+
+
+### **Question** :
+
+Abigail was the first to join the video conference.
+
+Her team has been advising a company working on a deep-learning model. They've been at a standstill for a while, and Abigail's task is to move things forward.
+
+Just ten minutes into the call, Abigail figured out the problem.
+
+During the training of their network and the backpropagation process, the gradients got smaller until they almost reached zero, leaving the weights in the lower layers unmodified.
+
+Abigail identified this as the vanishing gradient problem. Now all she needs to do is hypothesize about why this is happening.
+
+**Which of the following could be causing the model to suffer from the vanishing gradient problem?**
+
+
+### **Choices** :
+
+- The hidden layers of the model use the ReLU activation function.
+- The model uses batch normalization.
+- The hidden layers of the model use the sigmoid activation function.
+- The hidden layers of the model use the tanh activation function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>If the gradients of the loss function approach zero, the model will stop learning because the network will stop updating the weights. This phenomenon is known as the [Vanishing Gradient Problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem), and it's very common when using the [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) and [tanh](https://www.sciencedirect.com/topics/mathematics/hyperbolic-tangent-function) activation functions in deep neural networks.
+
+The sigmoid and tanh functions squeeze a large input space into a value between `[0..1]` and `[-1..1]`, respectively. Therefore, large changes in the input of these functions cause small changes in the output. On top of that, both functions saturate when their input grows extremely large or small. Sigmoid saturates at `0` and `1`, tanh saturates at `-1` and `1`. The derivatives at these extremes are very close to zero. 
+
+This is not a problem if we are building a shallow network, but as we add more and more layers using these activation functions, the gradients will eventually become too small, and the network will stop learning.
+
+[ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)), on the other hand, is a way to solve the vanishing gradient problem. ReLU is much less likely to saturate, and its derivative is `1` for values larger than zero. This means that the second choice is an incorrect answer.
+
+Finally, [batch normalization](https://en.wikipedia.org/wiki/Batch_normalization) is another way to mitigate the vanishing gradient problem. If we normalize the input to a layer using a sigmoid activation function, the values won't reach the edges and will stay around the area where the derivative isn't too small.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The Wikipedia page of ["Vanishing gradient problem"](https://en.wikipedia.org/wiki/Vanishing_gradient_problem) has a great explanation of this issue.* Check ["How to Fix the Vanishing Gradients Problem Using the ReLU"](https://machinelearningmastery.com/how-to-fix-vanishing-gradients-using-the-rectified-linear-activation-function/) for an explanation of how ReLU fixes this problem.</p></details>
+
+-----------------------
+
