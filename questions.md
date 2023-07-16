@@ -21209,3 +21209,38 @@ Finally, we can use a particular implementation of a machine learning algorithm 
 
 -----------------------
 
+## Date - 2023-07-16
+
+
+## Title - Semi-supervised description
+
+
+### **Question** :
+
+Semi-supervised learning, also known as semi-supervised machine learning, is a subcategory of machine learning and artificial intelligence.**Which of the following is the correct description of Semi-supervised learning?**
+
+
+### **Choices** :
+
+- Semi-supervised learning is a type of machine learning where the model is not given any labeled training data. Instead, the model is only given a set of unlabeled data and is expected to discover the relationships and patterns within the data on its own.
+- Semi-supervised learning is a type of machine learning where the model is trained on labeled data, which consists of input data and corresponding correct output labels. The model can then make predictions on new, unseen data by using the patterns it learned from the training data.
+- Semi-supervised learning is a type of machine learning that involves training an agent to take action in an environment to maximize a reward. This is done through a process of trial and error, where the agent receives feedback in the form of rewards or punishments based on its actions and uses this feedback to adjust its behavior and improve its performance over time.
+- Semi-supervised learning is a type of machine learning where the training data consists of a mixture of labeled and unlabeled examples. It leverages the availability of labeled examples to improve the model's performance while still making use of the vast amount of unlabeled data that is often available.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Semi-supervised learning is a type of machine learning where the training data consists of a mixture of labeled and unlabeled examples. It leverages the availability of labeled examples to improve the model's performance while still making use of the vast amount of unlabeled data that is often available.Unsupervised learning is a type of machine learning where the model is not given any labeled training data. Instead, the model is only given a set of unlabeled data and is expected to discover the relationships and patterns within the data on its own.Supervised learning is a type of machine learning where the model is trained on labeled data, which consists of input data and corresponding correct output labels. The model can then make predictions on new, unseen data by using the patterns it learned from the training data.Finally, Reinforcement learning is a type of machine learning that involves training an agent to take action in an environment to maximize a reward. This is done through a process of trial and error, where the agent receives feedback in the form of rewards or punishments based on its actions and uses this feedback to adjust its behavior and improve its performance over time.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) is an excellent introduction to the differences between supervised and unsupervised learning.* ["What is reinforcement learning? The complete guide"](https://deepsense.ai/what-is-reinforcement-learning-the-complete-guide/) covers an introduction to Reinforcement learning.* ["What Is Semi-Supervised Learning"](https://machinelearningmastery.com/what-is-semi-supervised-learning/) covers Semi-supervised learning.</p></details>
+
+-----------------------
+
