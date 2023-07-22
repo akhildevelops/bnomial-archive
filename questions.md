@@ -21482,3 +21482,50 @@ While linear regression and neural networks involve a weighted sum of input feat
 
 -----------------------
 
+## Date - 2023-07-22
+
+
+## Title - Up and down
+
+
+### **Question** :
+
+Sophie is a machine learning student working late into the night.
+
+She's been trying to train a neural network using mini-batch gradient descent. The issue that keeps her up is the training loss which keeps going up and down instead of consistently decreasing.
+
+Sophie is on a tight schedule and can only try a couple more things to rectify this before moving on.
+
+**What do you suggest Sophie should try next to address the issue? Choose all that apply.**
+
+
+### **Choices** :
+
+- Increase the batch size to ensure a more diverse sample set in each batch.
+- Return to the dataset and ensure it's balanced correctly, as this could be a data problem.
+- Increase the learning rate to take larger steps toward the gradient.
+- Decrease the learning rate to prevent skipping the local minimum.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The oscillating training loss that Sophie is experiencing is less likely to be caused by an imbalanced dataset. If that were the case, the model would struggle to learn, but the loss wouldn't oscillate in this manner.
+
+Increasing the learning rate would allow more significant steps in the direction of the gradient. However, this might lead to overshooting the local minima, which can cause oscillations as the model "bounces" back and forth.
+
+On the other hand, decreasing the learning rate can help address the issue. A lower learning rate would lead to smaller steps, making it less likely for the model to miss the local minimum.
+
+Additionally, if Sophie uses a very small batch size, outliers in the data could cause significant shifts in the training loss from one batch to the next. This could also lead to the observed oscillations in loss. Therefore, increasing the batch size to get a more diverse set of samples in each batch could help stabilize the training loss.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["The wrong batch size is all it takes" ](https://articles.bnomial.com/the-wrong-batch-size-is-all-it-takes) explains how different batch sizes influence the training process of neural networks using gradient descent.* ["What could an oscillating training loss curve represent?"](https://ai.stackexchange.com/questions/14079/what-could-an-oscillating-training-loss-curve-represent) is a StackExchange question that will help you answer this question.* Check ["Why is my training loss fluctuating?"](https://www.researchgate.net/post/Why_is_my_training_loss_fluctuating) for another set of answers covering this problem.</p></details>
+
+-----------------------
+
