@@ -21731,3 +21731,54 @@ It's improbable that the problem is caused by a learning rate that's too high. I
 
 -----------------------
 
+## Date - 2023-07-27
+
+
+## Title - Visual search
+
+
+### **Question** :
+
+Talia is a data scientist at a company that develops an e-commerce platform with a visual search feature.
+
+The company has collected many product images from various online retailers, but the images are not labeled by category. To enhance the visual search functionality, Talia wants to classify each product image into specific categories. However, she realizes that she cannot use supervised learning without labeled data.
+
+Talia needs to determine a method for obtaining labels for the image data.
+
+**Which of the following techniques could Talia use to label the data?**
+
+
+### **Choices** :
+
+- Assemble a team to examine and manually label the category of each product image.
+- Apply a supervised learning method to extract the labels directly from the existing data.
+- Use semi-supervised learning to propagate labels throughout the entire dataset.
+- Use reinforcement learning to propagate labels throughout the entire dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To employ a supervised learning method, Talia needs to create labels for the data. She has several techniques available to achieve this.
+
+The first choice suggests using human labelers, the most common approach to labeling data. Talia could assemble a team to examine each product image and assign an appropriate category label (e.g., clothing, electronics, or furniture).
+
+Using a supervised learning method to infer the labels from the existing dataset is not feasible since supervised learning requires labels, which Talia lacks. 
+
+Using semi-supervised learning to propagate labels throughout the entire dataset could be used if Talia already had a small portion of labeled data. The method would then generate labels for the remaining data. However, there is no indication that Talia has any labeled data, making semi-supervised learning an unsuitable option.
+
+Finally, using reinforcement learning to propagate labels throughout the entire dataset is not ideal for labeling data in this context, as it is mainly designed for decision-making processes and learning through trial and error.
+
+Other techniques to generate labels include [active learning](https://articles.bnomial.com/active-learning) and [weak supervision](https://snorkel.ai/weak-supervision/).</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Machine Learning Data Lifecycle in Production"](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production) course in Coursera, part of the [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops).* Check out ["Semi-Supervised Learning With Label Propagation"](https://machinelearningmastery.com/semi-supervised-learning-with-label-propagation/) for an introduction to how to use a few labels with semi-supervised learning.* ["Active Learning"](https://articles.bnomial.com/active-learning) is an introduction to a learning technique to build better-performing machine learning models using fewer training labels.* ["Weak Supervision: A New Programming Paradigm for Machine Learning"](http://ai.stanford.edu/blog/weak-supervision/) is a good article from Stanford introducing Weak Supervision.</p></details>
+
+-----------------------
+
