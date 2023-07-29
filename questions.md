@@ -21829,3 +21829,52 @@ Finally, shuffling helps us prevent the influence of any unintentional order or 
 
 -----------------------
 
+## Date - 2023-07-29
+
+
+## Title - Separating classes
+
+
+### **Question** :
+
+Haven is trying to solve a simple problem using a Machine Learning model.
+
+She decided to use a neural network because it's the area she needs to learn the most.
+
+Unfortunately, Haven realized her network was not correctly separating the classes in her dataset. After reading more about the issue, she suspects she must introduce non-linearities to her neural network.
+
+**How can Haven solve her problem?**
+
+
+### **Choices** :
+
+- Haven should use Rectifier Linear Unit (ReLU) as an activation function.
+- Haven should use the Identity function as an activation function.
+- Haven should use the Sigmoid function as an activation function.
+- Haven should use Stochastic Gradient Descent to train the network.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>For a neural network to learn complex patterns, we must ensure that the network can approximate any function, not only linear ones. This is why we call it "non-linearities."
+
+The way we do this is by using activation functions. 
+
+An interesting fact: the [Universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) states that, when using non-linear activation functions, we can turn a two-layer neural network into a universal function approximator. This is an excellent illustration of how powerful neural networks are.
+
+Some of the most popular activation functions are [sigmoid](https://en.wikipedia.org/wiki/Logistic_function) and [ReLU](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks). 
+
+The identity function doesn't work for this purpose because it returns the same value used as its argument. Finally, Stochastic Gradient Descent doesn't have anything to do with the linearity of the network operations.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Activation function"](https://en.wikipedia.org/wiki/Activation_function) from Wikipedia to understand more about this topic.* I find the ["Universal approximation theorem"](https://en.wikipedia.org/wiki/Universal_approximation_theorem) fascinating.</p></details>
+
+-----------------------
+
