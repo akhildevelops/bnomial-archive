@@ -21878,3 +21878,48 @@ The identity function doesn't work for this purpose because it returns the same 
 
 -----------------------
 
+## Date - 2023-07-30
+
+
+## Title - Self clothing
+
+
+### **Question** :
+
+Lilliana is the head of the IT department at a large clothing store. 
+
+She has a strong background in data science and has built several models for forecasting sales and identifying customer trends using supervised and unsupervised learning techniques.
+
+Recently, during a tech conference, she came across a presentation on self-supervised learning, which she found intriguing as it was a new concept.
+
+**Which of the following statements about self-supervised learning are accurate?**
+
+
+### **Choices** :
+
+- Self-supervised learning is a hybrid of supervised and semi-supervised learning techniques.
+- Like supervised learning, self-supervised learning methods can evaluate the accuracy of their predictions during training.
+- Self-supervised methods require only a small number of labeled samples.
+- Like unsupervised learning, self-supervised methods don't require labeled training data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Self-supervised methods are considered a form of unsupervised learning. However, not all unsupervised methods are self-supervised. Self-supervised methods have similarities to supervised, unsupervised, and semi-supervised learning, but they aren't a hybrid of supervised and semi-supervised techniques.
+
+Self-supervised learning doesn't require labeled data, similar to unsupervised learning. On the other hand, in self-supervised methods, "supervision" can be derived directly from the data. Therefore, like supervised learning, we can judge whether a prediction is true or false.
+
+An example would be a neural network that predicts the next word given a part of a sentence. We can take the text of a book and create random samples by picking parts of sentences. We don't need any labels, but for every instance, we still know what the correct answer is.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Self-supervised learning"](https://project.inria.fr/paiss/files/2018/07/zisserman-self-supervised.pdf) is a presentation by Andrew Zisserman covering self-supervised learning for images.* ["Self-supervised learning: The dark matter of intelligence"](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/) is an excellent post from Meta's AI Research team.</p></details>
+
+-----------------------
+
