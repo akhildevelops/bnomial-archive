@@ -22211,3 +22211,54 @@ The most common scenario is to start with a high learning rate and decrease it o
 
 -----------------------
 
+## Date - 2023-08-06
+
+
+## Title - Logistic characteristics
+
+
+### **Question** :
+
+Emily is developing a logistic classifier for her latest research. 
+
+She understands that the accuracy of her predictions depends on the error function she uses. She wants this function to have the following characteristics:
+
+* The function should yield a small number if the sample is classified correctly.
+* The function should yield a large number if the sample is misclassified.
+* The error for a group of samples should be the sum or average for all the samples.
+
+Emily has a few options but would like your advice.
+
+**Which of the following would be the most suitable error function for a logistic classifier?**
+
+
+### **Choices** :
+
+- Log loss: a function that returns the negative logarithm of the product of probabilities.
+- Absolute error: a function that returns the absolute value of the difference between the prediction and the label.
+- Square error: a function that returns the square of the difference between the prediction and the label.
+- Mean percentage: a function that returns the average error of the differences between predicted and actual values.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The absolute error, the square error, and the log loss are good choices that satisfy the characteristics that Emily needs. The "mean percentage" is a made-up error function that doesn't exist.
+
+Out of these three functions, we need to analyze whether they can be used to build a binary classification model.
+
+Neither the absolute nor square error functions are used in binary classification problems. They don't penalize mistakes as harshly as log loss does, so they aren't a good choice for this type of problem. 
+
+Log loss, however, is one of the most popular error functions and a perfect fit for a binary classifier like the one Emily is trying to build.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check ["Logistic Regression for Machine Learning"](https://machinelearningmastery.com/logistic-regression-for-machine-learning/) for an introduction to Logistic Regression.- ["Logistic Regression: Loss and Regularization"](https://developers.google.com/machine-learning/crash-course/logistic-regression/model-training) is a quick summary about the Log-loss and regularization.</p></details>
+
+-----------------------
+
