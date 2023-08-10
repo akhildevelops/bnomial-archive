@@ -22413,3 +22413,62 @@ So there you have it. The correct answer to this question is the fourth choice.<
 
 -----------------------
 
+## Date - 2023-08-10
+
+
+## Title - Spanish pigeons
+
+
+### **Question** :
+
+Gabriella was excited about the performance of his model.
+
+She's been working on an app to classify photos of pigeons, and her model is performing very well on all metrics. 
+
+Gabriella knows what she is doing: she split training and test data, used the proper evaluation metrics, balanced her dataset, and reviewed examples regularly to ensure there were no labeling errors.
+
+Finally, Gabriella launched his app. 
+
+Positive feedback started rolling in except from one place: users in Spain complained the performance was awful.
+
+Gabriella was baffled.
+
+**What is the most likely reason for the problem?**
+
+
+### **Choices** :
+
+- Gabriella didn't train the model long enough to capture all the necessary details of different pigeon species.
+- Gabriella's model is too simple, and it couldn't learn the entire dataset of pigeons, leaving out those from Spain.
+- Gabriella's model suffers from data or concept drift.
+- Gabriella's model suffers from sampling bias. She probably didn't include enough examples of Spanish pigeons.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A common problem in machine learning is that a model that shows promising results during evaluation doesn't perform well when deployed in production. 
+
+While there may be various reasons for that, the story above points us in one particular direction.
+
+Not training the model long enough is unlikely to be a problem here. Gabriella wouldn't be getting good results anywhere if this was the case. Notice that problems seem to only happen in Spain.
+
+Insufficient model capacity can't either be a valid reason for what Gabriella is seeing. If this were the case, the model would be underfitting and give poor results across the board, not localized to a specific region.
+
+Data and concept drift are indeed common problems with models in production. However, they arise when the environment changes over time, as does the input to the model. In this case, the problem appeared straight after deployment.
+
+This leaves us with the only correct answer: The most likely reason for this problem is that Gabriella didn't have enough data from Spain, so her model is struggling to recognize pigeons from that region.
+
+This issue is called "sampling bias." It explains why the problem occurred in one particular country. Sampling bias is difficult to detect during development because the data is missing from the training and test datasets, so we can't notice it while evaluating the model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Sampling bias"](https://en.wikipedia.org/wiki/Sampling_bias) for a complete explanation of this problem.</p></details>
+
+-----------------------
+
