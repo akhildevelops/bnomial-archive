@@ -22617,3 +22617,52 @@ Finally, optimizing neural networks is easier when their behavior is as linear a
 
 -----------------------
 
+## Date - 2023-08-14
+
+
+## Title - Over distinctions
+
+
+### **Question** :
+
+Madeleine, a budding machine learning practitioner, is often puzzled over the distinctions between multi-class and multi-label classification problems.
+
+In multi-class classification, each sample in the dataset is associated with a single class. However, each instance can be tied to one or more categories in multi-label classification. Despite their apparent similarities, these types of problems require different approaches.
+
+Madeleine frequently finds herself in a quandary remembering the appropriate loss function to employ when training a neural network to handle these problems.
+
+**Which two of the following statements correctly address her question?**
+
+
+### **Choices** :
+
+- Binary cross-entropy is commonly applied as the loss function for multi-label classification problems.
+- Categorical cross-entropy is typically the loss function for multi-class classification problems.
+- Binary cross-entropy is often used as the loss function for multi-class classification problems.
+- Categorical cross-entropy is generally employed as the loss function for multi-label classification problems.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When dealing with [multi-class classification](https://en.wikipedia.org/wiki/Multiclass_classification) tasks, the goal of the output layer of the model is to predict the most suitable class for the input provided to the network. For this purpose, the softmax function is ideal as it converts the output scores to probabilities for each class.
+
+The categorical cross-entropy loss function quantifies the disparity between two probability distributions. Therefore, for multi-class classification tasks, this loss function makes an excellent pair with a softmax output layer.
+
+Conversely, in [multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) models, the output layer is designed to deliver independent values. The sigmoid function suits this requirement well, translating the output scores to a value between 0 and 1.
+
+Multi-label classification tasks incorporate principles from binary classification, but multiple outputs are expected instead of a single sigmoid output. Considering a model predicting ten potential classes as a combination of ten binary classifiers can be helpful. The binary cross-entropy loss function, commonly used in training binary classification models, suits this situation well.
+
+Multi-class classification models usually utilize a softmax output layer with the categorical cross-entropy loss function. In contrast, multi-label classification models prefer a sigmoid output layer coupled with the binary cross-entropy loss function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Binary crossentropy"](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy) for an explanation of how Binary Cross-Entropy works.* Check ["Categorical crossentropy"](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/categorical-crossentropy) for an explanation of how Categorical Cross-Entropy works.</p></details>
+
+-----------------------
+
