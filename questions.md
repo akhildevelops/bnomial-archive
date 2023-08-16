@@ -22719,3 +22719,46 @@ Therefore, we can't predict how the model's confidence will fluctuate for a part
 
 -----------------------
 
+## Date - 2023-08-16
+
+
+## Title - Snapping plants
+
+
+### **Question** :
+
+Camryn is creating an app to help people identify the type of plant they have just by snapping a photo. She has been studying machine learning and has decided to use a neural network to solve this problem.
+
+She's starting off small and plans to use a neural network with only one layer between the input and output layers. While explaining this to her friends helping her test the app, she wants to use the simplest language possible to avoid confusing them.
+
+**How should Camryn refer to this type of neural network?**
+
+
+### **Choices** :
+
+- A hidden neural network
+- A recurrent neural network
+- A shallow neural network
+- A deep neural network
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The kind of network Camryn is planning to use for her plant identification app is a "shallow neural network." This term is used in computer science to denote a network with only one hidden layer.
+
+When a neural network consists of multiple hidden layers, we call it a "deep neural network." However, since Camryn's network only includes one layer, it is not considered "deep" but rather "shallow."
+
+The phrases "hidden neural network" and "recurrent neural network" do not apply in this situation. The term "hidden neural network" doesn't exist in computer science terminology. And "recurrent neural network" is a specific kind of network that isn't the one Camryn is implementing for her app.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["But what is a neural network?"](https://www.youtube.com/watch?v=aircAruvnKk) is Grant Sanderson's introduction to neural networks on YouTube. Highly recommended!* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen).</p></details>
+
+-----------------------
+
