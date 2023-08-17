@@ -22762,3 +22762,52 @@ The phrases "hidden neural network" and "recurrent neural network" do not apply 
 
 -----------------------
 
+## Date - 2023-08-17
+
+
+## Title - Nut allergies
+
+
+### **Question** :
+
+Sarah is working on an interesting project for a health app. The app aims to identify whether a food item in an image contains a nut, helping those with nut allergies avoid harmful food items.
+
+The project has generated significant excitement among the team. They've compiled a vast dataset of images to train the model and have chosen to use deep learning to build a binary classifier. The key question they're facing right now is the selection of an appropriate activation function for the final layer of the network.
+
+**Which activation functions could be a good candidate for the output layer?**
+
+
+### **Choices** :
+
+- Softmax
+- Leaky ReLU
+- Rectifier Linear Unit (ReLU)
+- Sigmoid
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Sarah's team is building a binary classifier. The goal is for the output layer to produce a result that can be easily interpreted.
+
+ReLU and Leaky ReLU functions return the input if it's positive or zero otherwise. Leaky ReLU also allows a small, non-zero output for negative inputs.
+
+However, these functions might not be ideal for the final layer of Sarah's model. If the penultimate layer has successfully gathered all the necessary information for prediction, applying ReLU or Leaky ReLU to the output layer would keep any positive values intact and turn negative values into zero (or a tiny positive result in the case of Leaky ReLU). This wouldn't be useful, as the magnitude of these values wouldn't help differentiate between inputs.
+
+Conversely, the [Sigmoid function](https://en.wikipedia.org/wiki/Logistic_function) can convert its input into a range from 0 to 1. This feature makes it apt for binary classification models. By setting a threshold, we can interpret the model's output. For example, anything equal to or under `0.5` could be interpreted as the absence of a nut, and anything above `0.5` could indicate its presence.
+
+Finally, the [Softmax function](https://en.wikipedia.org/wiki/Softmax_function) can transform a vector of numbers into a vector of probabilities. In the context of the binary classifier that Sarah's team is working on, Softmax could output a vector with two values: the first representing the absence of a nut and the second representing its presence. The team could then select the larger of these two values to make the final prediction.
+
+It's worth noting that Softmax is essentially a generalized form of the Sigmoid function for multi-class cases. However, Softmax reduces to Sigmoid when used in a binary classification context, resulting in the same outcome.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["A Gentle Introduction To Sigmoid Function"](https://machinelearningmastery.com/a-gentle-introduction-to-sigmoid-function/) for a quick introduction to Sigmoid.* ["The Differences between Sigmoid and Softmax Activation Functions"](https://medium.com/arteos-ai/the-differences-between-sigmoid-and-softmax-activation-function-12adee8cf322) is a short comparison between these two functions.</p></details>
+
+-----------------------
+
