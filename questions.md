@@ -22858,3 +22858,52 @@ Lastly, computing the [F1-score](https://en.wikipedia.org/wiki/F-score) is also 
 
 -----------------------
 
+## Date - 2023-08-19
+
+
+## Title - Satisfaction scores
+
+
+### **Question** :
+
+Jennifer is a data scientist on a machine learning project involving customer satisfaction scores.
+
+In the dataset she is handling, the feature representing the scores is called "Satisfaction Level" and consists of four unique values: "Very Dissatisfied," "Dissatisfied," "Satisfied," and "Very Satisfied."
+
+Jennifer is discussing the type of this feature with her team. Some members suggest it's nominal, while others argue it's ordinal.
+
+Now, Jennifer wants to settle the dispute by clearly understanding the properties of an ordinal feature.
+
+**Which of the following definitions correctly summarizes what an ordinal feature is?**
+
+
+### **Choices** :
+
+- An ordinal feature is a categorical variable with a meaningful order.
+- An ordinal feature is a categorical variable with ten or more possible values.
+- Any feature used in a machine learning model is an ordinal feature.
+- An ordinal feature is a categorical variable with fewer than ten possible values.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Jennifer can refer to Jason Brownlee's ["Ordinal and One-Hot Encodings for Categorical Data"](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/) article for a clear definition:
+
+> [An ordinal variable is a] variable that comprises a finite set of discrete values with a ranked ordering between values.
+
+This means that an ordinal feature is a type of categorical variable but with a clear and meaningful order in its values. In Jennifer's case, the "Satisfaction Level" feature is indeed ordinal as the levels of satisfaction follow a natural order from "Very Dissatisfied" to "Very Satisfied."
+
+The number of potential values doesn't determine whether a feature is ordinal. Also, machine learning models can use various types of features, not just ordinal ones. For instance, features can be nominal or numerical.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Ordinal and One-Hot Encodings for Categorical Data"](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/) for an explanation about ordinal features.</p></details>
+
+-----------------------
+
