@@ -22907,3 +22907,56 @@ The number of potential values doesn't determine whether a feature is ordinal. A
 
 -----------------------
 
+## Date - 2023-08-20
+
+
+## Title - Get them unstuck
+
+
+### **Question** :
+
+Rebecca was the first one at the virtual meeting.
+
+She has been assisting a client who has embarked on building a deep-learning model. However, the client's progress has been stalled, and it's Rebecca's role to get them unstuck.
+
+A mere ten minutes into the conversation, Rebecca recognized the problem.
+
+While training their network, during the backpropagation process, the gradients rapidly shrunk until they nearly hit zero, causing the weights in the lower layers to remain static.
+
+Rebecca immediately identified this as the vanishing gradient problem. 
+
+**Which of the following could be causing the model to suffer from the vanishing gradient problem?**
+
+
+### **Choices** :
+
+- The hidden layers of the model use the ReLU activation function.
+- The hidden layers of the model use the tanh activation function.
+- The model uses a very large learning rate.
+- The hidden layers of the model use the sigmoid activation function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>If the gradients of the loss function approach zero, the model will stop learning because the network will stop updating the weights. This phenomenon is known as the [Vanishing Gradient Problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem), and it's very common when using the [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) and [tanh](https://www.sciencedirect.com/topics/mathematics/hyperbolic-tangent-function) activation functions in deep neural networks.
+
+The sigmoid and tanh functions squeeze a large input space into a value between `[0..1]` and `[-1..1]`, respectively. Therefore, large changes in the input of these functions cause small changes in the output. On top of that, both functions saturate when their input grows extremely large or small. Sigmoid saturates at `0` and `1`, and tanh saturates at `-1` and `1`. The derivatives at these extremes are very close to zero. 
+
+While this is not a problem in shallow networks, the gradients may become too small for deeper networks that use these activation functions, and the network ceases to learn.
+
+[ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) helps to address the vanishing gradient problem. It's less likely to saturate, and its derivative is `1` for values greater than zero. Thus, the first choice is incorrect.
+
+While an excessively large learning rate can indeed cause problems in the learning process, typically, it results in instability and the inability of the model to converge rather than the vanishing gradient problem.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The Wikipedia page of ["Vanishing gradient problem"](https://en.wikipedia.org/wiki/Vanishing_gradient_problem) has a great explanation of this issue.* Check ["How to Fix the Vanishing Gradients Problem Using the ReLU"](https://machinelearningmastery.com/how-to-fix-vanishing-gradients-using-the-rectified-linear-activation-function/) for an explanation of how ReLU fixes this problem.</p></details>
+
+-----------------------
+
