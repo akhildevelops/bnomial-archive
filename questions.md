@@ -23337,3 +23337,52 @@ As you can see, the fourth choice is the correct answer to this question.</p></d
 
 -----------------------
 
+## Date - 2023-08-28
+
+
+## Title - Test performance
+
+
+### **Question** :
+
+Mariah is facing a challenge in her machine learning project, as her model is not performing well on the test data.
+
+She wonders if the training and test datasets have different distributions, leading her to consider adversarial validation as a method to investigate this issue.
+
+**How should Mariah properly implement adversarial validation?**
+
+
+### **Choices** :
+
+- Merge the training dataset with the test dataset and assign a new binary target, with 1 for test samples and 0 for training samples.
+- Merge the training dataset with the test dataset and assign a new binary target, with 0 for test samples and 1 for training samples.
+- Divide the test dataset into two subsets and assign a new binary target to each subset, with 1 for the first subset and 0 for the second subset.
+- Divide the validation dataset into two subsets and assign a new binary target to each subset, with 1 for the first subset and 0 for the second subset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Popular validation techniques, like cross-validation, allow you to test your models on unseen data if that data comes from the same distribution as your training dataset. Unfortunately, that's not always the case, and even slight differences between the training and test data will considerably affect the result of your model.
+
+[Adversarial validation](https://articles.bnomial.com/adversarial-validation) is a technique to estimate the difference between your training and test data. [_The Kaggle Book_](https://amzn.to/3kbanRb) introduces it as follows:
+
+> [adversarial validation] was long rumored among Kaggle participants and transmitted from team to team until it emerged publicly, thanks to a post by Zygmunt Zając on his FastML blog.
+
+To set it up, you will create a new dataset by joining the training and test data. The target of that new dataset is a binary variable differentiating the training and test samples. You can determine how easy it's to separate both datasets by running a classifier on that new data.
+
+Adversarial validation relies on computing the [ROC-AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc), a graph showing the True Positive Rate and the False Positive Rate at different classification thresholds. The area under this curve (AUC) measures the model's performance. A perfect model will have an area of `1.0`, while a model that only makes mistakes will have an area of `0.0`.
+
+If you run the classifier and the ROC-AUC is around `0.5`, you will know that the training and test data are not easily distinguishable, which is good because it means the data comes from the same distribution. If the ROC-AUC is too high—closer to `1.0`—the classifier can tell training and test data apart, which means they come from a different distribution.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Adversarial validation"](https://articles.bnomial.com/adversarial-validation) is a great introduction to adversarial validation.* Check ["What is Adversarial Validation?"](https://www.kaggle.com/code/carlmcbrideellis/what-is-adversarial-validation/notebook) for a discussion about this technique in Kaggle.* [_The Kaggle Book_](https://amzn.to/3kbanRb) is an amazing reference for those looking to participate in Kaggle.</p></details>
+
+-----------------------
+
