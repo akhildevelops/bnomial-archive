@@ -23429,3 +23429,48 @@ The Minkowski distance is a generalization of the Euclidean and Manhattan distan
 
 -----------------------
 
+## Date - 2023-08-30
+
+
+## Title - Softmax mockery
+
+
+### **Question** :
+
+Despite years of research, Loretta never paid too much attention to the softmax function and its properties. She never needed it, so imagine her surprise when Alan pushed her about it.
+
+Alan was cooky. He didn't know much but liked to show off with every bit of trivia that crossed his path. More than anything, he enjoyed pissing off Loretta at every opportunity he had.
+
+And here is Alan, bugging Loretta about the softmax function and ready to mock her if she fails.
+
+**Which of the following are correct statements about the softmax function?**
+
+
+### **Choices** :
+
+- The softmax function is a soft or smooth approximation to the max function.
+- The softmax function is a soft or smooth approximation to the argmax function.
+- The softmax function converts a vector of `n` values into a probability distribution of `n` possible outcomes.
+- Softmax is a differentiable function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The name "softmax" is a misnomer. The softmax function is a smooth—soft—approximation of the argmax function, not the max function. To avoid this confusion, some of the literature uses "softargmax" instead, but the machine learning world ran with "softmax" and never looked back.
+
+The softmax function turns a vector of `n` values into another vector of `n` probabilities that sum to 1. These probabilities are proportional to the relative scale of each value in the vector. For example, when we use softmax as the activation function of a neural network's output layer, we get a normalized probability distribution that we can use to interpret the result of multi-class classification models.
+
+Finally, contrary to the argmax function, the softmax function is differentiable.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["The Softmax function and its derivative"](https://eli.thegreenplace.net/2016/the-softmax-function-and-its-derivative/) for a complete explanation of softmax.* ["What is the Softmax Function?"](https://deepai.org/machine-learning-glossary-and-terms/softmax-layer) is another great explanation of how the function works.</p></details>
+
+-----------------------
+
