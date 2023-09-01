@@ -23533,3 +23533,52 @@ In summary, the first, second, and fourth choices are correct.</p></details>
 
 -----------------------
 
+## Date - 2023-09-01
+
+
+## Title - Bounding boxes
+
+
+### **Question** :
+
+Magdalena is working on a model to detect people in footage from security cameras.
+
+She wants to measure the performance of her object detection method, but there is a problem: The bounding boxes predicted by her model never match precisely the bounding boxes in the ground truth data. 
+
+Magdalena needs a metric that tells her how well the two bounding boxes overlap. Based on this metric, she can define a threshold and decide if the predicted bounding box is correct or not.
+
+**Which metric can Magdalena use?**
+
+
+### **Choices** :
+
+- The percentage of the ground truth bounding box that's covered by the predicted bounding box.
+- The percentage of the predicted bounding box that's covered by the ground truth bounding box.
+- The intersection area of the predicted and ground truth bounding boxes divided by their union.
+- The intersection area of the predicted and ground truth bounding boxes multiplied by their union.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>After a quick look at the choices, the first two options sound like plausible solutions. However, they have fundamental flaws that may allow a bad model to score high on these metrics.
+
+Let's take the percentage of the ground-truth bounding box covered by the prediction. If our model learns to predict huge bounding boxes covering almost the whole image, we will always get a score close to 100%. 
+
+If we take the percentage of the predicted bounding box covered by the ground truth, we have the opposite problem: a small bounding box somewhere in the bounds of the ground truth will give us a 100% score. Therefore the first two choices are incorrect.
+
+An excellent way to deal with these problematic cases is to take the so-called intersection over union measure (IoU for short, also called the [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index)). We compute the intersection area of the bounding boxes and divide it by their union. The union will increase if the predicted bounding box is too big, driving the score down. The small intersection area will lower the score if the bounding box is too small. 
+
+Finally, the last choice is also incorrect. Multiplying the intersection by the union will not give us any relevant or helpful results.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check ["Intersection over Union (IoU) for object detection"](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) for an entire explanation of this metric.</p></details>
+
+-----------------------
+
