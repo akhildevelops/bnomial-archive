@@ -23639,3 +23639,50 @@ Thus, the answer is `1/5`.</p></details>
 
 -----------------------
 
+## Date - 2023-09-03
+
+
+## Title - Recent weeks
+
+
+### **Question** :
+
+In her Machine Learning course, Samantha has been given an assignment. She's fairly new to the subject, and they've been discussing structured data and different types of features in recent weeks.
+
+Her task is to preprocess a dataset by converting all nominal features into numeric representations using one-hot encoding.
+
+However, Samantha is facing a hurdle: she has forgotten the exact definition of "nominal features."
+
+**Which of the following descriptions correctly describes a nominal feature?**
+
+
+### **Choices** :
+
+- A nominal feature is a categorical variable with more than ten possible values.
+- A nominal feature is a categorical variable with fewer than ten potential values.
+- A nominal feature is a categorical variable with an established order.
+- A nominal feature is a categorical variable without a meaningful order.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>As mentioned by Jason Brownlee in his ["Ordinal and One-Hot Encodings for Categorical Data"](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/) article:
+
+> [A nominal variable is a] variable that comprises a finite set of discrete values with no relationship between values.
+
+This means that a nominal feature is a categorical feature where the order of its values doesn't hold any significance. For example, consider a feature "Fruit" with possible values: "Apple," "Banana," and "Cherry." There is no meaningful order among these values. 
+
+The quantity of potential values does not determine whether a feature is nominal. Also, nominal features do not have an inherent order among their values.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Ordinal and One-Hot Encodings for Categorical Data"](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/) for an explanation of nominal features.</p></details>
+
+-----------------------
+
