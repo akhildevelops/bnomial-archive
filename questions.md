@@ -23735,3 +23735,52 @@ The final choice, however, is not a problem. We want every neuron to learn diffe
 
 -----------------------
 
+## Date - 2023-09-05
+
+
+## Title - Apples and oranges
+
+
+### **Question** :
+
+Everlee has been delving into the world of computer vision recently.
+
+Specifically, she's concentrating on using deep learning and applying pre-trained models to distinguish between images of apples and oranges.
+
+She has gathered a dataset of 1,000 256 x 256 color images. Half of these images are apples, while the other half are oranges.
+
+While exploring this problem, Everlee had an interesting question:
+
+**What's the appropriate shape for a tensor to hold all this data?**
+
+
+### **Choices** :
+
+- It can be stored in a tensor of shape `(1000, 256, 256)`
+- It can be stored in a tensor of shape `(1000, 256, 256, 1)`
+- 2. It can be stored in a tensor of shape `(1000, 256, 256, 2)`
+- It can be stored in a tensor of shape `(1000, 256, 256, 3)`
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When dealing with images, it's important to consider the three components of an image: height, width, and color depth. A color image has three color channels (one each for red, green, and blue), while grayscale images have only one.
+
+Assuming our images are 256 x 256 in size, we would need to store the RGB values for each pixel, so our tensor shape would need to be `(256, 256, 3)`. If we were only working with grayscale, our tensor could have a shape of `(256, 256)`, but conventionally, we add a dimension to accommodate color depth, allowing the same structure for both grayscale and color images. So, a single grayscale image would be stored in a `(256, 256, 1)` tensor. Since we're working with color images, we need a tensor of shape `(256, 256, 3)`.
+
+That covers how we store a single image. But what if we want to store 1,000 such images? We add another dimension, giving us a tensor of shape `(1000, 256, 256, 3)`.
+
+Conventionally, tensors holding image data are arranged in the following manner: (samples, height, width, and channels). While there is another convention that places channels before height and width, most practitioners place them at the end.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Deep Learning with Python_, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors and practical code.</p></details>
+
+-----------------------
+
