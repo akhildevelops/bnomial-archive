@@ -23936,3 +23936,48 @@ On the other hand, leave-one-out cross-validation will give Josie a less biased 
 
 -----------------------
 
+## Date - 2023-09-09
+
+
+## Title - Universal approximators
+
+
+### **Question** :
+
+A theoretical question that Daisy always liked to discuss was the ability of machine learning algorithms to approximate any function.
+
+She called them "universal approximators." To classify, they had to approximate any measurable or continuous function up to any desired accuracy.
+
+**Which of the following would you consider universal approximators?**
+
+
+### **Choices** :
+
+- Neural Networks
+- Support Vector Machines using a Gaussian kernel
+- Linear Regression
+- Boosted Decision Trees
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Except for linear regression, all the other three choices are universal approximators.
+
+Thanks to the [Universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem), neural networks are a well-known member of this category. The theorem states that, when using non-linear activation functions, we can turn a two-layer neural network into a universal function approximator.
+
+The authors of ["A Note on the Universal Approximation Capability of Support Vector Machines"](https://www.researchgate.net/publication/2531186_A_Note_on_the_Universal_Approximation_Capability_of_Support_Vector_Machines) show that support vector machines with standard kernels can also approximate any measurable or continuous function.
+
+Finally, the ["Universal approximation"](https://kenndanielso.github.io/mlrefined/blog_posts/12_Nonlinear_intro/12_5_Universal_approximation.html) chapter of [_Machine Learning Refined_](https://amzn.to/3OXcHZF) covers trees as one of the standard types of universal approximations.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["A Note on the Universal Approximation Capability of Support Vector Machines"](https://www.researchgate.net/publication/2531186_A_Note_on_the_Universal_Approximation_Capability_of_Support_Vector_Machines) is a paper showing that SVMs with standard kernels can approximate any measurable or continuous function.* Chapter 12.5 ["Universal approximation"](https://kenndanielso.github.io/mlrefined/blog_posts/12_Nonlinear_intro/12_5_Universal_approximation.html) of [_Machine Learning Refined_](https://amzn.to/3OXcHZF) covers kernels, neural networks, and trees as universal approximations.</p></details>
+
+-----------------------
+
