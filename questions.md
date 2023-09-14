@@ -24175,3 +24175,61 @@ In summary, the first and fourth choices answer this question correctly.</p></de
 
 -----------------------
 
+## Date - 2023-09-14
+
+
+## Title - The final exam
+
+
+### **Question** :
+
+Emersyn was running out of ideas to create new questions for the final exam.
+
+In a last attempt to do something original, she copied an example code fragment from the Keras website and decided to ask a few questions about it:
+
+```
+model = keras.Sequential([
+    keras.Input(shape=(28, 28, 1)),
+    layers.Conv2D(32, kernel_size=(3, 3), activation="relu"),
+    layers.MaxPooling2D(pool_size=(2, 2)),
+    layers.Conv2D(64, kernel_size=(3, 3), activation="relu"),
+    layers.MaxPooling2D(pool_size=(2, 2)),
+    layers.Flatten(),
+    layers.Dropout(0.5),
+    layers.Dense(10, activation="softmax"),
+])
+```
+
+**Based on the code above, which of the questions Emersyn wrote are correct?**
+
+
+### **Choices** :
+
+- The kernel and pool size should have the same value. The model will likely fail to learn anything meaningful.
+- The default activation function in `MaxPooling2D` layers is ReLU, which is why the code doesn't explicitly use it.
+- The Dropout right before the output layer will cut down the number of learnable parameters from 1,600 to 800.
+- The softmax activation function in the last layer hints that this is a multi-class classification model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The kernel size in convolutional layers and the pool size of the pooling layer don't need to have the same size. The code fragment is indeed part of a working example, and it's correctly configured.
+
+[`MaxPooling2D`](https://keras.io/api/layers/pooling_layers/max_pooling2d/) layers don't use activation functions. That's the reason the code doesn't specify one. A max pooling operation calculates the maximum value in each patch of each feature map. Keras will throw an error if you try to set an activation function on the `MaxPooling2D` layer.
+
+The Dropout right before the output layer doesn't reduce the number of learnable parameters in half. Instead, the Dropout will set the value of 50% of the neurons to 0.
+
+Finally, the [softmax](https://en.wikipedia.org/wiki/Softmax_function) activation function and the size of the output layer point to a multi-class classification problem. Remember that softmax converts a vector of numbers into a vector of probabilities, which we need in multi-class classification tasks.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For more information about convolutional layers, check ["How Do Convolutional Layers Work in Deep Learning Neural Networks?"](https://machinelearningmastery.com/convolutional-layers-for-deep-learning-neural-networks/).* Check ["A Gentle Introduction to Pooling Layers for Convolutional Neural Networks"](https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/) for more information about how max pooling works.* ["A Gentle Introduction to Dropout for Regularizing Deep Neural Networks"](https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/) is an excellent introduction to Dropout.* ["Simple MNIST convnet"](https://keras.io/examples/vision/mnist_convnet/) is a Keras example showing this particular code fragment.</p></details>
+
+-----------------------
+
