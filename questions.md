@@ -24319,3 +24319,52 @@ True Positives are those samples that we expect to be Positive (class B), and th
 
 -----------------------
 
+## Date - 2023-09-17
+
+
+## Title - Forest fires
+
+
+### **Question** :
+
+Lily, an AI researcher at a prominent environmental organization, is working on a project to detect whether a satellite image contains a forest fire.
+
+The project will have a significant impact, and the team has accumulated many images to train the model. They plan to use deep learning to build a binary classifier. The main decision now is about selecting the appropriate activation function for the final layer of the network.
+
+**Which activation functions could be a good candidate for the output layer?**
+
+
+### **Choices** :
+
+- Rectifier Linear Unit (ReLU)
+- Sigmoid
+- Tanh
+- Softmax
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Lily's team is building a binary classifier. The goal is to design the output layer to produce an easily interpreted result.
+
+ReLU is a function that returns its input if it's positive or zero otherwise. While it is beneficial in the hidden layers of a neural network, it does not seem suitable for the final layer in Lily's model. If the penultimate layer has captured all the necessary information for prediction, applying ReLU to the output layer would leave any positive values untouched and turn negative values into zero. This isn't ideal because we can't use the magnitude of these values to differentiate between inputs.
+
+On the other hand, the [Sigmoid function](https://en.wikipedia.org/wiki/Logistic_function) can convert its input into a range from 0 to 1. This characteristic makes it a suitable choice for binary classification models. By setting a threshold, we can interpret the output of the model. For instance, anything equal to or under `0.5` could represent the absence of a forest fire, and anything above `0.5` could indicate its presence.
+
+The [Tanh function](https://en.wikipedia.org/wiki/Hyperbolic_functions#Hyperbolic_tangent) is another activation function that maps its inputs to a value between -1 and 1. While it is a good choice for hidden layers in some cases, it is unsuitable for binary classification problems where we need an output from 0 to 1.
+
+Finally, the [Softmax function](https://en.wikipedia.org/wiki/Softmax_function) can turn a vector of numbers into a vector of probabilities. In the context of the binary classifier that Lily's team is working on, Softmax could output a vector with two values: the first representing the absence of a forest fire and the second representing its presence. The team could then select the larger of these two values to make the final prediction.
+
+It's worth noting that Softmax is essentially a generalization of the sigmoid function for multi-class cases. However, Softmax reduces to sigmoid when used in a binary classification context, resulting in the same outcome.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["A Gentle Introduction To Sigmoid Function"](https://machinelearningmastery.com/a-gentle-introduction-to-sigmoid-function/) for a quick introduction to Sigmoid.* ["The Differences between Sigmoid and Softmax Activation Functions"](https://medium.com/arteos-ai/the-differences-between-sigmoid-and-softmax-activation-function-12adee8cf322) is a short comparison between these two functions.</p></details>
+
+-----------------------
+
