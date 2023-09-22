@@ -24596,3 +24596,50 @@ Lastly, the [F1-score](https://en.wikipedia.org/wiki/F-score) is a good choice, 
 
 -----------------------
 
+## Date - 2023-09-22
+
+
+## Title - Bagging or Boosting?
+
+
+### **Question** :
+
+Katherine wants to use an ensemble model to process her dataset. 
+
+There's only one question for her to answer: Should she use bagging or boosting?
+
+Both techniques have different advantages and disadvantages, and Katherina wants to ensure she evaluates them correctly before committing to one solution.
+
+**Which of the following statements are true about bagging and boosting?**
+
+
+### **Choices** :
+
+- Bagging trains individual models sequentially, using the results from the previous model to inform the selection of training samples.
+- Boosting trains individual models sequentially, using the results from the previous model to inform the selection of training samples.
+- Bagging trains a group of models, each using a subset of data selected randomly with replacement from the original dataset.
+- Each model receives equal weight in bagging to compute the final prediction, while boosting uses some way of weighing each model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Ensembling is where we combine a group of models to produce a new model that yields better results than any initial individual models. Bagging and boosting are two popular ensemble techniques.
+
+Bagging trains a group of models in parallel and independently from each other. Each model uses a subset of the data randomly selected with replacement from the original dataset. In contrast, Boosting trains a group of learners sequentially, using the results from each model to inform which samples to use to train the next model.
+
+This summary helps us conclude that the first choice is incorrect, but the second and third choices are correct.
+
+Finally, when computing the final prediction, bagging averages out the results of each model. Boosting, however, weights each model depending on its performance. Therefore, the fourth choice is also correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [Bagging vs. Boosting in Machine Learning: Difference Between Bagging and Boosting](https://www.upgrad.com/blog/bagging-vs-boosting/) for a detailed comparison between both techniques.* [What is the difference between Bagging and Boosting?](https://quantdare.com/what-is-the-difference-between-bagging-and-boosting/) is another great summary of both techniques and their advantages and disadvantages.</p></details>
+
+-----------------------
+
