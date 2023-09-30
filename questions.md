@@ -24985,3 +24985,52 @@ Therefore, the correct answer to this question is the fourth choice.</p></detail
 
 -----------------------
 
+## Date - 2023-09-30
+
+
+## Title - Incomplete fields
+
+
+### **Question** :
+
+Samantha is a data scientist at a leading healthcare organization. 
+
+They've recently received a massive dataset from a medical study, which holds crucial information about patients' vitals. However, she discovered that many values were missing, entire fields were incomplete, and some data was mishandled.
+
+Samantha knows well-structured data is vital for building a successful machine learning model. She decided to take on these issues first before further processing.
+
+During a team meeting, Samantha discusses potential methodologies to address the concerns with the dataset. 
+
+**Which of the following are valid techniques Samantha and her team could use to handle the problems with their data?**
+
+
+### **Choices** :
+
+- Replace missing values with the mean, median, mode, or other imputation techniques.
+- Use a machine learning algorithm that is robust to missing values.
+- Predict the missing values using a separate Machine Learning model.
+- Drop any rows or columns that contain missing or corrupted data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Replacing missing values with the mean, median, mode, or other [imputation](https://en.wikipedia.org/wiki/Imputation_(statistics)) techniques is an excellent approach to handling this problem. Remember that, for imputation to work, we need to apply it to those features where most of the data is in good shape and only a few values are missing. If the dataset contains features with that characteristic, imputation will help. 
+
+Sometimes, a row or column is in such poor shape that the best approach is to drop it altogether. Imagine a feature where only a small percentage of rows have values, or most of the data is corrupted. In those cases, getting rid of the data is the appropriate approach. 
+
+A more advanced technique commonly used is to predict missing values using a separate model. For example, you could use a linear regression model to fill in the blanks on one specific column of data. This approach considers the correlation between other features and the column with missing values, potentially producing good results. 
+
+Finally, we can use a particular implementation of a machine learning algorithm that is robust to missing values. For example, we could run the [k-Nearest Neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) and ignore a column with missing values when computing the distance. However, this depends on the algorithm's implementation, so you must watch out for that.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Handling Missing Values"](https://www.kaggle.com/dansbecker/handling-missing-values) is a practical tutorial on how to handle missing values.</p></details>
+
+-----------------------
+
