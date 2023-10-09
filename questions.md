@@ -25419,3 +25419,52 @@ False Negatives are those samples that we expect to be Positive (class A), but t
 
 -----------------------
 
+## Date - 2023-10-09
+
+
+## Title - Scikit-Learn's fan
+
+
+### **Question** :
+
+So far, Melody is a big fan of Scikit-Learn.
+
+She hasn't used it for too long, but every time she learns something new, there's always an elegant way to do it using Scikit-Learn.
+
+But today is perhaps the exception: Melody finished training a multi-class classification model, and after displaying Scikit-Learn's classification report, she noticed something wasn't right.
+
+She has to analyze the Macro-average, Micro-average, and Weighted F1-Score values for her model, but the classification report doesn't display the Micro-average F1-Score.
+
+**How can Melody move forward?**
+
+
+### **Choices** :
+
+- The Micro-average F1-Score is the same as the model's accuracy. Melody can run her analysis using the accuracy of her model.
+- The Micro-average F1-Score is the same as the model's precision. Melody can run her analysis using the precision of her model.
+- The Micro-average F1-Score is the same as the model's recall. Melody can run her analysis using the recall of her model.
+- Melody will need to compute the Micro-average F1-Score of her model manually.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When we work on multi-class classification problems, it's simple to compute the F1-Score for each class. Several strategies exist to calculate a global F1-Score representing the entire model's performance: Macro-average F1-Score, Micro-average F1-Score, and Weighted F1-Score.
+
+Scikit-Learn's classification report shows all three of these metrics but uses a different name for the Micro-average F1-Score. That's why Melody is confused.
+
+The Micro-average F1-Score is a metric where we sum all of the contributions from each category to compute an aggregated F1-Score. Micro-average F1-Score calculates the proportion of correctly classified samples out of all samples, which is the model's accuracy definition.
+
+In any multi-class classification problem, the Micro-average F1-Score is the same as the accuracy. That's why Scikit-Learn displays it under the "accuracy" label.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Micro, Macro & Weighted Averages of F1 Score, Clearly Explained"](https://towardsdatascience.com/micro-macro-weighted-averages-of-f1-score-clearly-explained-b603420b292f) is a great article covering how to compute a global F1-Score metric in multi-class classification problem.* Check ["What is the F-Score?](https://deepai.org/machine-learning-glossary-and-terms/f-score) for a short introduction to the Fβ-Score.</p></details>
+
+-----------------------
+
