@@ -26066,3 +26066,50 @@ There's no way to know which vector is "the best one," so the first option is in
 
 -----------------------
 
+## Date - 2023-10-22
+
+
+## Title - Know-it-all students
+
+
+### **Question** :
+
+Athena is preparing for next week's lecture. She teaches computer vision at a prestigious college and has to deal with a couple of know-it-all students.
+
+Athena needs to ensure her material is sharp.
+
+She will cover Max Pooling, when to use it, and its advantages. To finish her lecture, she prepared a quiz just in case the students gave her a hard time.
+
+**Here's Athena's quiz. Which of the following is true about Max Pooling?**
+
+
+### **Choices** :
+
+- Max pooling will always decrease the number of parameters in the network compared to another network that doesn't use Max pooling.
+- Max pooling will always increase the number of parameters in the network compared to another network that doesn't use Max pooling.
+- Max pooling will improve the network's ability to detect the same features in different locations within the image.
+- Max pooling extracts smooth features by calculating the average value for every patch on the feature map.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>There's a "gotcha" in Athena's quiz. We commonly use Max pooling to downsample feature maps, thus reducing the number of parameters in the network, but it depends on how large we configure the pool size. The first choice of Athena's quiz states that Max pooling will always decrease the number of parameters, but if we use a pool size of 1, there will be no downsampling. Thus, neither the quiz's first nor the second choices are correct.
+
+Max pooling does add translation invariance properties to the network, which is important because we usually care about whether a feature is present in the image rather than where it is. 
+
+Finally, the fourth choice describes how Average pooling works. On the other hand, Max pooling uses the maximum value in a patch rather than the average value.
+
+Athena's students will undoubtedly have a lot of fun with the quiz.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Max Pooling in Convolutional Neural Network and Its Features"](https://analyticsindiamag.com/max-pooling-in-convolutional-neural-network-and-its-features/) is a great introduction to Max Pooling.* Check ["A Gentle Introduction to Pooling Layers for Convolutional Neural Networks"](https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/) for more information about how pooling layers work.</p></details>
+
+-----------------------
+
