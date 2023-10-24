@@ -26160,3 +26160,54 @@ Both the precision and recall of this model are 43%. Substituting this value in 
 
 -----------------------
 
+## Date - 2023-10-24
+
+
+## Title - Computationally expensive
+
+
+### **Question** :
+
+Elliana's mandate to her team was to build a model as fast as possible and put it out there.
+
+She leads a startup focused on keeping costs down and providing value as quickly as possible. Elliana understands that investing resources into a better model has diminishing returns. 
+
+Her team is trying to decide what process to follow to build their model. They want to prioritize an approach that's as computationally cheap as possible. They have a list of potential choices.
+
+**Looking at the list, which will be the first option the team should discard because of how computationally expensive it is?**
+
+
+### **Choices** :
+
+- Splitting the dataset and training a model with 80% of the data while testing it with the remaining 20%.
+- Using a leave-one-out cross-validation approach to build the model.
+- Using a 5-Fold cross-validation approach to build the model.
+- Using a 10-Fold cross-validation approach to build the model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The team should scratch off the [leave-one-out cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#Leave-one-out_cross-validation) approach right away.
+
+Leave-one-out cross-validation is a variant of cross-validation where the number of folds equals the number of samples in the dataset. 
+
+To use leave-one-out cross-validation, we build one model for each sample in the dataset. We train each model using all data except one instance we later use to evaluate its performance. Finally, we compute the overall performance by averaging the result of each model.
+
+Assuming the team will use leave-one-out cross-validation on a dataset with 10,000 samples, they will need to train 10,000 models. Compare this with 10-Fold cross-validation, where they will only need to build ten models. 
+
+On the other hand, leave-one-out cross-validation will give a more robust estimate of model performance. Each sample has an opportunity to represent the entire dataset and contribute to the final evaluation, and this will result in a reliable and unbiased estimate of model performance.
+
+The team is not interested in better performance and wants a cheaper model to train. Leave-one-out cross-validation is significantly more expensive than every other choice on this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["LOOCV for Evaluating Machine Learning Algorithms"](https://machinelearningmastery.com/loocv-for-evaluating-machine-learning-algorithms/) is an excellent introduction to leave-one-out cross-validation.* Check ["A Quick Intro to Leave-One-Out Cross-Validation (LOOCV)"](https://www.statology.org/leave-one-out-cross-validation/) for a succinct introduction to leave-one-out cross-validation.</p></details>
+
+-----------------------
+
