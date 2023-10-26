@@ -26258,3 +26258,54 @@ Survivorship bias seriously compromises our ability to determine the odds of som
 
 -----------------------
 
+## Date - 2023-10-26
+
+
+## Title - Logistic churn
+
+
+### **Question** :
+
+Sophia is working on a project to predict customer churn using a logistic classifier. 
+
+She knows that the precision of her predictions is heavily influenced by the error function she uses. She wants this function to possess the following characteristics:
+
+* The function should produce a small number if the sample is correctly classified.
+* The function should produce a large number if the sample is incorrectly classified.
+* The error for a group of samples should be the sum or average for all the samples.
+
+Sophia has a few options but would like your input.
+
+**Which of the following would be the most appropriate error function for a logistic classifier?**
+
+
+### **Choices** :
+
+- Absolute error: a function that returns the absolute value of the difference between the prediction and the label.
+- Square error: a function that returns the square of the difference between the prediction and the label.
+- Mean percentage: a function that returns the average error of the differences between predicted and actual values.
+- Log loss: a function that returns the negative logarithm of the product of probabilities.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The absolute error, the square error, and the log loss are viable options that meet the characteristics that Sophia is looking for. The "mean percentage" is a fabricated error function that doesn't exist.
+
+Among these three functions, we must evaluate whether they can be used to construct a binary classification model.
+
+Neither the absolute nor square error functions are used in binary classification problems. They don't penalize errors as severely as log loss does, so they aren't a good choice for this type of problem. 
+
+Log loss, on the other hand, is one of the most commonly used error functions and an excellent choice for a binary classifier like the one Sophia is trying to develop.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check ["Logistic Regression for Machine Learning"](https://machinelearningmastery.com/logistic-regression-for-machine-learning/) for an introduction to Logistic Regression.- ["Logistic Regression: Loss and Regularization"](https://developers.google.com/machine-learning/crash-course/logistic-regression/model-training) is a quick summary about the Log-loss and regularization.</p></details>
+
+-----------------------
+
