@@ -26448,3 +26448,58 @@ True Negatives are those samples that we expect to be Negative (class A), and th
 
 -----------------------
 
+## Date - 2023-10-30
+
+
+## Title - A morning walk
+
+
+### **Question** :
+
+Maria was taking her morning walk when she decided to modify her deep neural network architecture.
+
+She's been researching different ways to speed up her training process and decided to experiment with Batch Normalization right before one of the hidden layers of her network.
+
+There was only one question left to answer:
+
+**How could Maria use Batch Normalization as part of her model?**
+
+
+### **Choices** :
+
+- Maria could use Batch Normalization before the activation function of the layer that comes before the layer she wants to affect.
+- Maria could use Batch Normalization after the activation function of the layer that comes before the layer she wants to affect.
+- Maria could use Batch Normalization right after the layer she wants to affect but before that layer's activation function.
+- Maria could use Batch Normalization right after the activation function of the layer she wants to affect.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Batch Normalization is a popular technique used to train deep neural networks. It normalizes the input to a layer during every training iteration using a mini-batch of data. It smooths and simplifies the optimization function leading to more stable and faster training.
+
+Maria has two options to batch-normalize the input of the hidden layer she is interested in: she can use Batch Normalization before the layer she wants to affect, either before or after the activation function. Remember that Batch Normalization will normalize the data that goes into the layer, so Maria needs to ensure to apply it before that layer.
+
+But where is it better to use Batch Normalization? Before or after the previous layer's activation function?
+
+The authors of ["Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"](https://arxiv.org/pdf/1502.03167.pdf) recommend using it right before the activation function:
+
+> The goal of Batch Normalization is to achieve a stable distribution of activation values throughout training, and in our experiments we apply it before the nonlinearity since that is where matching the first and second moments is more likely to result in a stable distribution.
+
+That has been the way many teams have used Batch Normalization, but later, there are experiments showing that Batch Normalization works best when used after the activation function. Here is an excerpt from ["Busting the Myth About Batch Normalization"](https://blog.paperspace.com/busting-the-myths-about-batch-normalization/) from the [Paperspace blog](https://blog.paperspace.com/):
+
+> While the original paper talks about applying batch norm just before the activation function, it has been found in practice that applying batch norm after the activation yields better results. This seems to make sense, as if we were to put an activation after batch norm, then the batch norm layer cannot fully control the statistics of the input going into the next layer since the output of the batch norm layer has to go through an activation. 
+
+In summary, the literature is split regarding the best way to use Batch Normalization. Maria could use it before or after the previous's layer activation function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"](https://arxiv.org/pdf/1502.03167.pdf) is the original paper introducing Batch Normalization.* ["Intro to Optimization in Deep Learning: Busting the Myth About Batch Normalization"](https://blog.paperspace.com/busting-the-myths-about-batch-normalization/) is the blog post challenging the original paper's position regarding where to use Batch Normalization.* ["A Gentle Introduction to Batch Normalization for Deep Neural Networks"](https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/) is a good introduction to Batch Normalization.</p></details>
+
+-----------------------
+
