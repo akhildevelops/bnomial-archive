@@ -26554,3 +26554,48 @@ So there you have it. The correct answer to this question is the fourth choice.<
 
 -----------------------
 
+## Date - 2023-11-01
+
+
+## Title - Regularizing a model
+
+
+### **Question** :
+
+Charlotte's machine learning model is overfitting.
+
+She needs to find a way to handle it, but before trying anything, she wants to understand her options.
+
+**Which of the following are regularization techniques that Charlotte could consider?**
+
+
+### **Choices** :
+
+- Validation-based early stopping
+- Dropout
+- Data augmentation
+- Cross-validation
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Validation-based early stopping is a regularization technique that stops the training process as soon as the generalization error of the model increases. In other words, if the model's performance on the validation set starts degrading, the training process stops. 
+
+Dropout is a regularization method that works well and is vital for reducing overfitting. Dropout randomly removes a percentage of the nodes, forcing the network to learn in a balanced way, and tackling a phenomenon that we call "[co-adaptation](https://machinelearning.wtf/terms/co-adaptation/)."
+
+Data augmentation has a regularization effect. Increasing the training data through data augmentation decreases the model's variance and, in turn, increases the model's generalization ability.
+
+Finally, cross-validation is a validation scheme and not a regularization method.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Early Stopping"](https://articles.bnomial.com/early-stopping) for an introduction to one of the most effective, easy-to-implement regularization techniques when training machine learning models.* ["A Gentle Introduction to Dropout for Regularizing Deep Neural Networks"](https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/) is an excellent introduction to Dropout.* ["The Essential Guide to Data Augmentation in Deep Learning"](https://www.v7labs.com/blog/data-augmentation-guide) is an excellent article discussing data augmentation in detail.</p></details>
+
+-----------------------
+
