@@ -26697,3 +26697,48 @@ Finally, decision trees can also solve regression problems where we want to pred
 
 -----------------------
 
+## Date - 2023-11-04
+
+
+## Title - Weather predictions
+
+
+### **Question** :
+
+For the first project, Cam wants to work with the weather dataset he found online.
+
+Cam's Machine Learning class was a ton of fun. Their professor let them choose a problem to solve to allow them to showcase what they've learned so far. 
+
+Cam wants to predict the probability of snowing based on four factors: the date, the air temperature, the location, and the air pressure. 
+
+**Which of the following is the most appropriate algorithm that Cam should use to solve this problem?**
+
+
+### **Choices** :
+
+- Cam should use linear regression.
+- Cam should use logistic regression.
+- Cam should use K-means.
+- Cam should use DBSCAN.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Cam's problem has two possible outcomes: it will snow or it won't, and Cam wants his model to return the probability of it. Logistic regression is an excellent fit for any problem with a binary outcome.
+
+Logistic regression estimates the probability of an event occurring based on a dataset of independent variables. Linear regression, on the other hand, predicts the continuous dependent variable using a dataset of independent variables. 
+
+K-means and DBSCAN are clustering algorithms and are not a good approach for this problem.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Linear Regression vs Logistic Regression"](https://www.javatpoint.com/linear-regression-vs-logistic-regression-in-machine-learning) does a full comparison between linear and logistic regression.* Check ["8 Clustering Algorithms in Machine Learning that All Data Scientists Should Know"](https://www.freecodecamp.org/news/8-clustering-algorithms-in-machine-learning-that-all-data-scientists-should-know/) for an explanation of K-Means and DBSCAN.</p></details>
+
+-----------------------
+
