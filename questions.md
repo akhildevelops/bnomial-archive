@@ -26791,3 +26791,48 @@ Lastly, the vanishing gradient problem has nothing to do with the learning rate 
 
 -----------------------
 
+## Date - 2023-11-06
+
+
+## Title - Low training
+
+
+### **Question** :
+
+There's not a lot of context for you other than the following chart showing the training loss of a machine learning model:
+
+![Training Loss Chart](https://user-images.githubusercontent.com/1126730/188471836-1959ae8e-44dd-4811-9606-2d1c1f9ded0c.jpg)
+
+As you can see, after finishing training, the loss is very low.
+
+**What's a reasonable conclusion about this machine learning model?**
+
+
+### **Choices** :
+
+- The model may be overfitting, but we can't say for sure.
+- The model may be underfitting, but we can't say for sure.
+- The model may be well-fit, but we can't say for sure.
+- The model is either overfitting or underfitting, but it's not well-fit.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A good model should capture valuable patterns in the data and discard any noise that doesn't help with predictions. An overfitting model will fit that noise. An underfitting model will not capture the relevant patterns in the dataset. 
+
+An overfitting model should not have any problems with the training data, so we should expect a low training loss. An underfitting model should struggle with the training data, so its training loss will be high.
+
+This model shows a low training loss, which we expect from an overfitting model, but this is not enough information to conclude that this model is overfitting. The model might be well-fit, but we can't say unless we evaluate it on a separate dataset. Therefore, the first and third options are correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.</p></details>
+
+-----------------------
+
