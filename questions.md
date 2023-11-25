@@ -27694,3 +27694,46 @@ Evangeline is working with a single feature, so _d_ = 1. Therefore, in this case
 
 -----------------------
 
+## Date - 2023-11-25
+
+
+## Title - Latest project
+
+
+### **Question** :
+
+Blakely is a data scientist who has been working on machine learning models. She has been particularly focused on using activation functions in neural networks for her latest project.
+
+Blakely has been exploring the Sigmoid activation function, commonly used in binary classification problems. The Sigmoid function is a smooth, S-shaped function that maps any real-valued number to a value between 0 and 1.
+
+**Which of the following is true about the Sigmoid Activation Function?**
+
+
+### **Choices** :
+
+- The function is neither continuous nor differentiable.
+- The function is differentiable but not continuous.
+- The function is continuous but not differentiable.
+- The function is both continuous and differentiable.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Sigmoid function is continuous and differentiable.
+
+The Sigmoid function is smooth and differentiable everywhere, including at `x=0`. This is one of the reasons why it was widely used in the early days of neural networks. 
+
+However, the Sigmoid function has some drawbacks, such as the vanishing gradient problem, which can slow the learning process. This is one of the reasons why other activation functions, like ReLU, have become more popular in recent years.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["A Gentle Introduction To Sigmoid Function"](https://machinelearningmastery.com/a-gentle-introduction-to-sigmoid-function/) for a quick introduction to Sigmoid.</p></details>
+
+-----------------------
+
