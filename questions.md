@@ -28198,3 +28198,50 @@ We use confusion matrices with binary and multi-class classification models, but
 
 -----------------------
 
+## Date - 2023-12-05
+
+
+## Title - Live audience
+
+
+### **Question** :
+
+Piper started building a simple neural network from scratch in front of a live audience.
+
+Her talk focused on the fundamental principles of neural networks, and writing the code wasn't too hard.
+
+But there was a problem, and it took Piper an eternity to find and fix it: she forgot to initialize the network weights, so they were all zeroes.
+
+**Which of the following was the clue for Piper to realize there was a problem?**
+
+
+### **Choices** :
+
+- The network learned, but it took a significantly long time.
+- The network learned, but it started overfitting quickly.
+- The network's loss started oscillating up and down.
+- The network neurons evolved symmetrically, learning the same features.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Correctly initializing a neural network can have a significant impact on convergence.
+
+Initializing the network weights with zeros will lead to every neuron learning the same features. Here is an excerpt from ["Initializing neural networks"](https://www.deeplearning.ai/ai-notes/initialization/) explaining the consequences of using the same weight values:
+
+> Thus, both hidden units will have an identical influence on the cost, leading to identical gradients. Thus, both neurons will evolve symmetrically throughout training, effectively preventing different neurons from learning different things.
+
+Since none of the other choices are possible, this symmetry tipped Piper about the problem.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Initializing neural networks"](https://www.deeplearning.ai/ai-notes/initialization/) is an excellent summary of the importance of weight initialization.* Check ["Weight Initialization Techniques in Neural Networks"](https://towardsdatascience.com/weight-initialization-techniques-in-neural-networks-26c649eb3b78) to learn about different initialization schemes.</p></details>
+
+-----------------------
+
