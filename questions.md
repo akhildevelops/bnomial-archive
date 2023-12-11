@@ -28468,3 +28468,44 @@ Therefore, the correct answer to this question is β = 2.</p></details>
 
 -----------------------
 
+## Date - 2023-12-11
+
+
+## Title - Bag of chips
+
+
+### **Question** :
+
+Amira brought a bag to the event. She wanted people to relax before a long day, so she thought of lighting the mood with a fun exercise.
+
+"There are 15 red chips, 25 blue chips, and only 5 black chips in this bag,"—she told the audience. "If I put my hand inside and pick a chip randomly, what's the probability it's neither red nor black?"
+
+**Select the correct probability from the following options:**
+
+
+### **Choices** :
+
+- The probability is 3/9
+- The probability is 3/25
+- The probability is 5/8
+- The probability is 5/9
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Amira wants to compute the probability of picking a blue chip since she doesn't want it to be red or black.
+
+There are 45 chips in the bag, 25 of which are blue. Therefore, the probability of picking a blue chip is 25/45, which simplifies down to 5/9.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Cartoon Guide to Statistics_](https://amzn.to/3eg9iIo) is a fun and instructive introduction to probabilities and statistics.</p></details>
+
+-----------------------
+
