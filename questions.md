@@ -28743,3 +28743,48 @@ Finally, latent spaces usually have a lower dimensionality than the feature spac
 
 -----------------------
 
+## Date - 2023-12-17
+
+
+## Title - Leadership meeting
+
+
+### **Question** :
+
+Annie received the email from her data science manager early in the morning. She needs to show up to the leadership meeting with the results of the latest iteration of their model but trying to decipher technical jargon was never her strong suit.
+
+Her manager sent her a picture of the confusion matrix the team created after validating the model:
+
+![Confusion matrix](https://user-images.githubusercontent.com/1126730/186957993-9bf7a320-0c86-455e-bd42-6a67777beaee.jpg)
+
+The sum of every element in the confusion matrix is 190, but Annie doesn't have much experience here.
+
+**What is the sum of the elements in a confusion matrix?**
+
+
+### **Choices** :
+
+- The sum of the elements in a confusion matrix always equals the number of correct predictions the model made on the validation set.
+- The sum of the elements in a confusion matrix always equals the number of mistakes the model made on the validation set.
+- The sum of the elements in a confusion matrix always equals the number of samples of the training set.
+- The sum of the elements in a confusion matrix always equals the number of samples of the validation set.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A [confusion matrix](https://articles.bnomial.com/confusion-matrix) is one of the simplest and most popular tools to analyze the performance of a classification model. It breaks down each class and the number of correct and incorrect predictions the model makes. It gives us immediate access to the model's errors and their type.
+
+The sum of every element in a confusion matrix gives us the number of samples in the dataset we used to create the matrix. Since the team built it during the validation process, we can assume it represents the validation set.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.</p></details>
+
+-----------------------
+
