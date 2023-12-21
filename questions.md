@@ -28929,3 +28929,44 @@ Notice how they ensured that there was no overlap between sets.</p></details>
 
 -----------------------
 
+## Date - 2023-12-21
+
+
+## Title - Decreasing lambda
+
+
+### **Question** :
+
+Ariel inherited a Linear Regression model. She didn't build the first version, so she isn't sure everything is working correctly.
+
+Although the validation error looks fine, Ariel wants to experiment to determine whether every individual piece makes sense. She wants to start by looking into the lambda (λ) parameter that controls the model's regularization.
+
+**Which of the following will eventually happen as Ariel continuously decreases the value of λ?**
+
+
+### **Choices** :
+
+- Ariel's model will eventually underfit, and the validation error will increase.
+- Ariel's model will eventually overfit, and the validation error will increase.
+- Ariel's model will eventually underfit, and the validation error will decrease.
+- Ariel's model will eventually overfit, and the validation error will decrease.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Ariel can control the model's regularization using the lambda (λ) parameter. She can tune this parameter to decide how much she wants to penalize the model's flexibility. 
+
+Decreasing the value of λ will increase the value of the coefficients, thus increasing the variance of the model. As this variance increases, the model will eventually overfit, leading to a higher validation error.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Regularization in Machine Learning"](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a) for a detailed explanation of how regularization works.* ["Fighting Overfitting With L1 or L2 Regularization: Which One Is Better?"](https://neptune.ai/blog/fighting-overfitting-with-l1-or-l2-regularization) will give you a complete introduction to L1 and L2 regularization.</p></details>
+
+-----------------------
+
