@@ -28970,3 +28970,46 @@ Decreasing the value of λ will increase the value of the coefficients, thus inc
 
 -----------------------
 
+## Date - 2023-12-22
+
+
+## Title - Restaurant trip
+
+
+### **Question** :
+
+Sloane took her friends to a restaurant.
+
+They ordered two dozen raw oysters. Sloane, Elliana, and Yasmin had five oysters each, while Ana ate the other 9.
+
+**Which of the following represents the mean of the oysters they ate?**
+
+
+### **Choices** :
+
+- The mean is 2.
+- The mean is 4.
+- The mean is 5.
+- The mean is 6.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The mean, median, and mode are different ways to measure the center of a dataset. Each of these metrics tries to summarize a set of values using a single number.
+
+The mean of a dataset represents its average. We can find it by adding all data points and dividing by the number of values in the set.
+
+This example has four data points: `5`, `5`, `5`, and `9`. Adding these values and dividing the result by `4` gives us a mean of `6`.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Mean Median Mode: What They Are, How to Find Them"](https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-median-mode/) for a complete explanation of the Mean, Median, and Mode.</p></details>
+
+-----------------------
+
