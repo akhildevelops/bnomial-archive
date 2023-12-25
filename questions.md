@@ -29125,3 +29125,48 @@ Although XGBoost has a clever approach for missing values, it's still generic an
 
 -----------------------
 
+## Date - 2023-12-25
+
+
+## Title - Muscle memory
+
+
+### **Question** :
+
+Brooke is working on a machine learning multi-class classification neural network and used a softmax activation function on the output layer.
+
+But Brooke did it because her muscle memory kicked in. She isn't sure why softmax is the right way to go.
+
+**Which of the following statements is true about the softmax activation function when used in the output layer of a neural network?**
+
+
+### **Choices** :
+
+- The softmax function turns the network's input into a vector of probabilities that sum to 1.
+- The softmax function turns a vector of real values into a sorted vector of probabilities that sum to 1.
+- The softmax function turns a vector of real values into a vector of probabilities that sum to 1.
+- The softmax function turns the network's input into a vector of probabilities that sum to 0.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The softmax function turns a vector of real values into another vector of probabilities that sum to 1. These probabilities are proportional to the relative scale of each value in the vector.
+
+When used as the activation function of the output layer of a neural network, softmax converts the scores from the previous layer to a normalized probability distribution. This is a convenient way to interpret the results of a multi-class classification model.
+
+Noticed that the first and fourth choices argue about softmax converting the network's input. This would only be true if the network doesn't have hidden layers, and the input layer is connected directly to the output. Moreover, the fourth choice claims that the sum of the vector values will be zero, which is incorrect.
+
+Finally, the second choice argues about a "sorted vector of probabilities." Softmax doesn't sort the output vector, so this option is also incorrect.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check ["Softmax Activation Function with Python"](https://machinelearningmastery.com/softmax-activation-function-with-python/) for more information about the Softmax function and a way to implement it.- ["What is the Softmax Function"](https://deepai.org/machine-learning-glossary-and-terms/softmax-layer) is a great summary of this function.</p></details>
+
+-----------------------
+
