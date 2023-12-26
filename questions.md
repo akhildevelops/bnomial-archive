@@ -29170,3 +29170,48 @@ Finally, the second choice argues about a "sorted vector of probabilities." Soft
 
 -----------------------
 
+## Date - 2023-12-26
+
+
+## Title - First chapter
+
+
+### **Question** :
+
+Adelaide was about to finish the first chapter of her book. It was about neural networks, and Adelaide wanted to write a few exercises before closing it.
+
+She found that an excellent way to summarize the chapter was with a multi-choice question:
+
+**Which of the following sentences are true about neural networks?**
+
+
+### **Choices** :
+
+- We can only optimize neural networks using the Gradient Descent algorithm.
+- Neural networks can only find the optimal solution for convex problems.
+- Neural networks can use a mix of activation functions.
+- Neural networks can approximate any function when using non-linear activations.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Gradient descent is an iterative optimization algorithm used to find the local minimum of a function. The algorithm works by taking steps proportional to the negative of the function's gradient at the current point. Gradient descent is an excellent choice to optimize neural networks, but it's not the only way. We can use, for example, the [Adam algorithm](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning), a combination of the AdaGrad and RMSProp algorithms.
+
+Using Gradient descent, we can find the optimal solution for a concave problem, but it's not guaranteed. The algorithm might converge to a local minimum instead of the global minimum.
+
+When setting up a neural network, we can use a mix of activation functions. For example, ReLU in the hidden layers and Softmax in the output layer of a classification model.
+
+Finally, thanks to the [Universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem), we can turn a two-layer neural network into a universal function approximator when using non-linear activation functions.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Gradient Descent For Machine Learning"](https://machinelearningmastery.com/gradient-descent-for-machine-learning/) for a description of the algorithm.* Check the ["Universal approximation theorem"](https://en.wikipedia.org/wiki/Universal_approximation_theorem) on Wikipedia for more information about the power of neural networks.* ["Gentle Introduction to the Adam Optimization Algorithm for Deep Learning"](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning) is an excellent explanation of the Adam algorithm.</p></details>
+
+-----------------------
+
