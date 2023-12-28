@@ -29260,3 +29260,52 @@ From the list of options, the only classification problem is determining whether
 
 -----------------------
 
+## Date - 2023-12-28
+
+
+## Title - Sigmoid's interpretation
+
+
+### **Question** :
+
+Lennon is starting to understand the need for activation functions when building neural networks.
+
+She is still relatively new and doesn't grasp the details of some of the most popular activation functions, especially because some formulas aren't straightforward to understand.
+
+For example, here is the Sigmoid formula:
+
+![Sigmoid](https://user-images.githubusercontent.com/1126730/196755518-311dd425-676e-4c85-be1f-467694879c30.jpg)
+
+**Which of the following is a correct interpretation of this function?**
+
+
+### **Choices** :
+
+- The output of the Sigmoid function could be any real number.
+- The output of the Sigmoid function could be any integer number.
+- The output of the Sigmoid function is a real number between `-1` and `1`.
+- The output of the Sigmoid function is a real number between `0` and `1`.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Sigmoid function takes a value as input and outputs another real value between `0` and `1`. We say that Sigmoid "squeezes" the input into that range.
+
+Sigmoid is continuously differentiable, and its derivative is simple to compute. This, together with its fixed output range, make the Sigmoid function one of the most popular activation functions.
+
+Here is the plot of the Sigmoid function:
+
+![Sigmoid Plot](https://user-images.githubusercontent.com/1126730/197406367-7a06343e-f5ed-4409-b11d-6ee92eef7171.jpg)</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For a complete description of the Sigmoid function, check the ["Logistic function"](https://en.wikipedia.org/wiki/Logistic_function) Wikipedia page.</p></details>
+
+-----------------------
+
