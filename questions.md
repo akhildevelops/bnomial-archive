@@ -29358,3 +29358,46 @@ In summary, Delaney shouldn't do anything at this point.</p></details>
 
 -----------------------
 
+## Date - 2023-12-30
+
+
+## Title - Just in time
+
+
+### **Question** :
+
+Lila had to turn in an implementation of a machine-learning technique to solve a toy exercise. She had to write the code from scratch.
+
+She had a simple dataset: only a few features and rows of data. 
+
+Lila decided to implement a solution that wouldn't require training and would classify new samples just in time.
+
+**Which of the following was the technique that Lila used?**
+
+
+### **Choices** :
+
+- Lila used Linear Regression
+- Lila used a Decision Tree
+- Lila used k-Nearest Neighbors
+- Lila didn't use any of the above.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Unlike Linear Regression and Decision Trees, k-Nearest Neighbors (KNN) is an algorithm that doesn't create a predictive model from a training dataset to make predictions. In KNN, there's no need for a training phase. Instead, the algorithm computes a prediction during inference time.
+
+KNN uses the entire dataset and looks for a pre-determined number of instances closest to the observation we want to classify to determine to which group the sample belongs.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Understand the Fundamentals of the K-Nearest Neighbors (KNN) Algorithm"](https://heartbeat.comet.ml/understand-the-fundamentals-of-the-k-nearest-neighbors-knn-algorithm-533dc0c2f45a) for an introduction to KNN.</p></details>
+
+-----------------------
+
