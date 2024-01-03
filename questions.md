@@ -29538,3 +29538,46 @@ Therefore, Line 10 computes the update by multiplying the derivative of the erro
 
 -----------------------
 
+## Date - 2024-01-03
+
+
+## Title - Neighborhood groceries
+
+
+### **Question** :
+
+A neighborhood grocery store wants to segment its online customers to send personalized advertising to their inboxes.
+
+Alivia is in charge of the team that will implement a solution, but she has no previous experience building a system like this.
+
+**How should Alivia approach this problem?**
+
+
+### **Choices** :
+
+- Alivia should use a decision tree to find and group similar customers.
+- Alivia should use a decision tree to group customers into a predefined list of categories.
+- Alivia should use a clustering algorithm to find and group similar customers.
+- Alivia should use a clustering algorithm to group customers into a predefined list of categories.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Customer segmentation](https://towardsdatascience.com/customer-segmentation-with-machine-learning-a0ac8c3d4d84) is a popular field where you try to find similar characteristics among your customers. It's the perfect opportunity to use unsupervised learning: a clustering algorithm.
+
+Alivia doesn't know what characteristics the applicants share, so she can't predefine the categories on which she wants to segment the customers. Instead, she needs to use a clustering algorithm to find those groups.
+
+For example, she could use [K-Means](https://en.wikipedia.org/wiki/K-means_clustering) to find interesting patterns and group the customers that share them. A critical distinction is that you don't need to consider these groups preemptively; the clustering algorithm will find them for you.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Customer Segmentation with Machine Learning"](https://towardsdatascience.com/customer-segmentation-with-machine-learning-a0ac8c3d4d84) for a quick introduction to Customer Segmentation.* ["10 Clustering Algorithms With Python"](https://machinelearningmastery.com/clustering-algorithms-with-python/) will introduce you to 10 different clustering algorithms.</p></details>
+
+-----------------------
+
