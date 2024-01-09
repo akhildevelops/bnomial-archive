@@ -29810,3 +29810,93 @@ One of the benefits of decision trees is that they are easy to interpret and exp
 
 -----------------------
 
+## Date - 2024-01-09
+
+
+## Title - Digit distribution
+
+
+### **Question** :
+
+The MNIST dataset is a collection of scanned images of handwritten digits. 
+
+It’s a modified subset of two datasets collected by the United States National Institute of Standards and Technology and one of the most popular datasets out there.
+
+Here is a simple way you can load this dataset in a [Google Colab](https://colab.research.google.com/) notebook:
+
+```
+from keras.datasets import mnist
+(X_train, y_train), (X_test, y_test) = mnist.load_data()
+```
+
+The dataset contains every digit from 0 to 9.
+
+**Could you help us determine what of the following statements are correct about the dataset?**
+
+
+### **Choices** :
+
+- There are a total of 7,293 images of digit 7.
+- The most popular digit in the dataset is 1, and the least popular in the train set is 9.
+- The digit 5 represents a mere 9% of the images in the test set.
+- There are 80,000 images among both train and test sets.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We need to write some code to answer this question.
+
+Assuming that we start with the code snippet provided in the problem statement, we have the dataset split into a train and a test set, so we need to [concatenate](https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html) them to make the rest of the code simpler:
+
+```
+import numpy as np
+labels = np.concatenate((y_train, y_test))
+```
+
+Notice that we don't need to worry about `X_train` and `X_test` because those arrays contain the images. We can answer the question by looking at the labels only.
+
+[Numpy's `unique()` function](https://numpy.org/doc/stable/reference/generated/numpy.unique.html) will allow us to group and count the labels:
+
+```
+count = np.unique(labels, return_counts=1)[1]
+count_train = np.unique(y_train, return_counts=1)[1] 
+count_test = np.unique(y_test, return_counts=1)[1]
+```
+
+If we print the count corresponding to digit 7, we will find out that there are 7,293 images:
+
+```
+print(count[7])
+```
+
+To determine the most popular digit in the dataset and the least popular in the train set, we can use the `argmax` and `argmin` functions in the corresponding arrays:
+
+```
+print(np.argmax(count))
+print(np.argmin(count_train))
+```
+
+By running this code, you'll find out that 1 is indeed the most popular digit in the entire dataset, but 5 is the least popular in the train set.
+
+We can compute the percentage that digit 5 represents in the test set with the following line:
+
+```
+print(count_test[5] / y_test.shape[0])
+```
+
+The result is `0.089`.
+
+Finally, we can find the total number of images by printing `labels.shape[0]`. We have 70,000 images, not 80,000.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For more information, you can check Numpy's [concatenate](https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html) and [unique](https://numpy.org/doc/stable/reference/generated/numpy.unique.html) functions.</p></details>
+
+-----------------------
+
