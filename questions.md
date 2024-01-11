@@ -29957,3 +29957,57 @@ Therefore, high variance models will be prone to overfit, while low variance mod
 
 -----------------------
 
+## Date - 2024-01-11
+
+
+## Title - Tiny number
+
+
+### **Question** :
+
+Here is Phoebe's experiment:
+
+She split her dataset into training and testing. She then set the testing data aside and created five other random splits from the training data, each with 20% of the samples.
+
+Phoebe then trained a model on each of the five groups and tested them on the testing data to determine the accuracy of each model. She grabbed the results and computed the variance between them:
+
+![Pseudocode](https://user-images.githubusercontent.com/1126730/199803699-e056bcea-133f-45b1-9c52-8e68d75f5bed.png)
+
+The final result was a tiny number.
+
+**What can you say about the model Phoebe used in her experiment?**
+
+
+### **Choices** :
+
+- Phoebe's model is high bias and low variance.
+- Phoebe's model is high bias and high variance.
+- Phoebe's model is low bias and low variance.
+- Phoebe's model is low bias and high variance.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>After Phoebe trains each model and computes their accuracy on the testing set, a couple of things could happen:
+
+1. The accuracy of each model is significantly different.
+2. The accuracy of each model is relatively similar.
+
+We know that Phoebe split the training dataset into five random groups, so we should expect each of these groups to be similar. If the model's performance on each differs significantly, we know Phoebe is using a high-variance model.
+
+On the other hand, if the model's performance is very similar across all five groups, we know we are looking at a stable, high-bias model that doesn't change much with new data.
+
+The variance between the five accuracies is tiny, so Phoebe must be using a high-bias and low-variance model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) for an introduction to bias and variance.* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
