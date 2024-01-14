@@ -30107,3 +30107,58 @@ In summary, the smaller the value of `K` is, the lower the bias and the higher t
 
 -----------------------
 
+## Date - 2024-01-14
+
+
+## Title - Geometric transformations
+
+
+### **Question** :
+
+We can't understand how deep learning networks work without looking into different tensor operations like addition, multiplication, etc. In the end, the magic mostly boils down to many of these operations chained together.
+
+Here is something fun.
+
+Every tensor operation has a corresponding geometric interpretation. For example, the addition operation represents the action of [translating](https://en.wikipedia.org/wiki/Translation_(geometry)) an object. Adding a vector to a set of points representing a 2D object is equivalent to moving the object by a certain amount in a specific direction.
+
+**Which of the following descriptions are correct geometric interpretations of tensor operations in a 2D plane?**
+
+
+### **Choices** :
+
+- We can rotate an object by multiplying it with a 2x2 matrix with the following structure: `[[cos(θ), -sin(θ)], [sin(θ), cos(θ)]]`.
+- We can scale an object by a dot product with a diagonal 2x2 matrix with the following structure: `[[h, 0], [0, v]]`.
+- We get a linear transform by adding an arbitrary matrix.
+- An affine transform combines a linear transform and a translation.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When we talk about [rotating](https://en.wikipedia.org/wiki/Rotation_(mathematics)) an object, we can think of moving each point of that object circularly around a center. Assuming that we use a column vector to represent the coordinate of each point, we can use matrix multiplication to rotate the object.
+
+First, we need a rotation matrix R. This is the matrix we will multiply with the object's coordinates to obtain the new set of rotated coordinates. The structure of this matrix R to rotate an object counterclockwise is `[[cos(θ), -sin(θ)], [sin(θ), cos(θ)]]` where θ represents the rotation angle. Therefore, the first choice is correct.
+
+We can [scale](https://en.wikipedia.org/wiki/Scaling_(geometry)) an object using the dot product with a matrix S, but this time the matrix will have a different structure. Vertical and horizontal scaling of a 2D object requires a 2x2 matrix containing the horizontal and vertical factors—by how much we want to scale the object in each direction.
+
+Let's assume we want to scale the object in half horizontally but keep it as-is vertically. The horizontal factor should be 0.5, and the vertical factor should be 1.0. The scaling matrix S will be `[[0.5, 0], [0, 1.0]]`. Notice how this is a diagonal matrix because it only contains non-zero values in the diagonal. Therefore, the second choice is correct.
+
+The third choice argues that a [linear transform](https://en.wikipedia.org/wiki/Linear_transformation) is an addition operation with an arbitrary matrix, but this is incorrect. The core of a linear transformation is the dot product, not an addition operation. Notice that both scaling and rotation are linear transforms.
+
+Finally, the fourth choice argues that an [affine transform](https://en.wikipedia.org/wiki/Affine_transformation) combines a linear transform and a translation, which is correct:
+
+> If X is the point set of an affine space, then every affine transformation on X can be represented as the composition of a linear transformation on X and a translation of X. 
+
+In summary, the first, second, and fourth choices are correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Deep Learning with Python, Second Edition_](https://amzn.to/3K3VZoy) covers these operations in detail.</p></details>
+
+-----------------------
+
