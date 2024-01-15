@@ -30162,3 +30162,50 @@ In summary, the first, second, and fourth choices are correct.</p></details>
 
 -----------------------
 
+## Date - 2024-01-15
+
+
+## Title - One or the other
+
+
+### **Question** :
+
+Lilith is working on a classification model and wants to find a way to evaluate it depending on whether precision or recall is more important to her client.
+
+She is using the Fβ score.
+
+Lilith understands how to give more weight to precision or recall, but she needs to consider the case where her client only cares about one of the metrics regardless of the value of the other.
+
+**How can Lilith do this?**
+
+
+### **Choices** :
+
+- If Lilith wants to consider precision only, she should use β = 0.
+- If Lilith wants to consider precision only, she should use β < 1.
+- If Lilith wants to consider recall only, she should use β > 1.
+- If Lilith wants to consider recall only, she should set β = infinity.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Here is the Fβ score formula:
+
+![FBeta-Score](https://user-images.githubusercontent.com/1126730/193036770-0a37f6f7-9a5d-4be3-9b89-7018931140eb.jpg)
+
+The Fβ score lets us combine precision and recall into a single metric. When using β = 1, we place equal weight on precision and recall. For values of β > 1, recall is weighted higher than precision; for values of β < 1, precision is weighted higher than recall.
+
+If Lilith's client wants only to consider precision regardless of the recall value, Lilith can use β = 0. Notice how the Fβ score becomes precision when β = 0. Conversely, If Lilith's client wants only to consider recall regardless of the precision value, Lilith can use β = infinite.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["What is the F-Score?"](https://deepai.org/machine-learning-glossary-and-terms/f-score) is a short introduction to this metric.* ["Micro, Macro & Weighted Averages of F1 Score, Clearly Explained"](https://towardsdatascience.com/micro-macro-weighted-averages-of-f1-score-clearly-explained-b603420b292f) is a great article covering how to compute a global F1-Score metric in multi-class classification problem.* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.</p></details>
+
+-----------------------
+
