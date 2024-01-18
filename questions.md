@@ -30312,3 +30312,60 @@ The correct answer is choosing the best parameters to tune a learning algorithm.
 
 -----------------------
 
+## Date - 2024-01-18
+
+
+## Title - Fraud detection
+
+
+### **Question** :
+
+Milani's team has been working on a fraud detection algorithm for months.
+
+They used the best practices and followed all the necessary steps: they split their data into training and test sets, they used a variety of metrics to evaluate their model, they balanced their dataset, and they reviewed their examples regularly to ensure there were no labeling errors.
+
+Finally, the model was ready, and Milani's team deployed it to production.
+
+The algorithm was a huge success. The team received much praise, and the number of fraud cases detected increased by more than 50% in the first month.
+
+However, Milani soon noticed something strange. All the fraud cases detected by the model were in the US.
+
+**What is the most likely reason for this problem?**
+
+
+### **Choices** :
+
+- The model is too simple and couldn't learn the entire dataset of fraud cases, leaving out those from other countries.
+- The model is suffering from data or concept drift.
+- The model didn't train long enough to capture all the details of different fraud cases.
+- The model suffers from sampling bias. It probably didn't include enough examples of fraud cases from other countries.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A common problem in machine learning is that a model that shows promising results during evaluation doesn't perform well when deployed in production.
+
+While there may be various reasons for that, the story above points us in one particular direction.
+
+The first choice, a simple model, can't be the correct answer. If that were the case, the model would be underfitting and give poor results across the board, not only in the US.
+
+Data and concept drift are indeed common problems with models in production. However, they arise when the environment changes over time, and so does the input to the model. In this case, the problem appeared straight after deployment.
+
+Training the model longer is unlikely to solve this problem. The model is already performing well, and this issue only appears in the US. If the model wasn't trained long enough, it would be underperforming in general, not just in a specific region.
+
+This leaves us with the only correct answer: The most likely reason for this problem is that Milani's team didn't have enough data from other countries, so the model struggles to recognize fraud cases from those regions.
+
+This issue is called "sampling bias." It explains why the problem occurred in one particular country. Sampling bias is difficult to detect during development because the data is missing from the training and test datasets, so we can't notice it while evaluating the model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Sampling bias"](https://en.wikipedia.org/wiki/Sampling_bias) for a complete explanation of this problem.</p></details>
+
+-----------------------
+
