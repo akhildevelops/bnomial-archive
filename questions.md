@@ -30580,3 +30580,46 @@ When doing feature selection on the entire dataset, Elise risks leaking informat
 
 -----------------------
 
+## Date - 2024-01-23
+
+
+## Title - Fighting overfitting
+
+
+### **Question** :
+
+What worries Kamila more than anything else is dealing with models that overfit. She never had apparent issues with underfitting, but regularizing a model that doesn't work well on production data is always a chore.
+
+But Kamila's problem wasn't the process of fixing the model but the underlying theory of why that process worked in the first place.
+
+So here she is, staring at two different regularization techniques. The first is L1, while the second is L2 regularization.
+
+**Which of the following illustrates how these two techniques work? Select all that apply.**
+
+
+### **Choices** :
+
+- L1 regularization uses the sum of absolute values of the weights to penalize the loss function.
+- L1 regularization uses the sum of squares of the weights to penalize the loss function.
+- L2 regularization uses the sum of absolute values of the weights to penalize the loss function.
+- L2 regularization uses the sum of squares of the weights to penalize the loss function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>L1 regularization helps with overfitting by shrinking the model's parameters toward zero, making certain features irrelevant and preventing the model from using them to make predictions. L1 regularization uses the sum of absolute values of the weights to penalize the loss function.
+
+On the other hand, L2 regularization fights overfitting by forcing weights to be small but not exactly zero. That means that the model can still use irrelevant features to make predictions, but the overall impact of those features will be limited. L2 regularization uses the sum of squares of the weights to penalize the loss function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Fighting Overfitting With L1 or L2 Regularization: Which One Is Better?"](https://neptune.ai/blog/fighting-overfitting-with-l1-or-l2-regularization) will give you a complete introduction to L1 and L2 regularization.</p></details>
+
+-----------------------
+
