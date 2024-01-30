@@ -30907,3 +30907,50 @@ Here is the plot of the Tanh function:
 
 -----------------------
 
+## Date - 2024-01-30
+
+
+## Title - Daily question
+
+
+### **Question** :
+
+Alayna found Bnomial, an online website that posts one machine learning question daily.
+
+Perfect! It was an excellent way for Alayna to practice consistently!
+
+The first question she found was about neural networks:
+
+**Which of the following sentences are true about neural networks?**
+
+
+### **Choices** :
+
+- We can optimize neural networks using the Gradient Descent algorithm.
+- Neural networks can find the optimal solution for convex problems.
+- Neural networks can use a mix of activation functions.
+- Neural networks can approximate any function when using non-linear activations.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Gradient descent is an iterative optimization algorithm used to find the local minimum of a function. The algorithm works by taking steps proportional to the negative of the function's gradient at the current point. Gradient Descent is an excellent choice to optimize neural networks.
+
+Using Gradient descent, we can find the optimal solution for a convex problem, assuming we configure the algorithm with an appropriate learning rate.
+
+When setting up a neural network, we can use a mix of activation functions. For example, ReLU in the hidden layers and Softmax in the output layer of a classification model.
+
+Finally, thanks to the [Universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem), we can turn a two-layer neural network into a universal function approximator when using non-linear activation functions.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Gradient Descent For Machine Learning"](https://machinelearningmastery.com/gradient-descent-for-machine-learning/) for a description of the algorithm.* Check the ["Universal approximation theorem"](https://en.wikipedia.org/wiki/Universal_approximation_theorem) on Wikipedia for more information about the power of neural networks.</p></details>
+
+-----------------------
+
