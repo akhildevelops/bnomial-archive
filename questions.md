@@ -31045,3 +31045,48 @@ Keras' `CategoricalCrossentropy`, on the other hand, has the same function but w
 
 -----------------------
 
+## Date - 2024-02-02
+
+
+## Title - Connections between units
+
+
+### **Question** :
+
+A "feedback loop" is when connections between units form a directed cycle, thus creating loops in a neural network. This feature allows networks to save information in the hidden layers.
+
+Only some neural network types support the concept of feedback loops.
+
+**Which of the following support feedback loops?**
+
+
+### **Choices** :
+
+- Multilayer Perceptron
+- Feed Forward Neural Network
+- Recurrent Neural Networks
+- Convolutional Neural Networks
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Recurrent Neural Networks have an advantage over traditional feed-forward networks when working with time series or data points that depend upon previous samples.
+
+The magic ingredient of Recurrent Neural Networks is the ability to store the information of previous inputs to generate the following sequence output. Recurrent Neural Networks do this by implementing the concept of a "feedback loop" or "feedback connection." These are connections feeding the hidden layers of the neural network back into themselves.
+
+None of the other options support the concept of feedback loops. Only Recurrent Neural Networks do.
+
+[Long Short-Term Memory](https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/) (LSTM) networks are a type of Recurrent Neural Network that is very popular for sequence prediction problems.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [An Introduction To Recurrent Neural Networks And The Math That Powers Them](https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/)* [Recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network)* [A Gentle Introduction to Long Short-Term Memory Networks by the Experts](https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/)</p></details>
+
+-----------------------
+
