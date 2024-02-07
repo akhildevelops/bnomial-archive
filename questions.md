@@ -31274,3 +31274,48 @@ Therefore, every choice is a correct answer.</p></details>
 
 -----------------------
 
+## Date - 2024-02-07
+
+
+## Title - Human-like language
+
+
+### **Question** :
+
+Madilyn works in the natural language processing department at a tech company. She has been tasked with building a model that can understand and generate human-like language.
+
+Madilyn decides to use a transformer model for this task. She knows that transformers are a type of deep learning model that has been proven effective in natural language processing tasks.
+
+**Which of the following are characteristics of transformers?**
+
+
+### **Choices** :
+
+- Transformers use attention mechanisms to allow the model to focus on specific parts of the input.
+- Transformers can handle variable-length input and output sequences.
+- Transformers are based on recurrent neural networks and use feedback loops to process the input data.
+- Transformers can only work with categorical data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Transformers are a type of deep learning model widely used in Natural Language processing tasks, such as machine translation and text summarization. They were introduced in the 2017 paper [Attention is All You Need](https://arxiv.org/abs/1706.03762) by Vaswani et al.
+
+One of the key characteristics of transformers is their use of attention mechanisms. Attention allows the model to focus on specific input parts, which is useful when processing long data sequences. This differs from traditional recurrent neural networks, which use feedback loops to process the input data.
+
+Another characteristic of transformers is their ability to handle variable-length input and output sequences. This is useful when dealing with natural language data, which often has varying lengths.
+
+Transformers are not limited to working with categorical data. They can also process numerical data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check the ["Attention is All You Need"](https://arxiv.org/abs/1706.03762) paper by Vaswani et al. for an introduction to Transformers.* The [Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) is a fantastic visual guide that explains the inner workings of the Transformer architecture in an easy-to-understand manner.</p></details>
+
+-----------------------
+
