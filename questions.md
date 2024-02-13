@@ -31578,3 +31578,52 @@ print(np.where(y_train == 3)[0].shape[0])
 
 -----------------------
 
+## Date - 2024-02-13
+
+
+## Title - Returning a product
+
+
+### **Question** :
+
+Nina was working on a machine learning model to predict the likelihood of a customer returning a product. She was hired by a retailer that wanted to use her model to improve customer service.
+
+After several weeks of development, Nina had two models that performed well on the validation data, but she wanted to pick only one.
+
+**What is the best way for Nina to decide which model is the best overall?**
+
+
+### **Choices** :
+
+- Nina should compute the f1-score for both models and choose the higher value.
+- Nina should compute the f1-score for both models and choose the lower value.
+- Nina should compute the Recall for both models and choose the higher value.
+- Nina should compute the Precision for both models and choose the higher value.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The best way for Nina to decide which model is the best overall is to compute the f1-score for both models and choose the higher value. 
+
+The model's f1-score is the harmonic mean between precision and recall. We can use the following formula to compute it:
+
+![F1-Score](https://articles.bnomial.com/images/article-when-accuracy-doesnt-help-3.jpg)
+
+While precision and recall are important metrics, they do not provide a complete picture of its overall performance. Precision measures the proportion of true positive predictions made by the model, while recall measures the proportion of actual positive cases correctly predicted by the model. While a high precision indicates that the model is good at avoiding false positives, a high recall indicates that the model is good at finding all of the positive cases.
+
+In the case of Nina's models, a high precision might indicate that the model is good at predicting which customers are likely to return a product, but it does not necessarily mean that the model is good at finding all of the customers who are likely to return a product. Similarly, a high recall might indicate that the model is good at finding all the customers who are likely to return a product, but it does not necessarily mean that the model is good at avoiding false positives.
+
+Therefore, while precision and recall are important metrics to consider when evaluating a model's performance, they should not be used in isolation to determine which model is the best overall. The F1 score is a better metric to use because it provides a balanced view of a model's precision and recall and allows Nina to choose the model that has the best overall performance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Micro, Macro & Weighted Averages of F1 Score, Clearly Explained"](https://towardsdatascience.com/micro-macro-weighted-averages-of-f1-score-clearly-explained-b603420b292f) is a great article covering how to compute a global F1-Score metric in multi-class classification problem.* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.</p></details>
+
+-----------------------
+
