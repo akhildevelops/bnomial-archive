@@ -31781,3 +31781,50 @@ The variance between the four accuracies is high, so Octavia must be using a hig
 
 -----------------------
 
+## Date - 2024-02-17
+
+
+## Title - Juice packing
+
+
+### **Question** :
+
+Winter works at a juice-packing company where she uses a machine-learning model to predict the demand for different juice flavors.
+
+After training and evaluating the model, Winter was confident that it was ready for production. The model was deployed, and the company started using it to plan its production and distribution.
+
+During the first few months, everything was working as expected. But then, the company noticed that the model consistently overestimated the demand for certain flavors. 
+
+**What could be the cause of the problem with the model?**
+
+
+### **Choices** :
+
+- The model is underfitting and needs more complexity.
+- The model is overfitting and needs more regularization.
+- The model is suffering from data drift.
+- The model is suffering from sampling bias.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Machine learning models are trained on a historical dataset and make predictions based on that data. If the data distribution changes over time, the model can become less accurate and give poor predictions. This phenomenon is known as data drift.
+
+Data drift can occur for various reasons, such as changes in the underlying process that generates the data, changes in the environment, or changes in how the data is collected. In this case, it is likely that the demand for certain flavors of juice has changed over time, and the model is not capturing that change.
+
+Underfitting, overfitting, and sampling bias are not relevant in this scenario. Underfitting occurs when the model is too simple and cannot capture the underlying relationship in the data. Overfitting occurs when the model is too complex and captures noise in the data instead of the relationship. Sampling bias occurs when the training data does not represent the entire population. In this case, the problem appeared after a few months the model was deployed, so underfitting, overfitting, and sampling bias are not the cause.
+
+The most likely explanation for the problem is that the model suffers from data drift and needs to be retrained on more recent data to capture the changes in the demand for juice flavors.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Data Drift vs. Concept Drift: What Are the Main Differences?"](https://deepchecks.com/data-drift-vs-concept-drift-what-are-the-main-differences/) is a great introduction to data and concept drift.* ["Why You Should Care About Data and Concept Drift" ](https://evidentlyai.com/blog/machine-learning-monitoring-data-and-concept-drift) is a great article from [Evidently AI](https://evidentlyai.com/) focusing on the importance of monitoring your models.</p></details>
+
+-----------------------
+
