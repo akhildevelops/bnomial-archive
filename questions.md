@@ -31973,3 +31973,50 @@ Building a model is not part of the Exploratory Data Analysis process, so we don
 
 -----------------------
 
+## Date - 2024-02-21
+
+
+## Title - Image recognition
+
+
+### **Question** :
+
+Dahlia has been working on an image recognition app that uses a deep learning model to classify different objects. She's been struggling to get her model to perform appropriately.
+
+Dahlia knows her model suffers from the vanishing gradient problem. She decides to research every possible option to improve her model.
+
+**Which of the following techniques will help Dahlia's model overcome the vanishing gradient problem?**
+
+
+### **Choices** :
+
+- Dahlia should try using the ReLU activation function, which is known to reduce the vanishing gradient problem.
+- Dahlia should consider introducing Batch Normalization to her model architecture to combat the vanishing gradient problem.
+- Dahlia should increase the batch size to combat the vanishing gradient problem.
+- Dahlia should carefully initialize the weights of her model, such as using He initialization, to reduce the vanishing gradient problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The [Vanishing Gradient Problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem) occurs when the gradients of the loss function approach zero. This prevents the model from updating the weights and learning effectively. This problem is widespread when using the [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) and [tanh](https://www.sciencedirect.com/topics/mathematics/hyperbolic-tangent-function) activation functions in deep neural networks.
+
+One way to overcome the vanishing gradient problem is to use the [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) activation function. ReLU is less likely to saturate, and its derivative is 1 for values larger than zero. This can help prevent the gradients from becoming too small and vanishing.
+
+Another technique that can help is introducing Batch Normalization to the model architecture. This normalizes the input to a layer, ensuring that the values don't reach the edges where the derivatives are too small. We can combat the vanishing gradient problem by modifying the input this way.
+
+Increasing the batch size is not a valid solution to the vanishing gradient problem. This technique has nothing to do with the gradients becoming small and vanishing.
+
+Carefully initializing the model weights can also help reduce the vanishing gradient problem. If we use sigmoid or tanh as our activation functions, and many of the weights are initialized with values too small or too large, we will end up with derivatives close to zero. Using [He initialization](https://arxiv.org/abs/1704.08863) can prevent this from happening.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["How to Fix the Vanishing Gradients Problem Using the ReLU"](https://machinelearningmastery.com/how-to-fix-vanishing-gradients-using-the-rectified-linear-activation-function/) is a great explanation of how to approach this problem.* Check ["On weight initialization in deep neural networks"](https://arxiv.org/abs/1704.08863). It's an excellent paper covering weight initialization.</p></details>
+
+-----------------------
+
