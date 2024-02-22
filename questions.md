@@ -32020,3 +32020,46 @@ Carefully initializing the model weights can also help reduce the vanishing grad
 
 -----------------------
 
+## Date - 2024-02-22
+
+
+## Title - Master's exam
+
+
+### **Question** :
+
+Millie is taking an exam for her Master's degree in machine learning.
+
+One of the questions tests her knowledge of Supervised Learning techniques. She needs to select every problem she can solve using Supervised Learning. 
+
+**Which of the following problems should Millie select as examples of Supervised Learning?**
+
+
+### **Choices** :
+
+- Given a dataset of emails and their classification, build an application to determine whether an email is spam.
+- Given a dataset of audio files and their text transcripts, build an application that turns any audio snippet into text.
+- Given a dataset of translations between English and Spanish, build an application that turns any sentence written in English into Spanish.
+- Given a dataset of images of circuit boards and whether they work, build an application that determines if a picture of a circuit board corresponds to a working board.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>There are multiple ways to approach these problems, but we can solve all of them using [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning).
+
+Supervised learning involves using labeled training data to make predictions or classify data. Every one of these examples gives us a dataset with examples of inputs and outputs.
+
+Transcription and translation are interesting examples because we can also solve these problems using Unsupervised Learning. For this particular question, Millie has access to labeled data, and she can frame the problem using Supervised Learning.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) is an excellent introduction to the differences between supervised and unsupervised learning.</p></details>
+
+-----------------------
+
