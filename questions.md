@@ -32063,3 +32063,50 @@ Transcription and translation are interesting examples because we can also solve
 
 -----------------------
 
+## Date - 2024-02-23
+
+
+## Title - News cycle
+
+
+### **Question** :
+
+Elaina works for a national pollster, and she is building a machine-learning model to classify the topic from the text of a news article.
+
+She has access to a dataset containing every news article from the past year. Elaina's goal is to classify each piece into ten topics. Her team labeled the dataset, and Elaina will use a supervised learning model to make the predictions.
+
+**How would you recommend Elaina split her dataset into training and validation?**
+
+
+### **Choices** :
+
+- Elaina should split her dataset based on the date of the story, ensuring every article around the same date goes into the same split.
+- Elaina should split her dataset based on the classification of every story, ensuring every article from the same class goes into the same split.
+- Elaina should split her dataset based on the classification of every story, ensuring every article from the same class goes into a different split.
+- Elaina should split her dataset randomly, ensuring each split properly represents the overall dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The samples in Elaina's dataset are not independent. Multiple stories about the same topic will appear around the same time. For example, during a major upset win in sports, Elaina will find various news articles related to the same topic.
+
+If Elaina splits her dataset randomly, the training and validation sets will likely contain the same stories. This will lead to a leaky validation strategy. Here is an excerpt from [The Kaggle Book](https://amzn.to/3kbanRb):
+
+> In a leaky validation strategy, the problem is that you have arranged your validation strategy in a way that favors better validation scores because some information leaks from the training data.
+
+Elaina's model can use the date as a clue to predict the topic of a news article: any story happening around the same date will likely belong to the same topic, which will make some of the samples from the validation set simple for the model to predict.
+
+The solution is to group news articles by their date and ensure they go together into the same set.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.* ["Target Leakage in Machine Learning"](https://www.youtube.com/watch?v=dWhdWxgt5SU) is a YouTube presentation that covers leakage, including during the partitioning of a dataset.</p></details>
+
+-----------------------
+
