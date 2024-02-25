@@ -32155,3 +32155,81 @@ Therefore, the only Nash equilibrium in this game is when both players defect.</
 
 -----------------------
 
+## Date - 2024-02-25
+
+
+## Title - Candy flavors
+
+
+### **Question** :
+
+Jocelyn has been selling candy online for about a year, and after a lot of back and forth, she wants to introduce a second flavor. 
+
+She is trying to run a tight ship, so she needs to ensure she doesn't order too much of the new flavor from her manufacturer. Jocelyn knows she needs to predict how much candy she will sell in the coming weeks.
+
+After a few days, Jocelyn builds an algorithm to predict the probability of an existing customer buying the new flavor. The function looks like this:
+
+```
+probability = σ(a + 0.45b - 0.84)
+```
+
+Where:
+* `a`: Indicates whether the customer bought candy during the last month.
+* `b`: Indicates whether the customer bought more than one candy flavor before.
+* `σ`: Is the sigmoid function.
+
+**Assuming Patricia is a customer who bought two packages of different candy flavors last week, what would be the probability of her purchasing the new flavor?**
+
+
+### **Choices** :
+
+- The probability is `0.26`
+- The probability is `0.65`
+- The probability is `0.80`
+- The probability is `1.0`
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We need to understand how to compute the Sigmoid function to answer this question. The Sigmoid function takes a value as input and outputs another real value between `0` and `1`. We say that Sigmoid "squeezes" the input into that range.
+
+Here is the formula:
+
+![Sigmoid](https://user-images.githubusercontent.com/1126730/196755518-311dd425-676e-4c85-be1f-467694879c30.jpg)
+
+In Python, the Sigmoid function looks like this:
+
+```
+import math
+
+def sigmoid(x):
+    return 1/(1 + math.exp(-x))
+```
+
+We can now answer the question by solving the following equation:
+
+```
+probability = sigmoid(a + 0.45 * b - 0.84)
+```
+
+Patricia bought candy during the last month, so `a = 1`, and she bought different flavors, so `b = 1`:
+
+```
+probability = sigmoid(1 + 0.45 * 1 - 0.84)
+probability = 0.6479408020806503
+```
+
+Therefore, Patricia's probability of buying the new flavor is `0.65`.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For a complete description of the Sigmoid function, check the ["Logistic function"](https://en.wikipedia.org/wiki/Logistic_function) Wikipedia page.</p></details>
+
+-----------------------
+
