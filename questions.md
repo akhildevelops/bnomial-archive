@@ -32233,3 +32233,54 @@ Therefore, Patricia's probability of buying the new flavor is `0.65`.</p></detai
 
 -----------------------
 
+## Date - 2024-02-26
+
+
+## Title - Model recipes
+
+
+### **Question** :
+
+Gia's been working on a model to classify photos of food. 
+
+Her company is building an application that will let users snap a picture of a plate at a restaurant and show them a potential recipe so they can cook it at home.
+
+After a year of work, Gia's model was working great. The company launched the model worldwide and started monitoring user feedback.
+
+Unfortunately, users from an Asian country complained because the model wasn't working for them.
+
+**What is the most likely reason for the problem?**
+
+
+### **Choices** :
+
+- Gia's model didn't have enough complexity to learn all the data, so it's normal to have problems with certain regions.
+- Gia needed to train the model for more time to fully capture the dataset's information.
+- Gia's model is suffering from data drift.
+- Gia's model is suffering from sampling bias.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A common problem in machine learning is that a model that shows promising results during evaluation doesn't perform well when deployed in production. 
+
+Gia's model doesn't lack complexity. If that were the case, the model would be underfitting and give poor results across all regions where the application works. The training time is not a problem either for similar reasons.
+
+Data and concept drift are common problems with models in production. However, they arise when the environment changes over time, and so does the input to the model. In this case, the problem appeared straight after deployment.
+
+The most likely reason for this problem is that Gia didn't have enough data from the Asian country where the application is failing, so the model is struggling to recognize food from that region.
+
+This issue is called "sampling bias." It explains why the problem occurred in one particular country. Sampling bias is difficult to detect during development because the data is missing from the training and test datasets, so we can't notice it while evaluating the model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Sampling bias"](https://en.wikipedia.org/wiki/Sampling_bias) for a complete explanation of this problem.</p></details>
+
+-----------------------
+
