@@ -32424,3 +32424,48 @@ Sampling bias is likely the cause of the problem. Sampling bias occurs when the 
 
 -----------------------
 
+## Date - 2024-03-01
+
+
+## Title - Type I
+
+
+### **Question** :
+
+In statistics, the notion of a statistical error is integral to hypothesis testing. When testing the null hypothesis, there are two types of errors: **type I** and **type II**.
+
+Look at this confusion matrix of a hypothetical machine learning model that classifies spam emails. The "P" stands for "Positive" samples, and the "N" stands for "Negative" samples. Our default assumption is that emails are not spam.
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/188163753-6424565d-3c8c-421e-95fb-7d89aba1453a.jpg)
+
+**How many type I errors does this model have?**
+
+
+### **Choices** :
+
+- There are 75 type I errors.
+- There are 22 type I errors.
+- There are 12 type I errors.
+- There are 121 type I errors.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Type I errors are the same as **false positives**. For example, if we mark a valid email as spam, we are in the presence of a false positive. Type I errors are the rejection of a true [null hypothesis](https://www.investopedia.com/terms/n/null_hypothesis.asp) by mistake.
+
+On the other hand, Type II errors are the same as **false negatives**. For example, if we let a spam message pass as a valid email, we are in the presence of a false negative. This is a type II error because we accept the conclusion of the email being good, even though it is incorrect. Type II errors are the acceptance of a false null hypothesis by mistake.
+
+Therefore, there are a total of 12 type I errors in this hypothetical model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.* Check out ["Type I and type II errors"](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) for the definition and examples of each type of error. * ["Understanding Null Hypothesis Testing"](https://opentextbc.ca/researchmethods/chapter/understanding-null-hypothesis-testing/) is an excellent article about hypothesis testing.</p></details>
+
+-----------------------
+
