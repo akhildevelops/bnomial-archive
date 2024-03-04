@@ -32557,3 +32557,56 @@ Vanessa should only include examples of classification problems. From the list o
 
 -----------------------
 
+## Date - 2024-03-04
+
+
+## Title - Administrative assistant
+
+
+### **Question** :
+
+Noelle is a student who takes college classes at night while she works full-time as an administrative assistant. As part of her Machine Learning course, she is learning about Perceptrons and how to implement them from scratch.
+
+One of the class assignments involves writing and running a Perceptron by hand. For this assignment, she is given a training sample `[-2.0, 4.0]` with a true label of `0`.
+
+**Assuming the initial weights of the Perceptron are initialized with zeros, and the predicted label is `1`, what does the weight vector look like after one pass?**
+
+
+### **Choices** :
+
+- The weight vector will be `[0.0, 0.0]`.
+- The weight vector will be `[-2.0, 4.0]`.
+- The weight vector will be `[2.0, -4.0]`.
+- The weight vector will be `[-1.0, 2.0]`.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Since the true label is `0` but the Perceptron predicted `1`, the error will be `0 - 1 = -1`, therefore, the Perceptron will update the weight vector by the negative feature vector.
+
+As a reminder, the following snippet of code illustrates how to update the weights of a Perceptron:
+
+```
+import numpy as np
+
+x = np.array([-2.0, 4.0])
+w = np.array([0.0, 0.0])
+error = -1
+w = w + error * x
+print(w)
+```
+
+The feature vector is `[-2.0, 4.0]`, and the weights were initialized with `[0.0, 0.0]`. The update will set them to `[2.0, -4.0].`</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Perceptron Algorithm for Classification in Python"](https://machinelearningmastery.com/perceptron-algorithm-for-classification-in-python/) is a great introduction to the Perceptron.</p></details>
+
+-----------------------
+
