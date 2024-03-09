@@ -32826,3 +32826,44 @@ Therefore, One-Hot Encoding creates one additional column for each possible cate
 
 -----------------------
 
+## Date - 2024-03-09
+
+
+## Title - Shelter's headquarters
+
+
+### **Question** :
+
+Kailani is working with the government to classify the shelters in the city. They are interested in organizing each location by its impact in terms of help provided versus costs.
+
+She wants to start by organizing the data and preparing the features to help build a machine-learning model to predict future shelters' impact.
+
+**Which of the following columns on Kailani's dataset are meaningful numerical features for the model?**
+
+
+### **Choices** :
+
+- The shelter's headquarters phone number.
+- The shelter's tax identifier.
+- The number of employees that work at the shelter's headquarters.
+- The number of years the shelter has been operating.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The phone number and the tax identifier of the shelters are numeric features, but they will probably not help classify shelters. Kailani should discard these features.
+
+The number of employees and years a shelter has been operating seems like good candidates for Kailani's model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.</p></details>
+
+-----------------------
+
