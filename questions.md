@@ -32867,3 +32867,48 @@ The number of employees and years a shelter has been operating seems like good c
 
 -----------------------
 
+## Date - 2024-03-10
+
+
+## Title - Basketball team
+
+
+### **Question** :
+
+Elianna worked as a data scientist in the analytics department of a professional basketball team. 
+
+As part of her job, she used machine learning algorithms to analyze data and predict player performance and team strategy.
+
+Elianna was well aware of the importance of the No Free Lunch Theorem in her work, so she always kept repeating it to hear teammates. 
+
+**How is the No Free Lunch Theorem relevant to Elianna?**
+
+
+### **Choices** :
+
+- There is no single machine learning algorithm that is universally the best for all possible tasks.
+- The performance of machine learning algorithms is independent of the specific characteristics of the data and task at hand.
+- The most complex machine learning algorithm for a given task is the best option.
+- The simplest machine learning algorithm for a given task is the best option.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The [No Free Lunch Theorem](https://en.wikipedia.org/wiki/No_free_lunch_theorem) states that there is no single machine learning algorithm that is universally the best for all possible tasks. This means that the performance of a machine learning algorithm depends on the specific characteristics of the data and task at hand, and there is no one-size-fits-all solution.
+
+Elianna is using machine learning algorithms to analyze data and make predictions in the context of professional basketball. She knows that the No Free Lunch Theorem means she will need to carefully consider the specific needs and challenges of the task when selecting a machine learning algorithm. 
+
+This means that she should be prepared to try out different approaches and find the best solution for each problem that arises.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["No Free Lunch Theorem for Machine Learning"](https://machinelearningmastery.com/no-free-lunch-theorem-for-machine-learning/) for a complete explanation of this theorem.</p></details>
+
+-----------------------
+
