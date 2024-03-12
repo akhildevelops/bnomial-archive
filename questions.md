@@ -32957,3 +32957,48 @@ None of the other options support the concept of feedback loops. Only Recurrent 
 
 -----------------------
 
+## Date - 2024-03-12
+
+
+## Title - A tree that's not doing great
+
+
+### **Question** :
+
+Adelynn is a data scientist at a startup, and she has been working on building a machine-learning model to classify customers into different categories. 
+
+After some investigation, Adelynn discovers that the Decision Tree model she uses is not doing great. She remembers reading about a technique called pruning that could help.
+
+**What is the purpose of pruning a Decision Tree?**
+
+
+### **Choices** :
+
+- To improve the model's ability to generalize to new data.
+- To reduce the complexity of the model and make it easier to interpret.
+- To improve the model's training speed and efficiency.
+- To improve the model's performance on a specific task or dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Decision Trees are a popular machine-learning model for classification and regression tasks. They build a tree-like decision model based on the data's features to predict the output label of a given input sample. However, if the Decision Tree is allowed to grow too large, it can become overly complex and may start to fit the training data too closely, a phenomenon known as overfitting.
+
+Pruning is a technique that can be used to reduce the size of a Decision Tree and prevent overfitting. It involves removing nodes from the tree that are not contributing significantly to the model's accuracy. By pruning a Decision Tree, the model's ability to generalize to new data is improved, as the model is less likely to be overly complex and overfit the training set. This is the primary purpose of pruning a Decision Tree.
+
+In addition to improving the model's ability to generalize to new data, pruning a Decision Tree reduces the complexity of the model and makes it easier to interpret. By removing unnecessary nodes from the Decision Tree, the model becomes simpler and more transparent, making it easier to understand and interpret.
+
+Pruning also reduces the number of nodes and decision points the model needs to consider during training, which can improve the model's training speed and efficiency.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Decision tree pruning"](https://en.wikipedia.org/wiki/Decision_tree_pruning) covers the process of pruning a tree to reduce overfitting.* ["How to tune a Decision Tree?"](https://towardsdatascience.com/how-to-tune-a-decision-tree-f03721801680) is a great article talking about different ways to tune a decision tree, including the effects of setting the maximum depth.</p></details>
+
+-----------------------
+
