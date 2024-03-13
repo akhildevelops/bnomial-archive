@@ -33002,3 +33002,50 @@ Pruning also reduces the number of nodes and decision points the model needs to 
 
 -----------------------
 
+## Date - 2024-03-13
+
+
+## Title - Crashing cars
+
+
+### **Question** :
+
+Palmer works for NASCAR, developing a machine-learning model to predict whether a car will crash in a race. 
+
+She had access to data for thousands of races, with labels indicating whether each car crashed.
+
+After studying the available techniques, Palmer had several options for building a binary classification model. 
+
+**Which of the following should be the best approach to build a binary classification model?**
+
+
+### **Choices** :
+
+- Palmer should use Reinforcement Learning.
+- Palmer should use a Decision Tree, a Supervised Learning technique.
+- Palmer should use k-Nearest Neighbors, a Supervised Learning technique.
+- Palmer should use Unsupervised Learning.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Supervised learning is a type of machine learning where the model is trained on labeled data. In the case of Palmer's model, she could use supervised learning to train a model on the data for past races, where the data is labeled with the outcome (i.e., whether each car crashed or not). This would allow the model to learn from the data and predict future races.
+
+Either a Decision Tree or k-Nearest Neighbors would work for Palmer. Decision trees use a tree-like structure to make predictions. They are simple to understand and can be effective for binary classification tasks. K-nearest neighbors is a non-parametric technique that uses a similarity measure to classify data points based on their neighbors. It is often used for classification tasks, including binary classification.
+
+Reinforcement learning is not a good choice for Palmer's model. Reinforcement learning is a type of machine learning where the model learns by interacting with its environment and receiving feedback as rewards or penalties. This differs from binary classification, which involves making predictions based on input data.
+
+Unsupervised learning is also not a good choice for Palmer's model because is a type of machine learning where the model is trained on unlabeled data. This means that the model must find patterns and relationships in the data without any guidance from labels or outputs. In this example, Palmer has access to plenty of data and knows the target she wants to predict.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check out ["Binary classification"](https://en.wikipedia.org/wiki/Binary_classification) in Wikipedia for more information.* ["4 Types of Classification Tasks in Machine Learning"](https://machinelearningmastery.com/types-of-classification-in-machine-learning/) is a great article going over different ways to implement a classification model.</p></details>
+
+-----------------------
+
