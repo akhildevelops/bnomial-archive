@@ -33049,3 +33049,49 @@ Unsupervised learning is also not a good choice for Palmer's model because is a 
 
 -----------------------
 
+## Date - 2024-03-14
+
+
+## Title - Classification pseudocode
+
+
+### **Question** :
+
+Alana implemented an algorithm to classify new samples of data. Her approach uses a dataset that she collected and labeled.
+
+Her algorithm uses a pre-determined value `N`, and does the following for every new sample Alana wants to classify:
+1. She calculates the distance with every sample from the dataset.
+2. She picks the `N` closest samples from the dataset.
+3. She returns the mode of the labels of those `N` samples.
+
+**Based on this description, which of the following is the technique that Alana implemented?**
+
+
+### **Choices** :
+
+- Alana implemented k-Nearest Neighbors (KNN)
+- Alana implemented a Decision Tree
+- Alana implemented Linear Regression
+- None of the above techniques resemble Alana's implementation.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Alana's implementation resembles the way k-Nearest Neighbors (KNN) works.
+
+KNN is an algorithm that doesn't create a predictive model from a training dataset to make predictions. In KNN, there's no need for a training phase. Instead, the algorithm computes a prediction during inference time.
+
+KNN uses the entire dataset and looks for a pre-determined number of instances closest to the observation we want to classify to determine to which group the sample belongs. In Alana's implementation, this value is `N`. Since Alana wants to classify new samples, she can use the mode of the labels of the closest observations as the final prediction.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Understand the Fundamentals of the K-Nearest Neighbors (KNN) Algorithm"](https://heartbeat.comet.ml/understand-the-fundamentals-of-the-k-nearest-neighbors-knn-algorithm-533dc0c2f45a) for an introduction to KNN.</p></details>
+
+-----------------------
+
