@@ -33152,3 +33152,46 @@ P(T and E) = 10⁻⁸
 
 -----------------------
 
+## Date - 2024-03-16
+
+
+## Title - Advertising tensor
+
+
+### **Question** :
+
+Phoenix is a data scientist working at a marketing research firm. She wants to build a predictive model to identify which advertisements attract customer attention most.
+
+Phoenix gathered a dataset containing 100 customer responses to advertisements. 65 responses are labeled as "positive," and 35 as "negative." 
+
+As Phoenix starts to build the model, she separates the features into a tensor "X" and the corresponding target values into a tensor "y."
+
+**Which of the following is the shape of the tensor "y"?**
+
+
+### **Choices** :
+
+- (35, 65)
+- (65, 35)
+- (100, 2)
+- (100,)
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Phoenix wants to solve a binary classification problem with two classes: one representing every "positive" customer and the other representing the "negative" customers. The `y` tensor contains the target labels. The shape of this tensor depends on the number of samples in the dataset.
+
+In this scenario, there are 65 positive and 35 negative samples, so the total number of samples is 100. The shape of the tensor `y` should be (100,) with one dimension to represent the 100 samples.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Deep Learning with Python, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors.</p></details>
+
+-----------------------
+
