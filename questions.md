@@ -33390,3 +33390,44 @@ The solution is to group flights by their date and ensure they go together into 
 
 -----------------------
 
+## Date - 2024-03-21
+
+
+## Title - The role of entropy
+
+
+### **Question** :
+
+Aliyah is a researcher who specializes in machine learning and data analysis. She is currently writing a paper on entropy and its role in data processing.
+
+As part of her research, Aliyah is exploring the different ways entropy can be used to understand the information being processed.
+
+**What does high entropy indicate about the information being processed in this context?**
+
+
+### **Choices** :
+
+- High entropy indicates the presence of a pattern in the information
+- High entropy indicates the lack of presence of a pattern in the information
+- High entropy indicates it's simple to draw conclusions from the information
+- High entropy indicates the randomness in the information being processed
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Entropy is a concept used to quantify the randomness or uncertainty in a data set. In the context of information processing, entropy can be used to measure the randomness of the data being processed.
+
+A high entropy value indicates that the data being processed is random or uncertain, making it difficult to draw meaningful conclusions from the data. In contrast, a low entropy value indicates that the data is less random and more predictable, making it easier to draw conclusions from the data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Understanding Entropy: the Golden Measurement of Machine Learning"](https://towardsdatascience.com/understanding-entropy-the-golden-measurement-of-machine-learning-4ea97c663dc3) for an introduction to entropy.</p></details>
+
+-----------------------
+
