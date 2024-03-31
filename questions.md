@@ -33876,3 +33876,46 @@ If both players refuse to swerve, they will crash and obtain the lowest reward. 
 
 -----------------------
 
+## Date - 2024-03-31
+
+
+## Title - Weights vector
+
+
+### **Question** :
+
+Harmony is a computer science student, and during her free time decided to watch a video about a Perceptron.
+
+When the video finished, Harmony tried to reproduce everything she learned by implementing it using Python, but as soon as she started coding, she realized she had forgotten how to set up the weights vector.
+
+**Which option should Harmony choose to set up the number of weights in her Perceptron correctly?**
+
+
+### **Choices** :
+
+- Harmony should create as many weights as samples in her dataset.
+- Harmony should create a random number of weights.
+- Harmony should create as many weights as features in her dataset.
+- Harmony should create as many weights as hidden layers in her implementation.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A perceptron is a machine learning algorithm that takes a set of inputs, known as features, and uses a set of weights to predict the class of a data point. The number of weights a perceptron uses equals the number of features.
+
+Each weight in the perceptron represents a feature in the data. The weights are used to compute a weighted sum of the inputs, which is then passed through an activation function to produce a prediction. The activation function is typically a step function that returns 0 or 1, indicating whether the sample belongs to one class or the other.
+
+Using a different weight for each feature, the perceptron captures the different relationships between the features and the target. We can learn the optimal weights that allow the model to make accurate predictions by training a perceptron.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Perceptron Algorithm for Classification in Python"](https://machinelearningmastery.com/perceptron-algorithm-for-classification-in-python/) is a great introduction to the Perceptron.</p></details>
+
+-----------------------
+
