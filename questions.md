@@ -34013,3 +34013,48 @@ Finally, L1 and L2 regularization are ways to constrain the complexity of the mo
 
 -----------------------
 
+## Date - 2024-04-03
+
+
+## Title - Candy observations
+
+
+### **Question** :
+
+Stevie works for a candy manufacturer and wants to build a machine-learning model to predict the best price for every new product they release.
+
+She has access to a large dataset with similar products in the market, but since every product is different, she applies a log transformation to the target column before training the model.
+
+**If Stevie's model for a single observation is `y = f(x)`, what are `x` and `y`?**
+
+
+### **Choices** :
+
+- `y` is a feature vector containing the variables that describe the product, and `x` is the product's price.
+- `y` is a feature vector containing the variables that describe the product, and `x` is the logarithm of the product's price.
+- `x` is a feature vector containing the variables that describe the product, and `y` is the product's price.
+- `x` is a feature vector containing the variables that describe the product, and `y` is the logarithm of the product's price.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We can represent Stevie's model as a function `y = f(x)`.
+
+This function has two components: the function's output —the `y` value— and the function's input —the `x` value.
+
+The result of this function—`y`—is what Stevie wants to predict: the product's price. On the other hand, `x` is a feature vector containing all the variables that describe the product. 
+
+An important detail: Stevie applied a log transformation to the product's price before training the model. This means the model will not output the price directly but a logarithm of the product's price.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Log Transformation: Purpose and Interpretation"](https://medium.com/@kyawsawhtoon/log-transformation-purpose-and-interpretation-9444b4b049c9) for an introduction to log transformation.* The [_Machine Learning Bookcamp_](https://amzn.to/3hCGbgo) is a great book that discusses the topic.</p></details>
+
+-----------------------
+
