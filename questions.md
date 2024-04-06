@@ -34157,3 +34157,46 @@ Therefore, there are a total of 22 type II errors in this hypothetical model.</p
 
 -----------------------
 
+## Date - 2024-04-06
+
+
+## Title - Local professor
+
+
+### **Question** :
+
+Zuri is a local university professor teaching a Machine Learning course. 
+
+She is covering Decision Trees in her course and wants to ensure that her students understand entropy and its role in the classification problem.
+
+**In the context of Decision Trees and entropy, what does low entropy indicate about the partitions in a classification problem?**
+
+
+### **Choices** :
+
+- Low entropy means the partitions are pure.
+- Low entropy means the partitions are not pure.
+- Low entropy means the partitions are useful.
+- Low entropy means the partitions are not useful.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Entropy measures how random the information being processed is. The higher the entropy, the harder it is to draw conclusions from that information.
+
+Decision Trees use a "purity" metric to split at each node. Low entropy leads to pure nodes, where 100% of the data belongs to a single partition, while high entropy leads to impure nodes, where the data is split evenly between partitions.
+
+Low entropy means that the different classes are distinct and easier to predict, while high entropy means that the different classes are mixed and not well separated. If a partition has low entropy, the class labels are pure.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Understanding Entropy: the Golden Measurement of Machine Learning"](https://towardsdatascience.com/understanding-entropy-the-golden-measurement-of-machine-learning-4ea97c663dc3) for an introduction to entropy.</p></details>
+
+-----------------------
+
