@@ -34200,3 +34200,48 @@ Low entropy means that the different classes are distinct and easier to predict,
 
 -----------------------
 
+## Date - 2024-04-07
+
+
+## Title - What the book says
+
+
+### **Question** :
+
+Mariana wants to set up the correct loss function for her model.
+
+She read that she should focus on the average positive difference between her model's predictions and the target values.
+
+But that's what the book says. Now it's up to Mariana to translate that into technical terms.
+
+**Which of the following is the correct error measure that Mariana needs?**
+
+
+### **Choices** :
+
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- Mean Positive Error (MPE)
+- Root Mean Squared Error (RMSE)
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Mariana needs to use the Mean Absolute Error (MAE.) 
+
+The book she read recommended the "average positive difference between predictions and target values." MAE will give Mariana the average magnitude of the errors without considering their direction, which is what "positive difference" means.
+
+Mean Squared Error (MSE) and Root Mean Squared Error (RMSE) also ignore the direction of the error, but they square the values, so they don't simply return the average difference.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Root-mean-square deviation"](https://en.wikipedia.org/wiki/Root-mean-square_deviation) is the Wikipedia page covering RMSE.* ["Mean absolute error"](https://en.wikipedia.org/wiki/Mean_absolute_error) is the Wikipedia page covering MAE.* ["RMSE vs MAE, which should I use?"](https://stephenallwright.com/rmse-vs-mae/) is a great summary by Stephen Allwright about the properties of these two functions and how you should think about them.</p></details>
+
+-----------------------
+
