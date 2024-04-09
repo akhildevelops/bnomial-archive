@@ -34305,3 +34305,60 @@ The feature vector is `[1.0, 2.0]`, and the weights were initialized with `[0.0,
 
 -----------------------
 
+## Date - 2024-04-09
+
+
+## Title - The right size
+
+
+### **Question** :
+
+Charlee, a computer vision specialist working for an auto manufacturer, is frustrated because she can't seem to get the output size of her convolutional layers right.
+
+She is designing a convolutional neural network, and the first layer operates on grayscale images of size 32×32. Charlee is using a convolutional layer with a kernel of size 5, no padding, and a stride of 2.
+
+**What is the size of the output of the convolutional layer?**
+
+
+### **Choices** :
+
+- The output size is 32×32
+- The output size is 28×28
+- The output size is 14×14
+- The output size is 5×5
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To compute the output size, we can use the following formula:
+
+```
+output = 1 + (input + 2 * padding - kernel) / stride
+```
+
+We can also analyze the problem step by step.
+
+Convolutions have many parameters that influence the output size, so let's go through the properties of the convolutional layer one by one.
+
+First, we know the input size to be 32×32.
+
+Next, we know that the kernel size is 5. This means we will move a sliding window of size 5×5 over the entire image. The window must fit completely in the image, so we cannot compute the convolution for the two rows and columns on the border. Therefore, the resulting output so far would be 28×28.
+
+Adding padding to the image is a way to avoid the reduction of the size, but Charlee isn't using any padding here.
+
+Finally, we have a stride of 2. This means the sliding window will move by 2 rows/columns every time, reducing each output dimension's size by half.
+
+Therefore, the final output size of the convolutional layer will be 14×14.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* It may be difficult to imagine why some of these things happen just by reading the text, so I encourage you to go to this ["Convolution Visualizer"](https://ezyang.github.io/convolution-visualizer/) and enter the parameters of the convolutional layer from the question. It should be much clearer now why this happens.* ["Convolution arithmetic"](https://github.com/vdumoulin/conv_arithmetic) is a technical report on convolution arithmetic in the context of deep learning.</p></details>
+
+-----------------------
+
