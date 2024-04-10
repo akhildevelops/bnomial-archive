@@ -34362,3 +34362,58 @@ Therefore, the final output size of the convolutional layer will be 14×14.</p><
 
 -----------------------
 
+## Date - 2024-04-10
+
+
+## Title - Educational platform
+
+
+### **Question** :
+
+Kali works at a company that runs an educational platform. 
+
+She is working on a project to classify student performance data. Her team needs to handle a few categorical features in the dataset. One team member suggested using Label encoding, while another advocated for One-Hot encoding.
+
+Kali must decide, so she asked both colleagues to write a summary of both approaches.
+
+**Here are some of the highlights, but they are contradictory. Please, select those you think are correct.**
+
+
+### **Choices** :
+
+- One-Hot encoding replaces each label from the categorical feature with a unique integer based on alphabetical ordering.
+- One-Hot encoding creates additional features based on the number of unique values in the categorical feature.
+- Label encoding replaces each label from the categorical feature with a unique integer based on alphabetical ordering.
+- Label encoding creates additional features based on the number of unique values in the categorical feature.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Before analyzing this question, we must understand what "categorical data" means.
+
+Categorical data are variables that contain label values rather than numeric values. For example, a variable representing the weather with values "sunny," "cloudy," and "rainy" is a categorical variable.
+
+Although some algorithms can use categorical data directly, most can't: they require the data to be numeric. We can use One-Hot or Label encoding to do this.
+
+[One-Hot encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f) creates a new feature for each unique value of the original categorical variable.
+
+For example, assume we have a dataset with a single feature called "weather" that could have the values "sunny," "cloudy," and "rainy." Applying One-Hot Encoding will get us a new dataset with three features, one for each value of the original "weather" column. 
+
+A sample that had the value "cloudy" in the previous column will now have the value 0 for both "sunny" and "rainy" and the value 1 under the "cloudy" feature.
+
+On the other hand, [Label encoding](https://www.mygreatlearning.com/blog/label-encoding-in-python/) replaces each categorical value with a consecutive number starting from 0. 
+
+For example, Label Encoding would replace our weather feature with a new one containing the values 0 instead of "cloudy," 1 instead of "rainy," and 2 instead of "sunny."</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["What is One Hot Encoding? Why and When Do You Have to Use it?"](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f) is an excellent introduction to One-Hot encoding.* ["Label Encoding in Python Explained"](https://www.mygreatlearning.com/blog/label-encoding-in-python/) is an introduction to Label encoding.* ["One-Hot Encoding vs. Label Encoding using Scikit-Learn"](https://www.analyticsvidhya.com/blog/2020/03/one-hot-encoding-vs-label-encoding-using-scikit-learn/) covers both techniques and when to use each one.</p></details>
+
+-----------------------
+
