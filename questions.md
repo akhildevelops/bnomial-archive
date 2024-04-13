@@ -34543,3 +34543,60 @@ Notice how each `assert` validates a specific pair of inputs. If there are no er
 
 -----------------------
 
+## Date - 2024-04-13
+
+
+## Title - Electric substations
+
+
+### **Question** :
+
+Gia is part of a team building a Machine Learning model to control electric substations. The team recently attended a training session to learn how to prepare the data for model training.
+
+Although the session covered the importance of splitting the data into train, validation, and test sets, it didn't explain why this is necessary.
+
+Gia wants to understand the reasoning behind splitting the data.
+
+**What are the reasons for splitting a dataset before training a Machine Learning model?**
+
+
+### **Choices** :
+
+- To prevent underfitting of the model
+- To prevent overfitting of the model
+- To make the training process faster
+- To accurately evaluate the model's performance
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's talk about school for a minute.
+
+Imagine teaching a math class, and it's time to evaluate your students. You decide to leave them 100 exercises as their homework. These problems cover the content they need to master to ace the exam.
+
+How can you design an exam that effectively identifies those who learned the material?
+
+Let's assume you pick 20 of the same homework exercises and use them in your test. This strategy might result in false positives: students who memorize the solutions to their homework may get a high score, although they don't necessarily know how to reason. In machine learning, we call this "overfitting."
+
+To ensure students don't overfit to their training exercises, you don't want to use the same homework to test their knowledge. Instead, you want to find new problems that evaluate the same material but are different enough to force the students to show their skills.
+
+We want to do the same when training machine learning models. If we only evaluate our work in the same data we use to train the model, we might overfit and have a model that isn't capable of generalizing to different data. In other words, the model may "memorize" the training data and learn to return excellent predictions when tested.
+
+If we split the dataset and leave a portion to evaluate how much the model learned, we will ensure that overfit won't happen. Therefore, the second and fourth choices are correct: we can accurately assess the model's performance and avoid overfitting.
+
+Getting back to the previous analogy, those students that can't solve the homework in the first place are underfitting. Underfitting happens when the model cannot learn the training data, so we don't need separate splits to detect underfitting. The training data is enough, so the first choice is not correct.
+
+Finally, we don't split the data to improve the training process speed; we do it to evaluate its performance accurately.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.* ["Train, Validation, Test Split for Machine Learning"](https://blog.roboflow.com/train-test-split/) goes into detail about the importance of each split.</p></details>
+
+-----------------------
+
