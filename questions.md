@@ -34921,3 +34921,46 @@ In this scenario, 100 customers purchased a product, and 100 didn't, so the tota
 
 -----------------------
 
+## Date - 2024-04-21
+
+
+## Title - Purchase likelihood
+
+
+### **Question** :
+
+Haven is a data scientist at an agency specializing in developing machine learning models. She has been working on a project to build a model that predicts the likelihood of a customer purchasing one of their products.
+
+Before she trains her model, Haven needs to divide her dataset into a training set and a test set. She knows it is important to shuffle the dataset before dividing it to ensure the most accurate results.
+
+**What is the main reason for shuffling the dataset before dividing it into a training and test set?**
+
+
+### **Choices** :
+
+- To ensure the class labels are evenly distributed between the training and test sets.
+- To ensure the training set contains more data than the test set.
+- To ensure that the training and test sets contain the same features.
+- To ensure that the training and test sets have the same number of observations
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The main reason for shuffling the dataset before dividing it into a training and test set is to ensure that the class labels are evenly distributed between the two sets. 
+
+This is important because if the class labels are not evenly distributed, one of the sets might not contain data that belongs to some of the labels. For example, assuming our dataset is sorted by the class label, we might assign every sample from one class to the training set and every sample from another to a test set.
+
+Shuffling the dataset helps to mitigate this issue by randomly reordering the data, which helps to ensure that the training and test sets are representative samples of the entire data population.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Machine Learning Crash Course"](https://developers.google.com/machine-learning/crash-course) is a great introduction to Machine Learning.</p></details>
+
+-----------------------
+
