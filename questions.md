@@ -35009,3 +35009,48 @@ Clara needs to predict a continuous value: the temperature of a city. Anytime we
 
 -----------------------
 
+## Date - 2024-04-23
+
+
+## Title - Five columns
+
+
+### **Question** :
+
+Jordyn is studying for her final exam in her Machine Learning course. She is reviewing the different problems she might encounter.
+
+In one of the practice problems, Jordyn is given a dataset with five different categorical columns, one of which is the target value she needs to predict. The target class has two possible values. The four features each have 4, 5, 3, and 2 possible values, respectively.
+
+Jordyn has to create a synthetic dataset containing all possible samples without duplicates.
+
+**What will be the length of this dataset?**
+
+
+### **Choices** :
+
+- The length of the dataset will be 14.
+- The length of the dataset will be 16.
+- The length of the dataset will be 120.
+- The length of the dataset will be 240.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The length of a synthetic dataset will depend on the number of possible combinations of values that can be generated based on the number of possible values for each attribute.
+
+To determine the number of possible combinations, we can calculate the product of the number of possible values for each attribute. In Jordyn's case, there are 4 possible values for the first attribute, 5 for the second attribute, 3 for the third attribute, 2 for the fourth attribute, and 2 for the target class.
+
+The product of these values is 4 x 5 x 3 x 2 x 2 = 240. This means that Jordyn's synthetic dataset will have 240 different examples, each with a different combination of values for the five columns.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Machine Learning Crash Course"](https://developers.google.com/machine-learning/crash-course) is a great introduction to Machine Learning.</p></details>
+
+-----------------------
+
