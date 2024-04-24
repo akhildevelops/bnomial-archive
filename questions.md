@@ -35054,3 +35054,48 @@ The product of these values is 4 x 5 x 3 x 2 x 2 = 240. This means that Jordyn's
 
 -----------------------
 
+## Date - 2024-04-24
+
+
+## Title - Younger brother
+
+
+### **Question** :
+
+Ana enjoys helping her younger brother with his computer science homework in her free time. He is taking an introductory Machine Learning class, and his homework is about Perceptrons.
+
+He needed to build a Perceptron for a binary classification problem but is his first time, and a Perceptron is not a simple thing to remember when you don't have a ton of experience.
+
+Ana decided to design a few questions to help her brother. They have a dataset with 4 features. They build the Perceptron and run the forward pass using a vector containing the values of a single sample. 
+
+**What is the size of the output if this vector looks like this `[1.0, 2.0, 1.0, 2.0]`?**
+
+
+### **Choices** :
+
+- The output will contain a single value.
+- The output will contain two values.
+- The output will contain three values.
+- The output will contain four values.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The size of the output of a Perceptron will be a single value. 
+
+A Perceptron will always output the predicted class of the sample. Regardless of how many features are in the sample, the output will always be a single value.
+
+This output comes from multiplying the input vector by the weights and passing the result through the activation function, a step function in the case of a Perceptron.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Perceptron Algorithm for Classification in Python"](https://machinelearningmastery.com/perceptron-algorithm-for-classification-in-python/) is a great introduction to the Perceptron.</p></details>
+
+-----------------------
+
