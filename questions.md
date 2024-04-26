@@ -35146,3 +35146,46 @@ Generally, non-linear machine learning algorithms with a lot of flexibility are 
 
 -----------------------
 
+## Date - 2024-04-26
+
+
+## Title - Underlying chain principles
+
+
+### **Question** :
+
+Amy is a data scientist who works at a large tech company. She is passionate about understanding the underlying principles behind machine learning and is always looking for ways to improve her skills.
+
+Recently, Amy has been delving deeper into the subject of neural networks and has come across the concept of the chain rule from Calculus. 
+
+Despite spending some time trying to understand how it works, Amy is not clear about its purpose.
+
+**Which of the following statements is true about the chain rule in neural networks?**
+
+
+### **Choices** :
+
+- The chain rule is utilized to compute the gradient of the loss function in relation to the network's inputs.
+- The chain rule is utilized to compute the gradient of the loss function in relation to the network's weights.
+- Optimize the performance of the network.
+- Improve the accuracy of the network.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The chain rule in Calculus allows us to find the derivative of a composite function. 
+
+In the context of neural networks, we use the chain rule as part of the backpropagation algorithm to calculate the gradient of the loss function with respect to the network's weights. This gradient tells us the direction and magnitude of the change we need to make to the weights to reduce the loss.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["The Chain Rule of Calculus for Univariate and Multivariate Functions"](https://machinelearningmastery.com/the-chain-rule-of-calculus-for-univariate-and-multivariate-functions) is a short introduction to the chain rule in machine learning.</p></details>
+
+-----------------------
+
