@@ -1,0 +1,60 @@
+#define PCRE2_CODE_UNIT_WIDTH 8
+#include <pcre2.h>
+#include <string.h>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char **argv)
+{
+    if (argc != 3)
+    {
+        cout << "Received less than 2 args";
+        return 1;
+    }
+    PCRE2_SPTR expression = (PCRE2_SPTR)argv[1];
+    PCRE2_SPTR text = (PCRE2_SPTR)argv[2];
+    PCRE2_SIZE eoffset;
+    PCRE2_SIZE *ovector;
+    pcre2_code *re;
+    pcre2_match_data *match_data;
+
+    int error_number;
+    int result;
+
+    re = pcre2_compile(expression, PCRE2_ZERO_TERMINATED, 0, &error_number, &eoffset, NULL);
+    if (re == NULL)
+    {
+        PCRE2_UCHAR buffer[256];
+        pcre2_get_error_message(error_number, buffer, sizeof(buffer));
+        cout << buffer;
+        return 1;
+    }
+    match_data = pcre2_match_data_create_from_pattern(re, NULL);
+    result = pcre2_match(re, text, strlen((char *)text), 0, 0, match_data, NULL);
+    if (result < 0)
+    {
+        switch (result)
+        {
+        case PCRE2_ERROR_NOMATCH:
+            cout << "No matches found!";
+            break;
+
+        default:
+            cout << "Matching Error" << result;
+            break;
+        }
+        pcre2_match_data_free(match_data);
+        pcre2_code_free(re);
+    }
+    ovector = pcre2_get_ovector_pointer(match_data);
+    printf("Match Succeeded at %d\n", ovector[0]);
+    int i;
+    // result is 1 + no: of matches, ovector is offsets and length of matched strings.
+    for (i = 0; i < result; i++)
+    {
+        PCRE2_SPTR substring_start = text + ovector[2 * i];
+        PCRE2_SIZE substring_length = ovector[2 * i + 1] - ovector[2 * i];
+        // https://stackoverflow.com/a/49580164/19483429*
+        printf("%2d: %.*s\n", i, (int)substring_length, (char *)substring_start);
+    }
+}
