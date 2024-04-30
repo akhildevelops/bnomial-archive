@@ -35338,3 +35338,50 @@ Supervised learning involves using labeled training data to make predictions or 
 
 -----------------------
 
+## Date - 2024-04-30
+
+
+## Title - Meaningful patterns
+
+
+### **Question** :
+
+Brooklynn was exploring clustering algorithms for her latest project, as she wanted to find meaningful patterns in her dataset. 
+
+After trying out K-Means clustering, she was impressed by its simplicity and efficiency. However, she was unsure about her data's optimal number of clusters.
+
+While researching online, Brooklynn encountered the term "elbow method" multiple times. Realizing its importance, she decided to delve deeper into the concept.
+
+**Which of the following statements is true about the elbow method?**
+
+
+### **Choices** :
+
+- In cluster analysis, the elbow method is used to determine the existing biases in a dataset.
+- In cluster analysis, the elbow method is used to select the outliers in a dataset.
+- In cluster analysis, the elbow method determines the optimal number of clusters.
+- In cluster analysis, the elbow method is used to determine the features that better explain the patterns in a dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The [elbow method](https://en.wikipedia.org/wiki/Elbow_method_(clustering)) is a way to determine the optimal number of clusters. 
+
+When running K-means, you can run the algorithm with a range of values of `k`, and for each value, calculate the sum of squared errors. Then, you can plot a line chart of these errors for each value of `k`. 
+
+If the line chart [looks like an arm](https://en.wikipedia.org/wiki/Elbow_method_(clustering)#/media/File:DataClustering_ElbowCriterion.JPG), then the "elbow" on the arm is the best number of clusters (`k`) that you should use.
+
+The elbow method is a way to choose the point where diminishing returns are no longer worth the cost. It's a very popular technique when using clustering algorithms.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Using the elbow method to determine the optimal number of clusters for k-means clustering"](https://bl.ocks.org/rpgove/0060ff3b656618e9136b) for an explanation of how to use the elbow method.* ["Elbow method (clustering)"](https://en.wikipedia.org/wiki/Elbow_method_(clustering)) is the Wikipedia page covering the elbow method.* Check ["Knee of a curve"](https://en.wikipedia.org/wiki/Knee_of_a_curve) for a precise explanation of looking at the "elbow" of a curve.</p></details>
+
+-----------------------
+
