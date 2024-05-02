@@ -35454,3 +35454,48 @@ L = torch.square(y_hat - y).sum()
 
 -----------------------
 
+## Date - 2024-05-02
+
+
+## Title - Perceptron weights
+
+
+### **Question** :
+
+Arabella is a computer science student who has always been fascinated by artificial intelligence. 
+
+As part of her coursework, she is building a simple perceptron from scratch. She has to decide on the number of weights her perceptron will use.
+
+Arabella has a matrix `X` that holds the features of her data samples and a vector `y` that holds the corresponding target values. She knows her perceptron will take `X` as input and produce a predicted value for each sample.
+
+**Which of the following options best describes the number of weights Arabella should use for her perceptron?**
+
+
+### **Choices** :
+
+- Arabella should use the same number of weights as the number of features in her data, i.e., weights = X.shape[1].
+- Arabella should use the same number of weights as the number of samples in her data, i.e., weights = X.shape[0].
+- Arabella should use the same number of weights as the number of numeric samples in her data.
+- Arabella should use a random number of weights.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A perceptron is a machine learning algorithm that takes a set of inputs, known as features, and uses a set of weights to predict the class of a data point. The number of weights a perceptron uses equals the number of features.
+
+Each weight in the perceptron represents a feature in the data. The weights are used to compute a weighted sum of the inputs, which is then passed through an activation function to produce a prediction. The activation function is typically a step function that returns 0 or 1, indicating whether the sample belongs to one class or the other.
+
+Using a different weight for each feature, the perceptron captures the different relationships between the features and the target. We can learn the optimal weights that allow the model to make accurate predictions by training a perceptron.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Perceptron Algorithm for Classification in Python"](https://machinelearningmastery.com/perceptron-algorithm-for-classification-in-python/) is a great introduction to the Perceptron.</p></details>
+
+-----------------------
+
