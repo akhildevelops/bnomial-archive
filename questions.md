@@ -35951,3 +35951,54 @@ Nonlinear models are usually low-bias. Decision Trees and k-Nearest Neighbors ar
 
 -----------------------
 
+## Date - 2024-05-12
+
+
+## Title - Convincing reason
+
+
+### **Question** :
+
+Nina is discussing the best approach for their new project with her coworker.
+
+Their task is to develop a model to identify objects in drone images.
+
+Nina believes a Convolutional Neural Network is the ideal choice, but her coworker thinks they should stick with a simple fully-connected neural network.
+
+Nina must provide convincing reasons for choosing a Convolutional Neural Network over a fully-connected network.
+
+**Which of the following arguments could Nina use to support her case?**
+
+
+### **Choices** :
+
+- Using a Convolutional Neural Network requires fewer parameters than a fully-connected network.
+- Convolutional Neural Networks can learn a hierarchy of visual features similar to the human brain, which results in better performance.
+- Convolutional Neural Networks are usually shallower than fully-connected networks, making the training process easier and faster.
+- The local structure of the image can be used more efficiently by a Convolutional Neural Network, resulting in much better features and performance.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A [Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network) (CNN) is a much better choice when dealing with image classification problems than a fully-connected network.
+
+CNNs require fewer parameters than fully-connected networks and reuse the same parameters over the whole image. The number of weights in a convolutional layer depends on the kernel size and the number of channels, not the image resolution. For example, in the [AlexNet architecture](https://en.wikipedia.org/wiki/AlexNet), the five convolutional layers are responsible for only 4% of the parameters of the network. In comparison, the final three fully-connected layers contain the remaining parameters. 
+
+A CNN can learn visual features of increasing complexity. The initial layers typically learn to recognize low-level details, like edges and colors, while deeper layers can handle more complex structures, like corners and patterns. The final layers of a CNN can learn complex representations like faces or any complex objects.
+
+A CNN is more time and memory efficient than a fully-connected network, so we can use deeper networks with many layers, which is impossible in a fully-connected network. You should always expect CNNs to be deeper than fully-connected networks.
+
+Finally, one reason CNNs are very effective in dealing with pictures is that they exploit the local structure of images. Since pixels located next to each other tend to be related, convolutional kernels can capture this information.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["A Beginner’s Guide to Convolutional Neural Networks (CNNs)"](https://towardsdatascience.com/a-beginners-guide-to-convolutional-neural-networks-cnns-14649dbddce8) is a great introduction to CNNs.* If you want to get deeper into how convolutions work, check out ["A guide to convolution arithmetic for deep learning"](https://arxiv.org/pdf/1603.07285.pdf).</p></details>
+
+-----------------------
+
