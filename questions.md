@@ -36206,3 +36206,48 @@ You should get the following result:
 
 -----------------------
 
+## Date - 2024-05-17
+
+
+## Title - Organizing properties
+
+
+### **Question** :
+
+Ben is working with a real estate company to classify properties in the city. They are interested in organizing each property by its value.
+
+He wants to start by organizing the data and preparing the features to help build a machine-learning model to predict the value of prospective properties.
+
+**Which of the following columns on Ben's dataset are meaningful numerical features for the model?**
+
+
+### **Choices** :
+
+- The property's phone number.
+- The property's square footage.
+- The number of bedrooms.
+- The number of bathrooms.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The property's square footage, the number of bedrooms, and the number of bathrooms are meaningful numerical features for the model.
+
+The phone number is not a meaningful numerical feature for this problem because it doesn't represent helpful information about the property's value. 
+
+The property's square footage, number of bedrooms, and number of bathrooms may help predict the property's value because they can indicate the size and amenities of the property. 
+
+It's important to carefully select and engineer the features used in a machine learning model to ensure that they are relevant and can help the model make accurate predictions.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.</p></details>
+
+-----------------------
+
