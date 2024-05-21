@@ -36401,3 +36401,50 @@ If we split the dataset and leave a portion to evaluate how much the model learn
 
 -----------------------
 
+## Date - 2024-05-21
+
+
+## Title - Animal characteristics
+
+
+### **Question** :
+
+Kaylani is the tech lead of a project that aims to classify pictures of animals based on 10 different characteristics. Each animal can have one or more of these features, so the system should recognize and tag the animal photos appropriately.
+
+The team used a convolutional neural network to build this system. The only question that remains is the best approach for designing the network.
+
+**Which would be the best approach for Kaylani and her team to design the network for classifying the photos?**
+
+
+### **Choices** :
+
+- Kaylani should use a sigmoid activation function in the output layer. The loss function should be binary cross-entropy.
+- Kaylani should use a sigmoid activation function in the output layer. The loss function should be categorical cross-entropy.
+- Kaylani should use a softmax activation function in the output layer. The loss function should be binary cross-entropy.
+- Kaylani should use a softmax activation function in the output layer. The loss function should be categorical cross-entropy.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The team is trying to build a [multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) model. Every animal will be classified with one or more of the 10 characteristics in multi-label classification. This differs from [multi-class classification](https://en.wikipedia.org/wiki/Multiclass_classification), where every animal will only be classified into one category.
+
+When building multi-label classification models, we need an output layer where every class is independent. Remember that we can have more than one active class for each input. The softmax activation function doesn't work because it uses every score to output the probabilities of each class. 
+
+Softmax is the correct output for multi-class classification. Sigmoid is the correct output for multi-label classification problems. The sigmoid function converts output scores to a value between 0 and 1, independently of all the other scores.
+
+Multi-label classification problems borrow the same principles from binary classification problems. The difference is that we end up with multiple sigmoid outputs instead of one. In our example problem, we combine three different binary classifiers. This is why we should use a binary cross-entropy as the loss function.
+
+In summary, multi-class classification models should use a softmax output with the categorical cross-entropy loss function. Multi-label classification models should use a sigmoid output and the binary cross-entropy loss function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The Wikipedia explanation of [Multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) should give you most of what you need to understand for this task.* ["Demystifying the Difference Between Multi-Class and Multi-Label Classification Problem Statements in Deep Learning"](https://www.analyticsvidhya.com/blog/2021/07/demystifying-the-difference-between-multi-class-and-multi-label-classification-problem-statements-in-deep-learning/) is an excellent article comparing these two types of problems.* ["How to choose cross-entropy loss function in Keras?"](https://androidkt.com/choose-cross-entropy-loss-function-in-keras/) explains the differences between the loss functions that we discussed in this question.</p></details>
+
+-----------------------
+
