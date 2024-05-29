@@ -36769,3 +36769,60 @@ The product of these values is 3 x 3 x 2 x 2 = 36. This means Joanna's synthetic
 
 -----------------------
 
+## Date - 2024-05-29
+
+
+## Title - Perplexing problem
+
+
+### **Question** :
+
+Despite their best efforts, Nicole's team was facing a perplexing problem: their machine learning model was not generalizing well to the test data.
+
+Exhausted and ready to reconsider their approach, the team was about to regroup when Nicole had a sudden idea.
+
+She took the training dataset, removed the target variable, and combined it with the test data. Then, she created a new binary target, assigning a 1 to every test sample and a 0 to every training sample.
+
+"Train a classifier on this new dataset, and let's see how accurate the predictions are," she instructed her team.
+
+**Her team appeared puzzled. What is Nicole attempting to accomplish?**
+
+
+### **Choices** :
+
+- This classifier will estimate how different the training data is from the test data, potentially explaining why the team is struggling.
+- This classifier will turn the initial problem into a more straightforward approach that will serve as a baseline for the team to continue their work and find a better solution.
+- This classifier will estimate the performance of the team's model on unseen test data. It will help the team understand whether they are overfitting or underfitting the training data.
+- Combining the training and test data is never a good idea, so this classifier's results will not be valid.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Nicole's approach should be familiar if you have experience participating in Kaggle competitions. 
+
+Popular validation techniques, like cross-validation, allow you to test your models on unseen data if that data comes from the same distribution as your training dataset. Unfortunately, that's not always the case, and even slight differences between the training and test data will considerably affect the result of your model.
+
+[Adversarial validation](https://articles.bnomial.com/adversarial-validation) is a technique to estimate the difference between your training and test data. [_The Kaggle Book_](https://amzn.to/3kbanRb) introduces it as follows:
+
+> [adversarial validation] was long rumored among Kaggle participants and transmitted from team to team until it emerged publicly, thanks to a post by Zygmunt Zając on his FastML blog.
+
+Nicole created a new dataset by joining the training and test data. The target of that new dataset is a binary variable differentiating the training and test samples. She can determine how easy it's to separate both datasets by running a classifier on that new data.
+
+Adversarial validation relies on computing the [ROC-AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc), a graph showing the True Positive Rate and the False Positive Rate at different classification thresholds. The area under this curve (AUC) measures the model's performance. A perfect model will have an area of `1.0`, while a model that only makes mistakes will have an area of `0.0`.
+
+If they run the classifier and the ROC-AUC is around `0.5`, Nicole will know that the training and test data are not easily distinguishable, which is good because it means the data comes from the same distribution. If the ROC-AUC is too high—closer to `1.0`—the classifier can tell training and test data apart, which means they come from a different distribution.
+
+Adversarial validation is a very clever technique. The result could help explain the team's struggle and guide it to continue.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Adversarial validation"](https://articles.bnomial.com/adversarial-validation) is a great introduction to adversarial validation.* Check ["What is Adversarial Validation?"](https://www.kaggle.com/code/carlmcbrideellis/what-is-adversarial-validation/notebook) for a discussion about this technique in Kaggle.* [_The Kaggle Book_](https://amzn.to/3kbanRb) is an amazing reference for those looking to participate in Kaggle.</p></details>
+
+-----------------------
+
