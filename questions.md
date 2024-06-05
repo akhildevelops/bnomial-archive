@@ -37125,3 +37125,48 @@ The elbow method is a way to choose the point where diminishing returns are no l
 
 -----------------------
 
+## Date - 2024-06-05
+
+
+## Title - Platform recommendations
+
+
+### **Question** :
+
+Kendall is a data scientist at a tech company building a recommendation system for its e-commerce platform.
+
+Before looking into more complex models, she wants to establish a good baseline. Kendall is considering trying two different models: a simple neural network and a linear regression model.
+
+**Which of the following statements are true for both Kendall's neural network and linear regression model?**
+
+
+### **Choices** :
+
+- Both models require numeric inputs between 0 and 1, so Kendall must standardize the values.
+- Both models need numeric input features, so Kendall must convert non-numeric features.
+- The result from both models is the linear sum of weighted inputs.
+- The result from both models is a probability vector.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Although it is generally true that both models would perform better with scaled or standardized input features, neither model explicitly requires features to be within the range of 0 to 1.
+
+Both neural networks and linear regression models require input features to be numeric. They cannot handle categorical features directly, so Kendall must transform non-numeric features before using them in either model.
+
+The output of a linear regression model is a single numerical value, not a vector of probabilities. Neural networks do not necessarily have to produce such output either.
+
+Lastly, while linear regression and neural networks involve a linear sum of weighted inputs, neural networks introduce non-linearities through activation functions. This key difference makes neural networks more powerful than linear regression.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Linear Regression v.s. Neural Networks"](https://towardsdatascience.com/linear-regression-v-s-neural-networks-cd03b29386d4) for comparing these two techniques.* ["3 Reasons Why You Should Use Linear Regression Models Instead of Neural Networks"](https://www.kdnuggets.com/2021/08/3-reasons-linear-regression-instead-neural-networks.html) is another great article talking about their differences.* ["Linear Regression for Machine Learning"](https://machinelearningmastery.com/linear-regression-for-machine-learning/) is a great introduction to linear regression.* ["Intro to Neural Networks"](https://developers.google.com/machine-learning/crash-course/introduction-to-neural-networks/video-lecture) is a good summary of neural networks.</p></details>
+
+-----------------------
+
