@@ -37225,3 +37225,46 @@ Finally, we discussed above how Decision Trees are prone to overfit if we aren't
 
 -----------------------
 
+## Date - 2024-06-07
+
+
+## Title - Building a Perceptron
+
+
+### **Question** :
+
+Sara is a professor of computer science, and she is preparing an Introduction to Machine Learning class. 
+
+She will introduce the concept of Perceptrons to her students, and she wants to emphasize the importance of choosing the correct number of weights when building a Perceptron.
+
+**Which of the following options is the correct way to choose the number of weights when building a Perceptron?**
+
+
+### **Choices** :
+
+- The number of weights should be randomly chosen.
+- The number of weights should equal the number of samples in the dataset.
+- The number of weights should equal the number of features in the dataset.
+- The number of weights should equal the number of biases in the model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A perceptron is a machine learning algorithm that takes a set of inputs, known as features, and uses a set of weights to predict the class of a data point. The number of weights a perceptron uses equals the number of features.
+
+Each weight in the perceptron represents a feature in the data. The weights are used to compute a weighted sum of the inputs, which is then passed through an activation function to produce a prediction. The activation function is typically a step function that returns 0 or 1, indicating whether the sample belongs to one class or the other.
+
+Using a different weight for each feature, the perceptron captures the different relationships between the features and the target. We can learn the optimal weights that allow the model to make accurate predictions by training a perceptron.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Perceptron Algorithm for Classification in Python"](https://machinelearningmastery.com/perceptron-algorithm-for-classification-in-python/) is a great introduction to the Perceptron.</p></details>
+
+-----------------------
+
