@@ -37345,3 +37345,69 @@ The test should be at least 95.1% accurate for Charlotte to be likely sick.</p><
 
 -----------------------
 
+## Date - 2024-06-09
+
+
+## Title - Studying tensors
+
+
+### **Question** :
+
+Collins is new to machine learning and has been studying tensors, an important data structure in the field.
+
+As she dives deeper, she comes across various attributes related to tensors and wants to determine which ones accurately describe a tensor.
+
+****Which of the following are valid attributes that represent a tensor?****
+
+
+### **Choices** :
+
+- * Rank: This attribute refers to the number of dimensions, or axes, in the tensor.
+- * Interaction: This attribute describes the connections between the tensor's axes.
+- * Shape: This attribute represents the number of elements in each dimension.
+- * Cardinality: This attribute represents the numerical relationship between the tensor axes.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Three primary attributes define a tensor:
+
+1. Its rank, or the number of axes.
+2. Its shape or the number of dimensions.
+3. Its data type or the type of data contained in it.
+
+The rank of a tensor refers to the tensor's number of axes.
+
+Examples:
+* Rank of a matrix is 2.
+* Rank of a vector is 1.
+* Rank of a scalar is 0.
+
+The shape of a tensor describes the number of elements along each dimension.
+
+Examples:
+* `()` — scalar
+* `(2,)` — vector 
+* `(3, 2)` — matrix
+* `(3, 2, 5)` — 3D tensor
+
+The data type of a tensor refers to the data type it stores:
+
+Examples:
+* `float32`
+* `float64`
+* `uint8`
+* `int64`</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Deep Learning with Python, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors.</p></details>
+
+-----------------------
+
