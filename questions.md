@@ -37648,3 +37648,42 @@ Semi-supervised learning requires only a small number of labeled samples, but th
 
 -----------------------
 
+## Date - 2024-06-15
+
+
+## Title - Item on the list
+
+
+### **Question** :
+
+Palmer is studying different Deep Learning architectures for her upcoming Computer Vision project. 
+
+She collects a list of potential choices and emails her colleague for feedback. Minutes later, she receives the response noticing that one of the items on Palmer's list is not a Deep Learning architecture.
+
+**Can you help Palmer identify the item in the list that is not a Deep Learning architecture?**
+
+
+### **Choices** :
+
+- ResNet
+- ImageNet
+- U-Net
+- VGG16
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[ImageNet](https://www.image-net.org/) is not a Deep Learning architecture but a large-scale dataset commonly used for training and benchmarking computer vision models. It contains millions of images categorized into thousands of classes. On the other hand, ResNet, U-Net, and VGG16 are popular Deep Learning architectures used for various computer vision tasks.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check the [ImageNet](https://www.image-net.org/) website for more information about one of the most popular public datasets in the world.</p></details>
+
+-----------------------
+
