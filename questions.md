@@ -37742,3 +37742,48 @@ Thus, the answer is `2/3`.</p></details>
 
 -----------------------
 
+## Date - 2024-06-17
+
+
+## Title - Team tech lead
+
+
+### **Question** :
+
+Logan recently became a Team Lead at a tech company focusing on natural language processing.
+
+A few weeks into the project, the team is working on a sentiment analysis model to categorize customer reviews into positive, negative, and neutral sentiments. Logan wants to ensure that each sentiment category is properly represented in both the training and test sets, avoiding cases where the model encounters a sentiment during testing that it hasn't seen during training or vice versa.
+
+**Which of the following terms describes the process Logan wants her team to follow?**
+
+
+### **Choices** :
+
+- Logan asked her team to cross-validate their dataset.
+- Logan asked her team to bootstrap their dataset.
+- Logan asked her team to validate their dataset.
+- Logan asked her team to stratify their dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Stratified sampling is a method to split a dataset to produce subsets containing a balanced proportion of samples for each category.
+
+In Logan's case, she is working on a classification problem involving sentiment analysis. Stratified sampling will ensure that her training and test sets have approximately the same percentage of sentiment samples as the complete dataset.
+
+For example, suppose the dataset has 5,000 positive, 10,000 negatives, and 15,000 neutral reviews. Logan wants to maintain this ratio when splitting the data into training and test sets. If the team selects 24,000 total reviews for training, Logan expects to see 4,000 positive (16.67%), 8,000 negatives (33.33%), and 12,000 neutral (50%) reviews.
+
+Therefore, Logan wants her team to stratify their dataset.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Stratified sampling in Machine Learning"](https://medium.com/analytics-vidhya/stratified-sampling-in-machine-learning-f5112b5b9cfe) is a quick introduction to stratified sampling.* Check ["What is Stratified Cross-Validation in Machine Learning?"](https://towardsdatascience.com/what-is-stratified-cross-validation-in-machine-learning-8844f3e7ae8e) for more information about stratified cross-validation.</p></details>
+
+-----------------------
+
