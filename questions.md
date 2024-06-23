@@ -38038,3 +38038,58 @@ Fairness is essential to machine learning models in research and production envi
 
 -----------------------
 
+## Date - 2024-06-23
+
+
+## Title - Half the records
+
+
+### **Question** :
+
+Celeste evaluated her model in a dataset with 10,000 records and got an accuracy of 90%.
+
+She collected 1,000 new records and added half to the training set and the other half to the test set. After training a new model, she evaluated it with 10,500 records, and the accuracy decreased to 88%.
+
+**Which of the following is a valid conclusion about Celeste's model?**
+
+
+### **Choices** :
+
+- Celeste's model is worse than before.
+- Celeste's model is better than before.
+- Celeste's model is the same as before.
+- We don't know exactly whether Celeste's model is better or worse.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When Celeste added 1,000 new records and split them between the training and test sets, the distribution of the test set changed. Since the new test set has a different distribution, we cannot directly compare the model's accuracy before and after adding the new records.
+
+The decreased accuracy from 90% to 88% does not necessarily mean the model is worse. 
+
+It could be that the new data is more challenging for the model, or the model has improved in certain aspects but is not apparent in the overall accuracy. To accurately assess whether the model is better or worse, Celeste must evaluate the models on the same data with the same underlying distribution.
+
+Here is a hypothetical scenario of two models illustrating how Model 2 could improve even when returning a lower accuracy:
+
+* Model 1 accuracy on 10,000 records: 90% (9,000 records correctly classified.)
+* Model 1 accuracy on the new 500 records: 10% (50 records correctly classified.)
+* Model 2 accuracy on the 10,000 records: 91% (9,100 records correctly classified.)
+* Model 2  accuracy on the new 500 records: 28% (140 records correctly classified.)
+* Model 2 accuracy on the 10,500 records: 88% (9,240 records correctly classified.)
+
+In this hypothetical example, Model 2 is better on the original 10,000 records (91% versus 90%) and the 500 new records (28% versus 10%.) But its accuracy is worse with the 10,500 test set (88% versus 90%.)
+
+This is called the [Simpson's paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox). When comparing two experiments, we need to make sure that we evaluate the same data or at least data having the same underlying distribution. If we change the distribution, we can't compare the results and may make the wrong conclusion.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Simpson's Paradox"](https://www.britannica.com/topic/Simpsons-paradox) for a complete explanation about the paradox.* Here is a video about the [Simpson's Paradox](https://www.youtube.com/watch?v=ebEkn-BiW5k).</p></details>
+
+-----------------------
+
