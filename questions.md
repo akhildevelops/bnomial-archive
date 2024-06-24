@@ -38093,3 +38093,46 @@ This is called the [Simpson's paradox](https://en.wikipedia.org/wiki/Simpson%27s
 
 -----------------------
 
+## Date - 2024-06-24
+
+
+## Title - Exploring birds
+
+
+### **Question** :
+
+Cali is an avid birdwatcher and has decided to use her passion for birds to explore the capabilities of deep neural networks. 
+
+She gathers a diverse dataset of bird images covering different species, habitats, and behaviors. With this dataset, Cali begins experimenting with deep neural networks to see how well they can classify the images and recognize the distinct characteristics of each species.
+
+**Which of the following statements reasonably simplifies how the network operates?**
+
+
+### **Choices** :
+
+- The earlier layers of a neural network compute simpler features than deeper layers.
+- The deeper layers of a neural network compute more complex features than earlier layers.
+- The earlier layers of a neural network compute more complex features than deeper layers.
+- The deeper layers of a neural network compute simpler features than earlier layers.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Think of a bird picture. You'll see the eyes, feathers, beak, and other characteristics. Notice how groups of pixels form edges, shapes, and the rest of the bird's features. 
+
+A reasonable explanation for how a neural network works are to assume that earlier layers focus on detecting more basic features, like edges and shapes of the image. Later layers could use these earlier pieces to form more recognizable shapes, like the eyes and beak of the bird.
+
+While the network deals with pixels early on, the deeper we go into it, the more it will work with complete patterns until it reaches the output layer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["But what is a neural network?"](https://www.youtube.com/watch?v=aircAruvnKk) is Grant Sanderson's introduction to neural networks on YouTube. Highly recommended!* [_Neural Networks and Deep Learning_](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen).</p></details>
+
+-----------------------
+
