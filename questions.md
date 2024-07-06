@@ -38671,3 +38671,50 @@ Lastly, optimizing neural networks is easier when their behavior is as linear as
 
 -----------------------
 
+## Date - 2024-07-06
+
+
+## Title - Well-regarded distance
+
+
+### **Question** :
+
+Kalani is working on a machine learning project involving clustering data points based on similarity. She knows that selecting the right distance metric is crucial for her clustering algorithm to produce meaningful results.
+
+While exploring various distance metrics, she comes across the Euclidean distance, which is widely used and well-regarded. To ensure she understands the concept correctly, she decides to research the properties of Euclidean distance.
+
+**From the following list, select every correct statement about the Euclidean distance.**
+
+
+### **Choices** :
+
+- The Euclidean distance between two distinct points is always positive.
+- The Euclidean distance is always zero for any pair of identical points.
+- The Euclidean distance between two points is affected by the order of the dimensions, so swapping the order of dimensions would change the computed distance.
+- The Euclidean distance can be computed as the dot product of the differences between the corresponding coordinates.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In one or more dimensions, we can use the [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance). For example, in a line, the distance between two points is the numerical difference between their coordinates. In a plane, the distance is the [Pythagorean distance](https://en.wikipedia.org/wiki/Pythagorean_theorem). 
+
+But can we use it in multidimensional spaces?
+
+The answer is yes; the Euclidean distance works in [multidimensional spaces](https://hlab.stanford.edu/brian/euclidean_distance_in.html). Intuitively, this should make sense because we can use it as the metric to compute the distance between multi-feature observations in our dataset.
+
+The distance from a point _p_ to another point _q_ is the same regardless of whether we start from _p_ or _q_. This distance is always a positive value as long as _p_ and _q_ are different points. If _p_ and _q_ are the same point, the distance is 0.
+
+Finally, the Euclidean distance is the square root of the sum of the squared differences between corresponding coordinates, not the dot product of the differences.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Euclidean Distance In 'n'-Dimensional Space"](https://hlab.stanford.edu/brian/euclidean_distance_in.html) for a summary and visualization of how the Euclidean distance works in multi-dimensional spaces.* ["Euclidean distance"](https://en.wikipedia.org/wiki/Euclidean_distance) and ["Euclidean space"](https://en.wikipedia.org/wiki/Euclidean_space) are Wikipedia articles that will help with this topic.</p></details>
+
+-----------------------
+
