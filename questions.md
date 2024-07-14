@@ -39068,3 +39068,52 @@ If you run the classifier and the ROC-AUC is around `0.5`, you will know that th
 
 -----------------------
 
+## Date - 2024-07-14
+
+
+## Title - Clean data
+
+
+### **Question** :
+
+Sophia is a data scientist at a digital marketing agency.
+
+She recently acquired a new dataset from a client, which contains details about customers' online behavior. However, she noticed that many values were missing, several fields were incomplete, and some data was corrupted.
+
+Sophia understands the importance of clean data for building a successful Machine Learning model, so she addressed these issues before moving forward.
+
+During a meeting with her team, Sophia discusses potential strategies for dealing with the problematic dataset. 
+
+**Which of the following are valid techniques Sophia and her team could use to handle the problems with their data?**
+
+
+### **Choices** :
+
+- Predict the missing values using a separate Machine Learning model.
+- Use a machine learning algorithm that is robust to missing values.
+- Drop any rows or columns that contain missing or corrupted data.
+- Replace missing values with the mean, median, mode, or other imputation techniques.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Replacing missing values with the mean, median, mode, or other [imputation](https://en.wikipedia.org/wiki/Imputation_(statistics)) techniques is an excellent approach to handling this problem. Remember that, for imputation to work, we need to apply it to those features where most of the data is in good shape and only a few values are missing. If the dataset contains features with that characteristic, imputation will help. 
+
+Sometimes, a row or column is in such poor shape that the best approach is to drop it altogether. Imagine a feature where only a small percentage of rows have values, or most of the data is corrupted. In those cases, getting rid of the data is the appropriate approach. 
+
+A more advanced technique commonly used is to predict missing values using a separate model. For example, you could use a linear regression model to fill in the blanks on one specific column of data. This approach considers the correlation between other features and the column with missing values, potentially producing good results. 
+
+Finally, we can use a particular implementation of a machine learning algorithm that is robust to missing values. For example, we could run the [k-Nearest Neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) and ignore a column with missing values when computing the distance. However, this depends on the algorithm's implementation, so you must watch out for that.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Handling Missing Values"](https://www.kaggle.com/dansbecker/handling-missing-values) is a practical tutorial on how to handle missing values.</p></details>
+
+-----------------------
+
