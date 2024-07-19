@@ -39306,3 +39306,50 @@ Mini-Batch Gradient Descent strikes a balance between computation speed and upda
 
 -----------------------
 
+## Date - 2024-07-19
+
+
+## Title - Plant species
+
+
+### **Question** :
+
+Camilla has recently been promoted to a team leader position at a company focusing on image recognition.
+
+Although she lacks extensive management experience, Camilla knows the importance of implementing a robust process for her new team.
+
+A month into their project, the team is working on identifying various plant species based on user images. Camilla wants to ensure that each plant species is adequately represented in the training and test sets, preventing situations where the model encounters a species during testing that it hasn't seen during training or vice versa.
+
+**Which of the following terms describes the process Camilla wants her team to follow?**
+
+
+### **Choices** :
+
+- Camilla asked her team to stratify their dataset.
+- Camilla asked her team to cross-validate their dataset.
+- Camilla asked her team to validate their dataset.
+- Camilla asked her team to bootstrap their dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Stratified sampling is a method used to split a dataset to produce subsets containing a balanced proportion of samples for each category.
+
+In Camilla's case, she is working on a classification problem involving plant species identification. Stratified sampling will ensure that her training and test sets have approximately the same percentage of plant species samples as the complete dataset.
+
+For example, suppose the dataset has 3,000 images of roses, 7,000 images of tulips, and 10,000 of daffodils. Camilla wants to maintain this ratio when splitting the data into training and test sets. If the team selects 16,000 total images for training, Camilla expects to see 2,400 roses (15%), 5,600 tulips (35%), and 8,000 daffodils (50%).
+
+Therefore, Camilla wants her team to stratify their dataset.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Stratified sampling in Machine Learning"](https://medium.com/analytics-vidhya/stratified-sampling-in-machine-learning-f5112b5b9cfe) is a quick introduction to stratified sampling.* Check ["What is Stratified Cross-Validation in Machine Learning?"](https://towardsdatascience.com/what-is-stratified-cross-validation-in-machine-learning-8844f3e7ae8e) for more information about stratified cross-validation.</p></details>
+
+-----------------------
+
