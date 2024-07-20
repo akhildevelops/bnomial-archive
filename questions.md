@@ -39353,3 +39353,48 @@ Therefore, Camilla wants her team to stratify their dataset.</p></details>
 
 -----------------------
 
+## Date - 2024-07-20
+
+
+## Title - Working manufacturer
+
+
+### **Question** :
+
+Harley is a data scientist at a cellphone manufacturer working on a model to predict customer satisfaction based on various phone features.
+
+Before exploring more complex models, she wants to compare a simple neural network and a linear regression model.
+
+**Which of the following statements are true for both Harley's neural network and linear regression model?**
+
+
+### **Choices** :
+
+- Both models need numeric input features, so Harley must convert non-numeric features.
+- Both models require numeric inputs between 0 and 1, so Harley must standardize the values.
+- The result from both models is a probability vector.
+- Both models' results involve a weighted sum of the input features, but neural networks introduce non-linearities through activation functions.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Although it is generally true that both models would perform better with scaled or standardized input features, neither model explicitly requires features to be within the range of 0 to 1.
+
+Both neural networks and linear regression models require input features to be numeric. They cannot handle categorical features directly, so Harley must transform non-numeric features before using them in either model.
+
+The output of a linear regression model is a single numerical value, not a vector of probabilities. Neural networks do not necessarily have to produce such output either.
+
+While linear regression and neural networks involve a weighted sum of input features, neural networks introduce non-linearities through activation functions. This key difference makes neural networks more powerful than linear regression.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Linear Regression v.s. Neural Networks"](https://towardsdatascience.com/linear-regression-v-s-neural-networks-cd03b29386d4) for comparing these two techniques.* ["3 Reasons Why You Should Use Linear Regression Models Instead of Neural Networks"](https://www.kdnuggets.com/2021/08/3-reasons-linear-regression-instead-neural-networks.html) is another great article talking about their differences.* ["Linear Regression for Machine Learning"](https://machinelearningmastery.com/linear-regression-for-machine-learning/) is a great introduction to linear regression.* ["Intro to Neural Networks"](https://developers.google.com/machine-learning/crash-course/introduction-to-neural-networks/video-lecture) is a good summary of neural networks.</p></details>
+
+-----------------------
+
