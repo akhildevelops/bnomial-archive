@@ -39545,3 +39545,54 @@ The number of possible values does not define a nominal feature.</p></details>
 
 -----------------------
 
+## Date - 2024-07-24
+
+
+## Title - Abnormal cells
+
+
+### **Question** :
+
+Mabel works as a data analyst in a health tech company. Recently, she's been involved in a project that uses deep learning to identify abnormal cells in medical images. 
+
+The company has collected a dataset of 2000 grayscale images of cells under a microscope, each of size 256 x 256. Half of those are images of normal cells, and the other half are images of abnormal cells.
+
+In a discussion with her team, a question made Mabel consider the tensor structure required to store all this data.
+
+**What's the correct shape of a tensor capable of storing all this data simultaneously?**
+
+
+### **Choices** :
+
+- We can store it in a tensor of shape `(2000, 256, 256)`
+- We can store it in a tensor of shape `(256, 256, 1)`
+- We can store it in a tensor of shape `(2000, 256, 256, 1)`
+- We can store it in a tensor of shape `(1000, 256, 256, 1)`
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Working with images typically requires a tensor to store the height, the width, and the color depth. Grayscale images have a single color channel like the cell images.
+
+Assuming our pictures are of size 256 x 256, we need to store the value of each pixel in the image. Since we're dealing with grayscale images, we would conventionally store each image in a tensor of shape `(256, 256)` or `(256, 256, 1)`.
+
+Notice that, by convention, image data is often represented in a 4D array (also known as a 4D tensor) with dimensions corresponding to the number of samples (i.e., the number of images), the height of the image, the width of the image, and the number of color channels. For grayscale images, the number of color channels is 1.
+
+Including the color channel in the tensor's shape can help ensure compatibility with various image processing and machine learning libraries, which expect input in this format. This means the preferred choice to store one image of size 256 x 256 is a tensor of shape `(256, 256, 1)`, but `(256, 256)` technically works.
+
+So far, we know how to store a single grayscale picture of size 256 x 256. But how about storing 2000 of them? We need another dimension, which leads us to a tensor of shape `(2000, 256, 256, 1)` or `(2000, 256, 256)`.
+
+The order of these dimensions is intentional. Conventionally, tensors that hold images are structured in the following way: (samples, height, width, and channels). There's another convention where channels go before the dimensions of the images, but it's more common to put them at the end.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Deep Learning with Python_, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors and practical code.</p></details>
+
+-----------------------
+
