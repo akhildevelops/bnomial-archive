@@ -39839,3 +39839,52 @@ An example would be a neural network that predicts the next word given a part of
 
 -----------------------
 
+## Date - 2024-07-30
+
+
+## Title - Complex decision making
+
+
+### **Question** :
+
+Ariyah, a data analyst passionate about helping businesses make informed decisions, has been exploring Machine Learning techniques to improve her analysis skills. 
+
+She's particularly drawn to Decision Trees because they provide a simple yet effective way to model complex decision-making processes.
+
+**Which of the following points are advantages of using Decision Trees?**
+
+
+### **Choices** :
+
+- Decision Trees are versatile and can handle categorical and numerical data.
+- Decision Trees are very resistant to overfitting.
+- The logic behind Decision Trees is easy to interpret, making them a great tool for explaining results to non-experts.
+- Decision Trees can solve regression and classification tasks.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Decision Trees are a popular machine learning technique because they can handle categorical and numerical data, making them applicable to various problems.
+
+Additionally, they are easily interpretable, as the tree structure can be visualized and follows a series of "if-then" rules, allowing even non-experts to understand the decision-making process. You can look at a prediction from a Decision Tree and fully understand why the model arrived at that conclusion. 
+
+Decision Trees, unfortunately, are prone to overfitting if we don't take careful care of their depth. In other words, unless we ensure our tree doesn't go too deep, it will tend to fit noisy samples and output the wrong prediction. We can control overfitting in a Decision Tree by "pruning."
+
+Remember that while a single Decision Tree is prone to overfitting, using an ensemble of trees is more resistant. Here is a quote from "[To Boost or not to Boost: On the Limits of Boosted Neural Networks](https://arxiv.org/pdf/2107.13600.pdf)":
+
+> [these experiments] confirm that training single large decision trees is prone to overfitting while boosted ensembles of decision trees are resistant to overfitting.
+
+Many people relate Decision Trees with classification tasks, but they are also valuable for solving regression tasks. A classification task is when the predicted outcome is a discrete class, while the result of a regression task is a Real number. This flexibility makes Decision Trees very useful.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["To Boost or not to Boost: On the Limits of Boosted Neural Networks"](https://arxiv.org/pdf/2107.13600.pdf), the paper cited above comparing the overfitting tendency of a single Decision Tree versus an ensemble of trees.* ["Decision tree pruning"](https://en.wikipedia.org/wiki/Decision_tree_pruning) covers the process of pruning a tree to reduce overfitting.* Check ["Random Forest"](https://en.wikipedia.org/wiki/Random_forest) for more information about a widely used class of Decision Tree ensembles.</p></details>
+
+-----------------------
+
