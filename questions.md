@@ -39984,3 +39984,50 @@ Thus, the answer is `4/5`.</p></details>
 
 -----------------------
 
+## Date - 2024-08-02
+
+
+## Title - Healthcare company
+
+
+### **Question** :
+
+Jocelyn is a data scientist at a healthcare company.
+
+Her job is to develop a model that predicts the likelihood of patients developing diabetes. She built a neural network using patients' medical records, but the predictions aren't as precise as she needs them to be. 
+
+Jocelyn believes making the network deeper could be the solution.
+
+**What should Jocelyn do to make her network deeper?**
+
+
+### **Choices** :
+
+- Jocelyn should add more layers to the network.
+- Jocelyn should add more neurons to the existing layers.
+- Jocelyn should change the activation function in the existing layers.
+- Jocelyn should use a different optimization algorithm.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Jocelyn should add more layers to the network. A deep neural network is an artificial neural network with multiple layers between the input and output layers. The more layers we add, the "deeper" the network becomes.
+
+Adding neurons alone doesn't change the depth of the network. It does change its capacity, but a network with the same number of layers but more neurons will still have the same depth. 
+
+Changing the activation function in the existing layers might affect the model's performance, but it won't make the network deeper. Activation functions play a role in introducing non-linearities, but they don't affect the depth of the network.
+
+A different optimization algorithm could improve the training process and performance but won't deepen the neural network. Optimization algorithms help minimize the loss function but don't increase the network's depth.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Wikipedia's definition of ["Deep neural networks"](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks) serves as a succinct summary of what deep neural networks are.* Check ["A Layman’s Guide to Deep Neural Networks"](https://towardsdatascience.com/a-laymans-guide-to-deep-neural-networks-ddcea24847fb) for a non-mathematical introduction to deep neural networks.</p></details>
+
+-----------------------
+
