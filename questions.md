@@ -40031,3 +40031,54 @@ A different optimization algorithm could improve the training process and perfor
 
 -----------------------
 
+## Date - 2024-08-03
+
+
+## Title - Object schedule
+
+
+### **Question** :
+
+Emma created a Deep Learning model to identify objects in pictures taken from a drone camera. During her exploration phase, she found a specific learning-rate schedule that performed well for her model.
+
+She wants to train a new model using the same architecture with images from a different drone camera.
+
+Everything will stay the same except the dataset. 
+
+**Should Emma expect her learning-rate schedule to also work for the second model?**
+
+
+### **Choices** :
+
+- Only if the second dataset has the same number of samples. The learning-rate schedule depends on the number of samples in the dataset. Therefore the exact schedule won't work with a different size dataset.
+- Yes, because both datasets come from the same type of drone camera. The learning-rate schedule should change whenever we have a dataset from a different target distribution. This won't be the case here.
+- No, because a new dataset changes the tradeoff between optimization and regularization. The learning-rate schedule is dataset-specific.
+- Yes, because learning-rate schedules are specific to the optimization mechanisms used by the model. A new dataset will require a new optimization process, invalidating the learning-rate schedule.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's take a look at [this tweet](https://twitter.com/fchollet/status/1508477486882979843) from [François Chollet](https://amzn.to/3K3VZoy):
+
+> PSA: never attempt to use a training schedule from an old dataset on a new dataset. Even if the model, the number of samples, and the target distribution are the same, the intrinsic difficulty of the problem may have changed (tradeoff between optimization and regularization). 
+
+> Learning rate schedules and regularization are fundamentally dataset-specific, far more than model architecture.
+
+Notice that he mentions that even when the dataset size and the target distribution are the same, the learning-rate schedule might not be helpful anymore. Even when we don't change anything about the model architecture or the method we use to train it, a new dataset may change the intrinsic difficulty of the problem.
+
+With a new dataset, we may need more regularization to avoid overfitting, or we may need less of it to ensure the model learns the specifics of the problem. A different dataset leads to a different set of tradeoffs. 
+
+Therefore, Emma should not reuse the learning-rate schedule and instead find the best for the second model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* François' book, [_Deep Learning with Python, Second Edition_](https://amzn.to/3K3VZoy), is among the best Deep Learning references you'll find.</p></details>
+
+-----------------------
+
