@@ -40276,3 +40276,56 @@ Lastly, "Mini-Batch Gradient Descent" implies using a subset of the data—more 
 
 -----------------------
 
+## Date - 2024-08-08
+
+
+## Title - Looking properties
+
+
+### **Question** :
+
+Wren is a data scientist looking into the world of neural networks. She has been particularly intrigued by the Rectified Linear Unit (ReLU) Activation Function, often used in deep learning models. 
+
+The ReLU function is a simple function that outputs the input directly if it is positive; otherwise, it outputs zero. 
+
+Wren is interested in the mathematical properties of the ReLU function, especially when it comes to its continuity and differentiability.
+
+**Which of the following is true about the Rectified Linear Unit (ReLU) Activation Function?**
+
+
+### **Choices** :
+
+- The function is neither continuous nor differentiable.
+- The function is differentiable but not continuous.
+- The function is both continuous and differentiable.
+- The function is continuous but not differentiable.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>ReLU is continuous but not differentiable.
+
+While the function is indeed differentiable for values of `x>0` and `x<0`, it is not differentiable for `x=0`. 
+
+Think about it: what is the derivative of the ReLU function at `x=0`? Is it constant? Is it rising? The derivative is not defined at `x=0`, so the function is not differentiable.
+
+This may be surprising because we know that Gradient Descent needs a differentiable function to work. How come it works with ReLU, then?
+
+In a [really good post](https://sebastianraschka.com/faq/docs/relu-derivative.html) about this topic, [Sebastian Raschka](https://twitter.com/rasbt) wrote about this:
+
+> In practice, it’s relatively rare to have `x=0` in the context of deep learning; hence, we usually don’t have to worry too much about the ReLU derivative at `x=0`. We typically set it to `0`, `1`, or `0.5`.
+
+So there you have it. The correct answer to this question is the fourth choice.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["A Gentle Introduction to the Rectified Linear Unit (ReLU)"](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/) for an introduction to ReLU.* The [_Deep Learning_](https://amzn.to/3MqvoTQ) book is a great resource.</p></details>
+
+-----------------------
+
