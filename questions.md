@@ -40388,3 +40388,48 @@ This issue is called "sampling bias." It explains why the problem occurred in on
 
 -----------------------
 
+## Date - 2024-08-10
+
+
+## Title - The meteorologist
+
+
+### **Question** :
+
+Presley, a meteorologist, is working on predicting weather patterns using machine learning algorithms. 
+
+She needs to split her dataset into training and test sets to train and evaluate her model effectively, and she knows she needs to shuffle the dataset before anything else.
+
+**What is the primary purpose of shuffling a dataset before dividing it into training and test sets?**
+
+
+### **Choices** :
+
+- Shuffling the data ensures the training and test sets contain the data ordered adequately.
+- Shuffling the data ensures that class labels are uniformly distributed across the training and test sets.
+- Shuffling the data ensures the training and test sets contain equal samples.
+- Shuffling the data ensures the training and test sets contain the same features.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Shuffling a dataset before dividing it into training and test sets is critical.
+
+First, we can ensure that the class labels are evenly distributed across the training and test sets. This helps avoid imbalances in the distribution of class labels, which could negatively impact the model's performance during training and evaluation. For example, if one class is over-represented in the training set but under-represented in the test set, the model might learn to predict the over-represented class well but perform poorly on the under-represented class.
+
+Second, shuffling helps ensure that the training and test sets are equally difficult for the model to learn and evaluate. If the data has some inherent order, such as being sorted by time or some other variable, the model might be exposed to certain patterns only during training, which could lead to overfitting or underfitting. By shuffling the data, we can ensure that the model is exposed to a diverse and representative data sample during training and evaluation, improving its generalization capabilities.
+
+Finally, shuffling helps us prevent the influence of any unintentional order or sequence in the data. For example, if the data was collected in batches and each batch had some unique characteristics, not shuffling the dataset could result in the model learning these batch-specific characteristics, which are irrelevant to the problem. Shuffling the dataset reduces the risk of the model learning irrelevant patterns and improving its ability to generalize to unseen data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems_](https://amzn.to/3SHGqsu) is one of the best books for machine learning fundamentals.* ["Machine Learning Crash Course"](https://developers.google.com/machine-learning/crash-course) is a great introduction to Machine Learning.</p></details>
+
+-----------------------
+
