@@ -40876,3 +40876,46 @@ While an excessively large learning rate can indeed cause problems in the learni
 
 -----------------------
 
+## Date - 2024-08-20
+
+
+## Title - Cash register
+
+
+### **Question** :
+
+Monica is a data scientist at a large grocery store chain.
+
+The grocery store has modern cash register systems, so Monica can access a wealth of sales data. She's fascinated by the massive variety of items customers purchase every day. The store sells everything from fruits and vegetables to household items.
+
+Monica is thinking about creating customer profiles to understand purchasing patterns better. This might help the store to design better sales promotions or arrange products more efficiently. However, she's unsure whether she should segment customers based on the types of products they buy, their total spending, or the time of their purchases.
+
+**If you were in Monica's position, how would you approach this problem?**
+
+
+### **Choices** :
+
+- Define a few profiles beforehand, and train a supervised learning algorithm to classify every customer into one.
+- Use a supervised learning algorithm to produce potentially interesting ways to segment the customers.
+- Use an unsupervised learning algorithm to produce potentially interesting ways to segment the customers.
+- Use a semi-supervised learning algorithm to process the data, thus taking advantage of both supervised and unsupervised techniques.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Customer segmentation](https://towardsdatascience.com/customer-segmentation-with-machine-learning-a0ac8c3d4d84) is a popular field where you try to find similar characteristics among your customers. It's the perfect opportunity to use unsupervised learning: a clustering algorithm.
+
+For example, Monica could use [K-Means](https://en.wikipedia.org/wiki/K-means_clustering) to find interesting patterns and group together the customers that share them. A critical distinction is that she doesn't need to consider the segments preemptively; the clustering algorithm will find them for her.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Customer Segmentation with Machine Learning"](https://towardsdatascience.com/customer-segmentation-with-machine-learning-a0ac8c3d4d84) for a quick introduction to Customer Segmentation.* ["10 Clustering Algorithms With Python"](https://machinelearningmastery.com/clustering-algorithms-with-python/) will introduce you to 10 different clustering algorithms.</p></details>
+
+-----------------------
+
