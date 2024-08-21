@@ -40919,3 +40919,52 @@ For example, Monica could use [K-Means](https://en.wikipedia.org/wiki/K-means_cl
 
 -----------------------
 
+## Date - 2024-08-21
+
+
+## Title - Pulling hairs
+
+
+### **Question** :
+
+Magdalena has been pulling her hair out.
+
+She's been laboring on this convolutional neural network for ages. She's using mini-batch gradient descent for her image classification task, and the results show the training loss swinging wildly up and down.
+
+It's driving her nuts!
+
+Magdalena is considering one or two last-ditch efforts before she throws in the towel.
+
+**Which of the following steps do you think she should attempt next?**
+
+
+### **Choices** :
+
+- She should decrease the learning rate to avoid overshooting the local minimum.
+- This is likely a problem with the data. Magdalena should revisit her dataset and ensure it's appropriately balanced.
+- She should expand the batch size to increase the range of samples in every batch.
+- Magdalena should increase the learning rate to take more significant steps toward the gradient.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The issue with the training loss is unlikely to be related to an imbalanced dataset. If that were the root cause, Magdalena would face a model with difficulty learning anything, but she wouldn't see the loss bouncing up and down.
+
+If she increases the learning rate, Magdalena would be able to take more significant steps in the gradient's direction, but this could lead her to overshoot the local minima. If her learning rate is too large, she'll repeatedly overshoot the local minima, and her loss will keep swinging back and forth.
+
+There's a good chance that the fluctuation in loss is due to a high learning rate. Reducing the learning rate could be a good experiment to see if it addresses the issue.
+
+Lastly, if Magdalena uses a very small batch size, poor samples could cause significant shifts in the training loss from one batch to the next. This could also be the reason for the fluctuating loss. Increasing the batch size and ensuring the data is appropriately distributed is another good experiment.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["The wrong batch size is all it takes" ](https://articles.bnomial.com/the-wrong-batch-size-is-all-it-takes) explains how different batch sizes influence the training process of neural networks using gradient descent.* ["What could an oscillating training loss curve represent?"](https://ai.stackexchange.com/questions/14079/what-could-an-oscillating-training-loss-curve-represent) is a StackExchange question that will help you answer this question.* Check ["Why is my training loss fluctuating?"](https://www.researchgate.net/post/Why_is_my_training_loss_fluctuating) for another set of answers covering this problem.</p></details>
+
+-----------------------
+
