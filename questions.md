@@ -41071,3 +41071,48 @@ Finally, Decision Trees aren't inherently more robust to imbalanced data, and re
 
 -----------------------
 
+## Date - 2024-08-24
+
+
+## Title - Interested student
+
+
+### **Question** :
+
+Rayna is a computer science student who has been studying machine learning. She has been particularly interested in using activation functions in neural networks. 
+
+Rayna has been studying the Sigmoid Activation Function, often used in binary classification problems. The Sigmoid function is a smooth, S-shaped function that maps any real-valued number to a value between 0 and 1. 
+
+Rayna is curious about the mathematical properties of the Sigmoid function, especially when it comes to its continuity and differentiability.
+
+**Which of the following is true about the Sigmoid Activation Function?**
+
+
+### **Choices** :
+
+- The function is neither continuous nor differentiable.
+- The function is differentiable but not continuous.
+- The function is both continuous and differentiable.
+- The function is continuous but not differentiable.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Sigmoid function is continuous and differentiable.
+
+The Sigmoid function is smooth and differentiable everywhere, including at `x=0`. This is one of the reasons why it was widely used in the early days of neural networks. 
+
+However, the Sigmoid function has some drawbacks, such as the vanishing gradient problem, which can slow the learning process. This is one of the reasons why other activation functions, like ReLU, have become more popular in recent years.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["A Gentle Introduction To Sigmoid Function"](https://machinelearningmastery.com/a-gentle-introduction-to-sigmoid-function/) for a quick introduction to Sigmoid.</p></details>
+
+-----------------------
+
