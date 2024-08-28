@@ -41302,3 +41302,46 @@ If you run the classifier and the ROC-AUC is around `0.5`, you will know that th
 
 -----------------------
 
+## Date - 2024-08-28
+
+
+## Title - Distance measures
+
+
+### **Question** :
+
+Distance measures are critical in many machine learning algorithms: they summarize the relative difference between two objects. K-Nearest Neighbors is an example of an algorithm that uses a distance measure at its core.
+
+Every distance measure doesn't work for every problem. Instead, we must select the appropriate function depending on the nature of the data.
+
+**Here is a list of four distance measures and a quick summary of how they work. Select every one of them that's correct.**
+
+
+### **Choices** :
+
+- The Euclidean distance between two vectors is the square root of the sum of the squared differences between them.
+- The Manhattan distance between two vectors is the sum of their absolute differences.
+- The Hamming distance is a generalization of the Euclidean and Manhattan distances that we can tune depending on which distance measure we need.
+- The Minkowski distance computes the distance between two binary vectors.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>While the Euclidean and Manhattan distances summary is correct, the Hamming and Minkowski summaries aren't.
+
+The Hamming distance computes the distance between two binary vectors. For example, you can calculate the distance between objects using a one-hot encoded feature.
+
+The Minkowski distance is a generalization of the Euclidean and Manhattan distances. Both of these work with real-value vectors, but the Euclidean distance is the shortest path between objects, while the Manhattan distance is the rectilinear distance between them. Using the Minkowski distance, we can control which approach to use depending on the data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["4 Distance Measures for Machine Learning"](https://machinelearningmastery.com/distance-measures-for-machine-learning/) for a complete explanation of these four distance measures.* ["Five Common Distance Measures in Data Science With Formulas and Examples"](https://regenerativetoday.com/five-common-distance-measures-in-data-science-with-formulas-and-examples/) is a deeper dive into these distance measures.</p></details>
+
+-----------------------
+
