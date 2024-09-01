@@ -41498,3 +41498,60 @@ Finally, the last choice is also incorrect. Multiplying the intersection by the 
 
 -----------------------
 
+## Date - 2024-09-01
+
+
+## Title - The second die
+
+
+### **Question** :
+
+Winter is planning a board game night with her friends and wants to surprise them with a new game. 
+
+The game comes with two dice. One is a 6-sided die, and the other is a huge 24-sided die.
+
+While getting ready, Winter's brother enters the room, curious about the dice. He selects one of the dice from the box and rolls a 4.
+
+**What is the probability that her brother pulled out the 24-sided die?**
+
+
+### **Choices** :
+
+- The probability is 1/5
+- The probability is 2/5
+- The probability is 3/5
+- The probability is 4/5
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's assume that `A` represents the event of rolling the die and getting a `4`, `B1` represents pulling out the 6-sided die, and `B2` represents pulling out the 24-sided die.
+
+We can compute the probability that Winter's brother picked the 24-sided die using the [Bayes theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem):
+
+```
+P(B2|A) = (P(A|B2)*P(B2))/P(A)
+P(B2|A) = (1/48)/P(A)
+
+P(A) = P(A|B2)*P(B2)+P(A|B1)*P(B1)
+P(A) = 1/48 + 1/12​
+P(A) = 5/48
+
+P(B2|A) = (1/48)/(5/48)
+P(B2|A) = 1/5​
+```
+
+Thus, the answer is `1/5`.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["A Gentle Introduction to Bayes Theorem for Machine Learning"](https://machinelearningmastery.com/bayes-theorem-for-machine-learning/) is a great starting point to understand the Bayes theorem and how to use it.* You can also check the Wikipedia page of [the Bayes theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem).</p></details>
+
+-----------------------
+
