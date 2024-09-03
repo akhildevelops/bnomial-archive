@@ -41602,3 +41602,52 @@ The quantity of potential values does not determine whether a feature is nominal
 
 -----------------------
 
+## Date - 2024-09-03
+
+
+## Title - Initializing neural networks
+
+
+### **Question** :
+
+High-level libraries are usually enough to solve complex problems without worrying about low-level details.
+
+But Gabriella didn't have that luxury. Her research got her very deep into how neural networks work. 
+
+As part of the project, she wants to write a blog post about the influence of different initialization schemes on how neural networks learn. She wants to cover the problems that could happen when we use the wrong initialization.
+
+**Which of the following problems could we face if we don't initialize the weights correctly?**
+
+
+### **Choices** :
+
+- The network might suffer from vanishing gradients, which could cause a slow down in training.
+- The network might suffer from exploding gradients, preventing it from learning correctly.
+- Every network neuron might learn the same features during training.
+- Every neuron of the network might learn different features during training.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Correctly initializing a neural network can have a significant impact on convergence.
+
+We may suffer from the vanishing gradient problem if we use small values to initialize the network's weights and the exploding gradient problem if we use large weight values instead. The gradients will become smaller or larger as we move from the output layer toward the input layer during backpropagation. ["Initializing neural networks"](https://www.deeplearning.ai/ai-notes/initialization/) illustrates a specific example with a 9-layer neural network using the identity function as the activation on every layer. 
+
+The third choice is correct: if we initialize the network with zeros, every neuron will learn the same features. Here is an excerpt from ["Initializing neural networks"](https://www.deeplearning.ai/ai-notes/initialization/) explaining the consequences of using the same weight values:
+
+> Thus, both hidden units will have identical influence on the cost, which will lead to identical gradients. Thus, both neurons will evolve symmetrically throughout training, effectively preventing different neurons from learning different things.
+
+The final choice, however, is not a problem. We want every neuron to learn different features.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Initializing neural networks"](https://www.deeplearning.ai/ai-notes/initialization/) is an excellent summary of the importance of weight initialization.* Check ["Weight Initialization Techniques in Neural Networks"](https://towardsdatascience.com/weight-initialization-techniques-in-neural-networks-26c649eb3b78) to learn about different initialization schemes.</p></details>
+
+-----------------------
+
