@@ -41758,3 +41758,50 @@ The solution is to split the dataset before doing any transformations. Skylar sh
 
 -----------------------
 
+## Date - 2024-09-06
+
+
+## Title - Normalizing inputs to a layer
+
+
+### **Question** :
+
+What if we normalize the input to the layers within a neural network?
+
+Liliana understood the idea of data normalization, but this new approach seemed bold and different.
+
+Fortunately, she found plenty of documentation about this technique, called Batch Normalization. During the training process, Batch Normalization normalizes the input to each layer within the network.
+
+**Liliana wants to write some notes before calling it a day. Which of the following are correct statements about Batch Normalization?**
+
+
+### **Choices** :
+
+- Batch Normalization rescales the data to a mean of zero and a standard deviation of one.
+- Batch Normalization rescales the data between zero and one.
+- Batch Normalization makes the network less sensitive to the choice of weight initialization.
+- Batch Normalization requires extra computations, slightly increasing the network's total training time.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Batch Normalization is a popular technique used to train deep neural networks. It normalizes the input to a layer during every training iteration using a mini-batch of data. It smooths and simplifies the optimization function leading to a more stable and faster training.
+
+Batch Normalization works by scaling its input—the previous layer's output—to a mean of zero and a standard deviation of one per mini-batch. Thus the first choice is correct and the second incorrect.
+
+Although correctly initializing a network can significantly impact convergence, the stability offered by Batch Normalization makes training deep neural networks less sensitive to a specific weight initialization scheme. Since Batch Normalization normalizes values, it reduces the likelihood of running into vanishing or exploding gradients.
+
+Finally, Batch Normalization does require extra computations, making individual iterations slower. However, it will dramatically reduce the number of iterations needed to achieve convergence, making the training process much faster. Therefore, the fourth choice is incorrect.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["A Gentle Introduction to Batch Normalization for Deep Neural Networks"](https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/) is a good introduction to Batch Normalization.* Another great article to understand the impact of Batch Normalization is ["Why is Batch Normalization useful in Deep Neural Networks?"](https://towardsdatascience.com/batch-normalisation-in-deep-neural-network-ce65dd9e8dbf)</p></details>
+
+-----------------------
+
