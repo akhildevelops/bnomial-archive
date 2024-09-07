@@ -41805,3 +41805,50 @@ Finally, Batch Normalization does require extra computations, making individual 
 
 -----------------------
 
+## Date - 2024-09-07
+
+
+## Title - Leave one out
+
+
+### **Question** :
+
+Josie discovered that her model had worse performance when using a different test set.
+
+She started the project by setting aside a portion of her data and built a model that, so far, impressed everyone with a strong performance. But the bubble burst when she trained and tested the model with a different portion of her dataset.
+
+Josie is working with a very small dataset. Her team recommended k-Fold cross-validation, but Josie wanted to take the process to the extreme: she decided to create as many folds as samples in the dataset.
+
+**Which of the following statements correctly describes what Josie should expect to happen:**
+
+
+### **Choices** :
+
+- Josie's method will be computationally cheaper than fewer folds but result in a more biased model.
+- Josie's method will be computationally more expensive than fewer folds but will result in a less biased model.
+- Josie's method will be computationally cheaper than fewer folds but result in a more biased model.
+- Josie's method will be computationally more expensive than fewer folds and result in a more biased model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Josie's approach has a name: [Leave-one-out cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#Leave-one-out_cross-validation), a case of cross-validation where the number of folds equals the number of samples in the dataset. 
+
+To use leave-one-out cross-validation, we build one model for each sample in the dataset. We train each model using all data except one instance we later use to evaluate its performance. Finally, we compute the overall performance by averaging the result of each model.
+
+Assuming Josie is using leave-one-out cross-validation on a dataset with 100 samples, she will need to train 100 models. Compare this with 10-Fold cross-validation, where she will only need to build ten models. Leave-one-out cross-validation is significantly more expensive than a process using fewer folds.
+
+On the other hand, leave-one-out cross-validation will give Josie a less biased model than the 10-Fold cross-validation for this small dataset. Each training set will contain every sample but one, reducing the bias but increasing the final model's variance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["LOOCV for Evaluating Machine Learning Algorithms"](https://machinelearningmastery.com/loocv-for-evaluating-machine-learning-algorithms/) is an excellent introduction to leave-one-out cross-validation.* This [StackExchange answer](https://stats.stackexchange.com/questions/154830/10-fold-cross-validation-vs-leave-one-out-cross-validation) gives a good explanation of the bias and variance tradeoff of both methods. * Check ["A Quick Intro to Leave-One-Out Cross-Validation (LOOCV)"](https://www.statology.org/leave-one-out-cross-validation/) for a brief introduction to leave-one-out cross-validation.</p></details>
+
+-----------------------
+
