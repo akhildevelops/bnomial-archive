@@ -42149,3 +42149,42 @@ Finally, the [softmax](https://en.wikipedia.org/wiki/Softmax_function) activatio
 
 -----------------------
 
+## Date - 2024-09-14
+
+
+## Title - Architecture outlier
+
+
+### **Question** :
+
+Briella is studying Deep Learning models and comes across a list of popular architectures. However, she notices that one of the items on the list is not a Deep Learning architecture.
+
+**Can you help Briella identify the one that doesn't belong on this list?**
+
+
+### **Choices** :
+
+- ResNet
+- LSTM
+- CIFAR-10
+- DenseNet
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>CIFAR-10 is not a deep learning architecture. Instead, it is a widely used dataset for image classification tasks. On the other hand, ResNet, LSTM, and DenseNet are all popular Deep Learning architectures. 
+
+ResNet is mainly used for image classification tasks, LSTM for sequence-to-sequence problems, and DenseNet for various image-related tasks.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) for more information about the dataset.</p></details>
+
+-----------------------
+
