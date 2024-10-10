@@ -43435,3 +43435,46 @@ It's improbable that the problem is caused by a learning rate that's too high. L
 
 -----------------------
 
+## Date - 2024-10-10
+
+
+## Title - Extra regularization
+
+
+### **Question** :
+
+Eloise found that adding Batch Normalization was the best approach to improve the training speed of her deep neural network.
+
+But everything comes at a price. Batch Normalization introduces some regularization to the network, and Eloise knows this will affect the Dropout she is currently using.
+
+**How should Eloise adjust the Dropout her network is using?**
+
+
+### **Choices** :
+
+- After adding Batch Normalization, Eloise should remove the Dropout she is currently using.
+- After adding Batch Normalization, Eloise should slightly decrease the amount of Dropout she is currently using.
+- After adding Batch Normalization, Eloise should slightly increase the amount of Dropout she is currently using.
+- After adding Batch Normalization, Eloise should significantly increase the amount of Dropout she is using.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Batch Normalization is a popular technique used to train deep neural networks. It normalizes the input to a layer during every training iteration using a mini-batch of data. It smooths and simplifies the optimization function leading to a more stable and faster training.
+
+Batch Normalization acts as a regularizer. The mean of a mini-batch of data is a noisier version of the true mean of the population, and when used to normalize the data, it adds randomness to the optimization process. Eloise will need to adjust the Dropout she is using to accommodate this extra regularization.
+
+Keep in mind that Batch Normalization doesn't introduce a lot of regularization, so it's unlikely that Eloise can remove all of the Dropout she is using. She should, however, slightly decrease the Dropout she is using to account for the extra regularization.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"](https://arxiv.org/pdf/1502.03167.pdf) is the original paper introducing Batch Normalization.* ["Intro to Optimization in Deep Learning: Busting the Myth About Batch Normalization"](https://blog.paperspace.com/busting-the-myths-about-batch-normalization/) is an excellent blog post challenging some of the ideas from the original paper.* ["A Gentle Introduction to Batch Normalization for Deep Neural Networks"](https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/) is a good introduction to Batch Normalization.</p></details>
+
+-----------------------
+
