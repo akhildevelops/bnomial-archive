@@ -43478,3 +43478,48 @@ Keep in mind that Batch Normalization doesn't introduce a lot of regularization,
 
 -----------------------
 
+## Date - 2024-10-11
+
+
+## Title - Recurring daughter
+
+
+### **Question** :
+
+I'm trying to convince my daughter that she will have difficulty using a traditional feedforward network to process comments from her followers on YouTube.
+
+Instead, I recommended a simple Recurrent Neural Network as a good starting point. Going to transformers is overkill, and I'd rather have her look into some foundational ideas first.
+
+**Which of the following do you think I should include in the list of differences between recurrent and traditional networks?**
+
+
+### **Choices** :
+
+- Traditional neural networks can process inputs of any length. Recurrent Neural Networks require a fixed-size sequence as their input.
+- Recurrent Neural Networks capture the sequential information present in the input data. Traditional neural networks don't have this ability.
+- Recurrent Neural Networks share weights across time. Traditional networks use different weights on each input node.
+- A simple Recurrent Neural Network can consider future inputs to compute their current state. Traditional neural networks can't access future inputs.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Recurrent neural networks](https://en.wikipedia.org/wiki/Recurrent_neural_network) (RNN) are a type of artificial neural network that can process sequential or time series data. Their main difference from traditional networks is their ability to take information from prior inputs to influence the current input and output. This ability allows them to capture any sequential information present in the data. For example, an RNN is ideal for capturing the dependency between words of a sentence.
+
+RNN processes the data sequentially so a model can process sequences of varying sizes. For example, an RNN can process a 5-word and 10-word sentence using the same input structure, unlike a traditional neural network that will need a different input size for each case. 
+
+RNNs share the same weight parameters for every input sample, unlike traditional networks with different weights across each input node. Sharing parameters helps an RNN generalize to sequences of varying lengths and operate similarly on sequences with the same meaning but organized differently. The [accepted answer](https://stats.stackexchange.com/a/318428) to [this question](https://stats.stackexchange.com/questions/221513/why-are-the-weights-of-rnn-lstm-networks-shared-across-time) expands on this topic with an example.
+
+Finally, neither a simple Recurrent Neural Network nor a traditional network can access future inputs to compute their current state. A Bidirectional RNN is a combination of two Recurrent Neural Networks working in opposite directions, one from the beginning to the end of a sequence, and the other, from the end to the beginning of a sequence. A Bidirectional RNN can access future inputs, but not a simple one.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Recurrent Neural Networks"](https://www.ibm.com/cloud/learn/recurrent-neural-networks) for a description of what they are and how they work.* ["An Introduction To Recurrent Neural Networks And The Math That Powers Them"](https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/) is a deeper dive into RNNs.</p></details>
+
+-----------------------
+
