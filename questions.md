@@ -43742,3 +43742,54 @@ Therefore, the model's recall at predicting class `B` is 68%.</p></details>
 
 -----------------------
 
+## Date - 2024-10-16
+
+
+## Title - Bird-watching schedule
+
+
+### **Question** :
+
+Isabella developed a Deep Learning model to classify different types of birds in images taken from a bird-watching camera. During the initial experiments, she discovered a learning-rate schedule that provided excellent performance for her model.
+
+She wants to train a new version of her model using the images from a second camera. The cameras are identical and are just positioned at different angles.
+
+Isabella plans to keep the exact model architecture, optimization process, and learning-rate schedule and only change the dataset. She will even train the new model version using the same number of samples.
+
+**Should Isabella anticipate that her learning-rate schedule will also be effective for the second model?**
+
+
+### **Choices** :
+
+- Yes, because both datasets come from identical hardware. The learning-rate schedule should change whenever we have a dataset from a different target distribution, but that won't happen here.
+- Yes, because the learning-rate schedule depends on the number of samples in the dataset.
+- Yes, because learning-rate schedules are specific to the optimization mechanisms used by the model, and Isabella plans to keep the same optimization process.
+- No, because a new dataset changes the tradeoff between optimization and regularization. The learning-rate schedule is dataset-specific.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's take a look at [this tweet](https://twitter.com/fchollet/status/1508477486882979843) from [François Chollet](https://amzn.to/3K3VZoy):
+
+> PSA: never attempt to use a training schedule from an old dataset on a new dataset. Even if the model, the number of samples, and the target distribution are the same, the intrinsic difficulty of the problem may have changed (tradeoff between optimization and regularization). 
+
+> Learning rate schedules and regularization are fundamentally dataset-specific, far more than model architecture.
+
+Notice that he mentions that even when the dataset size and the target distribution are the same, the learning-rate schedule might not be helpful anymore. Even when we don't change anything about the model architecture or the method we use to train it, a new dataset may change the intrinsic difficulty of the problem.
+
+With a new dataset, we may need more regularization to avoid overfitting, or we may need less of it to ensure the model learns the specifics of the problem. A different dataset leads to a different set of tradeoffs. 
+
+Therefore, Isabel should not reuse the learning-rate schedule but find the best for the second model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* François' book, [_Deep Learning with Python, Second Edition_](https://amzn.to/3K3VZoy), is among the best Deep Learning references you'll find.</p></details>
+
+-----------------------
+
