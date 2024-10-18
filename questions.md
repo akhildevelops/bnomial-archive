@@ -43842,3 +43842,48 @@ Notice that the team doesn't know which mistakes the model makes unless they man
 
 -----------------------
 
+## Date - 2024-10-18
+
+
+## Title - Low training and testing
+
+
+### **Question** :
+
+There's not a lot of context for you other than the following chart showing the training and testing losses of a machine learning model:
+
+![Training and Testing Loss Chart](https://user-images.githubusercontent.com/1126730/188513133-fefa6ed8-9541-4bbe-b1f2-cae6e19c09f7.jpg)
+
+As you can see, after finishing training, both losses are low.
+
+**What's a reasonable conclusion about this machine learning model?**
+
+
+### **Choices** :
+
+- Your model is overfitting.
+- Your model is underfitting.
+- Your model is either overfitting or underfitting, but we can't tell.
+- Your model is well-fit.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A good model should capture valuable patterns in the data and discard any noise that doesn't help with predictions. An overfitting model will fit that noise. An underfitting model will not capture the relevant patterns in the dataset. 
+
+An overfitting model should not have any problems with the training data but stumble with the testing data. Therefore, we should expect a low training loss and a high testing loss. An underfitting model should struggle with the training and testing datasets, so both of its losses should be high.
+
+A well-fit model, however, should have low training and testing losses, which is what we see in the chart.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.</p></details>
+
+-----------------------
+
