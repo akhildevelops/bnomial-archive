@@ -44658,3 +44658,52 @@ K-means and DBSCAN are clustering algorithms and are not a good approach for thi
 
 -----------------------
 
+## Date - 2024-11-04
+
+
+## Title - Deep suffering
+
+
+### **Question** :
+
+Novah's team is struggling with the deep neural network they are working on.
+
+Sadly, during backpropagation, the gradient values of their network drop significantly as the process gets closer to the initial layers, stopping them from learning at the same speed as the last set of layers.
+
+Novah realizes their model is suffering from the vanishing gradient problem. She decides to look into every possible solution to improve their model.
+
+**Which of the following techniques will make Novah's model more resistant to the vanishing gradient problem?**
+
+
+### **Choices** :
+
+- Novah should make sure they are initializing the weights properly. For example, using He initialization should help with the vanishing gradient problem.
+- Novah should increase the learning rate to avoid getting stuck in local minima and thus reduce the chance of suffering vanishing gradients.
+- Novah should modify the model architecture to introduce Batch Normalization.
+- Novah should try ReLU as the activation function since it's well-known for mitigating the vanishing gradient problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>If the gradients of the loss function get close to zero, the model will stop learning because the network will stop updating the weights. This issue is known as the [Vanishing Gradient Problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem), and it's common when using the [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) and [tanh](https://www.sciencedirect.com/topics/mathematics/hyperbolic-tangent-function) activation functions in deep neural networks. 
+
+On the other hand, [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) is a way to solve the vanishing gradient problem. ReLU is much less likely to saturate, and its derivative is `1` for values larger than zero.
+
+[Batch normalization](https://en.wikipedia.org/wiki/Batch_normalization) is another way to lessen the vanishing gradient problem. Suppose we have a layer that uses a sigmoid activation function. We can normalize the input to that layer to ensure the values don't reach the edges and stay around the area where derivatives aren't too small. Changing the input to this layer with batch normalization will lessen the vanishing gradient problem.
+
+Randomly initializing the weights of the deep network could also be problematic and lead to the vanishing gradient problem. If we use sigmoid or tanh as our activation functions, and many of the weights are initialized with values too small or too large, we will end up with derivatives close to zero. Using [He initialization](https://arxiv.org/abs/1704.08863) should prevent this from happening.
+
+Lastly, the vanishing gradient problem has nothing to do with the learning rate used to train the network.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["How to Fix the Vanishing Gradients Problem Using the ReLU"](https://machinelearningmastery.com/how-to-fix-vanishing-gradients-using-the-rectified-linear-activation-function/) is a great explanation of how to approach this problem.* Check ["On weight initialization in deep neural networks"](https://arxiv.org/abs/1704.08863). It's an excellent paper covering weight initialization.</p></details>
+
+-----------------------
+
