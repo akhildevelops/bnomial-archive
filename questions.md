@@ -44752,3 +44752,56 @@ This model shows a low training loss, which we expect from an overfitting model,
 
 -----------------------
 
+## Date - 2024-11-06
+
+
+## Title - Salary leak
+
+
+### **Question** :
+
+There was a massive data leak, and for some mysterious reason, you came across a dataset full of compensation data from top tech companies in Silicon Valley.
+
+You thought it wouldn't hurt to play around with the data for a little bit. You could finally build a model to predict future compensation based on the different attributes of each employee.
+
+But one thing becomes apparent from the start: You need to cut down useless features to build something useful.
+
+Dimensionality reduction to the rescue. You haven't done it before and want to ensure you are doing it correctly.
+
+**How should you apply dimensionality reduction to your data?**
+
+
+### **Choices** :
+
+- Reduce the dimensions of the training dataset. It's unnecessary to use dimensionality reduction on the test dataset.
+- Reduce the dimensions of the entire dataset. Split your data into training and test right after.
+- Reduce the dimensions of the training dataset, then reduce the dimensions of the test dataset. We can use different dimensionality reduction techniques as long as both splits end up with the same features.
+- Reduce the dimensions of the training dataset, then apply the same transformations to the test dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>You found there are too many features to create a useful model. The Curse of Dimensionality states that, as the dimensionality of the data increases, the amount of data needed to train a learning algorithm grows exponentially. 
+
+There are different techniques to reduce the dimensionality of a dataset. They all follow the same principle: you start with a dataset, reduce its dimensionality, and obtain a new dataset with fewer features. Depending on the technique, the final dataset may contain a subset of the initial features or even have entirely different columns not present in the initial dataset.
+
+The first choice argues that you only need to worry about reducing the dimension of the training dataset. That's incorrect. How can you test a model trained with a dataset containing different features? 
+
+The second choice argues for reducing the dimensionality of the entire dataset and splitting the data right after that. Dimensionality reduction algorithms like PCA will use information about the whole dataset to produce new features. If we apply this algorithm to all of our data—including the test data, which we aren't supposed to know about— we'll leak details from the test data into the training set. 
+
+The third choice is also incorrect. You need to apply dimensionality reduction separately to the training and test datasets and make sure you use the same transformations from the training data on the test data.
+
+For example, imagine your dimensionality reduction technique creates a new feature based on the mean of another two columns. If you compute this mean separately on the train and test data, the resulting columns will come from different mean values. You need to avoid this problem by using what the fourth choice suggests: apply the same transformations and use the same information from the training and testing sets.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["What is the Curse of Dimensionality?"](https://deepai.org/machine-learning-glossary-and-terms/curse-of-dimensionality) for an introduction to the Curse of Dimensionality.* For an explanation of data leakages, check ["Data Leakage in Machine Learning"](https://machinelearningmastery.com/data-leakage-machine-learning/).* ["Introduction to Dimensionality Reduction for Machine Learning"](https://machinelearningmastery.com/dimensionality-reduction-for-machine-learning/) covers different examples of dimensionality reduction.</p></details>
+
+-----------------------
+
