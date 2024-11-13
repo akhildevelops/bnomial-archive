@@ -45090,3 +45090,46 @@ On the other hand, the lower the latent space's dimensionality, the less sensiti
 
 -----------------------
 
+## Date - 2024-11-13
+
+
+## Title - Grid competition
+
+
+### **Question** :
+
+Sutton wanted to win the competition. She knew the only path forward was to dedicate as much time as possible to tune her model and squeeze as much performance as possible from it.
+
+Sutton used a library to tune her model's hyperparameters on the test set. She used Grid Search to try to cover as many combinations as possible and chose the hyperparameters that gave her the lowest error.
+
+**What do you think about Sutton's chances of winning the competition?**
+
+
+### **Choices** :
+
+- Sutton's approach gives her a fighting chance.
+- Sutton's approach will produce a model that fails to run.
+- Sutton's approach will likely result in an overfit model.
+- We need more information to determine whether Sutton has a chance of winning the competition.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Sutton used the test set to choose the best hyperparameters, which could lead to a model that overfits the testing dataset. 
+
+This model will have trouble with unseen data because Sutton optimized it to work well on the test dataset. Instead, she should have used a validation set for hyperparameter tuning.
+
+The test set is helpful for a final evaluation of the model, but anytime we use it to make changes to the model, we risk overfitting it.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Overview of hyperparameter tuning"](https://cloud.google.com/ai-platform/training/docs/hyperparameter-tuning-overview) is a great introduction to hyperparameters and the process of finding their optimal value.* ["Train, Validation, Test Split for Machine Learning"](https://blog.roboflow.com/train-test-split/) goes into detail about the importance of each split.</p></details>
+
+-----------------------
+
