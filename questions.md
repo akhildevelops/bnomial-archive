@@ -45197,3 +45197,46 @@ Therefore, the model's f1-score at predicting class `A` is 84%.</p></details>
 
 -----------------------
 
+## Date - 2024-11-15
+
+
+## Title - Loss up and down
+
+
+### **Question** :
+
+The worst thing that could happen to Thea is happening: she is training a neural network, and her training loss goes up and down and never settles:
+
+![Learning Curves](https://user-images.githubusercontent.com/1126730/191616550-37c5cea8-1bc6-4008-b30e-ec9eeceb9c86.jpg)
+
+Up to this point, she is using mini-batch gradient descent to train the network. She has talked to people and collected some feedback. She put it all together in the list below.
+
+**Which of the following will help Thea solve the problem?**
+
+
+### **Choices** :
+
+- Use a lower learning rate.
+- Use a higher learning rate.
+- Decrease the batch size to train the network.
+- Increase the batch size to train the network.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Increasing the learning rate will allow the model to take more significant steps in the gradient's direction, but it may miss the local minima. If it does, it will have to go back, and the same will happen again. A learning rate that's too high could be causing the oscillation, so Thea shouldn't keep increasing it. Conversely, reducing the learning rate is an excellent next step that could solve the problem.
+
+Thea is using mini-batch gradient descent to train her model. The more she decreases the batch size, the more every sample will influence the shape of the loss. In a small batch, one instance could swing the loss significantly. Therefore, Thea should consider increasing the batch size to smooth the loss.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["The wrong batch size is all it takes" ](https://articles.bnomial.com/the-wrong-batch-size-is-all-it-takes) explains how different batch sizes influence the training process of neural networks using gradient descent.* ["What could an oscillating training loss curve represent?"](https://ai.stackexchange.com/questions/14079/what-could-an-oscillating-training-loss-curve-represent) is a StackExchange question that will help you answer this question.* Check ["Why is my training loss fluctuating?"](https://www.researchgate.net/post/Why_is_my_training_loss_fluctuating) for another set of answers covering this problem.</p></details>
+
+-----------------------
+
