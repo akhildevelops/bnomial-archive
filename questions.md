@@ -45471,3 +45471,52 @@ Finally, for Linear Regression to work, we must ensure that the relationship bet
 
 -----------------------
 
+## Date - 2024-11-21
+
+
+## Title - Same distribution
+
+
+### **Question** :
+
+Kehlani suspected that her training and test data didn't come from the same distribution.
+
+To prove it, she mixed all the data, removed the target variable, and added a new binary target that contained a value of 1 for each training sample and a value of 0 for each test sample.
+
+She then trained a new binary classification model using this new dataset to see whether she could separate the samples based on whether they belonged to the training or test sets.
+
+Kehlani used a ROC curve to evaluate the results of the model. She looked at the area under the curve to make her final determination.
+
+**Based on Kehlani's strategy, which of the following is the correct way to evaluate her model?**
+
+
+### **Choices** :
+
+- If the area under the curve is close to 1.0, the training and test samples come from the same distribution, and if it's close to 0.5, they come from different distributions.
+- If the area under the curve is close to 0.5, the training and test samples come from the same distribution, and if it's close to 1.0, they come from different distributions.
+- If the area under the curve is close to 1.0, the training and test samples come from the same distribution, and if it's close to 0.0, they come from different distributions.
+- The area under the curve is not a good metric to determine whether this new model performs accurately.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Kehlani's strategy is called ["Adversarial validation"](https://essays.bnomial.com/adversarial-validation), and it's a clever technique to determine whether your training and test data come from the same distribution.
+
+After she created the new model, she decided to use a ROC curve and evaluate the results based on the area under the curve (AUC.) This metric measures the area underneath the ROC curve, which ranges between 0.0 and 1.0.
+
+The more accurate the model results are, the higher the area under the curve will be. Therefore, if the model can tell the training and test samples apart, the closer the AUC will be to 1.0, and Kehlani can conclude that both sets don't come from the same distribution.
+
+Conversely, the closer the model performs to random chance, the worse it is at telling training samples apart from test samples. In this case, Kehlani will see the AUC close to 0.5, which means that both sets come from the same distribution.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Adversarial validation"](https://articles.bnomial.com/adversarial-validation) for a quick introduction to this technique.* Check ["Classification: ROC Curve and AUC"](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) for an explanation of how to create and interpret a ROC curve.</p></details>
+
+-----------------------
+
