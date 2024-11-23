@@ -45569,3 +45569,44 @@ In summary, Camille shouldn't do anything at this point.</p></details>
 
 -----------------------
 
+## Date - 2024-11-23
+
+
+## Title - KNN's runtime
+
+
+### **Question** :
+
+Evangeline is working with a dataset with a single column of data. 
+
+She wants to run k-Nearest Neighbors (KNN), but only if the algorithm is fast enough when making predictions. Evangeline doesn't have any control over how the data is stored.
+
+**Assuming there are _n_ samples in the dataset, which of the following will be the runtime of Evangeline's KNN at prediction time?**
+
+
+### **Choices** :
+
+- The runtime that Evangeline should expect is _O(1)_
+- The runtime that Evangeline should expect is _O(n)_
+- The runtime that Evangeline should expect is _O(log n)_
+- The runtime that Evangeline should expect is _O(n²)_
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>k-Nearest Neighbors' runtime is _O(nd)_ because we need to compute the distance to each feature of every sample. Here _n_ represents the number of instances, and _d_ the number of features. 
+
+Evangeline is working with a single feature, so _d_ = 1. Therefore, in this case, the runtime of KNN is _O(n)_.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Here is a [Stack Exchange answer](https://stats.stackexchange.com/q/219664) that covers KNN's runtime complexity in detail.</p></details>
+
+-----------------------
+
