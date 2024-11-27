@@ -45749,3 +45749,55 @@ We can classify this particular autoencoder as self-supervised learning. Notice 
 
 -----------------------
 
+## Date - 2024-11-27
+
+
+## Title - Porting dropouts
+
+
+### **Question** :
+
+Valentina is porting her PyTorch code over to TensorFlow. 
+
+Her new company bought Valentina's startup, and the first order of business was to migrate the code base and integrate it into the new company's ecosystem.
+
+The deep learning model they built uses Dropout on a few hidden layers. Valentina knows that both TensorFlow's and Pytorch's implementations are the same: they zero out some of the nodes and scale the remaining. However, she doesn't remember exactly how these work.
+
+**Assuming Valentina is looking at a Dropout with a rate of `0.2`, which of the following are correct?**
+
+
+### **Choices** :
+
+- A Dropout rate of `0.2` will set 80% of the nodes to zero.
+- A Dropout rate of `0.2` will set every node to zero with a probability of 20%.
+- A Dropout rate of `0.2` will scale the value of every remaining node—those not set to zero—by multiplying them by `1.25`.
+- A Dropout rate of `0.2` will scale the value of every remaining node—those not set to zero—by multiplying them by `0.2`.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Dropout is a regularization method that works well and is vital for reducing overfitting.
+
+Sometimes, the nodes in a neural network create strong dependencies on other nodes, which may lead to overfitting. An example is when a few nodes on a layer do most of the work, and the network ignores all the other nodes. Despite having many nodes on the layer, you only have a small percentage of those nodes contributing to predictions. We call this phenomenon "[co-adaptation](https://machinelearning.wtf/terms/co-adaptation/)," and we can tackle it using Dropout.
+
+During training, Dropout randomly removes a percentage of the nodes, forcing the network to learn in a balanced way. Now every node is on its own and can't rely on other nodes to do their work. They have to work harder by themselves. 
+
+Valentina is right. Both [TensorFlow](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout) and [PyTorch](https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html) use the same implementation of Dropout that follows this process:
+
+1. It zeros out every node of the layer with the specified probability. In this case, a Dropout with a `0.2` rate will zero out every node with a 20% probability.
+2. It scales the remaining nodes to account for the missing values. The scaling factor is `1/(1-rate)`. In this case, if we can substitute the rate by `0.2`, we get that it will scale nodes by `1.25`.
+
+Therefore, the second and third choices answer this question correctly.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For more information about co-adaptation and how to use Dropout, check ["Improving neural networks by preventingco-adaptation of feature detectors"](https://arxiv.org/pdf/1207.0580.pdf).* ["A Gentle Introduction to Dropout for Regularizing Deep Neural Networks"](https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/) is an excellent introduction to Dropout.* Here is [TensorFlow's implementation of Dropout](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout).* Here is [PyTorch's implementation of Droput](https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html).</p></details>
+
+-----------------------
+
