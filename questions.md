@@ -45801,3 +45801,80 @@ Therefore, the second and third choices answer this question correctly.</p></det
 
 -----------------------
 
+## Date - 2024-11-28
+
+
+## Title - Three gradients
+
+
+### **Question** :
+
+Here is a chart showing the gradient of three different functions:
+
+![Gradients](https://user-images.githubusercontent.com/1126730/198387377-cee47720-8729-409f-a119-7280d547f73d.jpg)
+
+These gradients correspond to Sigmoid, Tanh, and ReLU, but we don't know exactly the order.
+
+**Which of the following correctly identifies the three functions?**
+
+
+### **Choices** :
+
+- Function 1 is the gradient of Tanh, function 2 is the gradient of Sigmoid, and function 3 is the gradient of ReLU.
+- Function 1 is the gradient of Sigmoid, function 2 is the gradient of Tanh, and function 3 is the gradient of ReLU.
+- Function 1 is the gradient of ReLU, function 2 is the gradient of Tanh, and function 3 is the gradient of Sigmoid.
+- Function 1 is the gradient of Sigmoid, function 2 is the gradient of ReLU, and function 3 is the gradient of Tanh.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Here is the Python code you can use to plot the gradient of the three functions:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+def deriv_sigmoid(x):
+    return sigmoid(x) * (1 - sigmoid(x))
+
+def tanh(x):
+    return 2 / (1 + np.exp(-2 * x)) - 1
+
+def deriv_tanh(x):
+    return 1 - tanh(x) ** 2
+
+def deriv_relu(x):
+    return (x > 0) * 1
+
+x = np.arange(-5., 5., 0.2)
+fn1 = deriv_tanh(x)
+fn2 = deriv_sigmoid(x)
+fn3 = deriv_relu(x)
+
+plt.figure(figsize=(8, 6), dpi=80)
+
+plt.plot(x, fn1, label = "function 1")
+plt.plot(x, fn2, label = "function 2")
+plt.plot(x, fn3, label = "function 3")
+
+plt.legend()
+plt.show()
+```
+
+As you see, function 1 is the gradient of Tanh, function 2 is the gradient of Sigmoid, and function 3 is the gradient of ReLU.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For a complete description of the Sigmoid function, check the ["Logistic function"](https://en.wikipedia.org/wiki/Logistic_function) Wikipedia page.* For a complete description of the Tanh function, check the ["Hyperbolic Functions"](https://en.wikipedia.org/wiki/Hyperbolic_functions) Wikipedia page.* For a complete description of the ReLU function, check the ["Rectifier (neural networks)"](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) Wikipedia page.</p></details>
+
+-----------------------
+
