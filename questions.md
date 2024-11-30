@@ -45923,3 +45923,59 @@ Clustering algorithms are part of unsupervised learning, so the second choice is
 
 -----------------------
 
+## Date - 2024-11-30
+
+
+## Title - The model's precision
+
+
+### **Question** :
+
+A team built a binary classification model. They named the classes `A` and `B`.
+
+After finishing training, they evaluated the model on a validation set, and here is the confusion matrix with the results:
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/186248358-1b39a042-5725-408b-84aa-8dd915a6d99d.jpg)
+
+**Given the above confusion matrix, what is the precision of this binary classification model at predicting class `B`?**
+
+
+### **Choices** :
+
+- The precision of the model at predicting class `B` is 28%.
+- The precision of the model at predicting class `B` is 52%.
+- The precision of the model at predicting class `B` is 80%.
+- The precision of the model at predicting class `B` is 88%.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To compute the model's precision at predicting class `B`, we can use the following formula:
+
+```
+precision = TP / (TP + FP)
+```
+
+In this example, we have 28 true positive samples and 7 false positive samples. Substituting these values in our formula:
+
+```
+precision = TP / (TP + FP)
+precision = 28 / (28 + 7)
+precision = 28 / 35
+precision = 0.8
+```
+
+Therefore, the model's precision at predicting class `B` is 80%.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.</p></details>
+
+-----------------------
+
