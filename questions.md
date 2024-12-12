@@ -46466,3 +46466,49 @@ KNN uses the entire dataset and looks for a pre-determined number of instances c
 
 -----------------------
 
+## Date - 2024-12-12
+
+
+## Title - Underlying function
+
+
+### **Question** :
+
+Harlow has access to a simple dataset with only one numerical feature and a target value.
+
+She wants to build a couple of models to predict the target value using her dataset. She will try two different functions:
+
+* Model A: `y = mx + b`
+* Model B: `y = x² + mx + b`
+
+Harlow split her dataset in two: 80% for training both models and 20% for testing them.
+
+**Which model will get the best results on Harlow's testing set?**
+
+
+### **Choices** :
+
+- Model A will have the best results on the testing set.
+- Model B will have the best results on the testing set.
+- Both Model A and Model B will have similar results on the testing set.
+- We need more information to decide which model will do better.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We don't know anything about the dataset, so we can't decide which model will do better.
+
+For example, if the data comes from a linear model, Model A may have an advantage, while Model B will be better if the data comes from a quadratic function.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Linear Regression for Machine Learning"](https://machinelearningmastery.com/linear-regression-for-machine-learning/) is an introduction to Linear Regression.</p></details>
+
+-----------------------
+
