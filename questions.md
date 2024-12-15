@@ -46614,3 +46614,48 @@ Generally, for _d_ features, the decision tree will need 2ᵈ leaf nodes.</p></d
 
 -----------------------
 
+## Date - 2024-12-15
+
+
+## Title - Hard to read
+
+
+### **Question** :
+
+Zara tried to read Stable Diffusion's paper but realized there were too many terms that she didn't understand.
+
+Early on, she stumbled upon the idea of a "latent space." Zara had never heard about that before, so she decided to do some research.
+
+By the end of the day, Zara had a good idea of what was a latent space and wrote a summary with her understanding.
+
+**Which of the following statements are correct regarding the concept of a latent space as we use it in machine learning?**
+
+
+### **Choices** :
+
+- We can find similar items nearby in latent space.
+- Latent spaces are always linear, which makes them easier to interpret.
+- The distance between objects in latent space lacks physical units, so every application needs to interpret these values.
+- Usually, the data points we project in the latent space have higher dimensionality than the space itself.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In machine learning, we use "latent space" to refer to a multi-dimensional space containing a meaningful internal representation of objects and where similar points appear closer together. 
+
+It's common for a latent space to be high-dimensional and nonlinear. There are no predefined units to measure the distance between data points in latent space, so interpreting the contents of a latent space is an application-specific and complex task. 
+
+Finally, latent spaces usually have a lower dimensionality than the feature space used to draw specific data points. Because of this, projecting an object in a latent space is typically a dimensionality reduction exercise.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check the [Latent space's Wikipedia page](https://en.wikipedia.org/wiki/Latent_space) for more information.</p></details>
+
+-----------------------
+
