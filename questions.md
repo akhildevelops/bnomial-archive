@@ -46749,3 +46749,48 @@ The second problem is how the team tuned the model's hyperparameters. They used 
 
 -----------------------
 
+## Date - 2024-12-18
+
+
+## Title - Too many networks
+
+
+### **Question** :
+
+Why would Konrad want to look into recurrent neural networks?
+
+He is always trying to minimize the amount of work he does. He is primarily a just-in-time person when it comes to learning new things.
+
+And now that he started with deep learning, there are too many different types of neural networks, and he's getting overwhelmed.
+
+**Let's help Konrad by selecting every correct statement regarding the differences between recurrent and traditional neural networks.**
+
+
+### **Choices** :
+
+- A recurrent neural network can process inputs of any length, unlike traditional networks that require a fixed-size input.
+- A recurrent neural network has access to the information it processed at any time in the past, while traditional networks can't access any historical data.
+- The model size of a recurrent neural network doesn't increase with the size of its input, unlike a traditional network where a larger input will require a bigger model.
+- A recurrent neural network captures the sequential information present in the input data. Traditional neural networks don't have this ability.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Recurrent neural networks](https://en.wikipedia.org/wiki/Recurrent_neural_network) (RNN) are a type of artificial neural network that can process sequential or time series data. Their main difference from traditional networks is their ability to take information from prior inputs to influence the current input and output. This ability allows them to capture any sequential information present in the data. For example, an RNN is ideal for capturing the dependency between words of a sentence.
+
+RNN processes the data sequentially so a model can process sequences of varying sizes. For example, an RNN can process a 5-word and 10-word sentence using the same input structure, unlike a traditional neural network that will need a different input size for each case. As the size of the input increases, a conventional network will need to accommodate it with a larger model size, while the size of an RNN will stay consistent.
+
+The only incorrect option is the second: while an RNN can access historical information, they have difficulty accessing data from long ago. Their limited ability to process historical information is one of the most significant disadvantages of an RNN.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["What are recurrent neural networks?"](https://www.ibm.com/cloud/learn/recurrent-neural-networks) for a description of what they are and how they work.* ["An Introduction To Recurrent Neural Networks And The Math That Powers Them"](https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/) is a deeper dive into RNNs.</p></details>
+
+-----------------------
+
