@@ -47225,3 +47225,52 @@ Here is the plot of the Sigmoid function:
 
 -----------------------
 
+## Date - 2024-12-28
+
+
+## Title - Throwing the towel
+
+
+### **Question** :
+
+Delaney was ready to throw the towel.
+
+She's been paying careful attention to her machine learning professor. After they reviewed gradient descent in detail, Delaney knew something important: Gradient descent moves downhill, so she should expect the loss to decrease over time.
+
+But here she is, looking at a training loss that goes up in several places. The first neural network she trains, and she can't shake the feeling she is doing something wrong:
+
+![Learning Curves](https://user-images.githubusercontent.com/1126730/192155439-4a4a9f25-ed44-4b72-994b-59a6f2743fd5.jpg)
+
+**How can Delaney fix this problem?**
+
+
+### **Choices** :
+
+- Delaney should decrease the batch size. That should stop the loss from increasing during training.
+- Delaney should increase the batch size. That should stop the loss from increasing during training.
+- Delaney should use Early Stopping to stop the process before the loss increases.
+- Delaney shouldn't do anything because her network has no problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Gradient descent moves downhill on average, so a network that learns appropriately should see the loss decrease over the training session. However, individual updates can move in the opposite direction, causing the loss to fluctuate up and down.
+
+Delaney's plot shows the loss increasing a few times momentarily, but it immediately starts decreasing. That's normal, and Delaney shouldn't worry about it.
+
+Delaney can modify the batch size to improve her results, but just by looking at the information from this question, there's nothing to fix. If she uses [Early Stopping](https://articles.bnomial.com/early-stopping), she will prevent the network from improving further.
+
+In summary, Delaney shouldn't do anything at this point.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["An overview of gradient descent optimization algorithms"](https://www.ruder.io/optimizing-gradient-descent/) for a deep dive into gradient descent and every one of its variants.* Check ["Early Stopping"](https://articles.bnomial.com/early-stopping) for an introduction to one of the most effective, easy-to-implement regularization techniques when training machine learning models.</p></details>
+
+-----------------------
+
