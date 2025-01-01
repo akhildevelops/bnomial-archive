@@ -47405,3 +47405,52 @@ Therefore, Dakota's second bullet point is the only one that's not correct.</p><
 
 -----------------------
 
+## Date - 2025-01-01
+
+
+## Title - Line 10 of the network
+
+
+### **Question** :
+
+Here is a simple and compact implementation of a neural network in Python:
+
+![Neural network](https://user-images.githubusercontent.com/1126730/210234829-44179024-a0e1-4be0-95f5-6c3e2d2d77ed.png)
+
+Line 10 computes the update we will add to the weights connecting the hidden and output layers.
+
+**Which of the following explains what happens on that line?**
+
+
+### **Choices** :
+
+- The code computes the update by multiplying the derivative of the error by the derivative of the network's output.
+- The code calculates the update by multiplying the derivative of the output by the target value.
+- The code computes the update by multiplying the error by the network's output.
+- There's an error in how the code calculates the update.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We need to update the weights of the network during the backpropagation process. We start from the final layer of the network and move sequentially to the beginning.
+
+We can apply the chain rule to calculate the update to the second set of weights: The multiplication between the derivative of the error and the output's layer derivative.
+
+The error represents how far the output is from the target values. In this example, the error is the square of the difference between `layer2` and the target values `y`. The derivative of the error is `2 * (layer2 - y)`.
+
+Notice that the output layer (`layer2`) uses a sigmoid function; hence its derivative is `layer2 * (1 - layer2)`.
+
+Therefore, Line 10 computes the update by multiplying the derivative of the error by the derivative of the network's output.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Neural Networks and Deep Learning_](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen) with a great introduction to neural networks.</p></details>
+
+-----------------------
+
