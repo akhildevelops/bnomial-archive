@@ -47542,3 +47542,52 @@ Based on this idea, if Lucia decreases the batch size, the noise will get worse,
 
 -----------------------
 
+## Date - 2025-01-04
+
+
+## Title - Purchasing products
+
+
+### **Question** :
+
+Collins was working on a machine learning model to predict the likelihood of a customer purchasing a product. She was hired by an e-commerce company that wanted to use her model to personalize their sales promotions.
+
+After several weeks of development, Collins had two models that performed well on the validation data. However, she noticed that the models had different strengths and weaknesses. One model had a higher precision but a lower recall than the other.
+
+Collins wanted to find the best overall model to deploy in production, but she wasn't sure how to choose between them.
+
+**What is the best way for Collins to decide which model is the best overall?**
+
+
+### **Choices** :
+
+- Collins should fix the precision at 95% and choose the model with the higher recall.
+- Collins should fix the recall at 95% and choose the model with the higher precision.
+- There's no objective way to decide which model is best. Collins should pick either one of them.
+- Collins should compute the area under the ROC curve for both models and choose the one with the higher value.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Which model is better usually depends on the application. A high recall is more important than precision for some use cases, while in others, it is not. 
+
+The first two options suggest fixing one particular metric and choosing the model that performs the best on the other one. This is a valid approach, but it's not what Collins needs. She wants to determine which model is the best, but fixing either recall or precision won't return the best overall model since we would always prioritize one of the metrics.
+
+For example, imagine that we tune both models to a recall above `95%` and then pick the one with the higher precision. There's no guarantee that the model we choose is the best possible overall—the one that better balances recall and precision. Instead, we ensured that the model we picked was the best, with a recall above `95%`.
+
+To find the best overall model, Collins should compute the area under the ROC curve (Receiver Operating Characteristic) and choose the model with the higher value. 
+
+A ROC curve shows the True Positive and False Positive Rates at different classification thresholds. The area under this curve measures the performance of the model. A perfect model will have an area of `1.0`, while a model that only makes mistakes will have an area of `0.0`. Therefore, choosing the model with the higher area will give Collins the best overall model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["ROC and AuC"](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) for an explanation of how the Area under the Curve on a ROC works.* ["ROC metrics"](https://scikit-learn.org/stable/modules/model_evaluation.html#roc-metrics) will give you more information about the different metrics you can compute from a ROC.</p></details>
+
+-----------------------
+
