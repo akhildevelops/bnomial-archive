@@ -47638,3 +47638,48 @@ Transformers are not limited to working with numerical data. They can also proce
 
 -----------------------
 
+## Date - 2025-01-06
+
+
+## Title - Low training. High testing
+
+
+### **Question** :
+
+There's not a lot of context for you other than the following chart showing the training and testing losses of a machine learning model:
+
+![Training and Testing Loss Chart](https://user-images.githubusercontent.com/1126730/188513143-7dc8ec67-17a3-4ce9-919c-7a2851bf4d49.jpg)
+
+As you can see, after finishing training, the training loss is low, but the testing loss is high.
+
+**What's a reasonable conclusion about this machine learning model?**
+
+
+### **Choices** :
+
+- Your model is overfitting.
+- Your model is underfitting.
+- Your model is either overfitting or underfitting, but we can't tell.
+- Your model is well-fit.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A good model should capture valuable patterns in the data and discard any noise that doesn't help with predictions. An overfitting model will fit that noise. An underfitting model will not capture the relevant patterns in the dataset. 
+
+An overfitting model should not have any problems with the training data but stumble with the testing data. Therefore, we should expect a low training loss and a high testing loss. An underfitting model should struggle with the training and testing datasets, so both of its losses should be high. A well-fit model, however, should have low training and testing losses.
+
+The chart shows the model doing well with the training data but struggling with the testing set. Therefore, the model is overfitting.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.</p></details>
+
+-----------------------
+
