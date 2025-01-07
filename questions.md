@@ -47683,3 +47683,46 @@ The chart shows the model doing well with the training data but struggling with 
 
 -----------------------
 
+## Date - 2025-01-07
+
+
+## Title - Auto industry
+
+
+### **Question** :
+
+Hallie works in the auto industry. She is tasked with building a model to predict the likelihood of a car accident based on various factors such as the driver's age, weather conditions, and the car's make and model.
+
+Hallie decides to use a decision tree for this task. She knows that decision trees are powerful models that can help her understand the relationships between the input features and the target variable.
+
+**Which of the following are characteristics of decision trees?**
+
+
+### **Choices** :
+
+- Decision trees are non-parametric models that make no assumptions about the data distribution.
+- Decision trees can handle both numerical and categorical data.
+- Decision trees split the data into subsets based on random features.
+- Decision trees are difficult to interpret and explain to non-technical stakeholders.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Decision trees are a popular and powerful tool in machine learning and data science. They are a type of non-parametric model, which means that they make no assumptions about the distribution of the data. This allows them to work well with various data types, including numerical and categorical data.
+
+One of the main strengths of decision trees is their ability to split the data into subsets based on the most important features, not random features. This allows them to identify the key relationships between the input features and the target variable. The resulting tree structure is easy to interpret and explain to non-technical stakeholders, making them a useful tool for making decisions in real-world scenarios.
+
+One of the benefits of decision trees is that they are easy to interpret and explain to non-technical stakeholders. The tree structure shows the sequence of decisions made to classify the data, which can help us understand the relationships between the input features and the target variable.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Decision tree learning"](https://en.wikipedia.org/wiki/Decision_tree_learning) is the Wikipedia page where you can read about decision trees.* The Scikit-Learn's ["Decision Trees"](https://scikit-learn.org/stable/modules/tree.html) page contains an extensive list of advantages and disadvantages of decision trees.</p></details>
+
+-----------------------
+
