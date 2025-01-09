@@ -47816,3 +47816,60 @@ Finally, we can find the total number of images by printing `labels.shape[0]`. W
 
 -----------------------
 
+## Date - 2025-01-09
+
+
+## Title - Two bad models
+
+
+### **Question** :
+
+Chloe wasn't confident about the results of her homework, and her professor confirmed her fears.
+
+Two of the models she had to train weren't good enough. The first was overfitting, while the second was underfitting.
+
+She got some feedback: the professor suggested analyzing the models from a bias and variance perspective and taking the necessary steps to fix them.
+
+Chloe is still learning. She wasn't sure what to do.
+
+**Which of the following is the correct conclusion about Chloe's models?**
+
+
+### **Choices** :
+
+- The overfitting model has a high bias, and the one underfitting has a high variance.
+- The overfitting model has a high bias, and the one underfitting has a low variance.
+- The overfitting model has a low bias, and the one underfitting has a high variance.
+- The overfitting model has a low bias, and the one underfitting has a low variance.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To answer this question, we need to focus on the impact of bias on overfitting models and variance on underfitting models.
+
+Let's start with the bias, and what [Jason Brownlee](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) has to say about it: "Bias are the simplifying assumptions made by a model to make the target function easier to learn."
+
+In other words, bias refers to the assumptions the model makes to simplify the process of finding answers. The fewer assumptions it makes, the less biased the model is.
+
+Take any linear model, for example. They are highly biased because these models assume a linear relationship between the observations and the target variable. Because of these assumptions, linear models can easily underfit the training data. On the other hand, decision trees have a high variance. They don't make too many assumptions about the target function, so they are more likely to overfit.
+
+Therefore, high biased models are prone to underfitting, while high variance models are prone to overfitting. This narrows the correct answer to either the third or the fourth choice.
+
+Here is what [Jason](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) has to say about variance: "Variance is the amount that the estimate of the target function will change if different training data was used."
+
+Variance refers to how much the answers given by the model will change if we use different training data. The simpler the model is, the less likely the results will vary if we use different training data, while more complex models will have the opposite problem. Often, linear models are low-variance, and nonlinear models are high-variance.
+
+Therefore, high variance models will be prone to overfit, while low variance models will be prone to underfit. Looking at the two candidate choices left, the fourth is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Here is Jason Brownlee's article I mentioned before: ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/).* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).* In case you like the simplicity of Twitter threads, here is one for you about this topic: ["Bias, variance, and their relationship with machine learning algorithms"](https://twitter.com/svpino/status/1390969728504565761).</p></details>
+
+-----------------------
+
