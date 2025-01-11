@@ -47927,3 +47927,52 @@ The variance between the five accuracies is tiny, so Phoebe must be using a high
 
 -----------------------
 
+## Date - 2025-01-11
+
+
+## Title - Outstanding performance
+
+
+### **Question** :
+
+Cecilia was finally ready to start building the model supporting her research.
+
+She works with a high-dimensional but relatively small dataset. One of the largest companies in the world is sponsoring Cecilia's work, so she has a lot of pressure to deliver good results.
+
+After years of questionable evaluation practices from the research community, the sponsor wants to ensure that Cecilia provides an accurate estimate of model performance.
+
+**Which of the following approaches should Cecilia use to build her model?**
+
+
+### **Choices** :
+
+- Cecilia should use leave-one-out cross-validation to build her model.
+- Cecilia should train the model on the entire dataset and later evaluate it on the same data.
+- Cecilia should train the model on a portion of the data and use the rest to evaluate the model.
+- Cecilia should use k-fold cross-validation with 5 to 10 folds.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Cecilia should use [leave-one-out cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#Leave-one-out_cross-validation).
+
+Leave-one-out cross-validation is a variant of cross-validation where the number of folds equals the number of samples in the dataset. 
+
+To use leave-one-out cross-validation, we build one model for each sample in the dataset. We train each model using all data except one instance we later use to evaluate its performance. Finally, we compute the overall performance by averaging the result of each model.
+
+Leave-one-out cross-validation is usually expensive to run. Assuming Cecilia will use leave-one-out cross-validation on a dataset with 10,000 samples, she will need to train 10,000 models. Compare this with 10-Fold cross-validation, where she will only need to build ten models. Fortunately, Cecilia is not working with a large dataset, so this shouldn't be a problem.
+
+With small datasets, leave-one-out cross-validation will give Cecilia a more robust estimate of model performance. Each sample has an opportunity to represent the entire dataset and contribute to the final evaluation, and this will result in a reliable and less biased estimate of model performance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["An experimental comparison of cross-validation techniques for estimating the area under the ROC curve"](https://www.sciencedirect.com/science/article/abs/pii/S0167947310004469#br000160) is a paper comparing several cross-validation techniques.* ["LOOCV for Evaluating Machine Learning Algorithms"](https://machinelearningmastery.com/loocv-for-evaluating-machine-learning-algorithms/) is an excellent introduction to leave-one-out cross-validation.* Check ["A Quick Intro to Leave-One-Out Cross-Validation (LOOCV)"](https://www.statology.org/leave-one-out-cross-validation/) for a succinct introduction to leave-one-out cross-validation.</p></details>
+
+-----------------------
+
