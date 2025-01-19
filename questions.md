@@ -48359,3 +48359,48 @@ Therefore, the probability that the client will approve the design is approximat
 
 -----------------------
 
+## Date - 2025-01-19
+
+
+## Title - Early stopping
+
+
+### **Question** :
+
+Train a model for too long, and it will stop generalizing appropriately. Don't train it long enough, and it won't learn.
+
+That's a critical tradeoff when building a machine learning model, and finding the perfect number of iterations is essential to achieving the results we expect.
+
+Early stopping is a technique that helps.
+
+**Which of the following statements about early stopping is correct?**
+
+
+### **Choices** :
+
+- Early stopping is a regularization technique that increases the model's generalization error.
+- Early stopping is a regularization technique that under-constraints your model.
+- Early stopping is a regularization technique that prevents overfitting.
+- Early stopping is a regularization technique that prevents underfitting.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Early stopping](https://articles.bnomial.com/early-stopping) looks for a specific metric and stops the training process when it realizes that the metric is going in the wrong direction. Its goal is to prevent the model from overfitting, but it doesn't do anything to avoid underfitting.
+
+Many experts recommend leaving the model under-constrained when using early stopping. That way, we can find the exact number of epochs when the model starts overfitting without having any other regularization technique obscuring those results. That, however, doesn't mean that early stopping under-constrains a model, so the second choice is incorrect.
+
+Finally, early stopping helps the model generalize to unseen data, opposite to the first choice argument.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Early stopping"](https://articles.bnomial.com/early-stopping) for an introduction to one of the most effective, easy-to-implement regularization techniques when training machine learning models.</p></details>
+
+-----------------------
+
