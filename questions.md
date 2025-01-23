@@ -48539,3 +48539,56 @@ On the other hand, L2 regularization fights overfitting by forcing weights to be
 
 -----------------------
 
+## Date - 2025-01-23
+
+
+## Title - Dependent Nuclear reactor
+
+
+### **Question** :
+
+Joanna is the structural engineer in charge of designing a nuclear reactor. Her team plans to build the plant next to the coast, so they need to understand the probability and effects of natural disasters.
+
+After consulting with local experts, they know that the probability of a large earthquake in the area is `10^-4`, and the probability of a tsunami is also `10^-4`. However, they think a tsunami always happens whenever a large earthquake occurs.
+
+**What's the probability of having both an earthquake and a tsunami simultaneously?**
+
+
+### **Choices** :
+
+- The probability of having both events simultaneously is `10^-8`.
+- The probability of having both events simultaneously is `10^-5`.
+- The probability of having both events simultaneously is `10^-4`.
+- The probability of having both events simultaneously is `1`.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We can compute the probability of having both an earthquake and a tsunami simultaneously using the following formula:
+
+```
+P(T and E) = P(E) * P(T|E)
+```
+
+We know the probability of an earthquake `P(E) = 10^-4`, and the probability of a tsunami `P(T)` is also `10^-4`. We also know these events are dependent, and the probability of a tsunami given that an earthquake happens `P(T|E)` is `1`.
+
+We can now substitute the values in our initial equation:
+
+```
+P(T and E) = P(E) * P(T|E)
+P(T and E) = 10^-4 * 1
+P(T and E) = 10^-4
+```</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Cartoon Guide to Statistics_](https://amzn.to/3eg9iIo) is a fun and instructive introduction to probabilities and statistics.</p></details>
+
+-----------------------
+
