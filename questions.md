@@ -48592,3 +48592,52 @@ P(T and E) = 10^-4
 
 -----------------------
 
+## Date - 2025-01-24
+
+
+## Title - Approaching a problem
+
+
+### **Question** :
+
+Alexandria is a university professor who wants to build an algorithm to predict whether a student will pass or fail a course based on their past academic performance. 
+
+She has access to a labeled dataset with detailed academic information from thousands of students, including their grades and whether they passed or failed their courses.
+
+Alexandria is not sure which approach to take and would like some guidance.
+
+**Understanding that there are many ways to approach a problem, what would be your first recommendation to Alexandria?**
+
+
+### **Choices** :
+
+- The best way to approach this problem is with Unsupervised Learning by using a clustering algorithm.
+- The best way to approach this problem is with Supervised Learning by using a regression algorithm.
+- The best way to approach this problem is with Supervised Learning by using a classification algorithm.
+- The best way to approach this problem is with Reinforcement Learning.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Alexandria is trying to answer a question with only two possible answers: Is a student going to pass or fail?
+
+There could be many ways to approach this problem, but we can go with what we know in this case.
+
+Alexandria has access to labeled data, so she could set some of her data aside for testing purposes and build a binary classification model to predict a binary target value. This target could be whether or not a student passes or fails a course.
+
+This is likely the more straightforward way to approach Alexandria's problem: A Supervised Learning binary classification model.
+
+We could also frame this as a regression problem depending on the data we have for each student, but nothing in the description points to that being a good strategy.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) for an explanation of supervised and unsupervised learning algorithms.</p></details>
+
+-----------------------
+
