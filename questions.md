@@ -48641,3 +48641,46 @@ We could also frame this as a regression problem depending on the data we have f
 
 -----------------------
 
+## Date - 2025-01-25
+
+
+## Title - Critical solution
+
+
+### **Question** :
+
+Lola has been building machine learning systems for a decade, and her specialty is neural networks.
+
+Lola maintains a critical solution that helps her company make money: a multi-class classification model that she and her team have worked on for a few years.
+
+Almost every layer of Lola's model uses ReLU except the last layer, which uses softmax.
+
+**Which of the following statements are true about the softmax activation function when used in the output layer of a neural network?**
+
+
+### **Choices** :
+
+- The softmax function is not differentiable, and that's why Lola can only use it in the output layer of the network.
+- The softmax function is differentiable, and that's why Lola can use it in the output layer of the network.
+- The softmax function turns a vector of real values into an integer value representing the correct class index.
+- The softmax function turns a vector of real values into a vector of probabilities that sum to 1.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The softmax function is differentiable, which is an essential property to use its result to optimize a cost function. The function turns a vector of real values into another vector of probabilities that sum to 1. These probabilities are proportional to the relative scale of each value in the vector.
+
+While we can use the resultant vector to determine the correct class index, notice that softmax doesn't output this index directly. Instead, it outputs a vector where the index of the larger value will correspond to the correct class.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check ["Softmax Activation Function with Python"](https://machinelearningmastery.com/softmax-activation-function-with-python/) for more information about the Softmax function and a way to implement it.- ["What is the Softmax Function"](https://deepai.org/machine-learning-glossary-and-terms/softmax-layer) is a great summary of this function.</p></details>
+
+-----------------------
+
