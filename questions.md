@@ -48729,3 +48729,48 @@ Lainey needs to focus on classification problems. From the list of options, the 
 
 -----------------------
 
+## Date - 2025-01-27
+
+
+## Title - Reporting scores
+
+
+### **Question** :
+
+It was late, and Amara had to send the report of her last exam.
+
+She didn't have time to do much with the test scores, so she decided to report the median of the scores and leave any further analysis for another day.
+
+Her students' scores were: 5, 5, 3, 4, 5, 2, 5, 5, 2, 5, and 3.
+
+**What is the median value that Amara should report?**
+
+
+### **Choices** :
+
+- The median value of the dataset is 2.
+- The median value of the dataset is 3.
+- The median value of the dataset is 4.
+- The median value of the dataset is 5.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The mean, median, and mode are different ways to measure the center of a dataset. Each of these metrics tries to summarize a set of values using a single number.
+
+Amara can find the median by looking at the middle number after sorting the scores. In case there are two middle numbers, then she can use the mean of those two numbers.
+
+Amara has 11 scores, and the middle number after sorting the list is `5`.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Mean Median Mode: What They Are, How to Find Them"](https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-median-mode/) for a complete explanation of the Mean, Median, and Mode.</p></details>
+
+-----------------------
+
