@@ -48774,3 +48774,52 @@ Amara has 11 scores, and the middle number after sorting the list is `5`.</p></d
 
 -----------------------
 
+## Date - 2025-01-28
+
+
+## Title - Tanh's interpretation
+
+
+### **Question** :
+
+Alyssa is looking into activation functions trying to understand how they work.
+
+Sigmoid and Tanh were popular choices, but Alyssa read about how Tanh was the preferred choice for many practitioners.
+
+Here is the Tanh formula:
+
+![Tanh](https://user-images.githubusercontent.com/1126730/197406160-92aa0f03-ede8-43bc-853a-546360bc2287.jpg)
+
+**Which of the following is a correct interpretation of this function?**
+
+
+### **Choices** :
+
+- The output of the Tanh function could be any real number.
+- The output of the Tanh function could be any integer number.
+- The output of the Tanh function is a real number between `-1` and `1`.
+- The output of the Tanh function is a real number between `0` and `1`.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Hyperbolic tangent function, or Tanh, takes a value as input and outputs another real value between `-1` and `1`. We say that Tanh "squeezes" the input into that range.
+
+Tanh is continuously differentiable, and its derivative is simple to compute. 
+
+Here is the plot of the Tanh function:
+
+![Tanh plot](https://user-images.githubusercontent.com/1126730/197406179-9f80cd61-2241-489e-98a7-bd63bf74beba.jpg)</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For a complete description of the Tanh function, check the ["Hyperbolic Functions"](https://en.wikipedia.org/wiki/Hyperbolic_functions) Wikipedia page.</p></details>
+
+-----------------------
+
