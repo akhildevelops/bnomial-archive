@@ -48920,3 +48920,44 @@ Finally, we can extend the pipeline that feeds the model with a step that ensure
 
 -----------------------
 
+## Date - 2025-01-31
+
+
+## Title - Cross-entropy variations
+
+
+### **Question** :
+
+Fiona found a Keras example online training a neural network and using cross-entropy loss. 
+
+Fiona was familiar with a couple of implementations of the cross-entropy loss: `CategoricalCrossentropy` and `SparseCategoricalCrossentropy.`
+
+**When should you use every one of these implementations of the cross-entropy loss?**
+
+
+### **Choices** :
+
+- We should use `SparseCategoricalCrossentropy` when the labels in the dataset are one-hot encoded.
+- We should use `SparseCategoricalCrossentropy` when the labels in the dataset are integer values.
+- We should use `CategoricalCrossentropy` when the labels in the dataset are one-hot encoded.
+- We should use `CategoricalCrossentropy` when the labels in the dataset are integer values.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Keras' `SparseCategoricalCrossentropy` computes the cross-entropy loss between the labels and predictions. It works when the labels in the dataset are integer values, for example, `1`, `2`, and `3`.
+
+Keras' `CategoricalCrossentropy`, on the other hand, has the same function but works when the labels in the dataset are one-hot encoded, for example, `[1, 0, 0]`, `[0, 1, 0]`, and `[0, 0, 1]`.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Here is Keras' [SparseCategoricalCrossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/losses/SparseCategoricalCrossentropy) and [CategoricalCrossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy) documentation.</p></details>
+
+-----------------------
+
