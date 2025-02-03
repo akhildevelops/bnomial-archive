@@ -49051,3 +49051,44 @@ This means that she should focus on studying various algorithms to be prepared t
 
 -----------------------
 
+## Date - 2025-02-03
+
+
+## Title - Fortune 500
+
+
+### **Question** :
+
+Of all the data that Lucille received, she must decide which features will help build a machine-learning model.
+
+Lucille's team is focusing on Fortune 500 companies, and their model will predict what other companies have a shot at joining the list.
+
+**Which of the following columns on the dataset are meaningful features for the model?**
+
+
+### **Choices** :
+
+- The phone number of the company.
+- The company's profits from the previous year.
+- The number of employees that work for the company.
+- The company's name.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The phone numbers and names will not help predict whether a company has an opportunity of becoming a Fortune 500 company. Lucille should discard these features.
+
+The number of employees and profits from the previous year should be helpful for the model. Large companies that make a lot of profit are excellent indicators to solve this problem.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.</p></details>
+
+-----------------------
+
