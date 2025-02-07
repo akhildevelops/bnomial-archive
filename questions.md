@@ -49235,3 +49235,46 @@ Transformers are not limited to working with categorical data. They can also pro
 
 -----------------------
 
+## Date - 2025-02-07
+
+
+## Title - Tom's definition
+
+
+### **Question** :
+
+Using Tom M. Mitchell’s definition of Machine Learning: 
+
+> "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
+
+**Which of the following is the correct breakdown for the problem of recognizing handwritten digits?**
+
+
+### **Choices** :
+
+- **Task T:** Classifying handwritten digits. **Performance Measure P:** Number of correctly classified digits. **Experience E:** A dataset of handwritten digits.
+- **Task T:** Classifying handwritten digits. **Performance Measure P:** Percentage of correctly classified digits. **Experience E:** Number of classified digits.
+- **Task T:** Classifying handwritten digits. **Performance Measure P:** Percentage of correctly classified digits. **Experience E:** A dataset of handwritten digits and their corresponding classifications.
+- **Task T:** Classifying handwritten digits. **Performance Measure P:** Percentage of correctly classified digits. **Experience E:** A dataset of handwritten digits.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The correct breakdown for the problem of recognizing handwritten digits is "**Task T:** Classifying handwritten digits. **Performance Measure P:** Percentage of correctly classified digits. **Experience E:** A dataset of handwritten digits and their corresponding classifications."
+
+The **Performance Measure P** can't be the number of classified digits because that metric doesn't measure the quality of the model.
+
+The **Experience E** can't be the number of classified digits. Instead, it should be a dataset of digits, including their correct classification.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Machine Learning"](https://deepai.org/machine-learning-glossary-and-terms/machine-learning) for an introduction to machine learning, including Tom Mitchel's original framing.</p></details>
+
+-----------------------
+
