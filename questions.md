@@ -49278,3 +49278,48 @@ The **Experience E** can't be the number of classified digits. Instead, it shoul
 
 -----------------------
 
+## Date - 2025-02-08
+
+
+## Title - Large Models
+
+
+### **Question** :
+
+Gracelyn was a curious computer science student who had always been fascinated by natural language processing. 
+
+When she heard about the new Large Language Models (LLMs) that had recently been developed, she knew she had to learn more.
+
+At the time, some of the most popular LLMs were BERT, with 110 million parameters, GPT-3, with 175 billion parameters, and PaLM, with 540 billion parameters.
+
+But Gracelyn wasn't sure what exactly do these parameters mean.
+
+**Which of the following is the meaning of "parameters" in the context of  Large Language Models (LLM)?**
+
+
+### **Choices** :
+
+- The different learning rate values that were used to train the model.
+- The size of the input vocabulary used to train the model.
+- The number of connections between the neurons of the model.
+- The size of the attention mechanism used by the model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In the context of Large Language Models (LLM), "parameters" refers to the number of connections between the neurons in the model. The number of parameters determines the complexity of the model and the amount of information it can store and process.
+
+Something to keep in mind is that the larger the number of parameters, the more sophisticated the model is, but the more computationally expensive will be to train and use.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Neural Networks and Deep Learning_](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen) with a great introduction to neural networks.</p></details>
+
+-----------------------
+
