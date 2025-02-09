@@ -49323,3 +49323,46 @@ Something to keep in mind is that the larger the number of parameters, the more 
 
 -----------------------
 
+## Date - 2025-02-09
+
+
+## Title - Theater department
+
+
+### **Question** :
+
+Vivienne works in the data science department of a theater. She is tasked with building a model to predict which plays will be successful based on their genre, cast, and other factors.
+
+Vivienne decides to use a decision tree for this task. She knows that decision trees are powerful models that can help her understand the relationships between the input features and the target variable.
+
+**Which of the following are characteristics of decision trees?**
+
+
+### **Choices** :
+
+- Decision trees are non-parametric models that make no assumptions about the data distribution.
+- Decision trees can handle both numerical and categorical data.
+- Decision trees split the data into subsets based on the most important features.
+- Decision trees are easy to interpret and explain to non-technical stakeholders.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Decision trees are a popular machine-learning technique that is used for classification and regression tasks. They are a type of non-parametric model, which means that they make no assumptions about the distribution of the data. This allows decision trees to capture complex patterns in the data without requiring us to make any assumptions.
+
+Decision trees can handle numerical and categorical data, making them versatile tools for many real-world problems. They split the data into subsets based on the most important features, and this process continues until the data is fully classified or the tree reaches the maximum depth.
+
+One of the benefits of decision trees is that they are easy to interpret and explain to non-technical stakeholders. The tree structure shows the sequence of decisions made to classify the data, which can help us understand the relationships between the input features and the target variable.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Decision tree learning"](https://en.wikipedia.org/wiki/Decision_tree_learning) is the Wikipedia page where you can read about decision trees.* The Scikit-Learn's ["Decision Trees"](https://scikit-learn.org/stable/modules/tree.html) page contains an extensive list of advantages and disadvantages of decision trees.</p></details>
+
+-----------------------
+
