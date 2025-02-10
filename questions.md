@@ -49366,3 +49366,50 @@ One of the benefits of decision trees is that they are easy to interpret and exp
 
 -----------------------
 
+## Date - 2025-02-10
+
+
+## Title - Playing Stratego
+
+
+### **Question** :
+
+Remington was always eager to try new strategies while playing Stratego. She believed that the key to success was to constantly adapt and improve.
+
+Remington had a strategy for winning her Stratego matches: Sometimes, she would make a random move. Other times, she would only make moves that she knew would give her an advantage. Over time, Remington became skilled at predicting her opponent's moves and choosing the best course of action.
+
+Remington, a reinforcement learning engineer, described her approach as a "0.6 epsilon greedy policy."
+
+**Which of the following correctly summarizes Remington's approach while playing Stratego?**
+
+
+### **Choices** :
+
+- Remington makes a random move 60% of the time and only makes moves she knows will give her an advantage 40% of the time.
+- Remington makes a random move 40% of the time and makes moves she knows will give her an advantage 60% of the time.
+- Remington emphasizes exploiting her knowledge more than trying new strategies.
+- Remington usually makes moves that she knows will give her an advantage and otherwise makes random moves.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In reinforcement learning, an ["epsilon greedy policy"](https://developers.google.com/machine-learning/glossary#epsilon-greedy-policy) refers to a strategy that either follows a random policy with epsilon probability or a greedy policy otherwise.  
+
+A [greedy policy](https://developers.google.com/machine-learning/glossary#greedy-policy) always chooses the action with the highest expected return. In Remington's case, this would be executing the strategies she already knows. She explores and discovers new strategies when following a [random policy](https://developers.google.com/machine-learning/glossary#random_policy).
+
+Remington describes her approach as a "0.6 epsilon greedy policy" because she follows a random strategy about 60% of the time. In other words, Remington spends most of her time exploring rather than exploiting what she already knows.
+
+As an additional note, in reinforcement learning, after accumulating knowledge from exploring, the algorithm reduces the value of epsilon to shift from following a random to a greedy policy.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["The exploration-exploitation trade-off: intuitions and strategies"](https://towardsdatascience.com/the-exploration-exploitation-dilemma-f5622fbe1e82) is a great introduction to the exploration vs. exploitation tradeoff.* Check Google's machine learning glossary definition of ["Epsilon greedy policy"](https://developers.google.com/machine-learning/glossary#epsilon-greedy-policy).</p></details>
+
+-----------------------
+
