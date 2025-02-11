@@ -49413,3 +49413,84 @@ As an additional note, in reinforcement learning, after accumulating knowledge f
 
 -----------------------
 
+## Date - 2025-02-11
+
+
+## Title - Dataset statistics
+
+
+### **Question** :
+
+The MNIST dataset is a collection of handwritten digit images that has been modified from two datasets originally collected by the National Institute of Standards and Technology in the United States. 
+
+It is a popular dataset and can be easily loaded in a [Google Colab](https://colab.research.google.com/) notebook using the provided code snippet:
+
+```
+from keras.datasets import mnist
+(X_train, y_train), (X_test, y_test) = mnist.load_data()
+```
+
+The dataset contains every digit from 0 to 9.
+
+**Could you help us determine what of the following statements are correct about the dataset?**
+
+
+### **Choices** :
+
+- The digit 1 has the most images in the dataset, totaling 7,877 images.
+- The digit 0 has the least images in the test set, totaling 600 images.
+- The train and test sets contain the same number of images.
+- The digit 3 has 6,131 images in the train set.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We need to write some code to answer this question. Let's start by [concatenating](https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html) the train and test sets:
+
+```
+import numpy as np
+labels = np.concatenate((y_train, y_test))
+```
+
+Notice that we don't need to worry about `X_train` and `X_test` because those arrays contain the images. We can answer the question by looking at the labels only.
+
+[Numpy's `unique()` function](https://numpy.org/doc/stable/reference/generated/numpy.unique.html) will allow us to group and count the labels:
+
+```
+digit, count = np.unique(labels, return_counts=1)
+```
+
+If we print the count corresponding to digit 1, we will find out that there are 7,877 images:
+
+```
+print(count[1])
+```
+
+To determine how popular each digit is, we can print the entire `count` array and get the following result: `[6903, 7877, 6990, 7141, 6824, 6313, 6876, 7293, 6825, 6958]`. Notice that digit 1 is indeed the most popular in the dataset.
+
+We can check how many instances of digit 0 in the test set with the following code that will print 980:
+
+```
+print(np.where(y_test == 0)[0].shape[0])
+```
+
+We can find the total number of images on each set by printing `y_train.shape[0]` and `y_test.shape[0]`. The result will be 60,000 and 10,000, respectively.
+
+Finally, we can check how many instances of digit 3 in the train set with the following code that will print 6,131:
+
+```
+print(np.where(y_train == 3)[0].shape[0])
+```</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* For more information, you can check Numpy's [concatenate](https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html) and [unique](https://numpy.org/doc/stable/reference/generated/numpy.unique.html) functions.</p></details>
+
+-----------------------
+
