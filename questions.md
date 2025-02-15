@@ -49641,3 +49641,59 @@ Finally, Linear and Logistic Regression use a set of independent variables to pr
 
 -----------------------
 
+## Date - 2025-02-15
+
+
+## Title - Guessing the model
+
+
+### **Question** :
+
+Octavia had a problem with her model and decided to investigate.
+
+She split her dataset into training and testing. Set the testing data aside and created four other random splits from the training data, each with 25% of the samples.
+
+She then trained a model on each of the four groups and tested them on the testing data to determine the accuracy of each model. She grabbed the results and computed the variance between them.
+
+Here is what Octavia's code looked like:
+
+![Pseudocode](https://user-images.githubusercontent.com/1126730/199803699-e056bcea-133f-45b1-9c52-8e68d75f5bed.png)
+
+After running her function, Octavia found out that the result was a value much higher than what she expected.
+
+**If you had to guess, which model do you think Octavia is using?**
+
+
+### **Choices** :
+
+- Octavia could be using a Decision Tree.
+- Octavia could be using k-Nearest Neighbors.
+- Octavia could be using Linear Regression.
+- Octavia could be using Logistic Regression.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>After Octavia trains each model and computes its accuracy on the testing set, a couple of things could happen:
+
+1. The accuracy of each model is significantly different.
+2. The accuracy of each model is relatively similar.
+
+We know that Octavia split the training dataset into four random groups, so we should expect each of these groups to be similar. If the model's performance on each differs significantly, we know Octavia is using a high-variance model.
+
+On the other hand, if the model's performance is very similar across all four groups, we know we are looking at a stable, high-bias model that doesn't change much with new data.
+
+The variance between the four accuracies is high, so Octavia must be using a high-variance model. From the list, both Decision Trees and k-Nearest Neighbors are high-variance models.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) for an introduction to bias and variance.* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
