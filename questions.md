@@ -49795,3 +49795,52 @@ Modifying the model architecture to include batch normalization can help with th
 
 -----------------------
 
+## Date - 2025-02-18
+
+
+## Title - Four rounds
+
+
+### **Question** :
+
+Four rounds of interviews later, Tessa felt so overwhelmed that she started questioning every one of her answers.
+
+As soon as she got to her hotel, she wrote down every question she could remember. She wanted to gain some confidence before going to bed.
+
+She remembered one particular question vividly but couldn't recall her answer. Tessa had to pick every example of an ensemble method from a list of choices.
+
+**Assuming the following are the choices, what of the following are examples of ensemble methods?**
+
+
+### **Choices** :
+
+- Random Forest
+- Decision Trees
+- AdaBoost
+- Bagging
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Ensembling is where we combine a group of models to produce a new model that yields better results than any initial individual models. 
+
+Decision Trees is the only method from the list that's not an ensemble method. 
+
+[Random Forest](https://en.wikipedia.org/wiki/Random_forest) is an algorithm that consists of many individual decision trees. It uses bootstrap aggregating to combine these trees to reach a solution much better than the one provided by any of the individual trees.
+
+[AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) is another ensembling technique. It's also called Adaptive Boosting and, as the name implies, uses boosting.
+
+Finally, [Bootstrap aggregating](https://en.wikipedia.org/wiki/Bootstrap_aggregating), also called "bagging," is also a popular machine learning ensembling technique.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Bagging and Random Forest Ensemble Algorithms for Machine Learning"](https://machinelearningmastery.com/bagging-and-random-forest-ensemble-algorithms-for-machine-learning/) is a great introduction to bagging and Random Forest.* Check out ["Understanding Random Forest"](https://towardsdatascience.com/understanding-random-forest-58381e0602d2) to understand how it works and why it's effective.* [_The Kaggle Book_](https://amzn.to/3kbanRb) is an excellent source for information about ensembling techniques.</p></details>
+
+-----------------------
+
