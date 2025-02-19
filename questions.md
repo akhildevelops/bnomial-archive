@@ -49844,3 +49844,48 @@ Finally, [Bootstrap aggregating](https://en.wikipedia.org/wiki/Bootstrap_aggrega
 
 -----------------------
 
+## Date - 2025-02-19
+
+
+## Title - Outcome of matches
+
+
+### **Question** :
+
+Blair is the data scientist for a professional soccer team. 
+
+She is working on a project to build a model that predicts the outcome of matches. Before she can train her model, she needs to understand her data. She decides to start by performing Exploratory Data Analysis (EDA).
+
+**Which of the following are some of the steps Blair takes during this process?**
+
+
+### **Choices** :
+
+- When doing EDA, Blair needs to evaluate the performance of her models on the data to understand how well they can make predictions.
+- During EDA, Blair needs to understand the features in the dataset and the distribution of their values. This will help her identify potential problems or patterns that she can use to improve her model.
+- During EDA, Blair needs to assess the data quality, including checking for missing or corrupt values. This is important because poor-quality data can lead to poor model performance.
+- During EDA, Blair needs to learn the distribution of the target variable, which is the variable that she is trying to predict.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Exploratory Data Analysis is an essential step in any machine-learning project. 
+
+It allows us to explore and understand our data before we build a model. During this process, we investigate the dataset to discover valuable patterns, spot any potential anomalies, and use statistics and plots to test different hypotheses and check assumptions. 
+
+We also focus on understanding the distribution of the target variable and assessing the data quality, including checking for missing or corrupt values.
+
+Building a model is not part of the Exploratory Data Analysis process, so we don't evaluate the model's performance during this phase.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["What is Exploratory Data Analysis"](https://www.ibm.com/cloud/learn/exploratory-data-analysis) for an explanation of the EDA process.* The [_Feature Engineering for Machine Learning_](https://amzn.to/3JWZxZl) is a great book covering the entire Feature Engineering process.</p></details>
+
+-----------------------
+
