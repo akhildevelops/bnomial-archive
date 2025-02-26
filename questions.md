@@ -50200,3 +50200,51 @@ This issue is called "sampling bias." It explains why the problem occurred in on
 
 -----------------------
 
+## Date - 2025-02-26
+
+
+## Title - Driving sales
+
+
+### **Question** :
+
+Wynter is working at a marketing agency and is trying to build a machine-learning model to predict which advertisements will be most effective in driving sales. 
+
+Unfortunately, this is Wynter's first real project, and the model is not doing great. Her colleague recommended tuning the model's hyperparameters, but neither of them knows much about that.
+
+**Which of the following best describes how hyperparameter tuning impacts the performance of a model?**
+
+
+### **Choices** :
+
+- Hyperparameter tuning has no impact on the performance of a machine learning model.
+- Hyperparameter tuning significantly improves the performance of a machine learning model by isolating the most relevant samples from the dataset.
+- Hyperparameter tuning significantly improves the performance of a machine learning model by fine-tuning the model's ability to learn and generalize to new data.
+- Hyperparameter tuning significantly improves the performance of a machine learning model by selecting the most relevant features from the dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We use the term "hyperparameter" to refer to the settings we can use to control the learning process. We set these "knobs" and "levers" before training a model. In contrast, we use "parameters" to refer to variables internal to the model whose values we estimate (learn) during the learning process using data.
+
+A good way of thinking about this:
+
+* Parameters: We learn their values during training. We do not set their values manually.
+* Hyperparameters: The settings we fix before the learning process. We cannot learn these values during training.
+
+Hyperparameter tuning is the process of adjusting the hyperparameters of a machine-learning model to achieve better performance. Hyperparameters have nothing to do with the data. They aren't about features or samples. Hyperparameter tuning can have a significant impact on the model's ability to learn and generalize to new data. 
+
+We can fine-tune a model to improve its accuracy, precision, recall, and other performance metrics by choosing the values for the hyperparameters that result in the best performance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Overview of hyperparameter tuning"](https://cloud.google.com/ai-platform/training/docs/hyperparameter-tuning-overview) is a great introduction to hyperparameters and the process of finding their optimal value.* [Hyperparameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization)* [What is the Difference Between a Parameter and a Hyperparameter?](https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/)</p></details>
+
+-----------------------
+
