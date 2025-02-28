@@ -50293,3 +50293,50 @@ Finally, thanks to the [Universal approximation theorem](https://en.wikipedia.or
 
 -----------------------
 
+## Date - 2025-02-28
+
+
+## Title - Advertising spending
+
+
+### **Question** :
+
+Lily works at an advertising agency where she used a model to predict how much a client should spend on advertising.
+
+After training and testing her model, Lily felt confident it was ready for production: its performance was excellent. She deployed the model, and the agency started using it to make advertising recommendations to its clients.
+
+Hours later, a client complained that the model's predictions were consistently off by a large margin. 
+
+**What could be the cause of the problem with the model?**
+
+
+### **Choices** :
+
+- The model is underfitting and needs more complexity.
+- The model is overfitting and needs more regularization.
+- The model is suffering from data drift.
+- The model is suffering from sampling bias.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Overfitting and underfitting are common problems in machine learning. They occur when a model is not appropriately trained or has too much or too little capacity to learn from the data. Overfitting occurs when the model has learned the noise in the data and is unable to generalize to new data, while underfitting occurs when the model is unable to learn the underlying patterns in the data and performs poorly on both the training and test sets.
+
+In this example, Lily's model did well during training and testing, so assuming she had good data, it's unlikely the model was either overfitting or underfitting.
+
+Data drift is also unlikely. Data drift occurs when the data distribution changes over time, but in this case, Lily's model failed to work immediately after deployment, so there hasn't been enough time for the data to drift.
+
+Sampling bias is likely the cause of the problem. Sampling bias occurs when the training data does not represent the entire population. Lily might have trained the model on different data from the client's, and that's why the predictions are not correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Sampling bias"](https://en.wikipedia.org/wiki/Sampling_bias) for a complete explanation of this problem.</p></details>
+
+-----------------------
+
