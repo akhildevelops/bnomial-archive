@@ -51011,3 +51011,60 @@ KNN uses the entire dataset and looks for a pre-determined number of instances c
 
 -----------------------
 
+## Date - 2025-03-15
+
+
+## Title - Independent nuclear reactor
+
+
+### **Question** :
+
+Joanna is the structural engineer in charge of designing a nuclear reactor. Her team plans to build the plant next to the coast, so they need to understand the probability and effects of natural disasters.
+
+After consulting with local experts, they know that the probability of a large earthquake in the area is 10⁻⁴, and the probability of a tsunami is also 10⁻⁴.
+
+**What's the probability of having both an earthquake and a tsunami simultaneously, assuming both events are independent?**
+
+
+### **Choices** :
+
+- The probability of having both events simultaneously is 10⁻⁸.
+- The probability of having both events simultaneously is 10⁻⁵.
+- The probability of having both events simultaneously is 10⁻⁴.
+- The probability of having both events simultaneously is 1.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We can compute the probability of having both an earthquake and a tsunami simultaneously using the following formula:
+
+```
+P(T and E) = P(E) * P(T|E)
+```
+
+We know the probability of an earthquake `P(E) = 10⁻⁴`, and the probability of a tsunami `P(T)` is also 10⁻⁴. Since both events are independent, then the probability of a tsunami given that an earthquake happens, is also 10⁻⁴:
+
+```
+P(T|E) = P(T) = 10⁻⁴
+```
+
+We can now substitute the values in our initial equation:
+
+```
+P(T and E) = P(E) * P(T|E)
+P(T and E) = 10⁻⁴ * 10⁻⁴
+P(T and E) = 10⁻⁸
+```</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Cartoon Guide to Statistics_](https://amzn.to/3eg9iIo) is a fun and instructive introduction to probabilities and statistics.</p></details>
+
+-----------------------
+
