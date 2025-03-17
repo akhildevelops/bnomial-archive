@@ -51111,3 +51111,48 @@ In this scenario, there are 65 positive and 35 negative samples, so the total nu
 
 -----------------------
 
+## Date - 2025-03-17
+
+
+## Title - Power grid
+
+
+### **Question** :
+
+Blake is an engineer at a government organization responsible for maintaining and improving the power grid. She has been tasked with building a model to help predict the likelihood of power outages in certain areas.
+
+Blake has a dataset with the age of the power grid equipment, the number of power outages in the area, the average temperature, and the average wind speed.
+
+She builds a Perceptron and runs the forward pass using a vector containing the values of a single sample.
+
+**What is the size of the output if this vector looks like this [10, 5, 70, 10]?**
+
+
+### **Choices** :
+
+- The output will contain a single value.
+- The output will contain two values.
+- The output will contain three values.
+- The output will contain four values.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The size of the output of a Perceptron will be a single value. 
+
+A Perceptron will always output the predicted class of the sample. Regardless of how many features are in the sample, the output will always be a single value.
+
+This output comes from multiplying the input vector by the weights and passing the result through the activation function, a step function in the case of a Perceptron.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Perceptron Algorithm for Classification in Python"](https://machinelearningmastery.com/perceptron-algorithm-for-classification-in-python/) is a great introduction to the Perceptron.</p></details>
+
+-----------------------
+
