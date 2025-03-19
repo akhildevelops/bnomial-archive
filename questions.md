@@ -51201,3 +51201,59 @@ The goal of Camila's exercise is to predict a continuous value: the price of the
 
 -----------------------
 
+## Date - 2025-03-19
+
+
+## Title - Your friend's model
+
+
+### **Question** :
+
+Imagine you run this experiment with a dataset:
+
+You start by splitting your data into training and testing. Then, divide the training data into five random splits, each with 20% of the samples.
+
+You then ask a friend to train a model on each of the five groups and test them on the testing data to determine the accuracy of each model. She then computes the variance between the performance of each model.
+
+Here is what your friend's code looks like:
+
+![Pseudocode](https://user-images.githubusercontent.com/1126730/199803699-e056bcea-133f-45b1-9c52-8e68d75f5bed.png)
+
+You don't know anything about the model your friend used, but she says the result of the function above is a large value.
+
+**What can you say about your friend's model?**
+
+
+### **Choices** :
+
+- Her model is high bias and low variance.
+- Her model is high bias and high variance.
+- Her model is low bias and low variance.
+- Her model is low bias and high variance.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>After your friend trains each model and computes its accuracy on the testing set, a couple of things could happen:
+
+1. The accuracy of each model is significantly different.
+2. The accuracy of each model is relatively similar.
+
+You split the training dataset into five random groups, so we should expect each to be similar. If the model's performance on each differs significantly, we know your friend is using a high-variance model.
+
+On the other hand, if the model's performance is very similar across all four groups, we know we are looking at a stable, high-bias model that doesn't change much with new data.
+
+The variance between the five accuracies is high, so your friend must have used a high-variance and low-bias model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) for an introduction to bias and variance.* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
