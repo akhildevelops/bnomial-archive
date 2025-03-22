@@ -51347,3 +51347,46 @@ A high entropy value indicates that the data being processed is random or uncert
 
 -----------------------
 
+## Date - 2025-03-22
+
+
+## Title - Chain airport
+
+
+### **Question** :
+
+Molly works as an operations analyst at the airport. She is responsible for monitoring the performance of the airport's systems and identifying ways to improve efficiency. 
+
+Molly has always been interested in machine learning and decided to take a course.
+
+One of the concepts she found most interesting in the course was the chain rule from Calculus. Molly realized it was a fundamental concept if she wanted to understand how neural networks work.
+
+**Which of the following statements is true about the chain rule in neural networks?**
+
+
+### **Choices** :
+
+- The chain rule is used to calculate the gradient of the loss function with respect to the network's weights.
+- The chain rule is used to calculate the gradient of the loss function with respect to the network's inputs.
+- The chain rule is used to calculate the gradient of the loss function with respect to the network's outputs.
+- The chain rule is used to calculate the gradient of the loss function with respect to the layers of the network.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The chain rule in Calculus allows us to find the derivative of a composite function. 
+
+In the context of neural networks, we use the chain rule as part of the backpropagation algorithm to calculate the gradient of the loss function with respect to the network's weights. This gradient tells us the direction and magnitude of the change we need to make to the weights to reduce the loss.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["The Chain Rule of Calculus for Univariate and Multivariate Functions"](https://machinelearningmastery.com/the-chain-rule-of-calculus-for-univariate-and-multivariate-functions) is a short introduction to the chain rule in machine learning.</p></details>
+
+-----------------------
+
