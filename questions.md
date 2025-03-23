@@ -51390,3 +51390,48 @@ In the context of neural networks, we use the chain rule as part of the backprop
 
 -----------------------
 
+## Date - 2025-03-23
+
+
+## Title - Exploratory Data Analysis
+
+
+### **Question** :
+
+Maggie is a data scientist at a company building an email system. They want to build a set of machine learning models to process spam and understand patterns from their customers.
+
+The first step in the process is for Maggie to perform Exploratory Data Analysis (EDA). She wants to give a presentation to her team about everything they will complete during this phase.
+
+**Which of the following steps does Maggie take during this process?**
+
+
+### **Choices** :
+
+- During the Exploratory Data Analysis phase, Maggie will evaluate the performance of her model.
+- During the Exploratory Data Analysis phase, Maggie will monitor the performance of her model.
+- During the Exploratory Data Analysis phase, Maggie will look into the distribution of her dataset's features to identify potential problems or patterns that she can use to improve her model.
+- During the Exploratory Data Analysis phase, Maggie will assess the quality of her dataset, including checking for missing or corrupt values, to avoid poor model performance.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Exploratory Data Analysis is an essential step in any machine-learning project. 
+
+It allows us to explore and understand our data before we build a model. During this process, we investigate the dataset to discover valuable patterns, spot any potential anomalies, and use statistics and plots to test different hypotheses and check assumptions. 
+
+We also focus on understanding the distribution of the target variable and assessing the data quality, including checking for missing or corrupt values.
+
+Building a model is not part of the Exploratory Data Analysis process, so we don't evaluate the model's performance during this phase. We also don't monitor the model during this phase.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["What is Exploratory Data Analysis"](https://www.ibm.com/cloud/learn/exploratory-data-analysis) for an explanation of the EDA process.* The [_Feature Engineering for Machine Learning_](https://amzn.to/3JWZxZl) is a great book covering the entire Feature Engineering process.</p></details>
+
+-----------------------
+
