@@ -51580,3 +51580,78 @@ Bagging trains a group of models in parallel and independently from each other. 
 
 -----------------------
 
+## Date - 2025-03-27
+
+
+## Title - The network's weights
+
+
+### **Question** :
+
+The following code trains a multilayer perceptron with a single layer to learn how to perform an OR operation. 
+
+```python
+import torch
+
+X = torch.tensor([
+  [0.0, 0.0],
+  [0.0, 1.0],
+  [1.0, 0.0],
+  [1.0, 1.0],
+])
+y = torch.tensor([0.0, 1.0, 1.0, 1.0])
+learning_rate = 0.01
+W = torch.randn(2)
+
+for epoch in range(100):
+    y_hat = (X @ W).tanh()
+    L = torch.square(y_hat - y).sum()
+    print(f"Epoch {epoch} Loss: {L.data:.4}")
+
+    delta = 2 * L * (1 - torch.square(y_hat.tanh()))
+
+    # Right here, we should update the weights:
+    # W += ...
+```
+
+Notice one line is missing: the one that updates the network weights during backpropagation.
+
+**Which of the following is the correct way to update the weights?**
+
+
+### **Choices** :
+
+- `W += learning_rate * delta`
+- `W += learning_rate * (X @ delta)`
+- `W += learning_rate * (X.t() @ delta)`
+- `W += learning_rate * torch.t(X) @ delta`
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To update the weights of the network, we need the dot product of the inputs with the value of `delta.` To do that, however, we must transpose the input `X` to perform the multiplication.
+
+We can do this in two different ways: Using the [`torch.t()`](https://pytorch.org/docs/stable/generated/torch.t.html) function or calling `t()` on the input because `X` is a tensor. This means that we can update the weights like this:
+
+```
+W += learning_rate * (X.t() @ delta)
+```
+
+Or like this:
+
+```
+W += learning_rate * torch.t(X) @ delta
+```</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Build a Simple Neural Network Using PyTorch"](https://towardsdatascience.com/build-a-simple-neural-network-using-pytorch-38c55158028d) for step-by-step directions on how to build a neural network from scratch.</p></details>
+
+-----------------------
+
