@@ -51655,3 +51655,50 @@ W += learning_rate * torch.t(X) @ delta
 
 -----------------------
 
+## Date - 2025-03-28
+
+
+## Title - Writing a book
+
+
+### **Question** :
+
+Rosalie is writing a book about machine learning.
+
+One of the chapters covers Supervised Learning techniques. Rosalie knows this is important, so she wants to include some hands-on exercises for the reader.
+
+She has access to many different datasets and picks a few exciting problems with enough data for the reader to explore.
+
+**Which of the following problems should Rosalie pick to teach Supervised Learning?**
+
+
+### **Choices** :
+
+- Determine whether a website displays content for a mature audience.
+- Learn the best way to split a group of car buyers into different categories based on their buying patterns.
+- Given a dataset of images of circuit boards and whether they work, build an application that determines if a picture of a circuit board corresponds to a working board.
+- Given a dataset of translations between English and Spanish, build an application that turns any sentence written in English into Spanish.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>There are always multiple ways to approach these problems, but some are better for [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning), while others can benefit from [unsupervised learning](https://en.wikipedia.org/wiki/Unsupervised_learning).
+
+Given any website, Rosalie wants a "Yes" or "No" answer, depending on whether the site displays mature content. She could tackle this problem using a Supervised Learning technique, a binary classification algorithm. Something similar happens with classifying circuit board pictures to determine whether they work correctly.
+
+Splitting a group of car buyers into different categories requires a technique that helps Rosalie cluster buyers based on their buying patterns. We can't foresee these patterns beforehand, so any problem that involves finding out the best way of grouping samples is a good fit for clustering algorithms. [Clustering](https://en.wikipedia.org/wiki/Cluster_analysis) is an unsupervised learning technique, so this option is unsuitable for supervised learning. 
+
+Finally, translation is an interesting example because we can solve it using Supervised or Unsupervised Learning. For this particular question, Rosalie has access to labeled data, so she can frame the problem using Supervised Learning.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) is an excellent introduction to the differences between supervised and unsupervised learning.</p></details>
+
+-----------------------
+
