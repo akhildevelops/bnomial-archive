@@ -51702,3 +51702,52 @@ Finally, translation is an interesting example because we can solve it using Sup
 
 -----------------------
 
+## Date - 2025-03-29
+
+
+## Title - Drowning in flu
+
+
+### **Question** :
+
+Charlotte's town is drowning in flu cases. 10,000 people live there, and many struggle to get a doctor's appointment. The city estimates that 5% of the population is sick.
+
+Charlotte has no symptoms, but she buys a test from the pharmacy, and the result returns positive! Reading the instructions, she discovers that the test is 90% accurate.
+
+**What do you think is Charlotte's probability of being sick?**
+
+
+### **Choices** :
+
+- Charlotte is likely sick with a 90% probability.
+- Charlotte is likely sick with a 68% probability.
+- Charlotte is likely healthy with a 68% probability.
+- Charlotte is likely healthy with a 95% probability.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's break down the problem step by step.
+
+5% of the people that live in Charlotte's town are sick, which means that 500 individuals are sick and 9,500 are healthy. 
+
+The test is 90% accurate. If all 500 sick individuals take the test, `500 * 0.9 = 450` will be correctly diagnosed as sick, but 50 will be incorrectly diagnosed as healthy. If all 9,500 healthy individuals take the test, `9,500 * 0.9 = 8,550` will be correctly diagnosed as healthy, but 950 will be incorrectly diagnosed as sick.
+
+Charlotte could be one of those 450 people that are sick and had a positive test, but she could also be one of the 950 healthy with an incorrect positive result. To determine the probability of Charlotte being sick, we can compute how likely she is to be in each group.
+
+Out of `450 + 950 = 1,400` positive results, Charlotte is `450 / 1,400 = 32%` likely to be sick and `950 / 1,400 = 68%` likely to be healthy.
+
+Despite what Charlotte's test suggests, she is likely to be healthy.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Cartoon Guide to Statistics_](https://amzn.to/3eg9iIo) is a fun and instructive introduction to probabilities and statistics.</p></details>
+
+-----------------------
+
