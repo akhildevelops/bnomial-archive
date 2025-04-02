@@ -51880,3 +51880,52 @@ Finally, Semi-supervised learning is a type of machine learning where the traini
 
 -----------------------
 
+## Date - 2025-04-02
+
+
+## Title - Complex architecture
+
+
+### **Question** :
+
+Talia is working on a machine-learning model for her thesis. She has been building a deep neural network that uses a very complex architecture.
+
+The problem is that her model is not generalizing well. Despite having a low error rate on the training set, the error rate on the validation set is much higher.
+
+Talia knows that her model is suffering from overfitting. She needs to find a way to improve her model's performance on the validation set.
+
+**Which of the following techniques will help Talia fix her model's overfitting problem?**
+
+
+### **Choices** :
+
+- Talia should try using a smaller network architecture.
+- Talia should add more training data.
+- Talia should increase the learning rate.
+- Talia should add L1 and L2 regularization to the cost function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Overfitting is a common problem in machine learning, where a model performs well on the training data but fails to generalize to new examples.
+
+One way to fix overfitting is to use a smaller network architecture. If the model is too complex, it will be able to learn the noise in the training data, and this will prevent it from generalizing well. By simplifying the network architecture, we will reduce the model's capacity, and it will be less likely to overfit.
+
+Another way to fix overfitting is by adding more training data. With more data, the model will be able to learn the true underlying pattern of the problem, and this will reduce overfitting.
+
+Increasing the learning rate will not fix overfitting. If we use a high learning rate, the optimization algorithm will make large weight updates, which won't help the model generalize.
+
+Finally, L1 and L2 regularization are ways to constrain the complexity of the model. These techniques add a penalty term to the cost function to prevent the model from fitting the noise in the training data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.</p></details>
+
+-----------------------
+
