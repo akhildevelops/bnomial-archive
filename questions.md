@@ -51974,3 +51974,58 @@ An important detail: Stevie applied a log transformation to the product's price 
 
 -----------------------
 
+## Date - 2025-04-04
+
+
+## Title - The ice cream shop
+
+
+### **Question** :
+
+Bethany has been running her ice cream company for the last five years and currently owns half the market of her town. Brennen, her competitor, owns the other half.
+
+Bethany wants to get ahead and is thinking of reducing prices to steal around 20% of Brennen's customers. But if Brennen follows suit, they will both be back in the same place but now making lower profits.
+
+You can assume that every potential customer is already buying ice cream from either Bethany or Brennen, so the situation is a zero-sum game.
+
+**Which of the following do you think is Brennen's best strategy?**
+
+
+### **Choices** :
+
+- Brennen should be the first to reduce prices. Then never do it again regardless of what Bethany does.
+- Brennen should not reduce prices regardless of what Bethany does.
+- Brennen should not reduce prices unless Bethany does it first. Then start matching whatever Bethany does.
+- Brennen should be the first to reduce prices. Then start matching whatever Bethany does.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>This problem is an example of the [prisoner's dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma), a classic from game theory. Let's analyze the situation carefully.
+
+If Brennen reduces his prices and Bethany doesn't, Brennan will emerge the winner. The extra market share will make up for the profit reduction per person. Of course, it's improbable that Bethany doesn't do anything, which will take them back to square one, but now each will be making less money—they will both be charging less with the same amount of customers.
+
+If Bethany goes first and Brennen doesn't follow suit, Bethany wins, and Brennen loses. Brennan will be forced to charge less money if Bethany goes first, or else he stands to lose the most. Therefore, the second choice is not Brennen's best strategy.
+
+The best outcome for both of them is to do nothing! If neither reduces prices, they will keep the same market share but profit more. Brennen should consider this and start by cooperating and letting Bethany take the first step. If she reduces her prices, Brennen will have no choice but to follow, and they will lose some money. But if she doesn't do anything, they will both enjoy the status quo.
+
+Therefore, the best strategy is for Brennen to wait for Bethany—he shouldn't reduce his prices—and always match what she does. They stand to win the most by always cooperating, but if she defects and reduces her prices, Brennen should do the same.
+
+This strategy is called ["tit for tat"](https://en.wikipedia.org/wiki/Tit_for_tat) and is the most straightforward and successful in playing prisoner's dilemma. Here is an excerpt from [Wikipedia](https://en.wikipedia.org/wiki/Tit_for_tat):
+
+> An agent using this strategy will first cooperate, then subsequently replicate an opponent's previous action. If the opponent previously was cooperative, the agent is cooperative. If not, the agent is not.
+
+In summary, the third choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Since this problem illustrates an economic scenario where Prisoner's Dilemma applies, ["The Prisoner's Dilemma in Business and the Economy"](https://www.investopedia.com/articles/investing/110513/utilizing-prisoners-dilemma-business-and-economy.asp) is a perfect introduction with a few interesting day-to-day examples.* The ["Prisoner's Dilemma"](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma) Wikipedia page is a good reference. You can also find here the strategy for the iterated prisoner's dilemma, which is precisely what this problem is about.* The ["Tit for tat"](https://en.wikipedia.org/wiki/Tit_for_tat) Wikipedia page comes with a full explanation of why this is the best strategy to maximize your payoff.</p></details>
+
+-----------------------
+
