@@ -52333,3 +52333,66 @@ For example, Label Encoding would replace our weather feature with a new one con
 
 -----------------------
 
+## Date - 2025-04-11
+
+
+## Title - Feature matrix
+
+
+### **Question** :
+
+Taylor is a software engineer who has recently joined a machine learning startup. Her team is working on a project that involves building a model to classify different types of products based on customer feedback.
+
+While reviewing the code, Taylor came across the line `X[y == 0, 1]`. She knows that `X` is the feature matrix and `y` is the target vector that holds the class labels for each sample. However, she is unsure what the line `X[y == 0, 1]` does.
+
+**Assuming the code uses the Numpy library, which of the following is the correct interpretation of `X[y == 0, 1]`?**
+
+
+### **Choices** :
+
+- The code returns every sample that belongs to class 0.
+- The code returns the first feature of every sample that belongs to class 1.
+- The code returns the second feature of every sample that belongs to class 0.
+- The code returns the label for the first sample in the dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's break down `X[y == 0, 1]`:
+
+We have `y == 0`, which will return `True` for every sample that belongs to class 0, and `False` otherwise. We use this as a selection mask on the set `X`, which will return every row that belongs to class 0.
+
+Notice, however, that we don't return every feature from `X`. Instead, we only return the second feature (index = 1.)
+
+Therefore, the code returns the second feature of every sample that belongs to class 0.
+
+We can write a simple snippet of code to illustrate this:
+
+```
+import numpy as np
+
+X = np.array([[2, 1], [4, 3], [6, 5], [8, 7]])
+y = np.array([0, 1, 1, 0])
+print(X[y == 0, 1])
+```
+
+If we run the above code snippet, we will get:
+
+```
+[1 7]
+```
+
+Notice how the result is the second feature of the first and fourth rows, which correspond to the samples with class 0.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check the ["NumPy quickstart"](https://numpy.org/doc/stable/user/quickstart.html) tutorial for an introduction to Numpy.</p></details>
+
+-----------------------
+
