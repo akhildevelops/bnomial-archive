@@ -52557,3 +52557,48 @@ This means that the statement presented on this problem is true.</p></details>
 
 -----------------------
 
+## Date - 2025-04-15
+
+
+## Title - Future sales
+
+
+### **Question** :
+
+Julia is working with a retail company to classify the stores in the city. They are interested in organizing each location by its sales performance.
+
+She wants to start by organizing the data and preparing the features to help build a machine-learning model to predict future stores' sales performance.
+
+**Which of the following columns on Julia's dataset are meaningful numerical features for the model?**
+
+
+### **Choices** :
+
+- The store's square footage.
+- The store's street address.
+- The number of employees working at the store.
+- The store's phone number.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The store's square footage and the number of employees working at the store are meaningful numerical features for the model.
+
+Street addresses and phone numbers are not meaningful numerical features for this problem because they do not represent useful information about the store's sales performance. 
+
+The store's square footage and the number of employees, on the other hand, may be useful for predicting the store's sales performance because they can potentially indicate the size and resources available at the store. 
+
+It's important to carefully select and engineer the features used in a machine learning model to ensure that they are relevant and can help the model make accurate predictions.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.</p></details>
+
+-----------------------
+
