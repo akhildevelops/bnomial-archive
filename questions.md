@@ -52651,3 +52651,52 @@ In summary, multi-class classification models should use a softmax output with t
 
 -----------------------
 
+## Date - 2025-04-17
+
+
+## Title - College applications
+
+
+### **Question** :
+
+Noa is a newly graduated data scientist who works for a school. She is tasked with developing a machine-learning model to predict what college their students will want to apply to at the end of the year.
+
+Noa has access to every grade from every previous student, including labels indicating the college they went to.
+
+She has several options for building a classification model. 
+
+**Which of the following should be the best approach to build that model?**
+
+
+### **Choices** :
+
+- Noa should use a Decision Tree, a Supervised Learning technique.
+- Noa should use Linear Regression, a Supervised Learning technique.
+- Noa should use Reinforcement Learning.
+- Noa should use Unsupervised Learning.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Supervised learning is a type of machine learning where the model is trained on labeled data. In the case of Palmer's model, she could use supervised learning to train a model on the data for past races, where the data is labeled with the outcome (i.e., whether each car crashed or not). This would allow the model to learn from the data and predict future races.
+
+A Decision Tree should work for Palmer. Decision trees use a tree-like structure to make predictions. They are simple to understand and can be effective for classification tasks. 
+
+Linear regression is not a good option for classification tasks. Linear regression is a model for predicting a continuous numerical output based on input data, while classification involves predicting a discrete class or category based on input data. 
+
+Reinforcement learning is not a good choice for Noa's model. Reinforcement learning is a type of machine learning where the model learns by interacting with its environment and receiving feedback as rewards or penalties. This differs from classification, which involves making predictions based on input data.
+
+Unsupervised learning is also not a good choice for Noa's model either because is a type of machine learning where the model is trained on unlabeled data. This means that the model must find patterns and relationships in the data without guidance from labels or outputs. In this example, Noa has access to plenty of data and knows the target she wants to predict.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check out ["Binary classification"](https://en.wikipedia.org/wiki/Binary_classification) in Wikipedia for more information.* ["4 Types of Classification Tasks in Machine Learning"](https://machinelearningmastery.com/types-of-classification-in-machine-learning/) is a great article going over different ways to implement a classification model.</p></details>
+
+-----------------------
+
