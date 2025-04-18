@@ -52700,3 +52700,50 @@ Unsupervised learning is also not a good choice for Noa's model either because i
 
 -----------------------
 
+## Date - 2025-04-18
+
+
+## Title - Model coefficients
+
+
+### **Question** :
+
+Kailani is a data scientist at a hospital and has developed a model that takes in patient inputs and predicts if a patient has a fatal disease. 
+
+She wants to present her model's results to her boss. Unfortunately, he is not technical, so Kailani must communicate clearly.
+
+**Which of the following options represents the best way for Kailani to explain how the coefficients of her model work?**
+
+
+### **Choices** :
+
+- Positive coefficient indicates the variable is more likely to influence the outcome positively.
+- Positive coefficient indicates the variable is more likely to influence the outcome negatively.
+- Positive coefficient indicates the variable does not influence the outcome.
+- Negative coefficient indicates the variable does not influence the outcome.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The coefficients in the context of a model are the parameters learned by the model during training. They determine the relationship between the input features and the output predictions.
+
+In the case of Kailani's model, the coefficients are used to predict whether a patient has a fatal disease. The coefficients weigh the input features and determine the final prediction.
+
+When Kailani explains the coefficients to her boss, she wants to ensure he understands how they influence the final prediction.
+
+The best way to explain this is by saying that a positive coefficient indicates that the variable is more likely to influence the outcome positively. This means that the variable has a positive relationship with the target variable and increases the probability of the target being positive.
+
+On the other hand, a negative coefficient indicates that the variable has a higher likelihood of negatively influencing the outcome. This means that the variable has a negative relationship with the target variable and decreases the probability of the target being positive.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems_](https://amzn.to/3SHGqsu) is one of the best books for machine learning fundamentals.</p></details>
+
+-----------------------
+
