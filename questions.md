@@ -52794,3 +52794,46 @@ After we finish training and tuning the model, we can evaluate it on a test set,
 
 -----------------------
 
+## Date - 2025-04-20
+
+
+## Title - 200 customers
+
+
+### **Question** :
+
+Jordan is a machine learning engineer who works for a company specializing in personalized product recommendations. She wants to train a model that predicts whether a customer will buy a product based on their browsing history.
+
+Jordan gathered a dataset of 200 customer browsing sessions. Of these, 100 sessions resulted in a purchase, while 100 did not. Jordan wants to convert this data into a format that can be used to train a machine-learning model.
+
+As Jordan preprocesses the data, she separates the features into a tensor "X" and the corresponding target values into a tensor "y".
+
+**What is the shape of the tensor "y"?**
+
+
+### **Choices** :
+
+- (200,)
+- (100, 100)
+- (100, 2)
+- (200, 2)
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Jordan wants to solve a binary classification problem with two classes: one representing every customer who made a purchase and the other representing the customers who did not. The `y` tensor contains the target labels. The shape of this tensor depends on the number of samples in the dataset.
+
+In this scenario, 100 customers purchased a product, and 100 didn't, so the total number of samples is 200. The shape of the tensor y should be (200,) with one dimension to represent the 200 samples.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Deep Learning with Python, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors.</p></details>
+
+-----------------------
+
