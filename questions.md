@@ -52880,3 +52880,48 @@ Shuffling the dataset helps to mitigate this issue by randomly reordering the da
 
 -----------------------
 
+## Date - 2025-04-22
+
+
+## Title - Weather forecasting
+
+
+### **Question** :
+
+Clara is a data scientist working for a weather forecasting company. 
+
+The company wants to improve its temperature forecasting capabilities, so Clara is tasked with building a model that can accurately predict the temperature of a city based on meteorological data such as humidity, pressure, wind speed, and previous temperature records. 
+
+Fortunately, she has access to a labeled dataset of meteorological data and temperatures, so she shouldn't have any problems building a model.
+
+**How can we classify the type of machine learning problem Clara wants to solve?**
+
+
+### **Choices** :
+
+- Supervised Learning problem.
+- Unsupervised Learning problem.
+- Classification problem.
+- Regression problem.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>This is both a Supervised Learning and a Regression problem.
+
+A problem is considered Supervised Learning when the model is trained on a labeled dataset, where the input and output are known. This is the case of Clara's problem. She has access to a dataset that contains features (meteorological data) and labels (the temperature.)
+
+Clara needs to predict a continuous value: the temperature of a city. Anytime we need to predict continuous values instead of a discrete class, we are looking at a regression model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) is an excellent introduction to the differences between supervised and unsupervised learning.</p></details>
+
+-----------------------
+
