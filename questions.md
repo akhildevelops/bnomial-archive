@@ -53105,3 +53105,48 @@ In the context of neural networks, we use the chain rule as part of the backprop
 
 -----------------------
 
+## Date - 2025-04-27
+
+
+## Title - Transportation company
+
+
+### **Question** :
+
+Stevie is a data scientist working for a transportation company. She is tasked with building a machine-learning model to improve road traffic. 
+
+The first step in the process is to perform Exploratory Data Analysis (EDA) on the data. Stevie has been invited to present to the company's board of directors about everything they will complete during this phase.
+
+**Which steps will Stevie take during the Exploratory Data Analysis process?**
+
+
+### **Choices** :
+
+- Stevie will examine the distribution of the target variable.
+- Stevie will evaluate the performance of her model.
+- Stevie will monitor the performance of her model.
+- Stevie will examine the distribution of the features in the dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Exploratory Data Analysis is an essential step in any machine-learning project. 
+
+It allows us to explore and understand our data before we build a model. During this process, we investigate the dataset to discover valuable patterns, spot any potential anomalies, and use statistics and plots to test different hypotheses and check assumptions. 
+
+We also focus on understanding the distribution of the target variable and assessing the data quality, including checking for missing or corrupt values.
+
+Building a model is not part of the Exploratory Data Analysis process, so we don't evaluate the model's performance during this phase. We also don't monitor the model during this phase.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["What is Exploratory Data Analysis"](https://www.ibm.com/cloud/learn/exploratory-data-analysis) for an explanation of the EDA process.* The [_Feature Engineering for Machine Learning_](https://amzn.to/3JWZxZl) is a great book covering the entire Feature Engineering process.</p></details>
+
+-----------------------
+
