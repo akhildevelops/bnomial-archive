@@ -53301,3 +53301,72 @@ The elbow method is a way to choose the point where diminishing returns are no l
 
 -----------------------
 
+## Date - 2025-05-01
+
+
+## Title - The network's loss
+
+
+### **Question** :
+
+The following code trains a multilayer perceptron with a single layer to learn how to perform an OR operation. 
+
+```
+import torch
+
+X = torch.tensor([
+  [0.0, 0.0],
+  [0.0, 1.0],
+  [1.0, 0.0],
+  [1.0, 1.0],
+])
+y = torch.tensor([0.0, 1.0, 1.0, 1.0])
+learning_rate = 0.01
+W = torch.randn(2)
+
+for epoch in range(100):
+    y_hat = (X @ W).tanh()
+    
+    # Right here, we should compute the loss of the model
+    # L = ...
+
+    print(f"Epoch {epoch} Loss: {L.data:.4}")
+    delta = 2 * L * (1 - torch.square(y_hat.tanh()))   
+    W += learning_rate * (X.t() @ delta)
+```
+
+Notice one missing line: the one that computes the loss `L`.
+
+**Which of the following is the correct way to update the loss?**
+
+
+### **Choices** :
+
+- `L = torch.square(y_hat - y).sum()`
+- `L = y_hat - y`
+- `L = torch.square(y_hat - y)`
+- `L = (torch.square(y_hat) - y).sum()`
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Looking at the code, you'll realize the model uses the sum of the squared errors to compute the loss.
+
+We can compute this using the following code:
+
+```
+L = torch.square(y_hat - y).sum()
+```</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Cutting Your Losses: Loss Functions & the Sum of Squared Errors Loss"](https://dustinstansbury.github.io/theclevermachine/cutting-your-losses) for an explanation of the Sum of Squared Errors.</p></details>
+
+-----------------------
+
