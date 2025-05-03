@@ -53415,3 +53415,54 @@ Using a different weight for each feature, the perceptron captures the different
 
 -----------------------
 
+## Date - 2025-05-03
+
+
+## Title - Damaged chip
+
+
+### **Question** :
+
+Ava works in a chip factory where 1,000,000 chips are manufactured each month. The factory estimates that 0.1% of the chips produced are defective. 
+
+Ava developed a model that tests a chip and determines whether it's defective. During her tests, the model had a 98% accuracy rate. Ava wants to know whether the model is helpful.
+
+She grabs the first chip manufactured that month, runs it through the model, and gets a positive result: The model predicts this is a defective chip.
+
+**What can you tell about this result?**
+
+
+### **Choices** :
+
+- The chip is likely to be damaged with a 99% probability.
+- The chip is likely to be damaged with a 95% probability.
+- The chip is likely to be working with a 68% probability.
+- The chip is likely to be working with a 95% probability.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's break down the problem step by step.
+
+0.1% of the chips produced in the factory are defective, which means that 1,000 chips are defective and 999,000 work as expected. 
+
+Ada's model is 98% accurate. If all 1,000 defective chips pass the test, `1,000 * 0.98 = 980` will be correctly identified as defective, but 20 will be incorrectly diagnosed as correct. If all 999,000 working chips go through the model, `999,000 * 0.98 = 979,020` will be correctly identified as working, but 19,980 will be incorrectly diagnosed as defective.
+
+The chip that Ada ran through the model could be one of those 980 chips that are defective and had a positive result, but it could also be one of the 19,980 working chips with an incorrect positive result. To determine the probability this chip is damaged, we can compute how likely it is to be in each group.
+
+Out of `980 + 19,980 = 20,960` positive results, Ada's chip is `980 / 20,960 = 5%` likely to be damaged and `19,980 / 20,960 = 95%` likely to be working.
+
+Despite what Ada's model suggests, the chip is likely to be working correctly.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Cartoon Guide to Statistics_](https://amzn.to/3eg9iIo) is a fun and instructive introduction to probabilities and statistics.</p></details>
+
+-----------------------
+
