@@ -53507,3 +53507,69 @@ The strategies chosen by the players do not need to be at the same time or at ra
 
 -----------------------
 
+## Date - 2025-05-05
+
+
+## Title - Beginner tensor
+
+
+### **Question** :
+
+Catherine is a beginner in machine learning and is trying to understand the basics of tensors, which are essential data structures used in the field.
+
+She comes across a few attributes related to tensors and wants to know which correctly represents a tensor.
+
+**Which of the following are valid attributes that represent a tensor?**
+
+
+### **Choices** :
+
+- Dimensions: This attribute is also called the "rank" of the tensor.
+- Connectivity: This attribute represents the relationship between the tensor's axes.
+- Shape: This attribute represents the number of elements along each axis.
+- Data type: This attribute represents the type of values contained in the tensor.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Three primary attributes define a tensor:
+
+1. Its rank, or the number of axes.
+2. Its shape or the number of dimensions.
+3. Its data type or the type of data contained in it.
+
+The rank of a tensor refers to the tensor's number of axes.
+
+Examples:
+* Rank of a matrix is 2.
+* Rank of a vector is 1.
+* Rank of a scalar is 0.
+
+The shape of a tensor describes the number of elements along each dimension.
+
+Examples:
+* `()` — scalar
+* `(2,)` — vector 
+* `(3, 2)` — matrix
+* `(3, 2, 5)` — 3D tensor
+
+The data type of a tensor refers to the data type it stores:
+
+Examples:
+* `float32`
+* `float64`
+* `uint8`
+* `int64`</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Deep Learning with Python, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors.</p></details>
+
+-----------------------
+
