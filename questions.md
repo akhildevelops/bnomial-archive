@@ -53775,3 +53775,46 @@ The wrong labels or architecture could be reasons for the model performing worse
 
 -----------------------
 
+## Date - 2025-05-10
+
+
+## Title - Dog pictures
+
+
+### **Question** :
+
+Lauren is intrigued by the inner workings of deep neural networks and wants to understand how they process images to make accurate predictions.
+
+She is particularly interested in how these networks handle images, so she grabbed a dataset of dog pictures and started running experiments.
+
+**Which of the following statements reasonably simplifies how the network operates?**
+
+
+### **Choices** :
+
+- The earlier layers of a neural network compute more complex features than deeper layers.
+- The deeper layers of a neural network compute more complex features than earlier layers.
+- The complexity of the features computed by the neural network layers is proportionally distributed among all layers.
+- The complexity of the features computed by the neural network layers has no relationship with the layer's position.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Think of a dog picture. You'll see the eyes, nose, mouth, ears, fur, and other characteristics. Notice how groups of pixels form edges, shapes, and the rest of the dog's features. 
+
+A reasonable explanation for how a neural network works are to assume that earlier layers focus on detecting more basic features, like edges and shapes of the image. Later layers could use these earlier pieces to form more recognizable shapes, like the eyes and nose of the dog.
+
+While the network deals with pixels early on, the deeper we go into it, the more it will work with complete patterns until it reaches the output layer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["But what is a neural network?"](https://www.youtube.com/watch?v=aircAruvnKk) is Grant Sanderson's introduction to neural networks on YouTube. Highly recommended!* [_Neural Networks and Deep Learning_](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen).</p></details>
+
+-----------------------
+
