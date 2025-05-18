@@ -54167,3 +54167,51 @@ It's important to carefully select and engineer the features used in a machine l
 
 -----------------------
 
+## Date - 2025-05-18
+
+
+## Title - XOR logic gate
+
+
+### **Question** :
+
+We want to use a Perceptron to represent the XOR logic gate. As a reminder, here is how the XOR gate works:
+
+* 0 xor 0 = 0
+* 0 xor 1 = 1
+* 1 xor 0 = 1
+* 1 xor 1 = 0
+
+Our Perceptron will have two inputs, two weights, and a bias parameter. 
+
+**Which of the following parameters will make our Perceptron act as an XOR gate?**
+
+
+### **Choices** :
+
+- `w1 = 0.1`, `w2 = 0.6`, `b = 1.0`
+- `w1 = 0.6`, `w2 = 1.6`, `b = -2.3`
+- `w1 = 1.0`, `w2 = 1.0`, `b = -0.5`
+- You need more than one Perceptron to represent the XOR gate.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We cannot represent an XOR gate using a single Perceptron. Here is a plot showing the four possible results of the XOR operation:
+
+![image](https://user-images.githubusercontent.com/1126730/214069328-c724f9fd-a4bf-4437-8028-6a4b1768518d.png)
+
+Notice how we can't separate `(0, 1)` and `(1, 0)` from `(0, 0)` and `(1, 1)` using one line. As a reminder, the Perceptron can only produce a linear decision boundary, so we won't be able to use it to represent the XOR gate.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Neural Representation of AND, OR, NOT, XOR and XNOR Logic Gates (Perceptron Algorithm)"](https://medium.com/@stanleydukor/neural-representation-of-and-or-not-xor-and-xnor-logic-gates-perceptron-algorithm-b0275375fea1) for a deep dive on how to set up a Perceptron to represent multiple logic gates.</p></details>
+
+-----------------------
+
