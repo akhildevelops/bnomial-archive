@@ -54413,3 +54413,50 @@ In the [Euclidean plane](https://en.wikipedia.org/wiki/Euclidean_space), the dis
 
 -----------------------
 
+## Date - 2025-05-23
+
+
+## Title - Piece replacement
+
+
+### **Question** :
+
+Lucille is a data scientist writing an article about a model developed to predict if a piece of equipment has to be replaced. 
+
+The model takes in the piece's characteristics and outputs a prediction based on the relationships between the input features and the target variable.
+
+Lucille wants to explain how the coefficients, the parameters learned by the model during training, influence the final prediction.
+
+**Which of the following options represents the best way for Lucille to describe the role of the coefficients in the model?**
+
+
+### **Choices** :
+
+- A positive coefficient suggests that the feature does not affect the prediction.
+- A negative coefficient suggests that the feature does not affect the prediction.
+- A positive coefficient suggests that the feature has a higher probability of positively affecting the prediction.
+- A positive coefficient suggests that the feature has a higher probability of negatively affecting the prediction.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The coefficients in the context of a model are the parameters learned by the model during training. They determine the relationship between the input features and the output predictions.
+
+In this example, the coefficients are used to predict whether the piece has to be replaced. The coefficients weigh the input features and determine the final prediction.
+
+The best way to describe the role of the coefficients is by saying that a positive coefficient indicates that the variable is more likely to influence the outcome positively. This means that the variable has a positive relationship with the target variable and increases the probability of the target being positive.
+
+On the other hand, a negative coefficient indicates that the variable has a higher likelihood of negatively influencing the outcome. This means that the variable has a negative relationship with the target variable and decreases the probability of the target being positive.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems_](https://amzn.to/3SHGqsu) is one of the best books for machine learning fundamentals.</p></details>
+
+-----------------------
+
