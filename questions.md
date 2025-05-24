@@ -54460,3 +54460,52 @@ On the other hand, a negative coefficient indicates that the variable has a high
 
 -----------------------
 
+## Date - 2025-05-24
+
+
+## Title - Grading exams
+
+
+### **Question** :
+
+Mya is a college professor grading exams for aspiring data scientists. 
+
+She is currently evaluating the final project, which involves building a machine-learning model to predict the success of a new product launch for a tech company.
+
+The student must explain how they used the training, validation, and test sets during the development of their models.
+
+**Which of the following show appropriate practices for using these sets?**
+
+
+### **Choices** :
+
+- Use the training set multiple times to train the model.
+- Use the validation set multiple times to fine-tune the model's parameters.
+- Use the test set multiple times to fine-tune the model's parameters.
+- Use the test set only once to fine-tune the model's parameters.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The training and validation sets can be used multiple times throughout the model development process.
+
+We use a training set to train the model. This training set is a subset of the entire dataset. We use the training set multiple times throughout the model development process as the model is refined and improved.
+
+We use a validation set to tune the model's parameters and assess its performance to prevent overfitting. We evaluate the model's performance after each iteration of training.
+
+After we finish training and tuning the model, we can evaluate it on a test set, which hasn't been used during the training or validation process. The model's performance on the test set provides an estimate of how well the model will perform in real-world scenarios.
+
+We should never use the test set to fine-tune the model's parameters.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Train, Validation, Test Split for Machine Learning"](https://blog.roboflow.com/train-test-split/) goes into detail about the importance of each split.</p></details>
+
+-----------------------
+
