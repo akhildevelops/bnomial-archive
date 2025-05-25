@@ -54509,3 +54509,46 @@ We should never use the test set to fine-tune the model's parameters.</p></detai
 
 -----------------------
 
+## Date - 2025-05-25
+
+
+## Title - Types of flowers
+
+
+### **Question** :
+
+Sarah is a computer science student who wants to build a machine-learning model for classifying types of flowers. 
+
+She collected a dataset containing 150 flower samples with 3 features for each flower: the sepal length, the sepal width, and the petal length.
+
+As Sarah starts to build the model, she separates the features into a tensor `X` and the corresponding target labels into a tensor `y`.
+
+**What is the shape of the tensors `X` and `y`?**
+
+
+### **Choices** :
+
+- The shape of `X` is (150, 3), and the shape of `y` is (150,)
+- The shape of `X` is (3, 150), and the shape of `y` is (150,)
+- The shape of `X` is (150, 3), and the shape of `y` is (150, 1)
+- The shape of `X` is (150, 1), and the shape of `y` is (150, 3)
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Sarah separated her data into two tensors. The `X` tensor contains the features, and the `y` tensor contains the target labels. The shape of these tensors depends on the number of samples and features in the dataset.
+
+In this scenario, there are 150 flower samples, and each sample has 3 features. Therefore, the shape of the tensor `X` should be (150, 3), and the tensor `y` should be (150,) because it's a vector containing the target values.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [Deep Learning with Python, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors.</p></details>
+
+-----------------------
+
