@@ -54595,3 +54595,48 @@ Shuffling the dataset helps to mitigate this issue by randomly reordering the da
 
 -----------------------
 
+## Date - 2025-05-27
+
+
+## Title - Main technique
+
+
+### **Question** :
+
+Clara is a data scientist working for a weather forecasting company. 
+
+The company wants to improve its temperature forecasting capabilities, so Clara is tasked with building a model that can accurately predict the temperature of a city based on meteorological data such as humidity, pressure, wind speed, and previous temperature records. 
+
+Fortunately, she has access to labeled meteorological data and temperatures dataset, so she should be OK with building a model.
+
+**Which of the following is the main technique Clara should use to solve this task?**
+
+
+### **Choices** :
+
+- Clustering
+- Regression
+- Classification
+- Dimensionality Reduction
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The primary technique that Clara should use to solve this problem is regression.
+
+Regression is a supervised learning technique that predicts a continuous value based on input features. In this example, Clara wants to predict the temperature of a city based on meteorological data such as humidity, pressure, wind speed, and previous temperature records. The temperature is a continuous value.
+
+To do this, she will use a dataset of temperature records, with meteorological data and their corresponding temperature values. She can train a model to make predictions on new, unseen data.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Linear Regression for Machine Learning"](https://machinelearningmastery.com/linear-regression-for-machine-learning/) is an introduction to Linear Regression.* ["Supervised and Unsupervised Machine Learning Algorithms"](https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/) is an excellent introduction to the differences between supervised and unsupervised learning.</p></details>
+
+-----------------------
+
