@@ -54640,3 +54640,48 @@ To do this, she will use a dataset of temperature records, with meteorological d
 
 -----------------------
 
+## Date - 2025-05-28
+
+
+## Title - Soccer department
+
+
+### **Question** :
+
+Joanna works in the analytics department of a soccer team. She analyzes player performance data to determine potential strategies for upcoming games. 
+
+Joanna is given a dataset with four categorical columns, one of which is the target value she needs to predict. The target class has two possible values. The three features each have 3, 3, and 2 possible values, respectively.
+
+Joanna must generate a synthetic dataset with all unique samples, excluding duplicates.
+
+**What will be the length of this dataset?**
+
+
+### **Choices** :
+
+- The length of the dataset will be 8.
+- The length of the dataset will be 18.
+- The length of the dataset will be 36.
+- The length of the dataset will be 64.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The length of a synthetic dataset will depend on the number of possible combinations of values that can be generated based on the number of possible values for each attribute.
+
+To determine the number of possible combinations, we can calculate the product of the number of possible values for each attribute. In Joanna's case, there are 3 possible values for the first attribute, 3 for the second attribute, 2 for the third attribute,  and 2 for the target class.
+
+The product of these values is 3 x 3 x 2 x 2 = 36. This means Joanna's synthetic dataset will have 36 different examples, each with a different combination of values for the four columns.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Machine Learning Crash Course"](https://developers.google.com/machine-learning/crash-course) is a great introduction to Machine Learning.</p></details>
+
+-----------------------
+
