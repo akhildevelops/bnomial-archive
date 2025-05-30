@@ -54742,3 +54742,48 @@ Adversarial validation is a very clever technique. The result could help explain
 
 -----------------------
 
+## Date - 2025-05-30
+
+
+## Title - Learning hackathon
+
+
+### **Question** :
+
+Jayla was participating in a machine learning hackathon with her teammates, working to develop a solution for a complex problem.
+
+As the team brainstormed ideas, they started discussing the pros and cons of various algorithms. Jayla knew that some models were more sensitive to changes in training data than others.
+
+**Which of the following algorithms can be considered high-variance models?**
+
+
+### **Choices** :
+
+- Decision Trees
+- Linear Regression
+- Logistic Regression
+- k-Nearest Neighbors (KNN)
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Every machine learning algorithm deals with three types of errors: bias, variance, and irreducible error. We need to focus specifically on the variance error to answer this question.
+
+Here is what [Jason Brownlee](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) has to say about variance: "Variance is the amount that the estimate of the target function will change if different training data was used."
+
+In other words, variance refers to how much the answers given by the model will change if we use different training data. The model has high variance if the answers differ significantly when using different portions of our training dataset.
+
+Generally, non-linear machine learning algorithms with a lot of flexibility are high variance. For example, Decision Trees and k-Nearest Neighbors are high-variance models. Linear models, on the other hand, are usually low-variance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Gentle Introduction to the Bias-Variance Trade-Off in Machine Learning"](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/) is Jason Brownlee's article covering bias, variance, and their tradeoff.* The Wikipedia page on bias and variance is also a good resource: ["Bias–variance tradeoff"](https://en.wikipedia.org/wiki/Bias–variance_tradeoff).</p></details>
+
+-----------------------
+
