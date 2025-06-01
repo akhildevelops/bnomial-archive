@@ -54830,3 +54830,61 @@ In the context of neural networks, we use the chain rule as part of the backprop
 
 -----------------------
 
+## Date - 2025-06-01
+
+
+## Title - Researching presentation
+
+
+### **Question** :
+
+While exploring deep learning techniques, Gabriela stumbled upon an intriguing challenge: building a Machine Learning model to predict movie ratings based on user preferences.
+
+Before diving into the problem, she realized she needed to understand the concept of "Tensors" to effectively utilize a popular Deep Learning library.
+
+Determined to master the topic, Gabriela spent hours researching tensors and their properties. As she gained confidence in her understanding, she presented her findings during a local machine learning meetup.
+
+**Which of the following assertions from Gabriela's presentation are correct?**
+
+
+### **Choices** :
+
+- A vector that contains only one number is called a "scalar" or a rank-0 tensor. An example of a scalar is any numeric value like a person's age or today's temperature.
+- An array of numbers is called a "vector" or a rank-1 tensor. An example of a vector is an array containing the age of every person in a dataset.
+- An array with two dimensions is called a matrix or a rank-2 tensor. An example is an array containing the age, sex, height, and country of birth of every person in a dataset.
+- An array with three dimensions is a rank-3 tensor. An example is a 3D array containing the information of an image: for every `x` and `y` position, it contains a vector containing the values of each channel.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's get something out of the way: This question is about tensors as we use them in deep learning, not the mathematical definition of a tensor.
+
+The rank of a tensor refers to its number of axes—or dimensions. For example:
+
+* The rank of a scalar is 0.
+* The rank of a vector is 1.
+* The rank of a matrix is 2.
+* The rank of a 3D tensor is 3.
+
+A scalar, or 0D tensor, has a rank of 0 and contains a single number. These are also called "0-dimensional tensors." 
+
+A vector, or 1D tensor, has a rank of 1 and represents an array of numbers.
+
+A matrix, or 2D tensor, has a rank of 2 and represents an array of vectors. We refer to the two axes of a matrix as "rows" and "columns."
+
+You can obtain higher-dimensional tensors (3D, 4D, etc.) by packing lower-dimensional tensors in an array. For example, packing a 2D tensor in an array gives you a 3D tensor. 
+
+For example, to store a color image, we need three dimensions: one representing the image's width, another representing the height, and a final dimension for the color channels. Assuming we have three channels (red, blue, and green), you can think of having three different matrices, each containing the pixels for each one of the channels.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Deep Learning with Python_, Second Edition](https://amzn.to/3K3VZoy) covers the topic of tensors really well.* Check ["A Gentle Introduction to Tensors for Machine Learning with NumPy"](https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/) for a quick introduction to tensors and practical code.</p></details>
+
+-----------------------
+
