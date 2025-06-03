@@ -54951,3 +54951,46 @@ Notice how each `assert` validates a specific pair of inputs. If there are no er
 
 -----------------------
 
+## Date - 2025-06-03
+
+
+## Title - Smart home system
+
+
+### **Question** :
+
+Phoenix is working on a Machine Learning model to optimize the energy consumption of a smart home system. She wants to implement the Gradient Descent optimization algorithm to train her model.
+
+To balance the trade-off between computation speed and update accuracy, Phoenix is considering using Mini-Batch Gradient Descent. She wants to understand its benefits and characteristics.
+
+**Which of the following statements is true about Mini-Batch Gradient Descent?**
+
+
+### **Choices** :
+
+- Mini-Batch Gradient Descent requires loading the entire dataset into memory for each update iteration.
+- Mini-Batch Gradient Descent updates the model weights only after processing all the available training data.
+- Mini-Batch Gradient Descent uses a batch of data (more than one sample but fewer than the entire dataset) during every iteration.
+- Mini-Batch Gradient Descent is not a variant of Gradient Descent.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Gradient Descent is a popular optimization algorithm in machine learning. It minimizes an objective function by iteratively updating the model weights based on the function's gradient. The number of samples used to compute the gradient in each iteration can vary.
+
+Using a single sample is called Stochastic Gradient Descent (SGD). Using all the data at once is called Batch Gradient Descent. Using a batch of data—more than one sample but fewer than the entire dataset—is called Mini-Batch Gradient Descent.
+
+Mini-Batch Gradient Descent strikes a balance between computation speed and update accuracy. It leverages the benefits of both Stochastic Gradient Descent and Batch Gradient Descent by processing multiple samples in each iteration. This approach allows for more accurate updates than SGD while being computationally more efficient than Batch Gradient Descent, which requires loading the entire dataset into memory.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["The wrong batch size is all it takes" ](https://articles.bnomial.com/the-wrong-batch-size-is-all-it-takes) explains how different batch sizes influence the training process of neural networks using gradient descent.* ["A Gentle Introduction to Mini-Batch Gradient Descent and How to Configure Batch Size"](https://machinelearningmastery.com/gentle-introduction-mini-batch-gradient-descent-configure-batch-size/) covers Batch and Mini-Batch Gradient Descent.* Check ["An overview of gradient descent optimization algorithms"](https://www.ruder.io/optimizing-gradient-descent/) for a deep dive into gradient descent and every one of its variants.</p></details>
+
+-----------------------
+
