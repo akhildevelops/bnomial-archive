@@ -54994,3 +54994,50 @@ Mini-Batch Gradient Descent strikes a balance between computation speed and upda
 
 -----------------------
 
+## Date - 2025-06-04
+
+
+## Title - Straightforward and fast
+
+
+### **Question** :
+
+While working on a data analysis project, Blair used the K-Means algorithm. This was her first time working with a clustering algorithm.
+
+K-Means was straightforward and fast. Blair had all the code written in a few hours, but something was missing.
+
+The documentation mentioned the "elbow method," but Blair wasn't sure how it would help her.
+
+**Which of the following statements is true about the elbow method?**
+
+
+### **Choices** :
+
+- The elbow method determines the optimal number of clusters.
+- The elbow method detects outliers present in a dataset.
+- The elbow method pinpoints the biases within a dataset.
+- The elbow method determines which features best explain observed patterns in a dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The [elbow method](https://en.wikipedia.org/wiki/Elbow_method_(clustering)) is a way to determine the optimal number of clusters. 
+
+When running K-means, you can run the algorithm with a range of values of `k`, and for each value, calculate the sum of squared errors. Then, you can plot a line chart of these errors for each value of `k`. 
+
+If the line chart [looks like an arm](https://en.wikipedia.org/wiki/Elbow_method_(clustering)#/media/File:DataClustering_ElbowCriterion.JPG), then the "elbow" on the arm is the best number of clusters (`k`) that you should use.
+
+The elbow method is a way to choose the point where diminishing returns are no longer worth the cost. It's a very popular technique when using clustering algorithms.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Using the elbow method to determine the optimal number of clusters for k-means clustering"](https://bl.ocks.org/rpgove/0060ff3b656618e9136b) for an explanation of how to use the elbow method.* ["Elbow method (clustering)"](https://en.wikipedia.org/wiki/Elbow_method_(clustering)) is the Wikipedia page covering the elbow method.* Check ["Knee of a curve"](https://en.wikipedia.org/wiki/Knee_of_a_curve) for a precise explanation of looking at the "elbow" of a curve.</p></details>
+
+-----------------------
+
