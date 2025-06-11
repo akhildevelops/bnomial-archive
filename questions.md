@@ -55370,3 +55370,54 @@ Finally, Semi-supervised learning is a type of machine learning where the traini
 
 -----------------------
 
+## Date - 2025-06-11
+
+
+## Title - Social campaign
+
+
+### **Question** :
+
+Milani works at a marketing agency that specializes in social media campaigns.
+
+The agency has collected vast text data from various social media platforms but lacks labels. To optimize future campaigns, Milani wants to classify the sentiment of each text sample. However, she knows she cannot proceed with supervised learning without labeled data.
+
+Milani must decide on a technique for obtaining labels for the data.
+
+**Which of the following techniques could Milani use to label the data?**
+
+
+### **Choices** :
+
+- Hire a team to review and label each text sample manually.
+- Use user reactions or comments on the text samples to automatically generate labels.
+- Apply a supervised learning method to deduce the labels directly from the existing data.
+- Implement semi-supervised learning to spread labels across the entire dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To use a supervised learning method, Milani needs to produce labels for the data. There are various techniques she can use to achieve this.
+
+The most common approach to labeling data is by using human labelers. Milani could hire a team to review each text sample and assign an appropriate sentiment label (e.g., positive, negative, or neutral).
+
+Sometimes, feedback from existing interactions can be used to create labels, known as "direct labeling." For instance, Milani could use likes, dislikes, or other reactions to text samples on social media platforms to approximate the sentiment. Although direct labeling may not always capture the "true ground truth," it is a viable approach. 
+
+The third choice suggests using a supervised learning method to infer the labels from the existing dataset. However, this is not feasible since supervised learning requires labels, which Milani lacks.
+
+Lastly, [semi-supervised learning](https://machinelearningmastery.com/semi-supervised-learning-with-label-propagation/) could be used if Milani already had a small portion of labeled data. The method would then generate labels for the remaining data. However, there is no indication that Milani has any labeled data, making semi-supervised learning an unsuitable option. 
+
+Other techniques to generate labels include [active learning](https://articles.bnomial.com/active-learning) and [weak supervision](https://snorkel.ai/weak-supervision/).</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Machine Learning Data Lifecycle in Production"](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production) course in Coursera, part of the [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops).* Check out ["Semi-Supervised Learning With Label Propagation"](https://machinelearningmastery.com/semi-supervised-learning-with-label-propagation/) for an introduction to how to use a few labels with semi-supervised learning.* ["Active Learning"](https://articles.bnomial.com/active-learning) is an introduction to a learning technique to build better-performing machine learning models using fewer training labels.* ["Weak Supervision: A New Programming Paradigm for Machine Learning"](http://ai.stanford.edu/blog/weak-supervision/) is a good article from Stanford introducing Weak Supervision.</p></details>
+
+-----------------------
+
