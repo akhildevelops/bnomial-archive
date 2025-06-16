@@ -55603,3 +55603,58 @@ She collects a list of potential choices and emails her colleague for feedback. 
 
 -----------------------
 
+## Date - 2025-06-16
+
+
+## Title - Sister dice
+
+
+### **Question** :
+
+Alayah has a box containing a 6-sided and a 12-sided die.
+
+She asks her sister to randomly pick one out, roll it, and share the result. Her sister tells her that the result is 2.
+
+**What is the probability that Alayah's sister picked the 6-sided die?**
+
+
+### **Choices** :
+
+- The probability is 1/2
+- The probability is 2/3
+- The probability is 3/4
+- The probability is 1/3
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Let's assume that `A` represents the event of rolling the die and getting a `2`, `B1` represents pulling out the 6-sided die, and `B2` represents pulling out the 12-sided die.
+
+We can compute the probability that Alayah's sister picked the 6-sided die using the [Bayes theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem):
+
+```
+P(B1|A) = (P(A|B1)*P(B1))/P(A)
+P(B1|A) = (1/12)/P(A)
+
+P(A) = P(A|B1)*P(B1)+P(A|B2)*P(B2)
+P(A) = 1/12 + 1/24​
+P(A) = 1/8
+
+P(B1|A) = (1/12)/(1/8)
+P(B1|A) = 2/3​
+```
+
+Thus, the answer is `2/3`.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["A Gentle Introduction to Bayes Theorem for Machine Learning"](https://machinelearningmastery.com/bayes-theorem-for-machine-learning/) is a great starting point to understand the Bayes theorem and how to use it.* You can also check the Wikipedia page of [the Bayes theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem).</p></details>
+
+-----------------------
+
