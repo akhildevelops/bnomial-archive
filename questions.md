@@ -55856,3 +55856,52 @@ A different optimization algorithm could improve the training process and perfor
 
 -----------------------
 
+## Date - 2025-06-21
+
+
+## Title - Genre songs
+
+
+### **Question** :
+
+Leilani had been passionately working on her music recommendation system for weeks. 
+
+She built a neural network to classify songs into different genres, and while the training phase produced impressive results, the model's performance on the test data left her dissatisfied.
+
+After a few experiments, Leilani realized her model was overfitting.
+
+**Which of the following strategies would you say is likely to help Leilani solve her problem?**
+
+
+### **Choices** :
+
+- Increase the complexity of the model.
+- Switch to a different optimization algorithm.
+- Regularize the model.
+- Increase the amount of training data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Leilani's model is doing great with the training data but struggling on the test set, which indicates that her model is not generalizing well to unseen samples.
+
+If Leilani increases the complexity of her model, it may lead to even more overfitting. A more complex model has more capacity, which means it can easily "memorize" the training data instead of learning to generalize from it. While the model's performance on the training data might improve, its performance on the test data will likely worsen. The increased complexity can cause the model to capture the noise in the training data rather than the underlying patterns, making it less effective at handling new, unseen data.
+
+Switching the optimization algorithm is unlikely to solve this problem. Nothing in the statement gives us any information about which algorithm Leilani is currently using, and we don't have any reason to believe it's not a good one. We also know that her model is learning the training data, which wouldn't be possible if the optimization algorithm wasn't appropriate.
+
+Leilani could use regularization techniques to help with overfitting. Regularization discourages the model from becoming too complex or flexible, which helps prevent the model from "memorizing" the training data.
+
+Finally, there's a chance that the training data that Leilani is using doesn't fully capture the breadth of valid samples for her problem. In other words, her training dataset might not be enough to teach the model how to predict the test data correctly. Adding more data to the training set allows Leilani to build a model that generalizes better.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.</p></details>
+
+-----------------------
+
