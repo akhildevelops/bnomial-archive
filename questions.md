@@ -56193,3 +56193,52 @@ To avoid overfitting, Evelynn should prune the tree. By doing so, she forces the
 
 -----------------------
 
+## Date - 2025-06-28
+
+
+## Title - Media company
+
+
+### **Question** :
+
+Dakota is a data scientist at a media company. She is working on a project to build a machine-learning model that predicts the popularity of different types of content.
+
+The model's success will significantly impact the company's ability to provide its audience with the most engaging content.
+
+Before she trains her model, Dakota must divide her dataset into three sets: a training set, a validation set, and a test set. She knows that using each set for specific purposes is essential to ensure accurate results.
+
+**Which of the following are correct practices for using these three sets?**
+
+
+### **Choices** :
+
+- Dakota should use the test set only once to fine-tune the model's parameters.
+- Dakota should use the training set only once to train the model.
+- Dakota should use the validation set multiple times to fine-tune the model's parameters.
+- Dakota should use the training set multiple times to train the model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The training and validation sets can be used multiple times throughout the model development process.
+
+We use a training set to train the model. This training set is a subset of the entire dataset. We use the training set multiple times throughout the model development process as the model is refined and improved.
+
+We use a validation set to tune the model's parameters and assess its performance to prevent overfitting. We evaluate the model's performance after each iteration of training.
+
+After we finish training and tuning the model, we can evaluate it on a test set, which hasn't been used during the training or validation process. The model's performance on the test set provides an estimate of how well the model will perform in real-world scenarios.
+
+We should never use the test set to fine-tune the model's parameters.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Train, Validation, Test Split for Machine Learning"](https://blog.roboflow.com/train-test-split/) goes into detail about the importance of each split.</p></details>
+
+-----------------------
+
