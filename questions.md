@@ -56242,3 +56242,50 @@ We should never use the test set to fine-tune the model's parameters.</p></detai
 
 -----------------------
 
+## Date - 2025-06-29
+
+
+## Title - Binary neural network
+
+
+### **Question** :
+
+Gracelynn just started working on a new project where she needs to create a neural network model for classifying customer feedback.
+
+She has been exploring different loss functions and came across binary cross-entropy. Gracelynn needs to know if this loss function would suit her neural network model.
+
+**In which type of neural network problems should Gracelynn use binary cross-entropy as the loss function?**
+
+
+### **Choices** :
+
+- Binary cross-entropy is the loss function used for multi-class classification problems.
+- Binary cross-entropy is the loss function used for multi-label classification problems.
+- Binary cross-entropy is the loss function used for binary classification problems.
+- Binary cross-entropy is the loss function used for regression problems.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Binary cross-entropy is the loss function we use when training binary classifiers. When working on a binary classification task, we categorize every sample into two classes. For example, given images of dogs or cats, a binary classifier will decide whether a picture shows a dog or a cat.
+
+But binary classifiers aren't the only time we use binary cross-entropy.
+
+Binary cross-entropy is also the loss function we use in multi-label classification problems. These are problems where we categorize every sample into one or more classes. For example, organizing movies based on the type of content, for instance, violence, adult language, smoking, or sex, where each film could belong to one or more categories.
+
+In multi-label classification models, the output layer returns values independently. It's helpful to think of a model that outputs ten possible classes as a combination of ten different binary classifiers, and thus binary cross-entropy helps.
+
+Neither multi-class classification nor regression problems use binary-cross entropy.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Understanding binary cross-entropy / log loss: A visual explanation"](https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a) is an excellent introduction to binary cross-entropy.- Another article that helps understand binary cross-entropy is ["Binary Cross Entropy/Log Loss for Binary Classification"](https://www.analyticsvidhya.com/blog/2021/03/binary-cross-entropy-log-loss-for-binary-classification/).</p></details>
+
+-----------------------
+
