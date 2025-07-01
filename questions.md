@@ -56334,3 +56334,60 @@ The distribution's tails are the histogram's parts that start narrowing down. Wh
 
 -----------------------
 
+## Date - 2025-07-01
+
+
+## Title - Deep Learning's rise
+
+
+### **Question** :
+
+Jenna had always been fascinated by the rise and prominence of deep learning in the tech world.
+
+One afternoon, while on a call with her mentor discussing various aspects of her career, she couldn't help but bring up the topic of deep learning's surge in popularity.
+
+Her mentor, a veteran in the field, agreed with her observations and mentioned that many of the principles in deep learning today were already present in the '90s. However, the circumstances then did not allow for today's boom. 
+
+Intrigued, Jenna wondered what these "circumstances" could be.
+
+**Which of the following reasons contributed to the rise in popularity of deep learning?**
+
+
+### **Choices** :
+
+- The development and improvement of algorithms made training deep networks possible.
+- The gaming industry's massive investment in developing fast, parallel chips.
+- The beginning of the latest AI Winter drew significant positive press and encouraged investments in the field.
+- The proliferation of the Internet allowed the collection and distribution of massive amounts of data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In the book [Deep Learning with Python, Second Edition](https://amzn.to/3K3VZoy), François Chollet remarks:
+
+> (...) typical deep learning models used in computer vision or speech recognition require significantly more computational power than a standard laptop can provide. Throughout the 2000s, companies like NVIDIA and AMD pumped in billions of dollars in developing fast, massively parallel chips (graphical processing units, or GPUs) to power the graphics of progressively photorealistic video games (...)
+
+This huge investment provided a big push to deep learning: the required computing power suddenly became readily available.
+
+Similarly, the Internet played a significant role in fueling the popularity of deep learning. Its wide usage facilitated the collection and distribution of enormous amounts of data, which is crucial for powering these algorithms.
+
+Moreover, several key algorithmic improvements enabled the scientific community to train deep neural networks effectively. These included:
+
+> * Better activation functions for neural layers
+> * Improved weight-initialization schemes
+> * More efficient optimization schemes
+
+However, the "AI Winter" refers to a period of reduced funding and interest in artificial intelligence research. Contrary to the statement in the third choice, it was not associated with a positive press or increased investment in the field. Hence, it's not a correct reason for the rise in popularity of deep learning.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [_Deep Learning with Python, Second Edition_](https://amzn.to/3K3VZoy) for a great introduction to Deep Learning.</p></details>
+
+-----------------------
+
