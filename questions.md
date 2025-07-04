@@ -56487,3 +56487,48 @@ Lastly, calculating the [F1-score](https://en.wikipedia.org/wiki/F-score) is ano
 
 -----------------------
 
+## Date - 2025-07-04
+
+
+## Title - Better scheduler
+
+
+### **Question** :
+
+Kira is working on a deep-learning project to predict stock prices. She has built her model, but she's facing a challenge in getting her model to learn effectively during training.
+
+Kira read about a concept called a learning rate scheduler and thinks it might be what she needs to help her model learn better. However, she isn't entirely sure about its purpose and how it might help her.
+
+She decided to dig deeper and understand what a learning rate scheduler does.
+
+**Which of the following statements correctly defines the role of a learning rate scheduler?**
+
+
+### **Choices** :
+
+- The learning rate scheduler will help the optimization algorithm get past a flat region by continuing its previous movement.
+- The learning rate scheduler will adjust the learning rate during training according to a pre-defined schedule.
+- The learning rate scheduler will save a copy of the network weights according to the value of the learning rate.
+- The learning rate scheduler will help the optimization algorithm accelerate in one direction based on past updates.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When we train a deep learning model, the learning rate is one of the most crucial factors in controlling how the model learns. The learning rate defines how much the model changes in response to the estimated error each time the weights are updated.
+
+Using a learning rate scheduler can significantly improve the model's learning process. The scheduler adjusts the learning rate at different stages during training according to a pre-defined schedule.
+
+Typically, the learning rate starts relatively high to allow quick learning, and then it is gradually reduced to allow the model to converge effectively. This approach is like taking big steps when you're far from your destination and smaller steps as you get closer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Learning Rate Scheduling"](https://d2l.ai/chapter_optimization/lr-scheduler.html) is a great introduction to learning rate schedulers.- ["How to Choose a Learning Rate Scheduler for Neural Networks"](https://neptune.ai/blog/how-to-choose-a-learning-rate-scheduler) is an article from [Neptune AI](https://neptune.ai/), focusing on some practical ideas on how to use schedulers.</p></details>
+
+-----------------------
+
