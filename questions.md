@@ -56841,3 +56841,48 @@ Finally, [batch normalization](https://en.wikipedia.org/wiki/Batch_normalization
 
 -----------------------
 
+## Date - 2025-07-11
+
+
+## Title - Artificial game
+
+
+### **Question** :
+
+Nayeli is planning a game night with her friends and wants to introduce them to something new: a basic artificial intelligence game! 
+
+She thinks it would be fun if they could play tic-tac-toe against a computer that can learn how to win. Nayeli discovered she could create a program using a neural network to help the computer learn.
+
+She's planning to start simple, with a neural network with only one hidden layer. But she wants to explain this to her friends in the simplest way possible.
+
+**What is the best way for Nayeli to talk about this type of neural network?**
+
+
+### **Choices** :
+
+- A hidden neural network
+- A shallow neural network
+- A recurrent neural network
+- A deep neural network
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Nayeli is planning to use the kind of network for her tic-tac-toe game called a "shallow neural network." This is a special term that computer scientists use when a network only has one hidden layer.
+
+A neural network with many hidden layers is known as a "deep neural network." But Nayeli's network only has one layer, so it's not deep - it's shallow!
+
+The terms "hidden neural network" and "recurrent neural network" are not the right ones to use here. A "hidden neural network" isn't a term that's used in computer science. And while "recurrent neural network" is a real term, it describes a different kind of network that's not the one Nayeli is using for her game.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["But what is a neural network?"](https://www.youtube.com/watch?v=aircAruvnKk) is Grant Sanderson's introduction to neural networks on YouTube. Highly recommended!* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen).</p></details>
+
+-----------------------
+
