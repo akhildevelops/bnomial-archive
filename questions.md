@@ -57134,3 +57134,48 @@ For example, to store a color image, we need three dimensions: one representing 
 
 -----------------------
 
+## Date - 2025-07-17
+
+
+## Title - Sold monthly
+
+
+### **Question** :
+
+Anna has just landed her dream job.
+
+She is working for a big fashion retailer. Thousands of products are sold monthly, and Anna plans to assist the company in understanding its customers better.
+
+After a week of examining all the data they collected about each customer, Anna started pondering a suitable method to categorize them into clusters based on their attributes.
+
+The challenge is that Anna is uncertain about the optimal approach. Should she classify customers based on their purchasing habits, or would it be better to do it by age? What about the type of apparel or spending capacity?
+
+**How would you tackle this problem if you were in Anna's position?**
+
+
+### **Choices** :
+
+- Use a semi-supervised learning algorithm to process the data, thus leveraging supervised and unsupervised techniques.
+- Use an unsupervised learning algorithm to find interesting ways to categorize customers.
+- Define a few categories beforehand, and train a supervised learning algorithm to sort every customer into one.
+- Apply a supervised learning algorithm to discover potentially interesting ways to categorize customers.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Customer segmentation](https://towardsdatascience.com/customer-segmentation-with-machine-learning-a0ac8c3d4d84) is a popular field where you try to find similar characteristics among your customers. It's the perfect opportunity to use unsupervised learning: a clustering algorithm.
+
+For example, Anna could use [K-Means](https://en.wikipedia.org/wiki/K-means_clustering) to find interesting patterns and group together the customers that share them. A critical distinction is that she doesn't need to consider the segments preemptively; the clustering algorithm will find them for her.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Customer Segmentation with Machine Learning"](https://towardsdatascience.com/customer-segmentation-with-machine-learning-a0ac8c3d4d84) for a quick introduction to Customer Segmentation.* ["10 Clustering Algorithms With Python"](https://machinelearningmastery.com/clustering-algorithms-with-python/) will introduce you to 10 different clustering algorithms.</p></details>
+
+-----------------------
+
