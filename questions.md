@@ -57361,3 +57361,54 @@ Additionally, if Sophie uses a very small batch size, outliers in the data could
 
 -----------------------
 
+## Date - 2025-07-22
+
+
+## Title - Electrocardiogram readings
+
+
+### **Question** :
+
+Emily is struggling with her machine learning project.
+
+She is developing a model to detect early signs of a rare heart condition using electrocardiogram (ECG) readings. The issue is that Emily has a dataset with significantly more healthy samples than those with the disease, leading her model to misclassify ill patients as healthy frequently.
+
+Acquiring more data for such a rare condition is extremely tough, and stringent privacy laws further complicate matters.
+
+Emily is in dire need of alternative solutions.
+
+**Which of the following options could Emily consider to enhance her model's performance?**
+
+
+### **Choices** :
+
+- Assign a higher weight to the samples indicating the rare heart condition.
+- Augment the dataset with slightly modified copies of the images showing the disease.
+- Reduce the learning rate to allow the model to learn underrepresented samples.
+- Swap out her model with a Decision Tree as these are more resistant to imbalanced data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Handling imbalanced datasets is a typical challenge in machine learning, and there are numerous strategies to tackle it. Often, a combination of multiple approaches leads to the best results.
+
+One technique that's typically simple to implement is to give higher weight to underrepresented classes in the loss function. This strategy results in a higher penalty for the model if it misclassifies a sample from the rare class. In essence, increasing the weight of certain classes makes them "more important" from the loss function's perspective. Every significant machine learning framework offers a way to manipulate the weight assigned to each class.
+
+Another effective approach to address this issue is to augment the underrepresented class. Data augmentation involves generating new training data through minor modifications to existing samples. For example, ECG readings can be augmented by introducing noise or slight time variations.
+
+It's worth mentioning that these aren't the only ways to deal with imbalanced datasets. Other strategies could involve oversampling the underrepresented classes, downsampling the dominant class, or creating additional synthetic data.
+
+However, Decision Trees are not inherently more robust to imbalanced data, and reducing the learning rate does not directly help the model to better learn from the underrepresented class.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check out ["A Gentle Introduction to Imbalanced Classification"](https://machinelearningmastery.com/what-is-imbalanced-classification/) for a description of how to tackle imbalanced problems.</p></details>
+
+-----------------------
+
