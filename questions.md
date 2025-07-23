@@ -57412,3 +57412,52 @@ However, Decision Trees are not inherently more robust to imbalanced data, and r
 
 -----------------------
 
+## Date - 2025-07-23
+
+
+## Title - Nominal types
+
+
+### **Question** :
+
+Isabella is preparing for a project in her machine learning class.
+
+She's new to the field, and they've been studying structured data and various feature types over the past weeks.
+
+Her assignment is to eliminate all nominal features from a given dataset.
+
+Isabella is facing a problem: she can't recall the definition of "nominal features." 
+
+**Which of the following descriptions correctly describes a nominal feature?**
+
+
+### **Choices** :
+
+- A nominal feature is a categorical variable with more than ten possible values.
+- A nominal feature is a categorical variable with fewer than ten potential values.
+- A nominal feature is a categorical variable with an established order.
+- A nominal feature is a categorical variable without a meaningful order.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>According to Jason Brownlee in his ["Ordinal and One-Hot Encodings for Categorical Data"](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/) article:
+
+> [A nominal variable is a] variable that comprises a finite set of discrete values with no relationship between values.
+
+In other words, nominal features are categorical features where the order of values does not carry any significance. For instance, consider a feature "animal type" with possible values: "cat," "dog," and "bird." There is no meaningful order among these values. 
+
+The number of possible values does not define a nominal feature.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Ordinal and One-Hot Encodings for Categorical Data"](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/) for an explanation of nominal features.</p></details>
+
+-----------------------
+
