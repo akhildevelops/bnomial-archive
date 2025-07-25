@@ -57512,3 +57512,54 @@ The order of these dimensions is intentional. Conventionally, tensors that hold 
 
 -----------------------
 
+## Date - 2025-07-25
+
+
+## Title - Disappointing loss
+
+
+### **Question** :
+
+Sarah is a data scientist at a well-known tech company. 
+
+She has been working diligently on building a neural network for predicting user behavior. After carefully preparing the dataset, she was ready to start training her model.
+
+Excitedly, Sarah started the training process. However, after half an hour, she noticed that her training loss wasn't reducing as anticipated; it remained significantly high, much to her disappointment.
+
+Puzzled, Sarah went back to scrutinizing her process, attempting to uncover the potential reasons for this anomaly.
+
+**Select every potential reason causing the loss to behave this way.**
+
+
+### **Choices** :
+
+- Sarah is using a learning rate that's too high.
+- The neural network is getting stuck at local minima.
+- The regularization that Sarah is using is too aggressive.
+- Sarah is using a learning rate that's too low.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Many factors can cause problems during training. Let's discuss some of the more common ones.
+
+[Regularization](https://en.wikipedia.org/wiki/Regularization_(mathematics)) is a helpful technique to avoid overfitting, but it may prevent the network from learning when it is too aggressive. This happens because regularization imposes a penalty on the network's weights, preventing them from becoming too large. If we aren't careful, the weights may stop changing, the network will stop learning, and the loss will stay high.
+
+Using a learning rate that's too low might also keep the training loss high. The network weights will be updated very slowly with a low learning rate. Unless we run the training process for many iterations, the network will struggle to get to where the loss is sufficiently low.
+
+Finally, the optimization may be stuck at a local minimum. This will cause the loss to stop decreasing altogether. Strategies to overcome this problem include better initializing the network's parameters or increasing the learning rate or momentum to overcome the local minimum.
+
+It's improbable that the problem is caused by a learning rate that's too high. If this were the case, Sarah would see rather significant changes in the loss. With a high learning rate, it's also common to see the loss oscillating after some time.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["What should I do when my neural network doesn't learn?"](https://stats.stackexchange.com/questions/352036/what-should-i-do-when-my-neural-network-doesnt-learn) is an excellent discussion about this topic.</p></details>
+
+-----------------------
+
