@@ -57804,3 +57804,42 @@ Many people relate Decision Trees with classification tasks, but they are also v
 
 -----------------------
 
+## Date - 2025-07-31
+
+
+## Title - Architecture mismatch
+
+
+### **Question** :
+
+Meadow is discussing popular Deep Learning architectures with her colleagues during a meeting. They've listed some examples of such architectures, but one doesn't fit in the list. 
+
+Meadow wants to point out the odd one but needs your help.
+
+**Can you determine which of the following doesn't belong on this list?**
+
+
+### **Choices** :
+
+- ResNet
+- InceptionV3
+- Word2vec
+- MobileNet
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Word2vec is the odd one on the list, as it is a natural language processing (NLP) technique for learning word embeddings rather than a Deep Learning architecture. The other items in the list (InceptionV3, ResNet, and MobileNet) are all Deep Learning architectures used primarily for image classification tasks.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [Word2vec](https://en.wikipedia.org/wiki/Word2vec) for more information about the Word2vec technique.</p></details>
+
+-----------------------
+
