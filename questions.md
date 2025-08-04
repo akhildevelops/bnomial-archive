@@ -57998,3 +57998,48 @@ Therefore, Emma should not reuse the learning-rate schedule and instead find the
 
 -----------------------
 
+## Date - 2025-08-04
+
+
+## Title - Improving rate
+
+
+### **Question** :
+
+Annalise is a data science enthusiast trying to build her first deep-learning model. She has prepared her dataset and chosen the architecture for her neural network.
+
+During her training phase, however, Annalise noticed that her model's performance was not improving. After researching, she came across a concept called "learning rate scheduler" and thought it might be what she needed.
+
+Annalise wants to understand more about how a learning rate scheduler functions and how it might help improve her model's learning.
+
+**Which of the following correctly describes what a learning rate scheduler does in deep learning?**
+
+
+### **Choices** :
+
+- The learning rate scheduler will save a copy of the network weights according to the value of the learning rate.
+- The learning rate scheduler will help the optimization algorithm accelerate in one direction based on past updates.
+- The learning rate scheduler will adjust the learning rate during training according to a pre-defined schedule.
+- The learning rate scheduler will help the optimization algorithm get past a flat region by continuing its previous movement.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>One critical aspect of training neural networks in deep learning is setting the learning rate. The learning rate determines how much we adjust the model in response to the estimated error each time the weights are updated. The model may need too many updates to converge if the learning rate is too small. The model might skip the optimal solution or even diverge if it's too large.
+
+A popular technique for finding a good balance is using a learning rate scheduler. This predefined schedule adjusts the learning rate between epochs or iterations as the training progresses.
+
+The most common scenario is to start with a high learning rate and decrease it over time. Initially, we take significant steps towards the minimum but move more carefully as we hone in on it.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Learning Rate Scheduling"](https://d2l.ai/chapter_optimization/lr-scheduler.html) is a great introduction to learning rate schedulers.- ["How to Choose a Learning Rate Scheduler for Neural Networks"](https://neptune.ai/blog/how-to-choose-a-learning-rate-scheduler) is an article from [Neptune AI](https://neptune.ai/), focusing on some practical ideas on how to use schedulers.</p></details>
+
+-----------------------
+
