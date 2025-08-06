@@ -58094,3 +58094,50 @@ Log loss, however, is one of the most popular error functions and a perfect fit 
 
 -----------------------
 
+## Date - 2025-08-06
+
+
+## Title - Encoding features
+
+
+### **Question** :
+
+In developing a machine learning model, a significant portion of the work is done before the training begins.
+
+Giuliana knows that she must prepare her data before it can be used. She has been considering encoding some of the features in her dataset. One-Hot Encoding appears to be a suitable option.
+
+It's been a long time since Giuliana used One-Hot Encoding, and she could use some guidance.
+
+**Which of the following statements accurately describes how One-Hot Encoding functions?**
+
+
+### **Choices** :
+
+- One-Hot Encoding transforms a numerical feature into its categorical equivalent.
+- One-Hot Encoding converts a string-encoded feature into its numerical equivalent.
+- One-Hot Encoding changes a string-encoded feature into its categorical equivalent.
+- One-Hot Encoding generates additional features based on the number of unique values in a categorical feature.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Categorical data are variables that contain label values rather than numeric values. For instance, a variable representing the color with values "red," "blue," and "green" is a categorical variable.
+
+While some algorithms can work with categorical data directly, most cannot: they need the data to be numeric. One-Hot Encoding is one of the methods we can use to convert categorical data into a numerical format.
+
+For instance, suppose we have a dataset with a single feature called "color" that could have the values "red," "blue," and "green." Applying One-Hot Encoding will result in a new dataset with three features, one for each value of the original "color" column.
+
+A sample that had the value "blue" in the previous column will now have the value `0` for both "red" and "green" and the value `1` under the "blue" feature.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Why One-Hot Encode Data in Machine Learning?"](https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/) for an explanation of how One-Hot Encoding works.</p></details>
+
+-----------------------
+
