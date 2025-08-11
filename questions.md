@@ -58349,3 +58349,50 @@ Finally, shuffling helps us prevent the influence of any unintentional order or 
 
 -----------------------
 
+## Date - 2025-08-11
+
+
+## Title - Deep activations
+
+
+### **Question** :
+
+Tessa is preparing for her upcoming Machine Learning exam.
+
+She is reading about activation functions and how they are essential for creating deep neural networks. Tessa would like to write down a few examples of non-linear activation functions to learn more about them later.
+
+**Which of the following are considered non-linear activation functions?**
+
+
+### **Choices** :
+
+- Sigmoid
+- Hyperbolic Tangent (tanh)
+- Rectified Linear Unit
+- Leaky Rectified Linear Unit
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>For a neural network to learn complex patterns, we must ensure that the network can approximate any function, not only linear ones. This is why we call it "non-linearities."
+
+The way we do this is by using activation functions. 
+
+An interesting fact: the [Universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) states that, when using non-linear activation functions, we can turn a two-layer neural network into a universal function approximator. This is an excellent illustration of how powerful neural networks are.
+
+Some of the most popular activation functions are [sigmoid](https://en.wikipedia.org/wiki/Logistic_function), [tanh](https://en.wikipedia.org/wiki/Hyperbolic_functions#Hyperbolic_tangent), [ReLU](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks), and [Leaky ReLU](https://paperswithcode.com/method/leaky-relu).
+
+Therefore, every choice of this question is correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Activation function"](https://en.wikipedia.org/wiki/Activation_function) from Wikipedia to understand more about this topic.* I find the ["Universal approximation theorem"](https://en.wikipedia.org/wiki/Universal_approximation_theorem) fascinating.</p></details>
+
+-----------------------
+
