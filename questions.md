@@ -58643,3 +58643,50 @@ It's worth noting that Softmax is essentially a generalized form of the Sigmoid 
 
 -----------------------
 
+## Date - 2025-08-17
+
+
+## Title - Fish species
+
+
+### **Question** :
+
+Selah has just received an exciting project at work, where she has to create an object detection model to identify various fish species from underwater footage.
+
+She wants to construct a model that's not just tailored to this specific task but also one that she can adapt for future related tasks. 
+
+Selah needs to have an efficient evaluation method to ensure her model is performing optimally. This method should allow her to assess different versions of her model and pick the most effective one.
+
+**Which evaluation metrics should Selah use to evaluate her model?**
+
+
+### **Choices** :
+
+- F1 score
+- Recall
+- ROC Curve
+- Precision-Recall Curve
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The recall is a useful metric for object detection, but it doesn't give Selah the complete picture unless it's viewed in conjunction with precision. A model could have a high recall but terrible precision, which would not be useful for Selah. Thus, recall by itself is not the ideal metric.
+
+[ROC Curves](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) pose a problem for object detection problems because they require the notion of True Negatives to calculate the False Positive Rate, which is one of the ROC curve's axes. However, in object detection tasks like Selah's, the number of bounding boxes that don't contain an object of interest is typically too large to calculate True Negatives accurately; hence ROC curves are not usually employed in such scenarios.
+
+Instead, Selah could calculate a [Precision-Recall Curve](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html). This curve is akin to the ROC curve, but it uses the model's precision, which doesn't rely on True Negatives, making it more suitable for her object detection task.
+
+Lastly, computing the [F1-score](https://en.wikipedia.org/wiki/F-score) is also a good choice because it considers both the model's precision and recall, offering a balanced view of its performance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Classification: ROC Curve and AUC"](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) for an explanation of how to create and interpret a ROC curve.* For more information about Precision-Recall curves, check [Scikit-Learn's documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html).</p></details>
+
+-----------------------
+
