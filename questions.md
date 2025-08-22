@@ -58884,3 +58884,55 @@ Lastly, if Magdalena uses a very small batch size, poor samples could cause sign
 
 -----------------------
 
+## Date - 2025-08-22
+
+
+## Title - Online pet store
+
+
+### **Question** :
+
+Lucy's online pet store has seen a significant increase in customers and product variety.
+
+The neural network model Lucy's team had implemented showed signs of distress. The problem was easy to identify: the company collected more data and features from a wider range of customers. The current model wasn't utilizing all the available information, leading to underfitting.
+
+Lucy recognized the need to augment the capacity of her model.
+
+**Which of the following steps can Lucy take to augment the capacity of her neural network model?**
+
+
+### **Choices** :
+
+- Lucy should increase the regularization applied to the model.
+- Lucy should increase the number of nodes on each layer.
+- Lucy should raise the learning rate for training the model.
+- Lucy should increase the number of hidden layers in the neural network.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>This piece from ["How to Control Neural Network Model Capacity With Nodes and Layers"](https://machinelearningmastery.com/how-to-control-neural-network-model-capacity-with-nodes-and-layers/) offers a good understanding:
+
+> The capacity of a deep learning neural network model controls the scope of the types of mapping functions that it is able to learn. (...) The capacity of a neural network model is defined by configuring the number of nodes and the number of layers.
+
+Lucy has three options for expanding her network's capacity:
+* She can add more hidden layers.
+* She can increase the number of nodes on each layer.
+* She can combine these two strategies.
+
+Increasing the network's capacity will give the model more generalization power, so Lucy should see improved performance as the new model accommodates more data.
+
+The learning rate and regularization methods do not influence the network's capacity.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [How to Control Neural Network Model Capacity With Nodes and Layers](https://machinelearningmastery.com/how-to-control-neural-network-model-capacity-with-nodes-and-layers/)* [The capacity of feedforward neural networks](https://www.math.uci.edu/~rvershyn/papers/bv-capacity-neural-networks.pdf)</p></details>
+
+-----------------------
+
