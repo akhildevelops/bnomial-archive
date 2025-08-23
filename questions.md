@@ -58936,3 +58936,54 @@ The learning rate and regularization methods do not influence the network's capa
 
 -----------------------
 
+## Date - 2025-08-23
+
+
+## Title - Allergic reaction
+
+
+### **Question** :
+
+Rachel needs help with her machine learning project.
+
+Using patient data, she is building a model to predict a specific type of rare allergic reaction. The challenge is that Rachel's dataset contains far more instances of patients without the allergy than those with it, causing her model to misclassify allergic patients as non-allergic frequently.
+
+Getting more data for such a rare allergy is difficult, and strict privacy rules add further complications.
+
+Rachel is seeking other ways to enhance her model.
+
+**Which of the following strategies could Rachel use to improve her model's accuracy?**
+
+
+### **Choices** :
+
+- Augment the dataset with slightly modified copies of the patient data showing the allergy.
+- Reduce the learning rate to allow the model to learn from the underrepresented samples.
+- Swap out her model with a Decision Tree, as these are more resistant to imbalanced data.
+- Assign a higher weight to the samples indicating the rare allergy.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Dealing with imbalanced datasets is a common challenge in machine learning, and numerous strategies can help address it. Often, the best solution involves a mix of different approaches.
+
+A typically straightforward technique assigns a higher weight to the underrepresented classes in the loss function. This method increases the penalty for the model if it misclassifies a sample from the rare class. In simple terms, this makes certain classes "more important" from the loss function's perspective. All major machine learning frameworks provide a way to adjust the weight assigned to each class, making this a correct choice.
+
+Another practical approach to this problem is augmenting the underrepresented class. Data augmentation involves creating new training data by making small sample changes. In this context, Rachel could introduce minor variations to the patient data.
+
+However, it's worth noting that there are other strategies for dealing with imbalanced datasets. Other techniques could involve oversampling the underrepresented classes, downsampling the dominant class, or creating additional synthetic data.
+
+Finally, Decision Trees aren't inherently more robust to imbalanced data, and reducing the learning rate doesn't directly help the model learn better from the underrepresented class.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check out ["A Gentle Introduction to Imbalanced Classification"](https://machinelearningmastery.com/what-is-imbalanced-classification/) for a description of how to tackle imbalanced problems.</p></details>
+
+-----------------------
+
