@@ -59087,3 +59087,85 @@ If you have two decision trees with the same predictive power in your test datas
 
 -----------------------
 
+## Date - 2025-08-26
+
+
+## Title - Predictive maintenance
+
+
+### **Question** :
+
+Mariam built a machine learning model that looks at pictures of mechanical components and predicts whether they need maintenance.
+
+After successfully testing the model in a pilot project, the company plans to start using it in one of its warehouses. Before they are ready, Miriam needs to summarize the performance of the pilot project. 
+
+She ran pictures of 100 different components through the model and found the following:
+
+* The model predicted that 7 components needed maintenance. After manually inspecting them, only 5 required work, but the other 2 were okay. 
+* The model predicted that 93 components were working as expected but missed 2 that needed maintenance.
+
+**Which of the following is the correct summary of accuracy, precision, and recall for Miriam's model?**
+
+
+### **Choices** :
+
+- The model's accuracy is 93%, the precision is 29%, and the recall is 71%.
+- The model's accuracy is 98%, the precision is 71%, and the recall is 29%.
+- The model's accuracy is 90%, the precision is 98%, and the recall is 29%.
+- The model's accuracy is 96%, the precision is 71%, and the recall is 71%.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The easiest way to answer this question is to put the information we know in a [confusion matrix](https://articles.bnomial.com/confusion-matrix). Whenever you build a classification model, the confusion matrix will help tremendously. Let's see how.
+
+Here is the confusion matrix with Miriam's results. Notice the small annotations next to each value:
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/168438082-c56db22f-935b-4e27-9d01-ca8f881a8ad1.png)
+
+* Miriam's model found 5 true positives (TP). These are the components that the model predicted that needed maintenance that actually needed it.
+* There are 2 false positives (FP). These are the other 2 components the model thought erroneously needed maintenance.
+* There are 91 true negatives (TN). These are the components the model classified as okay and were indeed fine.
+* There are 2 false negatives (FN). These are the 2 components that the model missed as needing maintenance.
+
+We can compute the three metrics we need using this information. Let's start with accuracy:
+
+```
+accuracy = (TP+TN)/(TP+TN+FP+FN)
+accuracy = (5+91)/(5+91+2+2)
+accuracy = 96/100
+accuracy = 0.96
+```
+
+The [precision](https://en.wikipedia.org/wiki/Precision_and_recall#Precision) of the model is the fraction of components that truly need maintenance among the components that the model predicts need it. We can compute the precision this way:
+
+```
+precision = TP/(TP + FP)
+precision = 5/(5 + 2)
+precision = 5/7
+precision = 0.71
+```
+
+The [recall](https://en.wikipedia.org/wiki/Precision_and_recall#Recall) of the model is the fraction of components that truly need maintenance among all the existing components that need maintenance. We can compute the recall this way:
+
+```
+recall = TP/(TP + FN)
+recall = 5/(5 + 2)
+recall = 5/7
+recall = 0.71
+```
+
+As you can see, the fourth choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.</p></details>
+
+-----------------------
+
