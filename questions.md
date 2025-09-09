@@ -59813,3 +59813,50 @@ Finally, the ["Universal approximation"](https://kenndanielso.github.io/mlrefine
 
 -----------------------
 
+## Date - 2025-09-09
+
+
+## Title - Missing answers
+
+
+### **Question** :
+
+Amaya's company surveyed a large group of people. After collecting and digitizing all of the data, she noticed that many participants didn't answer one particular question.
+
+It was clear to Amaya that not disclosing the answer to the question was as important as the answer itself, so she wanted to consider this when preparing the data. The answer to the question was categorical.
+
+Amaya is ready to build a machine learning model but must first deal with the missing answers.
+
+**Which of the following should be the best strategy that Amaya should pursue?**
+
+
+### **Choices** :
+
+- Amaya should remove the column that contains the missing values.
+- Amaya should add a new column to the dataset to flag rows with missing values and then replace those values with a reasonable answer.
+- Amaya should replace the missing values with a reasonable answer.
+- Amaya should predict the missing values using a separate machine learning model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Amaya knows she must do something with the missing answers before training a machine learning model, and [imputing](https://en.wikipedia.org/wiki/Imputation_(statistics)) these values seem like a good solution. For example, she could replace the missing values with their mean, median, or mode.
+
+But this approach has a problem: Amaya thinks having many participants not disclose the answer to the question is as important as the answer itself. If she replaces the missing values, she will lose that information.
+
+A great approach to avoid losing that information is to add a new binary column to the dataset. This column will flag every participant that didn't answer the question. Assuming avoiding to answer is not a random event, this new column will help with the predictive performance of Amaya's model.
+
+Therefore, the best strategy for Amaya is to add this new column right before imputing missing values.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- ["Handling Missing Values"](https://www.kaggle.com/dansbecker/handling-missing-values) is a Kaggle notebook that goes over a few strategies to handle missing values, including adding an extra column to flag these rows.- Check ["Imputation of missing values"](https://scikit-learn.org/stable/modules/impute.html#imputation-of-missing-values) for some information about how Scikit-Learn handles missing values.- ["How to Handle Missing Data with Python"](https://machinelearningmastery.com/handle-missing-data-python/) is an excellent post discussing different strategies in Python.</p></details>
+
+-----------------------
+
