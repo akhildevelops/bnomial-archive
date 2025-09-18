@@ -60247,3 +60247,84 @@ The model will use that data and make the problem worse: it will predict that ne
 
 -----------------------
 
+## Date - 2025-09-18
+
+
+## Title - Learnable parameters
+
+
+### **Question** :
+
+Arianna is trying to learn how Convolutional Neural Networks work, so she decided to copy an online Keras example to start from somewhere.
+
+Here is the core of the code she put together:
+
+```
+model = keras.Sequential([
+    keras.Input(shape=(28, 28, 1)),
+    layers.Conv2D(32, kernel_size=(3, 3), activation="relu"),
+    layers.MaxPooling2D(pool_size=(2, 2)),
+    layers.Conv2D(64, kernel_size=(3, 3), activation="relu"),
+    layers.MaxPooling2D(pool_size=(2, 2)),
+    layers.Flatten(),
+    layers.Dropout(0.5),
+    layers.Dense(10, activation="softmax"),
+])
+```
+
+**Based on the above code fragment, what are the correct statements regarding each layer's parameters (weights and biases)?**
+
+
+### **Choices** :
+
+- The first convolutional layer has a total of 21,632 parameters.
+- The first max pooling layer has a total of 5,408 parameters.
+- The second convolutional layer has a total of 18,496 parameters.
+- The fully-connected layer has a total of 1,600 parameters.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0011</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We can compute the number of parameters of a convolutional layer using the following formula:
+
+```
+parameters = k * (f * h * w + 1)
+```
+
+Where `k` corresponds to the number of output filters from this layer, `f` corresponds to the number of filters coming from the previous layer, `h` corresponds to the kernel height and `w` to the kernel width. The value `1` corresponds to the bias parameter related to each filter. Here is the complete calculation for the first convolutional layer:
+
+```
+parameters = k * (f * h * w + 1)
+parameters = 32 * (1 * 3 * 3 + 1) = 320
+```
+
+Max pooling layers don't have any parameters because they don't learn anything. The input to the first max pooling layer is `26x26x32`, but the layer doesn't have any weights or biases associated with it.
+
+The second convolutional layer does have 18,496 parameters. Let's check:
+
+```
+parameters = k * (f * h * w + 1)
+parameters = 64 * (32 * 3 * 3 + 1) = 18,496
+```
+
+Finally, the fully-connected layer has 1,600 parameters. To compute this, we need to calculate the size of each layer to understand the input to the fully-connected layer:
+* Input: `28x28x1 = 784`
+* Conv2D: `26x26x32 = 21,632`
+* MaxPool2D: `13x13x32 = 5,408`
+* Conv2D: `11x11x64 = 7,744`
+* MaxPool2D: `5x5x64 = 1,600`
+
+Notice that the above values differ from the number of learnable parameters of each layer, but they are essential to understanding the size of the input to the fully-connected layer.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Understanding and Calculating the number of Parameters in Convolution Neural Networks (CNNs)"](https://towardsdatascience.com/understanding-and-calculating-the-number-of-parameters-in-convolution-neural-networks-cnns-fc88790d530d) for instructions on how to compute the number of learnable parameters.* ["Simple MNIST convnet"](https://keras.io/examples/vision/mnist_convnet/) is a Keras example showing this particular code fragment.</p></details>
+
+-----------------------
+
