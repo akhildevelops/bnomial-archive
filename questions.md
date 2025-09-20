@@ -60379,3 +60379,52 @@ Using data augmentation, Esther can reduce overfitting and help her model perfor
 
 -----------------------
 
+## Date - 2025-09-20
+
+
+## Title - Grocery fruits
+
+
+### **Question** :
+
+Serena has been given an intriguing project at her workplace. She has to design an object detection model that identifies different types of fruits in images taken from a grocery store.
+
+Her goal is to create a model that can be easily modified and used for other similar tasks in the future.
+
+To ensure that her model performs at its best, Serena needs a method to evaluate it effectively. This evaluation method should allow her to compare and choose the best among different versions of the model.
+
+**Which evaluation metrics should Serena use to evaluate her model?**
+
+
+### **Choices** :
+
+- F1 score
+- Mean Average Precision (mAP)
+- ROC Curve
+- Precision-Recall Curve
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The recall is useful for object detection, but it can't provide the full picture unless combined with Precision. High recall and low precision could lead to a model that is not useful. Therefore, Serena cannot rely solely on Recall as her key evaluation metric. 
+
+[ROC Curves](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) are not typically used for object detection tasks, as there's no real concept of True Negatives, which are required to compute the False Positive Rate, one of the axes of the ROC curve. In object detection tasks, the number of bounding boxes that do not contain an object of interest is generally too large to handle effectively.
+
+Instead, Serena could compute a [Precision-Recall Curve](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html). This curve is similar to the ROC curve but uses the model's precision instead of False Positive Rate, thereby avoiding the problem of True Negatives.
+
+[Mean Average Precision (mAP)](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3) is commonly used in object detection tasks to evaluate the overall performance of a model across all classes. It considers precision and recall and averages them over different Intersection over Union (IoU) thresholds, providing a single scalar value that Serena can use to compare different models.
+
+Lastly, the [F1-score](https://en.wikipedia.org/wiki/F-score) is a good choice, as it considers both the precision and recall of the model, offering a balanced view of the model's performance.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Classification: ROC Curve and AUC"](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) for an explanation of how to create and interpret a ROC curve.* For more information about Precision-Recall curves, check [Scikit-Learn's documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html).</p></details>
+
+-----------------------
+
