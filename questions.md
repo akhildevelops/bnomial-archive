@@ -60475,3 +60475,50 @@ Finally, when computing the final prediction, bagging averages out the results o
 
 -----------------------
 
+## Date - 2025-09-23
+
+
+## Title - The output of the network
+
+
+### **Question** :
+
+Juniper learned that designing a neural network architecture for a supervised classification problem wasn't hard.
+
+Although most of it needed experimentation, one thing Juniper could count on was the design of the output layer of the network.
+
+**Which of the following is a correct statement about the neurons in the output layer of a classification network?**
+
+
+### **Choices** :
+
+- The number of neurons in the output layer should always match the number of classes.
+- The number of neurons in the output layer doesn't necessarily need to match the number of classes.
+- The number of neurons in the output layer should always be greater than one.
+- The number of neurons in the output layer should always be a multiple of 2.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>When working on a multi-class classification problem, setting the output layer to the same number of classes we are interested in predicting is common. But what happens when we are working on a binary classification problem?
+
+A network to solve a binary classification problem doesn't need an output with two neurons. Instead, we can use a single neuron to determine the class by deciding on a cutoff threshold. For example, the result could be positive if the output exceeds 0.5 and negative otherwise.
+
+That means we can solve a problem requiring two classes with a single neuron.
+
+We can stretch the same idea to multi-class classification problems: We could interpret the output layer as a binary result, allowing us to represent multiple classes with fewer neurons. For example, we would need only two neurons to classify instances into four different categories (`00`, `01`, `10`, `11`.) This approach, although not popular, it's possible.
+
+Therefore, the second choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["But what is a neural network?"](https://www.youtube.com/watch?v=aircAruvnKk) is Grant Sanderson's introduction to neural networks on YouTube. Highly recommended!* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen).</p></details>
+
+-----------------------
+
