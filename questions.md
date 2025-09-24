@@ -60522,3 +60522,54 @@ Therefore, the second choice is the correct answer to this question.</p></detail
 
 -----------------------
 
+## Date - 2025-09-24
+
+
+## Title - Studying decision trees
+
+
+### **Question** :
+
+Kehlani is one of many software developers that decided to start learning machine learning.
+
+Following the recommendation of her peers, the first algorithm she looked into was decision trees. She found a lot of resemblance with some of the techniques she already knew.
+
+After a few weeks, Kehlani wants to summarize what she learned in an email to her team, but first, she wants you to review it.
+
+**These are the advantages that Kehlani listed. Which of them would you say are actual advantages of decision trees?**
+
+
+### **Choices** :
+
+- Decision trees are simple to understand and interpret, and we can visualize them.
+- Unlike other algorithms, many implementations of decision trees work with missing values and categorical data.
+- Decision trees always generalize well and are resistant to overfitting.
+- Decision trees require little data preparation compared to other algorithms. For example, they don't need the scaling of data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Decision Trees](https://en.wikipedia.org/wiki/Decision_tree_learning) are an excellent starting point for developers that want to learn machine learning.
+
+One of the reasons decision trees are popular is because they are easier to understand and interpret than other algorithms. You can explain the output of a tree by boolean logic, which makes them transparent compared to algorithms we can't explain. Kehlani did an excellent job by including this advantage in her email.
+
+Many different implementations of decision trees are very flexible with the data they can process. For example, some implementations can handle missing values and work directly with categorical data. Most machine learning algorithms don't have this luxury and require a much more extensive pre-processing step before training a model. 
+
+Something similar happens with having to scale the data. Decision trees can handle features with different scales. For example, it can take a column representing a person's age with values between 0 and 100 and another with a salary ranging from 20,000 to 500,000. Not every algorithm has this flexibility. Neural networks, for example, struggle when features don't have the same approximate scale.
+
+Decision trees, unfortunately, are prone to overfitting if we don't take careful care of their depth. In other words, unless we ensure our tree doesn't go too deep, it will tend to fit noisy samples and output the wrong prediction. The only example where Kehlani made a mistake is the third option. 
+
+Remember that while a single decision tree is prone to overfitting, using an ensemble of trees is more resistant. Here is a quote from "[To Boost or not to Boost: On the Limits of Boosted Neural Networks](https://arxiv.org/pdf/2107.13600.pdf)": "[these experiments] confirm that training single large decision trees is prone to overfitting while boosted ensembles of decision trees are resistant to overfitting."</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The Scikit-Learn's ["Decision Trees"](https://scikit-learn.org/stable/modules/tree.html) page contains an extensive list of advantages and disadvantages of decision trees.* Check ["To Boost or not to Boost: On the Limits of Boosted Neural Networks"](https://arxiv.org/pdf/2107.13600.pdf), the paper cited above comparing the overfitting tendency of a single Decision Tree versus an ensemble of trees.* ["Decision tree pruning"](https://en.wikipedia.org/wiki/Decision_tree_pruning) covers the process of pruning a tree to reduce overfitting.</p></details>
+
+-----------------------
+
