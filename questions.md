@@ -60573,3 +60573,52 @@ Remember that while a single decision tree is prone to overfitting, using an ens
 
 -----------------------
 
+## Date - 2025-09-25
+
+
+## Title - Defective chips
+
+
+### **Question** :
+
+A company is using autoencoders to detect anomalies with the chips they produce.
+
+They trained their autoencoder on millions of pictures of working chips to generate a compressed representation of the common characteristics of a chip in good condition.
+
+They run every new picture in production through the autoencoder to determine whether there's a problem with that particular chip.
+
+**Which of the following is the company's process to determine whether the chip is in good working condition?**
+
+
+### **Choices** :
+
+- The autoencoder's output is a softmax vector that classifies the picture into two classes. If the largest value in the vector corresponds to the anomaly class, the company knows this is a defective chip.
+- Autoencoders work like a binary classification model, where any output value greater than a predefined threshold indicates the input is an anomaly.
+- The company computes the error between the model's original input and output. The picture represents a defective chip if the error exceeds a predefined threshold.
+- The autoencoder's output is a value indicating how different the input image is from a working chip, so the largest this value is, the more likely it's for the input to be a defective chip.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Autoencoders](https://essays.bnomial.com/autoencoders) are learning algorithms that can help with anomaly detection problems. 
+
+An autoencoder is a neural network that we can split into three sections: an encoder, a bottleneck, and a decoder. The encoder compresses the original input into an intermediate representation, and the decoder reverses the process to reconstruct the original data. The bottleneck sits between the encoder and decoder and is the section that stores the compressed representation of the data. 
+
+In this particular problem, we can train an autoencoder by showing it images of working chips and expecting the model to reproduce the same input image. In other words, the autoencoder's input and expected output are the same. If we compute the similarity between the input and output images, we can determine whether the original picture belongs to a working or defective chip.
+
+A defective chip will have specific visual characteristics that will be impossible for the autoencoder to reproduce. Remember that the autoencoder learned on a dataset of working samples, so it won't have any notion of features that aren't common among chips in good status. 
+
+We should expect a reproduction error larger than normal whenever we input a defective chip into the autoencoder. Therefore, the third option is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Autoencoders"](https://articles.bnomial.com/autoencoders) for an introduction to a learning technique to represent data efficiently using neural networks.</p></details>
+
+-----------------------
+
