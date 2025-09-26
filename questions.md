@@ -60622,3 +60622,50 @@ We should expect a reproduction error larger than normal whenever we input a def
 
 -----------------------
 
+## Date - 2025-09-26
+
+
+## Title - Data augmentation on YouTube
+
+
+### **Question** :
+
+Amara is writing a script for a YouTube video about data augmentation.
+
+She wants to cover some of the most critical aspects of using the technique on a dataset of pictures.
+
+Here is Amara's list with the key takeaways she wants to leave for her audience.
+
+**Which of the following statements would you let Amara share with her audience?**
+
+
+### **Choices** :
+
+- Using data augmentation, we can artificially increase the amount of data by generating new samples from existing data.
+- Generative Adversarial Networks (GANs) and Style Transfer are advanced techniques that can help with data augmentation.
+- Data augmentation has a regularization effect when used to increase the amount of data before training a model.
+- Data augmentation always eliminates biases present in the original data.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1110</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The first choice is the definition of data augmentation: we can augment the size of the dataset by generating new samples from our existing data.
+
+Generative Adversarial Networks (GANs) are a popular way to generate synthetic images. [We can also use Style Transfer](https://arxiv.org/abs/1909.01056) to create new data based on existing samples.
+
+The third choice is also correct: Data augmentation has a regularization effect. Increasing the training data through data augmentation decreases the model's variance and, in turn, increases the model's generalization ability.
+
+Although data augmentation can be strategically used to remove certain biases, it may propagate biases already present in the original data. Remember that data augmentation uses existing data as the foundation for any new data, so any problems with the original dataset will persist on the augmented one.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["STaDA: Style Transfer as Data Augmentation"](https://arxiv.org/abs/1909.01056) is a paper illustrating how to use Style Transfer for data augmentation.* ["The Essential Guide to Data Augmentation in Deep Learning"](https://www.v7labs.com/blog/data-augmentation-guide) is an excellent article discussing data augmentation in detail.* Check ["Test-Time augmentation"](https://articles.bnomial.com/test-time-augmentation) for an introduction that will help you make better predictions with your machine learning model.</p></details>
+
+-----------------------
+
