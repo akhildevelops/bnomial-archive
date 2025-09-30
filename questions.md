@@ -60821,3 +60821,48 @@ Finally, we can use a particular implementation of a machine learning algorithm 
 
 -----------------------
 
+## Date - 2025-09-30
+
+
+## Title - High training
+
+
+### **Question** :
+
+There's not a lot of context for you other than the following chart showing the training loss of a machine learning model:
+
+![Training Loss Chart](https://user-images.githubusercontent.com/1126730/188470675-c76e29e3-e68c-4eaa-8b05-879bed678b2f.jpg)
+
+As you can see, after finishing training, the loss stays too high.
+
+**What's a reasonable conclusion about this machine learning model?**
+
+
+### **Choices** :
+
+- The model is overfitting.
+- The model is underfitting.
+- The model is neither overfitting nor underfitting.
+- The model is either overfitting or underfitting, but we can't say for sure.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A good model should capture valuable patterns in the data and discard any noise that doesn't help with predictions. An overfitting model will fit that noise. An underfitting model will not capture the relevant patterns in the dataset. 
+
+An overfitting model should not have any problems with the training data, so we should expect a low training loss. An underfitting model should struggle with the training data, so its training loss will be high.
+
+This model shows a high training loss, which we expect for an underfitting model.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Overfitting and Underfitting with Learning Curves"](https://articles.bnomial.com/overfitting-underfitting-learning-curves) for an introduction to two fundamental concepts in machine learning through the lens of learning curves.</p></details>
+
+-----------------------
+
