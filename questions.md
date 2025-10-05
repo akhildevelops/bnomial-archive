@@ -61058,3 +61058,57 @@ The quantity of potential values does not determine whether a feature is nominal
 
 -----------------------
 
+## Date - 2025-10-05
+
+
+## Title - A clever loss function
+
+
+### **Question** :
+
+Adalynn is using a clever approach with her deep learning model.
+
+During training, Adalynn runs three samples simultaneously through her model:
+* An anchor image
+* A matching picture representing the same entity as the anchor
+* A non-matching picture representing a different entity as the anchor
+
+The loss function she uses takes these three inputs and minimizes the distance between the anchor and the matching sample while maximizing the distance with the non-matching picture.
+
+But Adalynn didn't invent this function.
+
+**Which of the following is the name of the loss function that Adalynn is using?**
+
+
+### **Choices** :
+
+- Adalynn is using a Contrastive loss function
+- Adalynn is using a Binary Cross-entropy loss function
+- Adalynn is using a Categorical Cross-entropy loss function
+- Adalynn is using a Triplet loss function
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Adalynn is using [Triplet loss](https://en.wikipedia.org/wiki/Triplet_loss), helpful in [similarity learning problems](https://en.wikipedia.org/wiki/Similarity_learning) where the goal is to learn a function that measures how similar two objects are.
+
+The Triplet loss takes the three inputs: the anchor, a positive sample, and a negative sample, and minimizes the anchor—positive distance while maximizing the anchor—negative distance.
+
+The Triplet loss function compares a baseline (the anchor) to positive and negative inputs. It then reduces the distance between the baseline and the positive sample while increasing the distance between the anchor and the negative input.
+
+A popular application of Triplet loss is to teach a model to detect faces. Instead of framing this use case as a classification problem, we can look at it as a similarity learning problem. The goal would be for a network to compare two pictures and output whether they are similar enough. 
+
+Notice that we also use [Contrastive loss](https://medium.com/@maksym.bekuzarov/losses-explained-contrastive-loss-f8f57fe32246) in similarity learning problems, but this function receives two inputs and whether they represent the same concept or not.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["What is Triplet loss"](https://deepchecks.com/glossary/triplet-loss/) is a short introduction to this loss function. * The [Wikipedia page of the Triplet loss](https://en.wikipedia.org/wiki/Triplet_loss) function is also a great reference.* Check ["Losses explained: Contrastive Loss"](https://medium.com/@maksym.bekuzarov/losses-explained-contrastive-loss-f8f57fe32246) for an explanation of the Contrastive loss.</p></details>
+
+-----------------------
+
