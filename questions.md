@@ -61112,3 +61112,50 @@ Notice that we also use [Contrastive loss](https://medium.com/@maksym.bekuzarov/
 
 -----------------------
 
+## Date - 2025-10-06
+
+
+## Title - Features and data
+
+
+### **Question** :
+
+Balancing the size of a dataset and the number of features to train a model is always a problem you need to consider.
+
+**Which of the following statements correctly summarizes your thoughts about the relationship between features and dataset size?**
+
+
+### **Choices** :
+
+- When training a model, as you add more features to the dataset, you often need to increase the dataset's size to ensure the model learns reliably.
+- When training a model, adding more features to the dataset increases the amount of information you can extract, allowing you to use smaller datasets and still extract good performance from the data.
+- When training a learning algorithm, as you decrease the number of features in your dataset, you need to increase the number of training samples to make up the difference.
+- When training a learning algorithm, the features in your dataset are entirely independent of the number of training samples.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Removing features reduces the number of dimensions in our data. It concentrates the samples we have in a lower-dimensional space. We can't replace the information provided by a feature with more data.
+
+Imagine plotting a set of numbers. Since you have only one dimension, they will all lie somewhere in a line. Don't add new values; increase the features by adding a second dimension. Your values now become a set of 2D coordinates `(x, y)`; if you graph them, they will all be somewhere in a plane.
+
+If you compare the 1D line with the 2D plane (or even a 3D space, assuming you add a third dimension,) something will become apparent quick: As we increase the dimensionality of the data, it will be harder and harder to fill up the space with the same points.
+
+This increase in sparsity will make it much harder for the learning algorithm to find interesting patterns. 
+
+Based on this, we can conclude that there's a relationship between features and samples, and the more features we add, the more data points we need.
+
+The first choice is the only correct solution to this question. For a more formal definition, look at the [Curse of Dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality): The amount of data needed to extract relevant information increases exponentially with the number of features in your dataset.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["What is the Curse of Dimensionality?"](https://deepai.org/machine-learning-glossary-and-terms/curse-of-dimensionality) for an introduction to the Curse of Dimensionality.</p></details>
+
+-----------------------
+
