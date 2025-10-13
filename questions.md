@@ -61451,3 +61451,48 @@ The ROC F1-Score is a made-up term and therefore is not correct.</p></details>
 
 -----------------------
 
+## Date - 2025-10-13
+
+
+## Title - High-speed train
+
+
+### **Question** :
+
+Ladybug and Lemon are working on a machine-learning system to control high-speed trains.
+
+They decided to use k-Nearest Neighbors in one of the system modules but had to stop when they realized they had to work with some data represented in binary form.
+
+Ladybug and Lemon must decide which function to use to compute the distance between these binary columns. They want to measure how much two features with the same length differ.
+
+**Which of the following is the appropriate measure to compute the distance between binary columns?**
+
+
+### **Choices** :
+
+- Minkowski distance
+- Euclidean distance
+- Manhattan distance
+- Hamming distance
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The Minkowski distance is a generalization of the Euclidean and Manhattan distances. Both of these work with real-value vectors, but the Euclidean distance is the shortest path between objects, while the Manhattan distance is the rectilinear distance between them. Using the Minkowski distance, we can control which approach to use depending on the data. 
+
+Ladybug and Lemon, however, need to measure how much two messages with the same length differ.
+
+The Hamming distance computes the distance between two binary vectors. It's the ideal function for this example.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["4 Distance Measures for Machine Learning"](https://machinelearningmastery.com/distance-measures-for-machine-learning/) for a complete explanation of these four distance measures.* ["Five Common Distance Measures in Data Science With Formulas and Examples"](https://regenerativetoday.com/five-common-distance-measures-in-data-science-with-formulas-and-examples/) is a deeper dive into these distance measures.</p></details>
+
+-----------------------
+
