@@ -61547,3 +61547,69 @@ This scenario is an example of [Active learning](https://articles.bnomial.com/ac
 
 -----------------------
 
+## Date - 2025-10-15
+
+
+## Title - The model's recall
+
+
+### **Question** :
+
+A team built a binary classification model. They named the classes `A` and `B`.
+
+After finishing training, they evaluated the model on a validation set, and here is the confusion matrix with the results:
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/186248358-1b39a042-5725-408b-84aa-8dd915a6d99d.jpg)
+
+**Given the above confusion matrix, what of the following correctly represents the model's recall predicting classes `A` and `B`, respectively?**
+
+
+### **Choices** :
+
+- The model's recall predicting class `A` is 80%, and class `B` is 80%.
+- The model's recall predicting class `A` is 88%, and class `B` is 68%.
+- The model's recall predicting class `A` is 88%, and class `B` is 88%.
+- The model's recall predicting class `A` is 68%, and class `B` is 88%.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To compute the model's recall, we can use the following formula:
+
+```
+recall = TP / (TP + FN)
+```
+
+Let's start with class `A`. We have 52 true positive samples and 7 false negatives in this example. Substituting these values in our formula:
+
+```
+recall = TP / (TP + FN)
+recall = 52 / (52 + 7)
+recall = 52 / 59
+recall = 0.88
+```
+
+Therefore, the model's recall at predicting class `A` is 88%.
+
+We can now look at class `B`. We have 28 true positive samples and 13 false negatives in this example. Substituting these values in our formula:
+
+```
+recall = TP / (TP + FN)
+recall = 28 / (28 + 13)
+recall = 28 / 41
+recall = 0.68
+```
+Therefore, the model's recall at predicting class `B` is 68%.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.</p></details>
+
+-----------------------
+
