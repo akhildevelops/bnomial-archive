@@ -61758,3 +61758,51 @@ A well-fit model, however, should have low training and testing losses, which is
 
 -----------------------
 
+## Date - 2025-10-19
+
+
+## Title - Junior suggestions
+
+
+### **Question** :
+
+Amaya leads the team responsible for maintaining a machine learning model that helps run their company's marketing budget. The model has been running for a long time, and Amaya's team makes periodic updates and improvements.
+
+But they want more.
+
+The team aims to find some breakthroughs to improve the model considerably. Surprisingly, the most junior person on the team was the one coming up with two different ideas: 
+
+1. Take each row separately, and count the missing values across all columns. Then add a new column to the dataset with that number.
+2. Replace a categorical feature on their dataset with the number of times each value appears across all samples.
+
+**Which of the following would be your recommendation for Amaya regarding these two ideas?**
+
+
+### **Choices** :
+
+- Amaya shouldn't consider any of these techniques because they aren't valid forms of feature engineering.
+- Amaya should only consider the first technique. The second one is not a valid form of feature engineering.
+- Amaya should only consider the second technique. The first one is not a valid form of feature engineering
+- Amaya should consider both methods.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Amaya should experiment with both techniques to see whether they improve their model. The two suggestions are examples of meta-features based on the rows and columns of the team's dataset.
+
+The first suggestion, for example, will help the model understand which rows have an excess of missing values and which are complete. Of course, there's no guarantee this information is helpful, but that's something Amaya will have to decide based on her experiments.
+
+The second suggestion is an example of frequency encoding. It will make evident to the model the importance of an individual row based on how prominently it appears on the data. For instance, we could replace a job position title with the number of employees with that title.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.</p></details>
+
+-----------------------
+
