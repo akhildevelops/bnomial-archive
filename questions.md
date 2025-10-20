@@ -61806,3 +61806,50 @@ The second suggestion is an example of frequency encoding. It will make evident 
 
 -----------------------
 
+## Date - 2025-10-20
+
+
+## Title - Classifying bottles
+
+
+### **Question** :
+
+Esther decided to do something with her machine learning model to get better results from her model.
+
+She was responsible for a deep learning model to classify bottles in a factory. Instead of running every picture through her model, she created two more copies of the image: the first by flipping the original image vertically and the second by zooming in around 10%.
+
+Esther ran all three images through the model. She figured that having multiple images to construct the final answer would give her better results. 
+
+**What's the best way for Esther to use the three softmax vectors that her model will output to make a final decision? Select only one option.**
+
+
+### **Choices** :
+
+- Esther should select the best one of the three vectors that come out of her model.
+- Esther should use the softmax vector that contains the lowest value to compute the final result.
+- Esther should use the softmax vector that includes the highest value to calculate the final result.
+- Esther should average out every softmax vector and use that new vector to compute the final result.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Esther is using [Test-time augmentation](https://articles.bnomial.com/test-time-augmentation), a technique that relies on augmenting the original image before running it through a model. By doing this, Esther gives the model more opportunities to compute the correct prediction.
+
+When Esther runs three pictures through the model, she will get back three different vectors. How can she use these vectors to determine the final result?
+
+The best approach from the ones provided in this question is to average all three vectors and use the result to compute the correct class. By doing this, Esther will take advantage of each picture to make the final decision.
+
+There's no way to know which vector is "the best one," so the first option is incorrect. Choosing the vector will the lowest value doesn't seem like a great idea to make the best prediction, and although Esther could use the vector with the highest value, averaging all vectors will be a better approach.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [Test-time augmentation](https://articles.bnomial.com/test-time-augmentation) for an introduction to a technique that will help you make better predictions with your machine learning model.</p></details>
+
+-----------------------
+
