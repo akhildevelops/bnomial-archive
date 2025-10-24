@@ -61998,3 +61998,50 @@ The team is not interested in better performance and wants a cheaper model to tr
 
 -----------------------
 
+## Date - 2025-10-24
+
+
+## Title - Paul, the octopus
+
+
+### **Question** :
+
+During the 2010 world cup, an octopus named Paul became famous for correctly predicting the result of 8 soccer matches with no misses. 
+
+Paul's keepers would show him two boxes of food, each decorated with a team's flag. Whichever box Paul ate from first would be his prediction.
+
+The probability of doing what Paul did was a mere 0.39%, hence his rise to fame.
+
+**Which of the following is a correct statement about this story?**
+
+
+### **Choices** :
+
+- This story is an example of survivorship bias.
+- This story is an example of confirmation bias.
+- This story is an example of group attribution bias.
+- This story doesn't show any biases.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1000</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Paul was undoubtedly an impressive octopus, and without taking anything from him rather than magic, this situation shows the effects of [survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias).
+
+While the cameras focused on Paul because of his success, we don't consider all the other animals that tried but failed. If we assume that 1,000 animals tried to predict all eight games, probabilistically 3.9 of them would have gotten the result correctly.
+
+Of course, nobody cared about animals that failed their predictions but immediately gravitated toward the seemingly supernatural Paul. 
+
+Survivorship bias seriously compromises our ability to determine the odds of something happening. We focus on what we can see (the winners) and ignore what we can't see (the losers). Always seek out stories of failure and learn from them.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* The ["Survivorship bias"](https://en.wikipedia.org/wiki/Survivorship_bias) page in Wikipedia is an excellent resource.* Paul has a [Wikipedia page](https://en.wikipedia.org/wiki/Paul_the_Octopus) as well.</p></details>
+
+-----------------------
+
