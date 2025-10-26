@@ -62096,3 +62096,50 @@ Log loss, on the other hand, is one of the most commonly used error functions an
 
 -----------------------
 
+## Date - 2025-10-26
+
+
+## Title - Evaluating logistic regression
+
+
+### **Question** :
+
+Eva is working on a logistic regression model.
+
+She works for an auto manufacturer that wants to predict whether previous customers are potential future buyers.
+
+Eva has a well-balanced dataset and is ready to evaluate her model after a few iterations.
+
+**Which of the following are viable ways for Eva to evaluate her model?**
+
+
+### **Choices** :
+
+- Eva could evaluate the model by computing its accuracy.
+- Eva could evaluate the model by computing its log loss.
+- Eva could evaluate the model using the Mean Squared Error.
+- Eva could evaluate the model using the Mean Absolute Error.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Eva is building a [logistic regression](https://en.wikipedia.org/wiki/Logistic_regression) model to solve a binary classification problem. She is only concerned about two classes: potential buyers and non-potential buyers.
+
+Eva could compute the accuracy of her model and use it to determine how good it is. Accuracy is misleading for imbalanced datasets, but this is not the case.
+
+Eva could also compute the log loss of her model to evaluate it. You can use the log loss to determine how close are the prediction probabilities returned by the model to the actual values. The closer these are, the lower the log loss will be.
+
+Finally, Eva cannot use the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) (MSE) or the [Mean Absolute Error](https://en.wikipedia.org/wiki/Mean_absolute_error) (MAE) to evaluate her model. These metrics work for regression problems, where the model's output is a continuous value, but Eva is working on a classification problem with a model's output bounded between 0 and 1.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>- Check out ["Logistic Regression for Machine Learning"](https://machinelearningmastery.com/logistic-regression-for-machine-learning/) for an introduction to Logistic regression.- ["Intuition behind Log-loss score"](https://towardsdatascience.com/intuition-behind-log-loss-score-4e0c9979680a) is a great explanation of log loss and how it works.</p></details>
+
+-----------------------
+
