@@ -62143,3 +62143,48 @@ Finally, Eva cannot use the [Mean Squared Error](https://en.wikipedia.org/wiki/M
 
 -----------------------
 
+## Date - 2025-10-27
+
+
+## Title - Representing music
+
+
+### **Question** :
+
+Ada needs to process a dataset of songs from her favorite musician and create a compact representation of what makes her music unique and distinctive.
+
+She read about autoencoders and decided to design a network to solve her problem. But creating the bottleneck to force the model to represent the music wasn't as simple as she thought.
+
+**Which of the following are valid approaches that Ada could follow to design the bottleneck of her autoencoder?**
+
+
+### **Choices** :
+
+- Ada can introduce an information bottleneck by constraining the number of nodes in the middle part of the network.
+- Ada can introduce an information bottleneck by ensuring the middle part of the network has sufficient nodes to represent the input data in its original form.
+- Ada can introduce an information bottleneck by using the proper optimization algorithm.
+- Ada can introduce an information bottleneck by using a loss function that relies on activating a small number of nodes.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>[Autoencoders](https://essays.bnomial.com/autoencoders) are learning algorithms that can help with anomaly detection problems. 
+
+An autoencoder is a neural network that we can split into three sections: an encoder, a bottleneck, and a decoder. The encoder compresses the original input into an intermediate representation, and the decoder reverses the process to reconstruct the original data. The bottleneck sits between the encoder and decoder and is the section that stores the compressed representation of the data. 
+
+Regular autoencoders constrain the number of nodes in the bottleneck layers of the network. This characteristic forces the model to learn a compact representation of the data instead of memorizing the input. Therefore, the first choice is correct.
+
+Sparse autoencoders employ a different technique to introduce an information bottleneck. They use a loss function that relies on a small number of nodes. These autoencoders don't need bottleneck layers since penalizing activations is enough to accomplish the same purpose. Therefore, the fourth option is also correct.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Autoencoders"](https://articles.bnomial.com/autoencoders) for an introduction to a learning technique to represent data efficiently using neural networks.* For more information about sparse autoencoders, check the ["Introduction to autoencoders"](https://www.jeremyjordan.me/autoencoders/) article by Jeremy Jordan.</p></details>
+
+-----------------------
+
