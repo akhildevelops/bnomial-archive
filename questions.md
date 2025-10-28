@@ -62188,3 +62188,50 @@ Sparse autoencoders employ a different technique to introduce an information bot
 
 -----------------------
 
+## Date - 2025-10-28
+
+
+## Title - True Negatives
+
+
+### **Question** :
+
+Here is the picture of a confusion matrix we generated after evaluating a model in a dataset with 100 samples:
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/186962046-7c076163-5b58-442f-9641-c09f5cf71003.jpg)
+
+Assume that class B represents the outcomes of the model we are interested in finding.
+
+**What's the total of True Negatives on this evaluation round?**
+
+
+### **Choices** :
+
+- True Negatives are class A samples the model predicted as class B, so the answer is 7.
+- True Negatives are class B samples the model predicted as class A, so the answer is 13.
+- True Negatives are class A samples the model predicted as class A, so the answer is 52.
+- True Negatives are class B samples the model predicted as class B, so the answer is 28.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>We are interested in samples from class B, which means we will treat class B as our "Positive" samples and class A as our "Negative" samples.
+
+If we replace the classes in the confusion matrix with Positive and Negative instead of "B" and "A," it's much easier to reason about the model's number of True Positives:
+
+![Confusion Matrix](https://user-images.githubusercontent.com/1126730/187207950-77e4eccd-0b63-43bc-8f07-be19f690d725.jpg)
+
+True Negatives are those samples that we expect to be Negative (class A), and the model predicted as Negative (class A.) Therefore, the correct answer to the question is 52. You can see every combination in the image above.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.</p></details>
+
+-----------------------
+
