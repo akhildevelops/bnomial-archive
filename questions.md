@@ -62435,3 +62435,52 @@ If we run a few training sessions, each using an increasing amount of Dropout, w
 
 -----------------------
 
+## Date - 2025-11-02
+
+
+## Title - A decision tree for that?
+
+
+### **Question** :
+
+Gianna had the opportunity to meet some of her technical heroes at a conference, and of course, she peppered them with questions!
+
+At some point, the conversation centered around a machine learning solution they implemented. Gianna was delighted to hear that they used a decision tree for their solution.
+
+The next day, she was still thinking about the conversation. She didn't have much machine learning experience but knew enough about decision trees to feel validated. It was fantastic to find out that decision trees are useful!
+
+**Which of the following machine learning problems can you solve with a decision tree?**
+
+
+### **Choices** :
+
+- Binary classification problems where you need to decide the correct category for a sample among two possible choices.
+- Multi-class classification problems where you need to decide the correct category for a sample among multiple choices.
+- Multi-label classification problems where you need to decide the correct categories for a sample among multiple choices.
+- Regression problems where you need to predict a continuous output.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>To get straight to the answer, every one of the choices is a correct answer: decision trees are really powerful!
+
+We usually discuss two types of decision trees in machine learning: classification and regression trees. The former covers the first three choices, while the latter covers the fourth choice.
+
+Binary classification problems aim to classify one sample into two different categories. Multi-class classification problems are similar, but they classify samples into more than two categories. Decision trees are a perfect fit for these problems.
+
+[Multi-label classification](https://en.wikipedia.org/wiki/Multi-label_classification) is somewhat different. Here we want to classify a sample into one or more categories. Decision trees can also solve these problems. Check out [Scikit-Learn's implementation](https://scikit-learn.org/stable/modules/multiclass.html#multilabel-classification) to see how they tackle multi-label classification.
+
+Finally, decision trees can also solve regression problems where we want to predict a continuous target variable. ["How can Regression Trees be used for Solving Regression Problems?"](https://medium.com/analytics-vidhya/regression-trees-decision-tree-for-regression-machine-learning-e4d7525d8047) is an excellent introduction.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Scikit-Learn's ["Multiclass and multioutput algorithms"](https://scikit-learn.org/stable/modules/multiclass.html#multilabel-classification) will introduce you to solve these problems using Scikit-Learn's decision tree implementation.* ["How can Regression Trees be used for Solving Regression Problems?"](https://medium.com/analytics-vidhya/regression-trees-decision-tree-for-regression-machine-learning-e4d7525d8047) is an excellent article about using decision trees for regression tasks.</p></details>
+
+-----------------------
+
