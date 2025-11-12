@@ -62916,3 +62916,48 @@ Since London's model is overfitting, reducing the variance is a good step. As th
 
 -----------------------
 
+## Date - 2025-11-12
+
+
+## Title - Off-the-shelf encoder
+
+
+### **Question** :
+
+Marley used an off-the-shelf encoder to process a dataset of images and create embeddings for each. The next step for her is to try and interpret the latent space of her embeddings.
+
+A specific question she has is related to the dimensionality of the space. She can control the encoder's output, so Marley wonders whether a high-dimensional space would be better than a lower-dimensional one.
+
+**Which of the following statements about the dimensionality of a latent space are correct?**
+
+
+### **Choices** :
+
+- A high-dimensional latent space is more sensitive to specific features from the input object than a low-dimensional latent space.
+- A high-dimensional latent space is less sensitive to specific features from the input object than a low-dimensional latent space.
+- A high-dimensional latent space is more prone to overfitting than a low-dimensional latent space.
+- A low-dimensional latent space is more prone to overfitting than a high-dimensional latent space.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>1010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In machine learning, we use "latent space" to refer to a multi-dimensional space containing a meaningful internal representation of objects and where similar points appear closer together. 
+
+Latent spaces usually have a lower dimensionality than the feature space used to draw specific data points. Because of this, projecting an object in a latent space is typically a dimensionality reduction exercise.
+
+The more dimensions in the latent space, the more sensitive it is to specific features from the input objects. In other words, small changes in the input data could cause significant variations in their representation in latent space. This makes high-dimensional spaces more likely to overfit than low-dimensional spaces.
+
+On the other hand, the lower the latent space's dimensionality, the less sensitive to small changes in the input data. The more the encoder compresses the data, the fewer details will make it into the latent space. Low-dimensional spaces capture the essential features of the input data and are more robust to overfitting.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check the [Latent space's Wikipedia page](https://en.wikipedia.org/wiki/Latent_space) for more information.</p></details>
+
+-----------------------
+
