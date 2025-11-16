@@ -63111,3 +63111,48 @@ Thea is using mini-batch gradient descent to train her model. The more she decre
 
 -----------------------
 
+## Date - 2025-11-16
+
+
+## Title - Compact activation function
+
+
+### **Question** :
+
+Here is a simple and compact implementation of a neural network in Python:
+
+![Neural network](https://user-images.githubusercontent.com/1126730/196750241-0a53d7bf-d821-43e9-bf5c-560e6ca842d4.png)
+
+**Which of the following is the activation function used in this network?**
+
+
+### **Choices** :
+
+- This implementation uses a ReLU activation function.
+- This implementation uses a sigmoid activation function.
+- This implementation uses a softmax activation function.
+- This implementation doesn't use an activation function.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>The code defines the output layer in Line 9. 
+
+To compute the output of this second layer, we need to multiply the second set of weights (`W2`) by the output of the previous layer (`layer1`). Then we wrap this result with the activation function.
+
+In this case, the output layer uses a sigmoid activation function:
+
+![Sigmoid](https://user-images.githubusercontent.com/1126730/196755518-311dd425-676e-4c85-be1f-467694879c30.jpg)</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* [_Neural Networks and Deep Learning_](http://neuralnetworksanddeeplearning.com/index.html) is a free online book written by [Michael Nielsen](https://twitter.com/michael_nielsen) with a great introduction to neural networks.</p></details>
+
+-----------------------
+
