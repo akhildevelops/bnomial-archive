@@ -63295,3 +63295,50 @@ The mode of a dataset represents the most frequent number. The correct interpret
 
 -----------------------
 
+## Date - 2025-11-20
+
+
+## Title - Nuanced conversations
+
+
+### **Question** :
+
+Twitter is not a great place to have nuanced discussions.
+
+I don't think anyone was surprised to see people picking apart Journey's tweet.
+
+She tried to explain Linear Regression in less than 280 characters and, unsurprisingly, had to leave many details out.
+
+But not every comment she received was correct. Turns out that you can't listen to every person online!
+
+**Which of the following comments are factual statements about Linear Regression?**
+
+
+### **Choices** :
+
+- Linear Regression is an Unsupervised Learning technique useful for solving Regression problems.
+- You can use Linear Regression to predict a continuous dependent variable with the help of independent variables.
+- Linear Regression aims to find the best sigmoid curve that can accurately predict the output for the continuous dependent variable.
+- In Linear Regression, the relationship between the dependent and independent variables must be linear.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0101</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Linear Regression is probably the most popular Supervised Learning technique in machine learning. Its goal is to fit the best line through the data to predict a continuous output. 
+
+The algorithm uses a set of independent variables to predict a continuous dependent variable. For example, a person's age, salary, or home price. 
+
+Finally, for Linear Regression to work, we must ensure that the relationship between the inputs and the output is linear. A Linear Regression model won't give us good predictions if the relationship isn't linear. Sometimes, this condition means we must transform the input features before using Linear Regression. For example, if you have a variable with an exponential relationship with the target variable, you can use log transform to turn the relationship linear.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["Linear Regression for Machine Learning"](https://machinelearningmastery.com/linear-regression-for-machine-learning/) is an introduction to Linear Regression.</p></details>
+
+-----------------------
+
