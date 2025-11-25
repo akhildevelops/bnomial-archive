@@ -63524,3 +63524,52 @@ However, the Sigmoid function has some drawbacks, such as the vanishing gradient
 
 -----------------------
 
+## Date - 2025-11-25
+
+
+## Title - A few achievements
+
+
+### **Question** :
+
+We have seen Deep Learning become a force over the last two decades.
+
+A few critical algorithmic improvements allowed the community to start training deep neural networks reliably.
+
+**Which of the following are some achievements we have made since the early 2000s?**
+
+
+### **Choices** :
+
+- We proposed the idea of neural networks to replace multi-layer perceptrons.
+- We created better activation functions for neural layers
+- We came up with better weight-initialization schemes
+- We created better optimization schemes
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0111</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>In 1944, Warren McCulloch and Walter Pitts proposed the idea of neural networks, so they have been around for quite some time. But it wasn't until the late 2000s when the community started making significant improvements that enabled the popularity of Deep Learning. 
+
+In [Deep Learning with Python, Second Edition](https://amzn.to/3K3VZoy), François Chollet writes referring to the history of Deep Learning:
+
+> This changed around 2009-2010 with the advent of several simple but important algorithmic improvements (...):
+>
+> * Better activation functions for neural layers
+> * Better weight-initialization schemes
+> * Better optimization schemes
+
+These were some of the algorithm improvements that allowed the community to start using deep learning.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check [_Deep Learning with Python, Second Edition_](https://amzn.to/3K3VZoy) for a great introduction to Deep Learning.</p></details>
+
+-----------------------
+
