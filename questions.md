@@ -63749,3 +63749,48 @@ As you see, function 1 is the gradient of Tanh, function 2 is the gradient of Si
 
 -----------------------
 
+## Date - 2025-11-29
+
+
+## Title - Dataset of applicants
+
+
+### **Question** :
+
+Annabelle wanted to understand who was applying to her company's open jobs.
+
+What do these people have in common? 
+
+Annabelle had access to the entire dataset of applicants and had plenty of information about them.
+
+**What would be your recommendation for Annabelle?**
+
+
+### **Choices** :
+
+- Annabelle should use a supervised learning algorithm.
+- Annabelle should use an unsupervised learning algorithm.
+- Annabelle should use a reinforcement learning algorithm.
+- Annabelle should use a semi-supervised learning algorithm.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Annabelle doesn't know what characteristics the applicants share, so a clustering algorithm should be a good initial step.
+
+For example, she could use [K-Means](https://en.wikipedia.org/wiki/K-means_clustering) to find interesting patterns and group the applicants that share them. A critical distinction is that you don't need to consider these groups preemptively; the clustering algorithm will find them for you. 
+
+Clustering algorithms are part of unsupervised learning, so the second choice is the correct answer to this question.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Customer Segmentation with Machine Learning"](https://towardsdatascience.com/customer-segmentation-with-machine-learning-a0ac8c3d4d84) for a quick introduction to Customer Segmentation.* ["10 Clustering Algorithms With Python"](https://machinelearningmastery.com/clustering-algorithms-with-python/) will introduce you to 10 different clustering algorithms.</p></details>
+
+-----------------------
+
