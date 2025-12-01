@@ -63850,3 +63850,50 @@ Therefore, the model's precision at predicting class `B` is 80%.</p></details>
 
 -----------------------
 
+## Date - 2025-12-01
+
+
+## Title - Every city
+
+
+### **Question** :
+
+Camilla was feeling the Curse of Dimensionality in her bones.
+
+Her dataset had a column representing each city in the U.S. It was an important feature, and she couldn't eliminate it. Camilla needed that feature, but one-hot encoding produced thousands of new columns, making building her binary classifier with that dataset cumbersome.
+
+Fortunately, she found a way around her issue: she replaced each column's category with the posterior probability of the target being positive on the presence of that category.
+
+And it worked! 
+
+**What's the name of this encoding technique?**
+
+
+### **Choices** :
+
+- Camilla used Label encoding.
+- Camilla used Ordinal encoding.
+- Camilla used Target encoding.
+- Camilla used Posterior encoding.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Label encoding replaces each category with a consecutive number starting from 0. It's useful when the order of the categories doesn't matter. On the other hand, Ordinal encoding works similarly to Label encoding, but we use it when the order of categories matters. Camilla didn't use any of these two encoding techniques. 
+
+Target encoding is another technique that helps process categorical features with high cardinality. In a dataset where the target is binary, you replace each category with the posterior probability of the target value being positive or 1.
+
+Finally, Posterior encoding is not an encoding technique at the time of this writing.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["6 Ways to Encode Features for Machine Learning Algorithms"](https://towardsdatascience.com/6-ways-to-encode-features-for-machine-learning-algorithms-21593f6238b0) to see some of these encoding techniques in action.* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.</p></details>
+
+-----------------------
+
