@@ -63942,3 +63942,46 @@ This model shows high training and testing losses, which we expect from an under
 
 -----------------------
 
+## Date - 2025-12-03
+
+
+## Title - Confusion Matrix
+
+
+### **Question** :
+
+Most people summarize the performance of their model using a single high-level metric. For example, accuracy is a popular way to explain how the model is doing.
+
+While helpful, this doesn't give us enough information about the quality of the predictions and the mistakes the model makes.
+
+A confusion matrix is a tool we can use to zoom into a model and surface important information.
+
+**Which of the following sentences is true about a confusion matrix?**
+
+
+### **Choices** :
+
+- A confusion matrix helps analyze the performance of a binary classification model, but it doesn't work for multi-class classification models.
+- A confusion matrix helps analyze the performance of multi-class classification models, and it doesn't work for binary classification models.
+- A confusion matrix helps analyze the performance of classification models, including binary and multi-class models.
+- A confusion matrix helps analyze the performance of a regression model.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0010</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>A confusion matrix is one of the simplest and most popular tools to analyze the performance of a classification model. It breaks down each class and the number of correct and incorrect predictions the model makes. It gives us immediate access to the model's errors and their type.
+
+We use confusion matrices with binary and multi-class classification models, but we don't use them in regression problems.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["Confusion Matrix"](https://articles.bnomial.com/confusion-matrix) for a full explanation of how a confusion matrix works and how you can use them as part of your work.* Check ["When accuracy doesn't help"](https://articles.bnomial.com/when-accuracy-doesnt-help) for an introduction to precision, recall, and f1-score metrics to measure a machine learning model's performance.</p></details>
+
+-----------------------
+
