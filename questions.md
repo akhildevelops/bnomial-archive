@@ -64075,3 +64075,50 @@ The correct answer is the first choice: early stopping should halt the training 
 
 -----------------------
 
+## Date - 2025-12-06
+
+
+## Title - Amazon's warehouse
+
+
+### **Question** :
+
+Faith works in an Amazon warehouse. 
+
+Every day, thousands of packages leave the facility to their destination, and Faith has been working on a few machine learning models to predict workload over time.
+
+When building one of the models, she found out that her dataset had too many categorical features. Faith doesn't want to deal with a sparse dataset, so she needs your help to select the appropriate way to encode those columns.
+
+**How can Faith encode the categorical columns and avoid getting a sparse dataset?**
+
+
+### **Choices** :
+
+- Faith should use One-Hot encoding.
+- Faith should use Target encoding.
+- Faith should leave the categorical features as they are.
+- Faith should remove every categorical feature from the dataset.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0100</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Faith cannot leave the features as they are because many different machine learning models can't process categorical features directly. She can't remove them because she will lose all their predictive capabilities.
+
+Faith has to encode these features.
+
+One-Hot encoding creates a new feature for each unique value of the original categorical variable. For example, a "weather" feature with three values will get Faith three new features, one for each value of the original "weather" column. Unfortunately, using One-Hot encoding with many categorical features will result in a sparse dataset.
+
+Target encoding is another technique that helps process categorical features with high cardinality. Target encoding replaces the categories of a column with the average target value of all data points belonging to that category. In other words, Faith will convert each categorical feature into a numerical one and won't have to deal with a sparse dataset.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* Check ["6 Ways to Encode Features for Machine Learning Algorithms"](https://towardsdatascience.com/6-ways-to-encode-features-for-machine-learning-algorithms-21593f6238b0) to see some of these encoding techniques in action.* [_The Kaggle Book_](https://amzn.to/3kbanRb) explains different feature engineering techniques.* [_Feature Engineering for Machine Learning_](https://amzn.to/3SsnLAc) is an excellent book covering feature engineering.</p></details>
+
+-----------------------
+
