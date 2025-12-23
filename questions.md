@@ -64863,3 +64863,52 @@ Juliet is using `make_blobs()` to create a dataset, and this function returns in
 
 -----------------------
 
+## Date - 2025-12-23
+
+
+## Title - The clinical trial
+
+
+### **Question** :
+
+With more than five years of experience, Alani was an expert in dealing with tabular data. 
+
+In her last consulting gig, the company gave her access to a large dataset with patients' information from a clinical trial. Alani needs to predict which patients are more likely to drop off, and she decided to use XGBoost to create her model.
+
+There's only one problem. The dataset has a few columns with missing values. Not enough for Alani to drop the columns, but she still needs to decide what to do.
+
+**Which of the following should be the best way to deal with the missing values?**
+
+
+### **Choices** :
+
+- Alani should replace every missing value with the column's mean.
+- Alani should replace every missing value with the column's median.
+- Alani should replace every missing value with the column's mode.
+- Alani should keep the missing values untouched.
+
+
+### **Answer** :
+
+<details><summary>CLICK ME</summary><p>0001</p></details>
+
+
+### **Explaination** :
+
+<details><summary>CLICK ME</summary><p>Fortunately for Alani, she uses XGBoost, an algorithm that supports missing values and has a clever way to deal with them.
+
+In ["XGBoost: A Scalable Tree Boosting System,"](https://arxiv.org/pdf/1603.02754v3.pdf) the authors explain the algorithm's process to handle missing values. They call it "Sparsity-aware Split Finding":
+
+> (...) we propose to add a default direction in each tree node (...). When a value is missing in the sparse matrix x, the instance is classified into the default direction. There are two choices of default direction in each branch. The optimal default directions are learnt from the data.
+
+In other words, XGBoost learns how to classify samples with missing values by learning the best possible replacement for those values. This approach is better than replacing the value with an arbitrary choice like the feature's mean, median, or mode. Unless Alani knows something specific about those features, she should keep the missing values and let the algorithm deal with them.
+
+Although XGBoost has a clever approach for missing values, it's still generic and won't be better than a specific strategy that tackles each feature individually. A complete understanding of the problem and using that information to modify the data is always the best strategy.</p></details>
+
+
+### **References**: 
+
+<details><summary>CLICK ME</summary><p>* ["XGBoost: A Scalable Tree Boosting System"](https://arxiv.org/pdf/1603.02754v3.pdf) is the XGBoost paper that explains the "Sparsity-aware Split Finding" approach.</p></details>
+
+-----------------------
+
