@@ -1,8 +1,5 @@
 name: Archive Questions
-on:
-  schedule:
-  - cron: '20 5 * * *'
-    
+
 jobs:
   create_archive:
     runs-on: ubuntu-latest
